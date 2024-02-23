@@ -2,9 +2,9 @@
 //
 //import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 //import org.springframework.stereotype.Repository;
-//import org.unlogged.springwebfluxdemo.model.Account;
+//import org.unlogged.springwebfluxdemo.model.Person;
 //
 //@Repository
-//public interface AccountReactiveRepository
-//        extends ReactiveMongoRepository<Account, String> {
+//public interface PersonReactiveMongoRepository
+//        extends ReactiveMongoRepository<Person, String> {
 //}
