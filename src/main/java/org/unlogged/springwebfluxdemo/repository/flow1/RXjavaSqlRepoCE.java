@@ -8,7 +8,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface RXjavaSqlRepoCE extends BaseRepository {
-    public Flux<String> getAllStaffNames();
+    public Flux<Integer> getAllStaffNames();
 
     public Mono<StaffDTO> findStaffById(int id);
 

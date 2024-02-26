@@ -16,19 +16,19 @@ public class RXjavaSqlRepoImpl implements RxJavaSqlRepo {
 
     public static ConnectionProvider connectionProvider
             = new ConnectionProviderFromUrl(
-            "jdbc:mysql://localhost:3306/unlogged_demo", "root", "");
+            "jdbc:mysql://localhost:3306/udemo", "root", "");
     private Database db = Database.from(connectionProvider);
 
     @Override
-    public Flux<String> getAllStaffNames() {
-        List<String> names = db.select(
+    public Flux<Integer> getAllStaffNames() {
+        List<Integer> ids = db.select(
                         "select id from STAFF where id < ?")
                 .parameter(10)
-                .getAs(String.class)
+                .getAs(Integer.class)
                 .toList()
                 .toBlocking()
                 .single();
-        return Flux.just(names.toArray(new String[names.size()]));
+        return Flux.just(ids.toArray(new Integer[ids.size()]));
     }
 
     @Override

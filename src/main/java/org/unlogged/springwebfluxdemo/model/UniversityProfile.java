@@ -4,7 +4,7 @@ import java.util.List;
 
 public class UniversityProfile {
 
-    private String id;
+    private Integer id;
     private String name;
     private String address;
 
@@ -14,11 +14,11 @@ public class UniversityProfile {
         this.address = university.address();
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

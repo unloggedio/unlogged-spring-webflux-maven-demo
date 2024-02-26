@@ -17,7 +17,7 @@ public class CustomControllerCE extends BaseController<CustomService> {
     }
 
     @RequestMapping("/staff")
-    public ResponseEntity<Flux<String>> getAllStaffNames() {
+    public ResponseEntity<Flux<Integer>> getAllStaffNames() {
         return ResponseEntity.ok(customService.getAllStaffNames());
     }
 
@@ -58,5 +58,14 @@ public class CustomControllerCE extends BaseController<CustomService> {
 
     public Mono<UniversityFoodInfo> getFoodInfoProfileForUniversityNoEP(@RequestParam String id) {
         return customService.getFoodProfileForUniversity(id);
+    }
+
+    public Mono<UniversityProfileV2> getUniversityV2Mono(String universityId) {
+        return customService.getUniversityV2(universityId);
+    }
+
+    @RequestMapping("/university/v2/profile")
+    public ResponseEntity<Mono<UniversityProfileV2>> getUniversityV2(String universityId) {
+        return ResponseEntity.ok(customService.getUniversityV2(universityId));
     }
 }

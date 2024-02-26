@@ -1,9 +1,8 @@
 package org.unlogged.springwebfluxdemo.service.flow1;
 
-import org.unlogged.springwebfluxdemo.repository.flow1.BaseRepository;
+public class BaseServiceAbstract<RR, SR, MR> {
 
-public class BaseServiceAbstract<R, SR> {
-
-    protected R repository;
+    protected RR redisRepository;
     protected SR sqlRepository;
+    protected MR mongoRepo;
 }

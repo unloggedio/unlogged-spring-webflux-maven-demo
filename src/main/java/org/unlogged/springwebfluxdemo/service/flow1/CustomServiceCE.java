@@ -6,7 +6,7 @@ import reactor.core.publisher.Mono;
 
 public interface CustomServiceCE {
 
-    Flux<String> getAllStaffNames();
+    Flux<Integer> getAllStaffNames();
 
     Flux<Coffee> getCoffeeList();
 
@@ -21,4 +21,6 @@ public interface CustomServiceCE {
     Mono<UniversityProfileDTO> getUniversityProfile(String universityId);
 
     public Mono<UniversityFoodInfo> getFoodProfileForUniversity(String universityId);
+
+    public Mono<UniversityProfileV2> getUniversityV2(String universityId);
 }

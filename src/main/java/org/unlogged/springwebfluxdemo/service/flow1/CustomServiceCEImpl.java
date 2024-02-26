@@ -1,6 +1,7 @@
 package org.unlogged.springwebfluxdemo.service.flow1;
 
 import org.unlogged.springwebfluxdemo.model.*;
+import org.unlogged.springwebfluxdemo.repository.PersonReactiveMongoRepository;
 import org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo;
 import org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo;
 import reactor.core.publisher.Flux;
@@ -8,19 +9,20 @@ import reactor.core.publisher.Mono;
 
 import java.util.Objects;
 
-public class CustomServiceCEImpl extends BaseServiceAbstract<RedisCoffeeInteractionRepo, RxJavaSqlRepo> implements CustomServiceCE {
+public class CustomServiceCEImpl extends BaseServiceAbstract<RedisCoffeeInteractionRepo, RxJavaSqlRepo, PersonReactiveMongoRepository> implements CustomServiceCE {
 
     private RedisCoffeeInteractionRepo repo;
     private RxJavaSqlRepo sqlRepo;
+    private PersonReactiveMongoRepository mongoRepository;
 
-    public CustomServiceCEImpl(RedisCoffeeInteractionRepo repo, RxJavaSqlRepo sqlRepo) {
-
+    public CustomServiceCEImpl(RedisCoffeeInteractionRepo repo, RxJavaSqlRepo sqlRepo, PersonReactiveMongoRepository mongoRepository) {
         this.repo = repo;
         this.sqlRepo = sqlRepo;
+        this.mongoRepository = mongoRepository;
     }
 
     @Override
-    public Flux<String> getAllStaffNames() {
+    public Flux<Integer> getAllStaffNames() {
         return sqlRepo.getAllStaffNames();
     }
 
@@ -61,21 +63,36 @@ public class CustomServiceCEImpl extends BaseServiceAbstract<RedisCoffeeInteract
     public Mono<UniversityFoodInfo> getFoodProfileForUniversity(String universityId) {
         Mono<UniversityProfileDTO> universityProfileMono = getUniversityProfile(universityId);
         Flux<Coffee> coffeeFlux = getCoffeeList();
-        Mono<UniversityFoodInfo> foodInfoMono = Mono.just(new UniversityFoodInfo())
-                .map(element -> {
-                    element.setUniversityId(Objects.requireNonNull(universityProfileMono.block()).getId());
-                    element.setUniversityName(Objects.requireNonNull(universityProfileMono.block()).getName());
-                    element.setBeveragesAvailable(coffeeFlux.collectList().block());
-                    return element;
-                });
-//        Mono<UniversityFoodInfo> foodInfoMono = Mono
-//                .zip(universityProfileMono, coffeeFlux.collectList(), (profile, beverages) -> {
-//                    UniversityFoodInfo foodProfile = new UniversityFoodInfo();
-//                    foodProfile.setUniversityId(profile.getId());
-//                    foodProfile.setUniversityName(profile.getName());
-//                    foodProfile.setBeveragesAvailable(beverages);
-//                    return foodProfile;
+//        Mono<UniversityFoodInfo> foodInfoMono = Mono.just(new UniversityFoodInfo())
+//                .map(element -> {
+//                    element.setUniversityId(Objects.requireNonNull(universityProfileMono.block()).getId());
+//                    element.setUniversityName(Objects.requireNonNull(universityProfileMono.block()).getName());
+//                    element.setBeveragesAvailable(coffeeFlux.collectList().block());
+//                    return element;
 //                });
+        Mono<UniversityFoodInfo> foodInfoMono = Mono
+                .zip(universityProfileMono, coffeeFlux.collectList(), (profile, beverages) -> {
+                    UniversityFoodInfo foodProfile = new UniversityFoodInfo();
+                    foodProfile.setUniversityId(profile.getId());
+                    foodProfile.setUniversityName(profile.getName());
+                    foodProfile.setBeveragesAvailable(beverages);
+                    return foodProfile;
+                });
         return foodInfoMono;
+    }
+
+    public Mono<UniversityProfileV2> getUniversityV2(String universityId) {
+        return Flux
+                .zip(getFoodProfileForUniversity(universityId),
+                        mongoRepository.findPeopleWithAgeLessThan(30).collectList(),
+                        mongoRepository.findPeopleWithAgeGreaterThan(30).collectList(),
+                        sqlRepo.getStaffForUniversity(universityId).collectList()).flatMap(data ->
+                {
+                    UniversityProfileV2 profileV2 = new UniversityProfileV2(data.getT1().getUniversityId(),
+                            data.getT1().getUniversityName(), data.getT1().getBeveragesAvailable(),
+                            data.getT2(), data.getT3(),
+                            data.getT4());
+                    return Flux.just(profileV2);
+                }).next();
     }
 }

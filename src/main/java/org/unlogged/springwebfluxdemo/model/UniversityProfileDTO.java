@@ -4,7 +4,7 @@ import java.util.List;
 
 public class UniversityProfileDTO {
 
-    private String id;
+    private Integer id;
     private String name;
     private String address;
     private List<StaffDTO> staffList;
@@ -16,11 +16,11 @@ public class UniversityProfileDTO {
         this.staffList = staffDTOS;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

@@ -3,15 +3,15 @@ package org.unlogged.springwebfluxdemo.model;
 import java.util.List;
 
 public class UniversityFoodInfo {
-    private String universityId;
+    private Integer universityId;
     private String universityName;
     private List<Coffee> beveragesAvailable;
 
-    public String getUniversityId() {
+    public Integer getUniversityId() {
         return universityId;
     }
 
-    public void setUniversityId(String universityId) {
+    public void setUniversityId(Integer universityId) {
         this.universityId = universityId;
     }
 

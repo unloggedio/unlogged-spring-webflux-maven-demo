@@ -10,7 +10,7 @@ public class StaffDTO {
     }
 
     public StaffDTO(Staff staff) {
-        this.id = Integer.parseInt(staff.id());
+        this.id = staff.id();
         this.name = staff.name();
     }
 
