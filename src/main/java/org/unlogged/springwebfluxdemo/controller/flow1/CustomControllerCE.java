@@ -47,25 +47,25 @@ public class CustomControllerCE extends BaseController<CustomService> {
     }
 
     @RequestMapping("/university/staff")
-    public ResponseEntity<Mono<UniversityProfileDTO>> getListofStaffForUniversity(@RequestParam String id) {
+    public ResponseEntity<Mono<UniversityProfileDTO>> getListofStaffForUniversity(@RequestParam int id) {
         return ResponseEntity.ok(customService.getUniversityProfile(id));
     }
 
     @RequestMapping("/university/food")
-    public ResponseEntity<Mono<UniversityFoodInfo>> getFoodInfoProfileForUniversity(@RequestParam String id) {
+    public ResponseEntity<Mono<UniversityFoodInfo>> getFoodInfoProfileForUniversity(@RequestParam int id) {
         return ResponseEntity.ok(customService.getFoodProfileForUniversity(id));
     }
 
-    public Mono<UniversityFoodInfo> getFoodInfoProfileForUniversityNoEP(@RequestParam String id) {
+    public Mono<UniversityFoodInfo> getFoodInfoProfileForUniversityNoEP(int id) {
         return customService.getFoodProfileForUniversity(id);
     }
 
-    public Mono<UniversityProfileV2> getUniversityV2Mono(String universityId) {
+    public Mono<UniversityProfileV2> getUniversityV2Mono(int universityId) {
         return customService.getUniversityV2(universityId);
     }
 
     @RequestMapping("/university/v2/profile")
-    public ResponseEntity<Mono<UniversityProfileV2>> getUniversityV2(String universityId) {
+    public ResponseEntity<Mono<UniversityProfileV2>> getUniversityV2(@RequestParam int universityId) {
         return ResponseEntity.ok(customService.getUniversityV2(universityId));
     }
 }

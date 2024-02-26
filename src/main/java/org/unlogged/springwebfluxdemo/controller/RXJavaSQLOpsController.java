@@ -96,7 +96,7 @@ public class RXJavaSQLOpsController {
                 .count();
         Observable<Integer> staff2Insert = db.update("insert into STAFF(name) " +
                         "VALUES('staff2')")
-                .dependsOn(staff1Insert)
+                .dependsOn(createUniversityStaffBinding)
                 .count();
         staff1Insert.toBlocking().single();
         staff2Insert.toBlocking().single();
@@ -107,7 +107,7 @@ public class RXJavaSQLOpsController {
                 .count();
         Observable<Integer> university2Insert = db.update("insert into UNIVERSITY(name,address) " +
                         "VALUES('university2','place2')")
-                .dependsOn(university1Insert)
+                .dependsOn(createUniversityStaffBinding)
                 .count();
 
         university1Insert.toBlocking().single();

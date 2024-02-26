@@ -52,7 +52,7 @@ public class CustomServiceCEImpl extends BaseServiceAbstract<RedisCoffeeInteract
     }
 
     @Override
-    public Mono<UniversityProfileDTO> getUniversityProfile(String universityId) {
+    public Mono<UniversityProfileDTO> getUniversityProfile(int universityId) {
         Mono<UniversityProfile> universityProfileMono = sqlRepo.getUniversityProfile(universityId);
         Flux<StaffDTO> staffForselectUniversity = sqlRepo.getStaffForUniversity(universityId);
         return Mono.zip(universityProfileMono, staffForselectUniversity.collectList(), (profile, stafflist) ->
@@ -60,7 +60,7 @@ public class CustomServiceCEImpl extends BaseServiceAbstract<RedisCoffeeInteract
     }
 
     @Override
-    public Mono<UniversityFoodInfo> getFoodProfileForUniversity(String universityId) {
+    public Mono<UniversityFoodInfo> getFoodProfileForUniversity(int universityId) {
         Mono<UniversityProfileDTO> universityProfileMono = getUniversityProfile(universityId);
         Flux<Coffee> coffeeFlux = getCoffeeList();
 //        Mono<UniversityFoodInfo> foodInfoMono = Mono.just(new UniversityFoodInfo())
@@ -81,7 +81,7 @@ public class CustomServiceCEImpl extends BaseServiceAbstract<RedisCoffeeInteract
         return foodInfoMono;
     }
 
-    public Mono<UniversityProfileV2> getUniversityV2(String universityId) {
+    public Mono<UniversityProfileV2> getUniversityV2(int universityId) {
         return Flux
                 .zip(getFoodProfileForUniversity(universityId),
                         mongoRepository.findPeopleWithAgeLessThan(30).collectList(),

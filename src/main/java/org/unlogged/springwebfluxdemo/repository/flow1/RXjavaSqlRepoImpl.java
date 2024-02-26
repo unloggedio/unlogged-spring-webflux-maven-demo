@@ -41,7 +41,7 @@ public class RXjavaSqlRepoImpl implements RxJavaSqlRepo {
     }
 
     @Override
-    public Flux<StaffDTO> getStaffForUniversity(String universityId) {
+    public Flux<StaffDTO> getStaffForUniversity(int universityId) {
         Staff staffresult = db.select("select s.id, s.name from STAFF s, UNIVERSITY_STAFF us where us.university_id='" + universityId + "' and s.id=us.staff_id")
                 .autoMap(Staff.class)
                 .toBlocking()
@@ -72,7 +72,7 @@ public class RXjavaSqlRepoImpl implements RxJavaSqlRepo {
     }
 
     @Override
-    public Mono<UniversityProfile> getUniversityProfile(String universityId) {
+    public Mono<UniversityProfile> getUniversityProfile(int universityId) {
         University university = db.select("select id, name, address from UNIVERSITY where id=" + universityId)
                 .autoMap(University.class)
                 .toBlocking()

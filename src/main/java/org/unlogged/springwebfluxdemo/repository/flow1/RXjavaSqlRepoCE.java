@@ -18,6 +18,6 @@ public interface RXjavaSqlRepoCE extends BaseRepository {
 
     public Mono<Boolean> deleteStaff(int id);
 
-    public Mono<UniversityProfile> getUniversityProfile(String universityId);
-    public Flux<StaffDTO> getStaffForUniversity(String universityId);
+    public Mono<UniversityProfile> getUniversityProfile(int universityId);
+    public Flux<StaffDTO> getStaffForUniversity(int universityId);
 }

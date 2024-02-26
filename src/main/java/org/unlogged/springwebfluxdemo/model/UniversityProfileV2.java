@@ -63,6 +63,14 @@ public class UniversityProfileV2 {
         this.listOfSeniorMembers = listOfSeniorMembers;
     }
 
+    public List<StaffDTO> getStaffDTOList() {
+        return staffDTOList;
+    }
+
+    public void setStaffDTOList(List<StaffDTO> staffDTOList) {
+        this.staffDTOList = staffDTOList;
+    }
+
     @Override
     public String toString() {
         return "UniversityProfileV2{" +

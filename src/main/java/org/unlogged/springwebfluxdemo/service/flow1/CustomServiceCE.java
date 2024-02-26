@@ -18,9 +18,9 @@ public interface CustomServiceCE {
 
     Mono<Boolean> deleteStaff(int id);
 
-    Mono<UniversityProfileDTO> getUniversityProfile(String universityId);
+    Mono<UniversityProfileDTO> getUniversityProfile(int universityId);
 
-    public Mono<UniversityFoodInfo> getFoodProfileForUniversity(String universityId);
+    public Mono<UniversityFoodInfo> getFoodProfileForUniversity(int universityId);
 
-    public Mono<UniversityProfileV2> getUniversityV2(String universityId);
+    public Mono<UniversityProfileV2> getUniversityV2(int universityId);
 }
