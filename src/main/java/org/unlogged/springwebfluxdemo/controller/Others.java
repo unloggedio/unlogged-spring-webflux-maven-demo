@@ -8,10 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.data.domain.Example;
 import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.http.MediaType;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.reactive.function.server.RouterFunction;
+import org.springframework.web.reactive.function.server.ServerResponse;
 import org.unlogged.springwebfluxdemo.exception.WebfluxError;
 import org.unlogged.springwebfluxdemo.model.GenericTypeWrapper;
 import org.unlogged.springwebfluxdemo.model.Person;
@@ -29,6 +32,9 @@ import java.util.Set;
 import java.util.function.Consumer;
 
 import static org.springframework.data.mongodb.core.query.Criteria.where;
+import static org.springframework.data.mongodb.core.query.Query.query;
+import static org.springframework.web.reactive.function.server.RequestPredicates.all;
+import static org.springframework.web.reactive.function.server.RouterFunctions.route;
 
 @RestController
 @RequestMapping("/others")
@@ -109,5 +115,9 @@ public class Others {
     //should serialize and not throw a failed to serialize Exception
     public Criteria getCriteria1(String name) {
         return where("Person.name").is(name);
+    }
+
+    public Query getQuery() {
+        return query(getCriteria());
     }
 }
