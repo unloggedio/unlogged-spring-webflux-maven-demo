@@ -6,6 +6,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.unlogged.springwebfluxdemo.client.GreetingClient;
+import org.unlogged.springwebfluxdemo.exception.WebFluxException;
+import org.unlogged.springwebfluxdemo.exception.WebfluxError;
 import org.unlogged.springwebfluxdemo.model.TypeWrapper;
 import reactor.core.observability.micrometer.Micrometer;
 import reactor.core.publisher.Mono;
@@ -57,5 +59,20 @@ public class MonoOpsController {
                 .tap(Micrometer.observation(observationRegistry));
     }
 
+    @RequestMapping("/mono/error")
+    public Mono<String> returnMonoErrorBasic() {
+        if (true) {
+            return Mono.error(new RuntimeException("Custom throw"));
+        }
+        return Mono.just("Exception");
+    }
 
+    @RequestMapping("/mono/error/custom")
+    public Mono<String> returnCustomExceptionFromMono() {
+        if (true) {
+            return Mono.error(new WebFluxException(WebfluxError.CUSTOM_THROW,
+                    new RuntimeException("ThrowCustomException")));
+        }
+        return Mono.just("Exception");
+    }
 }

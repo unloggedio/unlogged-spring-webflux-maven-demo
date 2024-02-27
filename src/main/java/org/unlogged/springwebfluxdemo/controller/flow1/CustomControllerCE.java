@@ -64,8 +64,16 @@ public class CustomControllerCE extends BaseController<CustomService> {
         return customService.getUniversityV2(universityId);
     }
 
+    //This will Timeout
+    @RequestMapping("/university/mix")
+    public Mono<UniversityProfileV2> getUniversityMixed(@RequestParam int universityId) {
+        return customService.getMixResponse(universityId);
+    }
+
     @RequestMapping("/university/v2/profile")
     public ResponseEntity<Mono<UniversityProfileV2>> getUniversityV2(@RequestParam int universityId) {
         return ResponseEntity.ok(customService.getUniversityV2(universityId));
     }
+
+
 }

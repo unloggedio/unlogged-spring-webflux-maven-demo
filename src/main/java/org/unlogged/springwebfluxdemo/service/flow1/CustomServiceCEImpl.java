@@ -7,7 +7,7 @@ import org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-import java.util.Objects;
+import java.util.List;
 
 public class CustomServiceCEImpl extends BaseServiceAbstract<RedisCoffeeInteractionRepo, RxJavaSqlRepo, PersonReactiveMongoRepository> implements CustomServiceCE {
 
@@ -81,6 +81,7 @@ public class CustomServiceCEImpl extends BaseServiceAbstract<RedisCoffeeInteract
         return foodInfoMono;
     }
 
+    @Override
     public Mono<UniversityProfileV2> getUniversityV2(int universityId) {
         return Flux
                 .zip(getFoodProfileForUniversity(universityId),
@@ -94,5 +95,69 @@ public class CustomServiceCEImpl extends BaseServiceAbstract<RedisCoffeeInteract
                             data.getT4());
                     return Flux.just(profileV2);
                 }).next();
+    }
+
+    @Override
+    public Mono<UniversityProfileV2> getMixResponse(int universityId) {
+        return mix1(getUniversityV2(universityId));
+    }
+
+    private Mono<UniversityProfileV2> mix1(Mono<UniversityProfileV2> v2Mono) {
+        Mono<UniversityProfileV2> profileV2Mono = mongoRepository.findPeopleByAge(64).cache().repeat().collectList()
+                .zipWith(v2Mono)
+                .map(tuple -> {
+                    UniversityProfileV2 v2 = tuple.getT2();
+                    List<Person> newSlist = tuple.getT1();
+
+                    v2.setListOfSeniorMembers(newSlist);
+                    return v2;
+                });
+        return v2Mono
+                .map(profile -> {
+                    profile.setName(profile.getName() + "#");
+                    return profile;
+                })
+                .defaultIfEmpty(new UniversityProfileV2())
+                .cache()
+//                .repeat()
+                .zipWith(profileV2Mono)
+                .map(tuple ->
+                {
+                    UniversityProfileV2 initialProfile = tuple.getT1();
+                    UniversityProfileV2 updatedProfile = tuple.getT2();
+
+                    updatedProfile.setName(initialProfile.getName());
+                    return updatedProfile;
+                });
+    }
+
+
+    private Flux<UniversityProfileV2> mix2(Flux<UniversityProfileV2> v2Flux) {
+        Flux<UniversityProfileV2> profileV2Mono = mongoRepository.findPeopleByAge(64).cache().repeat()
+                .zipWith(v2Flux)
+                .map(tuple -> {
+                    UniversityProfileV2 v2 = tuple.getT2();
+                    Person p = tuple.getT1();
+
+                    v2.setListOfSeniorMembers(List.of(p));
+                    return v2;
+                });
+        return v2Flux
+                .map(profile -> {
+                    profile.setName(profile.getName() + "#");
+                    return profile;
+                })
+                .defaultIfEmpty(new UniversityProfileV2())
+                .cache()
+                .repeat()
+                .zipWith(profileV2Mono)
+                .map(tuple ->
+                {
+                    UniversityProfileV2 initialProfile = tuple.getT1();
+                    UniversityProfileV2 updatedProfile = tuple.getT2();
+
+                    updatedProfile.setName(initialProfile.getName());
+                    return updatedProfile;
+                });
     }
 }

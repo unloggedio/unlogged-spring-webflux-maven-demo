@@ -58,7 +58,6 @@ public class EntryPointController {
         return greetingClient.getTypeWrappedObject().block();
     }
 
-    //appsmith's general form of representing responses (similar)
     @RequestMapping("/typeWrapped/v2")
     public Mono<ResponseEntity<TypeWrapper>> getMonoRespTypeEntity() {
         return greetingClient.getTypeWrappedObject().map(ResponseEntity::ok);

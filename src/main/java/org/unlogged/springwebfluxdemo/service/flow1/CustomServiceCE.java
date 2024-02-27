@@ -23,4 +23,6 @@ public interface CustomServiceCE {
     public Mono<UniversityFoodInfo> getFoodProfileForUniversity(int universityId);
 
     public Mono<UniversityProfileV2> getUniversityV2(int universityId);
+
+    Mono<UniversityProfileV2> getMixResponse(int universityId);
 }

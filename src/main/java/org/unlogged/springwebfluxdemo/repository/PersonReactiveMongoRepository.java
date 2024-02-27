@@ -1,10 +1,12 @@
 package org.unlogged.springwebfluxdemo.repository;
 
+import org.springframework.data.mongodb.repository.DeleteQuery;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 import org.unlogged.springwebfluxdemo.model.Person;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 @Repository
 public interface PersonReactiveMongoRepository
@@ -21,4 +23,7 @@ public interface PersonReactiveMongoRepository
 
     @Query("{'age' : {'$gt' : ?0}}")
     Flux<Person> findPeopleWithAgeGreaterThan(Integer age);
+
+    @DeleteQuery("{ 'name' : ?0 }")
+    Mono<Void> deleteByName(String name);
 }
