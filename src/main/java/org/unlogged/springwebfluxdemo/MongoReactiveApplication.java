@@ -18,6 +18,8 @@ import org.springframework.data.mongodb.core.mapping.MongoMappingContext;
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 import org.springframework.transaction.reactive.TransactionalOperator;
 import org.unlogged.springwebfluxdemo.converter.StringToInstantConverter;
+import org.unlogged.springwebfluxdemo.listener.EncryptionMongoEventListener;
+import org.unlogged.springwebfluxdemo.service.mock.EncryptionService;
 
 import java.util.Collections;
 
@@ -57,5 +59,10 @@ public class MongoReactiveApplication
         converter.setCustomConversions(mongoCustomConversions());
         converter.setMapKeyDotReplacement("-UNLOGGED-DOT-REPLACEMENT-");
         return converter;
+    }
+
+    @Bean
+    public EncryptionMongoEventListener encryptionMongoEventListener(EncryptionService encryptionService) {
+        return new EncryptionMongoEventListener(encryptionService);
     }
 }
