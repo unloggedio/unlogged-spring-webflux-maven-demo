@@ -1,6 +1,7 @@
 package org.unlogged.springwebfluxdemo;
 
 
+import com.mongodb.ConnectionString;
 import com.mongodb.reactivestreams.client.MongoClient;
 import com.mongodb.reactivestreams.client.MongoClients;
 import org.springframework.context.annotation.Bean;
@@ -9,10 +10,11 @@ import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRep
 
 @EnableReactiveMongoRepositories
 public class MongoReactiveApplication
-  extends AbstractReactiveMongoConfiguration {
+        extends AbstractReactiveMongoConfiguration {
 
     @Bean
     public MongoClient mongoClient() {
+//        return MongoClients.create(new ConnectionString("mongodb://localhost/reactive"));
         return MongoClients.create();
     }
 

@@ -16,14 +16,7 @@ services:
     networks: 
       - unlogged_network
     environment:
-      REDIS_MASTER_HOST: redis
-
-  mongo-q:
-    image: mongo:latest
-    restart: always
-    ports:
-      - 27017:27017
-
+      REDIS_MASTER_HOST: localhost
 
   webflux-app:
     container_name: webflux-target-repo
@@ -38,10 +31,16 @@ services:
     depends_on:
       - mysql-r
       - redis-r
-      - mongo-q
-    networks: 
+    networks:
       - unlogged_network
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://root:example@localhost:27017/reactive
+      SPRING_DATA_MONGODB_HOST: mongodb
+
 
 networks:
   unlogged_network:
-    driver: bridge 
+    driver: bridge
+
+volumes:
+  mongodb_data_container:

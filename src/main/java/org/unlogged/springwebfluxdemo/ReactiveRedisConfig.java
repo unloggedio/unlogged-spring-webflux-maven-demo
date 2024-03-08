@@ -1,14 +1,18 @@
 package org.unlogged.springwebfluxdemo;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.data.redis.connection.ReactiveRedisConnectionFactory;
 import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
 
+@Configuration
 public class ReactiveRedisConfig {
 
     @Bean
+    @Primary
     public ReactiveRedisConnectionFactory reactiveRedisConnectionFactory() {
-        return new LettuceConnectionFactory("localhost", 6379);
+        return new LettuceConnectionFactory("redis-r", 6379);
     }
 
 //    @Bean
