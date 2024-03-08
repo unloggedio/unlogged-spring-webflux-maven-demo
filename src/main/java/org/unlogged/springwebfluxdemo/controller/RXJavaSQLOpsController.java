@@ -24,7 +24,7 @@ public class RXJavaSQLOpsController {
 
     public static ConnectionProvider dbPathConnectionProvider
             = new ConnectionProviderFromUrl(
-            "jdbc:mysql://localhost:3306/", "root", "");
+            "jdbc:mysql://localhost:3306/", "root", "root_password");
     private Database db = null;
     private Database dbPathCheck = Database.from(dbPathConnectionProvider);
 
@@ -37,13 +37,13 @@ public class RXJavaSQLOpsController {
         } else {
             System.out.println("DB exists, no need to seed or create.");
             db = Database.from(new ConnectionProviderFromUrl(
-                    "jdbc:mysql://localhost:3306/udemo", "root", ""));
+                    "jdbc:mysql://localhost:3306/udemo2", "root", "root_password"));
         }
     }
 
     public boolean shouldCreateNewDB() {
         try {
-            String dbname = dbPathCheck.select("SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'udemo'")
+            String dbname = dbPathCheck.select("SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'udemo2'")
                     .getAs(String.class)
                     .toBlocking()
                     .single();
@@ -61,12 +61,12 @@ public class RXJavaSQLOpsController {
 
     public void createTablesAndSeed() {
         Observable<Integer> createDB = dbPathCheck.update(
-                        "CREATE DATABASE IF NOT EXISTS udemo")
+                        "CREATE DATABASE IF NOT EXISTS udemo2")
                 .count();
         createDB.toBlocking().single();
 
         db = Database.from(new ConnectionProviderFromUrl(
-                "jdbc:mysql://localhost:3306/udemo", "root", ""));
+                "jdbc:mysql://localhost:3306/udemo2", "root", "root_password"));
 
         Observable<Integer> createUniversity = db.update(
                         "CREATE TABLE IF NOT EXISTS UNIVERSITY("

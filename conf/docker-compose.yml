@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  mysql-r:
+    image: mysql:latest
+    restart: always
+    networks: 
+      - unlogged_network
+    environment:
+      MYSQL_DATABASE: udemo2
+      MYSQL_ROOT_PASSWORD: root_password
+
+  redis-r:
+    image: redis:latest
+    restart: always
+    networks: 
+      - unlogged_network
+    environment:
+      REDIS_MASTER_HOST: redis
+
+  mongo-q:
+    image: mongo:latest
+    restart: always
+    ports:
+      - 27017:27017
+
+
+  webflux-app:
+    container_name: webflux-target-repo
+    build:
+      context: ../
+    volumes:
+      - /Users/testerfresher/.unlogged/:/root/.unlogged/
+      - /Users/testerfresher/.m2/repository/video/bug/unlogged-sdk:/root/.m2/repository/video/bug/unlogged-sdk
+    ports:
+      - "8080:8080"
+      - "12100:12100"
+    depends_on:
+      - mysql-r
+      - redis-r
+      - mongo-q
+    networks: 
+      - unlogged_network
+
+networks:
+  unlogged_network:
+    driver: bridge 
