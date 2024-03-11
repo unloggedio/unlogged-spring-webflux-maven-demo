@@ -13,21 +13,22 @@ public class SqlDbConnectionHelper {
     public static Database getDB() {
         ConnectionProvider dbPathConnectionProvider
                 = new ConnectionProviderFromUrl(
-                "jdbc:mysql://localhost:3306/", "root", "root_password");
+                "jdbc:mysql://mysqldb:3306/", "root", "root_password");
         Database dbPathCheck = Database.from(dbPathConnectionProvider);
         return createDBifNeeded(dbPathCheck);
     }
 
 
     public static Database createDBifNeeded(Database pathCheck) {
-        System.out.println("Post Construct creation");
         if (shouldCreateNewDB(pathCheck)) {
             System.out.println("Creating new DB");
             return createTablesAndSeed(pathCheck);
         } else {
-            System.out.println("DB exists, no need to seed or create.");
-           return Database.from(new ConnectionProviderFromUrl(
-                    "jdbc:mysql://localhost:3306/udemo2", "root", "root_password"));
+            System.out.println("DB exists, re creating");
+            Observable<Integer> deleteDb = pathCheck.update(
+                            "DROP DATABASE IF EXISTS udemo2")
+                    .count();
+            return createTablesAndSeed(pathCheck);
         }
     }
 
@@ -56,7 +57,7 @@ public class SqlDbConnectionHelper {
         createDB.toBlocking().single();
 
         Database db = Database.from(new ConnectionProviderFromUrl(
-                "jdbc:mysql://localhost:3306/udemo2", "root", "root_password"));
+                "jdbc:mysql://mysqldb:3306/udemo2", "root", "root_password"));
 
         Observable<Integer> createUniversity = db.update(
                         "CREATE TABLE IF NOT EXISTS UNIVERSITY("

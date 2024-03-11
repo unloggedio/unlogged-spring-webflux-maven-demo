@@ -1,10 +1,10 @@
 version: '3'
 
 services:
-  mysql-r:
+  mysqldb:
     image: mysql:latest
     restart: always
-    networks: 
+    networks:
       - unlogged_network
     environment:
       MYSQL_DATABASE: udemo2
@@ -13,10 +13,19 @@ services:
   redis-r:
     image: redis:latest
     restart: always
-    networks: 
+    networks:
       - unlogged_network
     environment:
       REDIS_MASTER_HOST: localhost
+  mongodb:
+    image: mongo:latest
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data_container:/data/db
+    networks:
+      - unlogged_network
 
   webflux-app:
     container_name: webflux-target-repo
@@ -29,13 +38,13 @@ services:
       - "8080:8080"
       - "12100:12100"
     depends_on:
-      - mysql-r
+      - mysqldb
       - redis-r
+      - mongodb
     networks:
       - unlogged_network
     environment:
-      SPRING_DATA_MONGODB_URI: mongodb://root:example@localhost:27017/reactive
-      SPRING_DATA_MONGODB_HOST: mongodb
+      SPRING_DATA_MONGODB_HOST: mongodb:27017
 
 
 networks:
