@@ -34,6 +34,10 @@ public class GreetingClient {
 
         this.client =
                 builder
+                        .defaultHeaders(headers -> {
+                            headers.add("h1", "hv1");
+                            headers.add("h2", "hv2");
+                        })
                         .clientConnector(connector())
                         .baseUrl("http://localhost:8080").build();
     }

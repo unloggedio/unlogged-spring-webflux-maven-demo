@@ -13,11 +13,12 @@ import reactor.util.context.Context;
 public class ContextEnrichmentFilter implements WebFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, WebFilterChain chain) {
-        exchange.getResponse()
-                .getHeaders().add("web-filter", "web-filter-test");
+        if (exchange.getResponse().getHeaders() != null) {
+            exchange.getResponse()
+                    .getHeaders().add("web-filter", "web-filter-test");
+        }
         return chain.filter(exchange);
     }
-
 
     public Context updateContextWithQuoteHeader(Context context, ServerWebExchange exchange) {
         Context finalContext = context.put("quote_header", getQuoteHeader(exchange));
