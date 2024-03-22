@@ -6,6 +6,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
+import org.unlogged.springwebfluxdemo.filter.ExampleHandlerFilterFunction;
 import org.unlogged.springwebfluxdemo.handler.GreetingHandler;
 
 import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
@@ -24,6 +25,9 @@ public class GreetingRouter {
                         greetingHandler::e)
                 .andRoute(GET("/typeWrapped").and(accept(MediaType.APPLICATION_JSON)),
                         greetingHandler::getTypeWrapped)
+                .andRoute(GET("/typeWrapped/{id}").and(accept(MediaType.APPLICATION_JSON)),
+                        greetingHandler::getTypeWrappedPV)
+                .filter(new ExampleHandlerFilterFunction())
                 .andRoute(GET("/someBean").and(accept(MediaType.APPLICATION_JSON)),
                         greetingHandler::getSomeBean)
                 .andRoute(GET("/listOfStrings").and(accept(MediaType.APPLICATION_JSON)),

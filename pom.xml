@@ -35,7 +35,7 @@
         <dependency>
             <artifactId>unlogged-sdk</artifactId>
             <groupId>video.bug</groupId>
-            <version>0.1.52</version>
+            <version>0.2.16</version>
         </dependency>
         <dependency>
             <groupId>io.reactivex.rxjava3</groupId>

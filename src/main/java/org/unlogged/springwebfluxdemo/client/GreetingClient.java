@@ -59,6 +59,13 @@ public class GreetingClient {
                 .map(Greeting::getTypeWrapper);
     }
 
+    public Mono<TypeWrapper> getTypeWrappedObjectPV(String id) {
+        return this.client.get().uri("/typeWrapped/" + id).accept(MediaType.APPLICATION_JSON)
+                .retrieve()
+                .bodyToMono(Greeting.class)
+                .map(Greeting::getTypeWrapper);
+    }
+
     public Mono<Bean> getRandomBean() {
         return this.client.get().uri("/someBean").accept(MediaType.APPLICATION_JSON)
                 .retrieve()
@@ -82,4 +89,7 @@ public class GreetingClient {
                 .bodyToMono(Greeting.class)
                 .map(Greeting::genericTypeWrapperString);
     }
+
+
+    //make a call to enrich a response on demand outside of webclient call
 }
