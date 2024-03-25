@@ -6,10 +6,7 @@ import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.unlogged.springwebfluxdemo.client.GreetingClient;
 import org.unlogged.springwebfluxdemo.model.GenericTypeWrapper;
 import org.unlogged.springwebfluxdemo.model.TypeWrapper;
@@ -51,6 +48,11 @@ public class EntryPointController {
     @RequestMapping("/typeWrapped")
     public ResponseEntity<Mono<TypeWrapper>> getTypeWrapped() {
         return ResponseEntity.ok(greetingClient.getTypeWrappedObject());
+    }
+
+    @RequestMapping(path = "/typeWrapped/{id}")
+    public ResponseEntity<Mono<TypeWrapper>> getTypeWrappedPv(@PathVariable String id) {
+        return ResponseEntity.ok(greetingClient.getTypeWrappedObjectPV(id));
     }
 
     @RequestMapping("/typeWrapped/blocked")

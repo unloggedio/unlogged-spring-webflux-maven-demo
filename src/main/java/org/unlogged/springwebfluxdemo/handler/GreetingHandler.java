@@ -29,6 +29,13 @@ public class GreetingHandler {
                 .body(BodyInserters.fromValue(new Greeting(new TypeWrapper()).getTypeWrapper()));
     }
 
+    public Mono<ServerResponse> getTypeWrappedPV(ServerRequest serverRequest) {
+        TypeWrapper gt = new Greeting(new TypeWrapper()).getTypeWrapper();
+        gt.setStringValue(serverRequest.pathVariable("id"));
+        return ServerResponse.ok().contentType(MediaType.APPLICATION_JSON)
+                .body(BodyInserters.fromValue(gt));
+    }
+
     public Mono<ServerResponse> getGenericTypeWrapper(ServerRequest serverRequest) {
         return ServerResponse.ok().contentType(MediaType.APPLICATION_JSON)
                 .body(BodyInserters.fromValue(new Greeting("").genericTypeWrapperString()));
