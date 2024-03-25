@@ -27,7 +27,7 @@ public class GreetingRouter {
                         greetingHandler::getTypeWrapped)
                 .andRoute(GET("/typeWrapped/{id}").and(accept(MediaType.APPLICATION_JSON)),
                         greetingHandler::getTypeWrappedPV)
-                .filter(new ExampleHandlerFilterFunction())
+//                .filter(new ExampleHandlerFilterFunction())
                 .andRoute(GET("/someBean").and(accept(MediaType.APPLICATION_JSON)),
                         greetingHandler::getSomeBean)
                 .andRoute(GET("/listOfStrings").and(accept(MediaType.APPLICATION_JSON)),
