@@ -41,7 +41,7 @@ public class EntryPointController {
     }
 
     @RequestMapping("/args1")
-    public ResponseEntity<Mono<String>> getArgs1(@RequestParam String inputdata) {
+    public ResponseEntity<Mono<String>> getArgs1() {
         return ResponseEntity.ok(greetingClient.getMessage());
     }
 

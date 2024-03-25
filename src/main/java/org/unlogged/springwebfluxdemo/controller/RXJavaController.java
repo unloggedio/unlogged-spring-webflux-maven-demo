@@ -273,6 +273,7 @@ public class RXJavaController {
         return integerFlowable;
     }
 
+    @RequestMapping("/bp/buffered")
     public List<Integer> backPressureBufferedStrat() {
         List<Integer> testList = IntStream.range(0, 100)
                 .boxed()
@@ -293,6 +294,7 @@ public class RXJavaController {
         return receivedInts;
     }
 
+    @RequestMapping("/bp/drop")
     public List<Integer> backPressureDropStrat() {
         //keep the upperbound of the range high enough for dropping to actually happen
         List<Integer> testList = IntStream.range(0, 100000)
@@ -314,6 +316,7 @@ public class RXJavaController {
         return receivedInts;
     }
 
+    @RequestMapping("/bp/latest")
     public List<Integer> backPressureLatestStrat() {
         //keep the upperbound of the range high enough for only the latest ones to be picked
         List<Integer> testList = IntStream.range(0, 100000)
@@ -336,6 +339,7 @@ public class RXJavaController {
         return receivedInts;
     }
 
+    @RequestMapping("/bp/error")
     public void backPressureErrorStart() {
         Observable observable = Observable.range(1, 100000);
         TestSubscriber subscriber = observable
@@ -349,6 +353,7 @@ public class RXJavaController {
     }
 
     //should overflow
+    @RequestMapping("/bp/missing")
     public void backPressureMissingStrat() {
         Observable observable = Observable.range(1, 100000);
         TestSubscriber subscriber = observable
@@ -359,6 +364,7 @@ public class RXJavaController {
         subscriber.assertError(MissingBackpressureException.class);
     }
 
+    @RequestMapping("/maybe/to/1")
     public TestObserver<Integer> maybe1() {
         return Maybe.just(1)
                 .map(x -> x + 7)
@@ -367,6 +373,7 @@ public class RXJavaController {
                 .assertResult(8);
     }
 
+    @RequestMapping("/maybe/1")
     public List<Integer> maybe2() {
         List<Integer> integers = new ArrayList<>();
         Maybe.just(1)
@@ -381,6 +388,7 @@ public class RXJavaController {
         return integers;
     }
 
+    @RequestMapping("/maybe/3")
     public List<String> maybe3() throws InterruptedException {
         List<String> res = new ArrayList<>();
         Flowable<String> visitors = Flowable.just("c1", "a2", "d3", "s4");
@@ -398,6 +406,7 @@ public class RXJavaController {
         return res;
     }
 
+    @RequestMapping("/completable/1")
     public Boolean getCompletable() {
         final Boolean[] res = {null};
         Completable
@@ -418,6 +427,7 @@ public class RXJavaController {
         return res[0];
     }
 
+    @RequestMapping("/from/flowable")
     public Completable fromFlowable() {
         Flowable<String> flowable = Flowable
                 .just("request received", "user logged in");
@@ -428,6 +438,7 @@ public class RXJavaController {
         return singleCompletable;
     }
 
+    @RequestMapping("/comp1")
     public void comp1() {
         Completable first = Completable
                 .fromSingle(Single.just(1));
@@ -440,6 +451,7 @@ public class RXJavaController {
                 .assertComplete();
     }
 
+    @RequestMapping("/merge1")
     public void mergeComp1() {
         Completable first = Completable
                 .fromSingle(Single.just(1));

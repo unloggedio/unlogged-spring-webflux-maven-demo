@@ -9,6 +9,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import rx.Observable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -42,11 +43,13 @@ public class RXjavaSqlRepoImpl implements RxJavaSqlRepo {
 
     @Override
     public Flux<StaffDTO> getStaffForUniversity(int universityId) {
-        Staff staffresult = db.select("select s.id, s.name from STAFF s, UNIVERSITY_STAFF us where us.university_id='" + universityId + "' and s.id=us.staff_id")
+        Iterable<Staff> staffresult = db.select("select s.id, s.name from STAFF s, UNIVERSITY_STAFF us where us.university_id='" + universityId + "' and s.id=us.staff_id")
                 .autoMap(Staff.class)
                 .toBlocking()
-                .single();
-        return Flux.just(new StaffDTO(staffresult));
+                .toIterable();
+        List<StaffDTO> staffDTOList = new ArrayList<>();
+        staffresult.forEach(staff -> staffDTOList.add(new StaffDTO(staff)));
+        return Flux.fromIterable(staffDTOList);
     }
 
     @Override

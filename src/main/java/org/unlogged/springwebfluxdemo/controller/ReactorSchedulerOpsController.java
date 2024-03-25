@@ -1,5 +1,7 @@
 package org.unlogged.springwebfluxdemo.controller;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
@@ -13,8 +15,11 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 
+@RestController
+@RequestMapping("/scheduler")
 public class ReactorSchedulerOpsController {
 
+    @RequestMapping("/immediate")
     public String immediateScheduler() {
         AtomicReference<String> atomicReference = new AtomicReference<>("");
         Scheduler scheduler = Schedulers.immediate();
@@ -23,6 +28,7 @@ public class ReactorSchedulerOpsController {
         return atomicReference.get();
     }
 
+    @RequestMapping("/bounded_elastic")
     public String boundedElasticScheduler() throws InterruptedException {
         AtomicReference<String> atomicReference = new AtomicReference<>("");
         Scheduler scheduler = Schedulers.boundedElastic();
@@ -32,6 +38,7 @@ public class ReactorSchedulerOpsController {
         return atomicReference.get();
     }
 
+    @RequestMapping("/new_bounded_elastic")
     public String customBEScheduler() throws InterruptedException {
         AtomicReference<String> atomicReference = new AtomicReference<>("");
         Scheduler scheduler = Schedulers.newBoundedElastic(1, 1, "new be");
@@ -41,6 +48,7 @@ public class ReactorSchedulerOpsController {
         return atomicReference.get();
     }
 
+    @RequestMapping("/executor")
     public String executorBasedScheduler() throws InterruptedException {
         ExecutorService executorService =
                 new ThreadPoolExecutor(1, 1, 0L, TimeUnit.MILLISECONDS,
@@ -53,6 +61,7 @@ public class ReactorSchedulerOpsController {
         return atomicReference.get();
     }
 
+    @RequestMapping("/parallel")
     public String parallelExecutor() throws InterruptedException {
         AtomicReference<String> atomicReference = new AtomicReference<>("");
         Scheduler scheduler = Schedulers.parallel();
@@ -62,6 +71,7 @@ public class ReactorSchedulerOpsController {
         return atomicReference.get();
     }
 
+    @RequestMapping("/single")
     public String singleScheduler() throws InterruptedException {
         AtomicReference<String> atomicReference = new AtomicReference<>("");
         Scheduler scheduler = Schedulers.single();
@@ -71,6 +81,7 @@ public class ReactorSchedulerOpsController {
         return atomicReference.get();
     }
 
+    @RequestMapping("/subscribe_on")
     public List<String> scheduleSubscribeOn() throws InterruptedException {
         List<String> urlList = Arrays.asList("url 1  2  ", "url xy ", "urlz");
         List<String> result = new ArrayList<>();

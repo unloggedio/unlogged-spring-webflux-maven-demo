@@ -75,6 +75,7 @@ public class CasesController {
     }
 
 
+    @RequestMapping("/ctx/v1/make")
     public Context makeContext() {
         return Context.of("e", "e");
     }
