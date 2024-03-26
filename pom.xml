@@ -35,7 +35,7 @@
         <dependency>
             <artifactId>unlogged-sdk</artifactId>
             <groupId>video.bug</groupId>
-            <version>0.2.16</version>
+            <version>0.3.1</version>
         </dependency>
         <dependency>
             <groupId>io.reactivex.rxjava3</groupId>
@@ -74,6 +74,11 @@
             <groupId>com.querydsl</groupId>
             <artifactId>querydsl-core</artifactId>
             <version>5.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
 
         <!--        <dependency>-->

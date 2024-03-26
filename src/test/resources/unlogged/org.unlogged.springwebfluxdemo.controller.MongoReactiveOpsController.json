@@ -1,0 +1,100 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.MongoReactiveOpsController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.MongoReactiveOpsController#addPerson#()Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Person;>;" : [ {
+      "lineNumbers" : [ 21, 22, 23 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"66029f0ba2c25d2c50130b82\"",
+          "id" : "113abeb5-d7a0-4f3b-8e6c-c2cbdd8741f3",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"personY\"",
+          "id" : "b3c4a6ce-42db-4e15-ad05-d6285a7f2736",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "63",
+          "id" : "9ae31eb9-9520-4eb5-b39b-113b3ff994c2",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "45831a07-8dd7-42b7-81c6-8d14f870ae60",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "d7d4024c-3f07-44f7-be85-f7736afa4388",
+      "name" : "addPerson saved on 2024-03-26 15:40",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"id\":\"66029f0ba2c25d2c50130b82\",\"name\":\"personY\",\"age\":63}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 14695002290424,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -446987282,
+      "probSerializedValue" : "eyJpZCI6IjY2MDI5ZjBiYTJjMjVkMmM1MDEzMGI4MiIsIm5hbWUiOiJwZXJzb25ZIiwiYWdlIjo2M30=",
+      "mockIds" : [ "e93dee41-1b13-48c3-b107-cad282419dd4" ],
+      "exception" : false,
+      "method" : {
+        "name" : "addPerson",
+        "signature" : "()Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Person;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.MongoReactiveOpsController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.MongoReactiveOpsController#countAll#()Lreactor/core/publisher/Mono<Ljava/lang/Long;>;" : [ {
+      "lineNumbers" : [ 41 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "9",
+          "id" : "c507847b-9e1f-48d9-8093-94f56e1ebd32",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "356430d6-1ff9-4acb-ad93-ab4534e71416",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "8b117227-d945-458f-9b82-4ba38ee13931",
+      "name" : "countAll saved on 2024-03-26 15:40",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "9",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 14716814127296,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -154894301,
+      "probSerializedValue" : "OQ==",
+      "mockIds" : [ "6ada0bfa-bd07-44b4-b5cc-11d1d007fc8c" ],
+      "exception" : false,
+      "method" : {
+        "name" : "countAll",
+        "signature" : "()Lreactor/core/publisher/Mono<Ljava/lang/Long;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.MongoReactiveOpsController",
+        "methodHash" : -105010169
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

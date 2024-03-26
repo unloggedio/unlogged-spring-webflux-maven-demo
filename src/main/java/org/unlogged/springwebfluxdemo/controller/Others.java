@@ -18,6 +18,8 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import org.unlogged.springwebfluxdemo.exception.WebfluxError;
 import org.unlogged.springwebfluxdemo.model.GenericTypeWrapper;
 import org.unlogged.springwebfluxdemo.model.Person;
+import org.unlogged.springwebfluxdemo.model.circle.CircleChild;
+import org.unlogged.springwebfluxdemo.model.circle.CircleParent;
 import org.unlogged.springwebfluxdemo.service.flow1.CustomService;
 import reactor.core.publisher.Mono;
 import reactor.core.publisher.Signal;
@@ -119,5 +121,9 @@ public class Others {
 
     public Query getQuery() {
         return query(getCriteria());
+    }
+
+    public Mono<CircleParent> getCircleParent() {
+        return Mono.just(new CircleParent(1));
     }
 }

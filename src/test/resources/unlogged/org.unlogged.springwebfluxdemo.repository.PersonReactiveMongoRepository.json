@@ -1,0 +1,48 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.repository.PersonReactiveMongoRepository",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.repository.PersonReactiveMongoRepository#save#(Lorg/unlogged/springwebfluxdemo/model/Person;)Lreactor/core/publisher/Mono<S>;" : [ {
+      "id" : "e93dee41-1b13-48c3-b107-cad282419dd4",
+      "name" : "mock response for call to mongoRepository.save(new Person(\"personY\", 63))",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.PersonReactiveMongoRepository",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.MongoReactiveOpsController",
+      "fieldName" : "mongoRepository",
+      "methodName" : "save",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":null,\"name\":\"personY\",\"age\":63}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"66029f0ba2c25d2c50130b82\",\"name\":\"personY\",\"age\":63}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<S>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.PersonReactiveMongoRepository#save#(Lorg/unlogged/springwebfluxdemo/model/Person;)Lreactor/core/publisher/Mono<S>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.repository.PersonReactiveMongoRepository#findAll#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Person;>;" : [ {
+      "id" : "6ada0bfa-bd07-44b4-b5cc-11d1d007fc8c",
+      "name" : "mock response for call to mongoRepository.findAll()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.PersonReactiveMongoRepository",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.MongoReactiveOpsController",
+      "fieldName" : "mongoRepository",
+      "methodName" : "findAll",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "1455993906",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Person>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.PersonReactiveMongoRepository#findAll#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Person;>;"
+    } ]
+  }
+}

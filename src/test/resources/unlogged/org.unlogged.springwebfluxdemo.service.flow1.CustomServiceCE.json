@@ -1,0 +1,745 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.service.flow1.CustomServiceCE",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomServiceCE#getStaffById#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/StaffDTO;>;" : [ {
+      "lineNumbers" : [ 36 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "6f304a99-9a00-4b71-857f-c54d1e0f1975",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "664ea382-0c53-4b3a-9329-fe7d236b9dbb",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "90c97829-3205-40f0-83b4-bfefb0dea53d",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "6fe83bb9-64e9-4a82-bb93-6e5d0383a19e",
+      "name" : "getStaffById saved on 2024-03-26 15:44",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"id\":1,\"name\":\"string\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 14919157958686,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1346343465,
+      "probSerializedValue" : "eyJpZCI6MSwibmFtZSI6InN0cmluZyJ9",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getStaffById",
+        "signature" : "(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/StaffDTO;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.flow1.CustomServiceCE",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomServiceCE#updateStaff#(Lorg/unlogged/springwebfluxdemo/model/StaffSaveRequest;)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;" : [ {
+      "lineNumbers" : [ 46 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "c017d873-d851-473e-85c8-8b3c5be9fe75",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "b1145b6c-0a9d-4294-a515-b8de33669e5f",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "15a28797-16d0-43a4-bfea-1a6008da530a",
+      "name" : "updateStaff saved on 2024-03-26 15:45",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":1,\"name\":\"string\"}" ],
+      "returnValue" : "true",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 14966503922382,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -521079124,
+      "probSerializedValue" : "dHJ1ZQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "updateStaff",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/StaffSaveRequest;)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.flow1.CustomServiceCE",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomServiceCE#getUniversityProfile#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfileDTO;>;" : [ {
+      "lineNumbers" : [ 56, 57, 58 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "18ecee56-53db-4cd4-9f8d-76115f7f51ed",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"university1\"",
+          "id" : "0da8f79b-c174-4ff5-a2e7-feecef84ff91",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"place1\"",
+          "id" : "5828e578-65d2-4451-92da-258f1a32cb9e",
+          "assertionType" : "EQUAL",
+          "key" : "/address"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1",
+              "id" : "beed0dcc-9f4f-4a93-939d-316330b5d865",
+              "assertionType" : "EQUAL",
+              "key" : "/staffList/0/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"string\"",
+              "id" : "c52c7806-641d-4302-b50c-2d8ff38f6010",
+              "assertionType" : "EQUAL",
+              "key" : "/staffList/0/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "933f5d7a-9861-436d-bee5-7dc9ce949443",
+            "assertionType" : "ALLOF",
+            "key" : "/staffList/0"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1",
+              "id" : "387289d1-ab07-4d73-8183-4ffd74cc1cd2",
+              "assertionType" : "EQUAL",
+              "key" : "/staffList/1/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"string\"",
+              "id" : "9f05c216-d8ff-4cfd-a868-6d979f279fce",
+              "assertionType" : "EQUAL",
+              "key" : "/staffList/1/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "a6e5db81-11cd-4939-bdaa-5022b742f120",
+            "assertionType" : "ALLOF",
+            "key" : "/staffList/1"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "18b55b4b-3ea7-43b9-af54-c93119a60375",
+          "assertionType" : "ALLOF",
+          "key" : "/staffList"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "10ea6c97-0f91-496b-a45a-48573eccc71f",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "864b7059-55b5-486c-aa1f-34cc9d80743b",
+      "name" : "getUniversityProfile saved on 2024-03-26 15:45",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"id\":1,\"name\":\"university1\",\"address\":\"place1\",\"staffList\":[{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"}]}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 15011799145161,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 152678886,
+      "probSerializedValue" : "eyJpZCI6MSwibmFtZSI6InVuaXZlcnNpdHkxIiwiYWRkcmVzcyI6InBsYWNlMSIsInN0YWZmTGlzdCI6W3siaWQiOjEsIm5hbWUiOiJzdHJpbmcifSx7ImlkIjoxLCJuYW1lIjoic3RyaW5nIn1dfQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getUniversityProfile",
+        "signature" : "(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfileDTO;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.flow1.CustomServiceCE",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomServiceCE#getFoodProfileForUniversity#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityFoodInfo;>;" : [ {
+      "lineNumbers" : [ 64, 65, 73, 74, 81, 56, 57, 58, 31 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "0c6c06ba-c705-4381-9ac6-f0cd9c547cfc",
+          "assertionType" : "EQUAL",
+          "key" : "/universityId"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"university1\"",
+          "id" : "d99b40e0-9685-4867-8fc8-ef8f7780dd67",
+          "assertionType" : "EQUAL",
+          "key" : "/universityName"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"8d4529c4-38d0-48c3-a216-15c3e64ed2e1\"",
+              "id" : "4e79350d-13fc-4172-a8cc-cb9ba0b69071",
+              "assertionType" : "EQUAL",
+              "key" : "/beveragesAvailable/0/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Jet Black Redis\"",
+              "id" : "859dd65a-1638-42b9-8a1c-14d370eb0ee4",
+              "assertionType" : "EQUAL",
+              "key" : "/beveragesAvailable/0/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "19b4b6a1-1abf-487c-a086-8d67f46c6a87",
+            "assertionType" : "ALLOF",
+            "key" : "/beveragesAvailable/0"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"a6387bbc-1170-4b85-8186-f557819b06b3\"",
+              "id" : "cc6d9230-ac94-407d-b1e0-c40acbd31388",
+              "assertionType" : "EQUAL",
+              "key" : "/beveragesAvailable/1/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Black Alert Redis\"",
+              "id" : "5b6d9a84-6efa-4104-a39e-feaae2c939a7",
+              "assertionType" : "EQUAL",
+              "key" : "/beveragesAvailable/1/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "368afcc5-3779-47c0-b3c1-f74d2d8db52b",
+            "assertionType" : "ALLOF",
+            "key" : "/beveragesAvailable/1"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"dc512dc5-dac2-4aa5-b6e6-4e41a281303b\"",
+              "id" : "6ee709c8-3a21-430c-b85e-97928275edde",
+              "assertionType" : "EQUAL",
+              "key" : "/beveragesAvailable/2/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Darth Redis\"",
+              "id" : "f8de8f4f-d4f2-4cb9-aec6-368d9bd213ab",
+              "assertionType" : "EQUAL",
+              "key" : "/beveragesAvailable/2/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "f867ac32-b514-4c96-8821-226853ffe00f",
+            "assertionType" : "ALLOF",
+            "key" : "/beveragesAvailable/2"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "4d9ba550-e1b8-4ec2-a7a5-5fd83b3d7545",
+          "assertionType" : "ALLOF",
+          "key" : "/beveragesAvailable"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "18f2c6a9-4885-4a68-bbf0-09239ca98fbe",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "a1ffd4e9-af2a-44d5-9dbe-d22d78f6e485",
+      "name" : "getFoodProfileForUniversity saved on 2024-03-26 15:46",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"universityId\":1,\"universityName\":\"university1\",\"beveragesAvailable\":[{\"id\":\"8d4529c4-38d0-48c3-a216-15c3e64ed2e1\",\"name\":\"Jet Black Redis\"},{\"id\":\"a6387bbc-1170-4b85-8186-f557819b06b3\",\"name\":\"Black Alert Redis\"},{\"id\":\"dc512dc5-dac2-4aa5-b6e6-4e41a281303b\",\"name\":\"Darth Redis\"}]}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 15038147907332,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -2008713899,
+      "probSerializedValue" : "eyJ1bml2ZXJzaXR5SWQiOjEsInVuaXZlcnNpdHlOYW1lIjoidW5pdmVyc2l0eTEiLCJiZXZlcmFnZXNBdmFpbGFibGUiOlt7ImlkIjoiOGQ0NTI5YzQtMzhkMC00OGMzLWEyMTYtMTVjM2U2NGVkMmUxIiwibmFtZSI6IkpldCBCbGFjayBSZWRpcyJ9LHsiaWQiOiJhNjM4N2JiYy0xMTcwLTRiODUtODE4Ni1mNTU3ODE5YjA2YjMiLCJuYW1lIjoiQmxhY2sgQWxlcnQgUmVkaXMifSx7ImlkIjoiZGM1MTJkYzUtZGFjMi00YWE1LWI2ZTYtNGU0MWEyODEzMDNiIiwibmFtZSI6IkRhcnRoIFJlZGlzIn1dfQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getFoodProfileForUniversity",
+        "signature" : "(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityFoodInfo;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.flow1.CustomServiceCE",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomServiceCE#getUniversityV2#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfileV2;>;" : [ {
+      "lineNumbers" : [ 86, 87, 88, 89, 90, 97, 64, 65, 73, 74, 81, 56, 57, 58, 31, 56, 57, 58, 31 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "d91e2518-98d7-41ef-bbe2-5d303d2aacfb",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"university1\"",
+          "id" : "73f84c5b-0956-44e6-b7d3-fc671ad70891",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"8d4529c4-38d0-48c3-a216-15c3e64ed2e1\"",
+              "id" : "a52c68c4-3c86-4f5e-9375-4c0799a95bd4",
+              "assertionType" : "EQUAL",
+              "key" : "/beverages/0/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Jet Black Redis\"",
+              "id" : "6c8be840-b6f9-476f-8498-963ee9bc8ed9",
+              "assertionType" : "EQUAL",
+              "key" : "/beverages/0/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "c8559c78-a96e-4b5d-b3b4-750abd1b6670",
+            "assertionType" : "ALLOF",
+            "key" : "/beverages/0"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"a6387bbc-1170-4b85-8186-f557819b06b3\"",
+              "id" : "f32f7295-6cea-4179-882a-2299568db0cc",
+              "assertionType" : "EQUAL",
+              "key" : "/beverages/1/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Black Alert Redis\"",
+              "id" : "4b486806-2e31-45b4-b4ff-dc1fc6642463",
+              "assertionType" : "EQUAL",
+              "key" : "/beverages/1/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "b81dc8db-c945-4281-b899-454d169cf4d0",
+            "assertionType" : "ALLOF",
+            "key" : "/beverages/1"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"dc512dc5-dac2-4aa5-b6e6-4e41a281303b\"",
+              "id" : "00f11503-043a-497a-947c-7c30ae2014af",
+              "assertionType" : "EQUAL",
+              "key" : "/beverages/2/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Darth Redis\"",
+              "id" : "19591c3a-bd55-49c4-a34b-583adc1ce100",
+              "assertionType" : "EQUAL",
+              "key" : "/beverages/2/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "b8ab468e-36ee-4905-a8da-75a62a5e15d0",
+            "assertionType" : "ALLOF",
+            "key" : "/beverages/2"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "347314f2-c1ad-4a2d-83cb-e8f41cfcdd82",
+          "assertionType" : "ALLOF",
+          "key" : "/beverages"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"65dc19bca9251b174f3f7a24\"",
+              "id" : "c7faff22-bbf3-4826-b952-de6e8a4fbd9d",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfStudents/0/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"amg\"",
+              "id" : "af2d8140-6595-4eba-ace4-e5dd24bcbbbe",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfStudents/0/name"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "26",
+              "id" : "483a80cc-2a85-4399-8a3a-39367ffeb2cf",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfStudents/0/age"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "3d84f692-dcd8-49ba-9dd6-dba08d8c0b03",
+            "assertionType" : "ALLOF",
+            "key" : "/listOfStudents/0"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"65dc46237cad7f231af36f0c\"",
+              "id" : "388af1cb-afad-45ff-8259-c80443339d9e",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfStudents/1/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"amg\"",
+              "id" : "3510fc61-7cb0-492e-a183-e7f9ee0b507f",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfStudents/1/name"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "26",
+              "id" : "6a1027c0-708f-40b8-aee5-12f264e86ca6",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfStudents/1/age"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "c6e5670a-6c69-487e-b426-07266495e05b",
+            "assertionType" : "ALLOF",
+            "key" : "/listOfStudents/1"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"65dc476d6ab2e823a98f1446\"",
+              "id" : "d4acea65-65c3-49f8-802c-eb1d02c882ac",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfStudents/2/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"amg\"",
+              "id" : "e637bf89-7803-4a91-9940-0b9a95706ac8",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfStudents/2/name"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "26",
+              "id" : "bd889254-22e3-4f80-8aac-4168c68cc9fb",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfStudents/2/age"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "d19acc71-d753-422d-bfd1-98319706e172",
+            "assertionType" : "ALLOF",
+            "key" : "/listOfStudents/2"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "d2c14e5f-d397-4cbd-9a63-c69b45be1642",
+          "assertionType" : "ALLOF",
+          "key" : "/listOfStudents"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"65dc47c1d81d7e5d0d6946c1\"",
+              "id" : "f3ef31c9-794a-4dd9-8a41-45cae4e3e83e",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/0/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"bababooey\"",
+              "id" : "2707424c-b8e9-4fa7-9b24-ca029faf2e5c",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/0/name"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "420",
+              "id" : "6680483f-84cb-459d-836f-7a0e55d52482",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/0/age"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "fbd48ae1-8c09-4784-9c7c-3bf816a93810",
+            "assertionType" : "ALLOF",
+            "key" : "/listOfSeniorMembers/0"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"65dc6e65a51e4e2079024dcf\"",
+              "id" : "13eee168-742f-4e37-ac4f-7bf194f06ddb",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/1/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"personX\"",
+              "id" : "95d373a3-00e0-4a5c-9b27-b613a5a322ea",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/1/name"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "64",
+              "id" : "83b02fbd-1864-4893-9e18-1a2e94ce6230",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/1/age"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "0cd6a3e5-972f-42d3-b779-5ea5d18b2803",
+            "assertionType" : "ALLOF",
+            "key" : "/listOfSeniorMembers/1"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"65e1de11bb4de67e4d8565a3\"",
+              "id" : "56f3694a-e06f-49c7-9f49-aafe58e46ef5",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/2/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"personY\"",
+              "id" : "509e9647-168b-415d-8dca-96e39fe2c841",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/2/name"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "63",
+              "id" : "5cc90de7-8e73-4463-a4af-ba8aba870706",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/2/age"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "9e43e09b-f75f-488d-9ea7-00fb16921413",
+            "assertionType" : "ALLOF",
+            "key" : "/listOfSeniorMembers/2"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"66029f0ba2c25d2c50130b84\"",
+              "id" : "70de025a-47c7-413d-b7ae-859183e1e9f0",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/3/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"personY\"",
+              "id" : "d0d07f6d-d114-4e9f-8183-7021d74957a1",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/3/name"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "63",
+              "id" : "afa2a3d6-fede-465a-ae3d-67601e4d9eb4",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/3/age"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "af7a94c2-fba8-466f-9436-2e56e59ec1fd",
+            "assertionType" : "ALLOF",
+            "key" : "/listOfSeniorMembers/3"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"66029f0ba2c25d2c50130b83\"",
+              "id" : "ea0d248a-acaa-44cd-8806-36c263060d0a",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/4/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"personY\"",
+              "id" : "15d075f4-ffc4-4cf2-936f-c212134bf4c9",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/4/name"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "63",
+              "id" : "8c1f1cd8-b11e-43b8-876d-8bcc7cfd0232",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/4/age"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "096be365-911d-4d4e-86e4-1b08dd02dca5",
+            "assertionType" : "ALLOF",
+            "key" : "/listOfSeniorMembers/4"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"66029f0ba2c25d2c50130b82\"",
+              "id" : "051f2030-c448-4239-806f-868e9324794c",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/5/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"personY\"",
+              "id" : "76c1d43a-2b73-46d6-9009-1d6724ad1733",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/5/name"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "63",
+              "id" : "dbc468f5-93fc-4374-9550-476cafea08a9",
+              "assertionType" : "EQUAL",
+              "key" : "/listOfSeniorMembers/5/age"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "0fc38c27-4ebf-4ad2-bdf1-5d8e49ce53e2",
+            "assertionType" : "ALLOF",
+            "key" : "/listOfSeniorMembers/5"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "04441800-1ad0-4206-b53b-cd91ac18bd2c",
+          "assertionType" : "ALLOF",
+          "key" : "/listOfSeniorMembers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1",
+              "id" : "02e8b595-141a-498b-b83a-31b8f2d75d5e",
+              "assertionType" : "EQUAL",
+              "key" : "/staffDTOList/0/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"string\"",
+              "id" : "e3d6517e-83b6-4478-bbc4-8b9acf294773",
+              "assertionType" : "EQUAL",
+              "key" : "/staffDTOList/0/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "3c53afb1-8639-472a-ac18-060966cb3b31",
+            "assertionType" : "ALLOF",
+            "key" : "/staffDTOList/0"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1",
+              "id" : "9f047ee6-6b00-4d07-8ebf-96650f5691ff",
+              "assertionType" : "EQUAL",
+              "key" : "/staffDTOList/1/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"string\"",
+              "id" : "93829db1-9ae3-42cb-ab81-b04075064d55",
+              "assertionType" : "EQUAL",
+              "key" : "/staffDTOList/1/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "83d8c56c-6911-4dd3-871c-11cf6230563a",
+            "assertionType" : "ALLOF",
+            "key" : "/staffDTOList/1"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "14187d3b-57f7-4a09-834e-1429510936e7",
+          "assertionType" : "ALLOF",
+          "key" : "/staffDTOList"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "2f2efdaa-939a-4990-840d-e0fd5b39a57d",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "f22ef57c-f7c1-40e0-bfdc-11031b2e6330",
+      "name" : "getUniversityV2 saved on 2024-03-26 15:46",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"id\":1,\"name\":\"university1\",\"beverages\":[{\"id\":\"8d4529c4-38d0-48c3-a216-15c3e64ed2e1\",\"name\":\"Jet Black Redis\"},{\"id\":\"a6387bbc-1170-4b85-8186-f557819b06b3\",\"name\":\"Black Alert Redis\"},{\"id\":\"dc512dc5-dac2-4aa5-b6e6-4e41a281303b\",\"name\":\"Darth Redis\"}],\"listOfStudents\":[{\"id\":\"65dc19bca9251b174f3f7a24\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc46237cad7f231af36f0c\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc476d6ab2e823a98f1446\",\"name\":\"amg\",\"age\":26}],\"listOfSeniorMembers\":[{\"id\":\"65dc47c1d81d7e5d0d6946c1\",\"name\":\"bababooey\",\"age\":420},{\"id\":\"65dc6e65a51e4e2079024dcf\",\"name\":\"personX\",\"age\":64},{\"id\":\"65e1de11bb4de67e4d8565a3\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b84\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b83\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b82\",\"name\":\"personY\",\"age\":63}],\"staffDTOList\":[{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"}]}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 15064252001875,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 633270733,
+      "probSerializedValue" : "eyJpZCI6MSwibmFtZSI6InVuaXZlcnNpdHkxIiwiYmV2ZXJhZ2VzIjpbeyJpZCI6IjhkNDUyOWM0LTM4ZDAtNDhjMy1hMjE2LTE1YzNlNjRlZDJlMSIsIm5hbWUiOiJKZXQgQmxhY2sgUmVkaXMifSx7ImlkIjoiYTYzODdiYmMtMTE3MC00Yjg1LTgxODYtZjU1NzgxOWIwNmIzIiwibmFtZSI6IkJsYWNrIEFsZXJ0IFJlZGlzIn0seyJpZCI6ImRjNTEyZGM1LWRhYzItNGFhNS1iNmU2LTRlNDFhMjgxMzAzYiIsIm5hbWUiOiJEYXJ0aCBSZWRpcyJ9XSwibGlzdE9mU3R1ZGVudHMiOlt7ImlkIjoiNjVkYzE5YmNhOTI1MWIxNzRmM2Y3YTI0IiwibmFtZSI6ImFtZyIsImFnZSI6MjZ9LHsiaWQiOiI2NWRjNDYyMzdjYWQ3ZjIzMWFmMzZmMGMiLCJuYW1lIjoiYW1nIiwiYWdlIjoyNn0seyJpZCI6IjY1ZGM0NzZkNmFiMmU4MjNhOThmMTQ0NiIsIm5hbWUiOiJhbWciLCJhZ2UiOjI2fV0sImxpc3RPZlNlbmlvck1lbWJlcnMiOlt7ImlkIjoiNjVkYzQ3YzFkODFkN2U1ZDBkNjk0NmMxIiwibmFtZSI6ImJhYmFib29leSIsImFnZSI6NDIwfSx7ImlkIjoiNjVkYzZlNjVhNTFlNGUyMDc5MDI0ZGNmIiwibmFtZSI6InBlcnNvblgiLCJhZ2UiOjY0fSx7ImlkIjoiNjVlMWRlMTFiYjRkZTY3ZTRkODU2NWEzIiwibmFtZSI6InBlcnNvblkiLCJhZ2UiOjYzfSx7ImlkIjoiNjYwMjlmMGJhMmMyNWQyYzUwMTMwYjg0IiwibmFtZSI6InBlcnNvblkiLCJhZ2UiOjYzfSx7ImlkIjoiNjYwMjlmMGJhMmMyNWQyYzUwMTMwYjgzIiwibmFtZSI6InBlcnNvblkiLCJhZ2UiOjYzfSx7ImlkIjoiNjYwMjlmMGJhMmMyNWQyYzUwMTMwYjgyIiwibmFtZSI6InBlcnNvblkiLCJhZ2UiOjYzfV0sInN0YWZmRFRPTGlzdCI6W3siaWQiOjEsIm5hbWUiOiJzdHJpbmcifSx7ImlkIjoxLCJuYW1lIjoic3RyaW5nIn1dfQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getUniversityV2",
+        "signature" : "(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfileV2;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.flow1.CustomServiceCE",
+        "methodHash" : -911204149
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}
