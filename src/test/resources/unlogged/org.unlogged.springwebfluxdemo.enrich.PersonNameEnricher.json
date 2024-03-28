@@ -8,32 +8,32 @@
           "subAssertions" : [ ],
           "expression" : "SELF",
           "expectedValue" : "\"string\"",
-          "id" : "13a8f877-efed-40a3-ab2d-43978d49225d",
+          "id" : "fa0b19e8-b46b-468d-b830-7fb17a9faade",
           "assertionType" : "EQUAL",
           "key" : "/id"
         }, {
           "subAssertions" : [ ],
           "expression" : "SELF",
           "expectedValue" : "\"string#En\"",
-          "id" : "7ac80a84-f549-4d2e-b950-810e43914c50",
+          "id" : "e9459447-d5ab-4b27-9a90-332921cf12ec",
           "assertionType" : "EQUAL",
           "key" : "/name"
         }, {
           "subAssertions" : [ ],
           "expression" : "SELF",
           "expectedValue" : "0",
-          "id" : "98665c7d-a3d0-4fd0-99f5-3109d5a6afb4",
+          "id" : "f71ab4a8-7cec-42f3-9269-e60c2d71d9dc",
           "assertionType" : "EQUAL",
           "key" : "/age"
         } ],
         "expression" : "SELF",
         "expectedValue" : "true",
-        "id" : "4212439f-7b2e-4245-835f-6eecfab69268",
+        "id" : "522ba9b0-d742-4067-abb2-5dcd993c6b23",
         "assertionType" : "ALLOF",
         "key" : "/"
       },
-      "candidateId" : "257b386d-ffb6-47d9-a4f4-f6ed97ab02ec",
-      "name" : "enrich saved on 2024-03-26 15:42",
+      "candidateId" : "9bf2643b-0613-4187-9b0d-f4feb833fc57",
+      "name" : "enrich saved on 2024-03-28 14:01",
       "description" : null,
       "methodArguments" : [ "{\"id\":\"string\",\"name\":\"string\",\"age\":0}" ],
       "returnValue" : "{\"id\":\"string\",\"name\":\"string#En\",\"age\":0}",
@@ -44,7 +44,7 @@
         "timestamp" : 14824226799422,
         "candidateStatus" : "NA"
       },
-      "sessionIdentifier" : -35934214,
+      "sessionIdentifier" : -266298244,
       "probSerializedValue" : "eyJpZCI6InN0cmluZyIsIm5hbWUiOiJzdHJpbmcjRW4iLCJhZ2UiOjB9",
       "mockIds" : [ ],
       "exception" : false,
@@ -52,7 +52,7 @@
         "name" : "enrich",
         "signature" : "(Lorg/unlogged/springwebfluxdemo/model/Person;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Person;>;",
         "className" : "org.unlogged.springwebfluxdemo.enrich.PersonNameEnricher",
-        "methodHash" : 866659253
+        "methodHash" : 0
       }
     } ]
   },
