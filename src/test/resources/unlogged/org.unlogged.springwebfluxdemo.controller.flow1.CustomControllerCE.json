@@ -1,0 +1,53 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE#coffeeFlixList#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;" : [ {
+      "lineNumbers" : [ 31, 31 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"0cc4bb28-91ca-4238-b361-e1ae102593ab\"",
+          "id" : "9ba091a3-3796-4e10-a2dd-2bdc6a5c3770",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Jet Black Redis\"",
+          "id" : "1e80fa33-301f-4cfb-ad8e-a966a55fbe48",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "d7576464-6b75-422c-a6d8-fac963a79873",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "3ea7fdaa-818f-4529-91f9-50d1aa6d65d6",
+      "name" : "coffeeFlixList saved on 2024-03-29 11:13",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"id\":\"0cc4bb28-91ca-4238-b361-e1ae102593ab\",\"name\":\"Jet Black Redis\"}",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 15205738594832,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -224448458,
+      "probSerializedValue" : "eyJpZCI6IjBjYzRiYjI4LTkxY2EtNDIzOC1iMzYxLWUxYWUxMDI1OTNhYiIsIm5hbWUiOiJKZXQgQmxhY2sgUmVkaXMifQ==",
+      "mockIds" : [ "54879867-e857-47c1-8a20-4a58db390ef7" ],
+      "exception" : false,
+      "method" : {
+        "name" : "coffeeFlixList",
+        "signature" : "()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+        "methodHash" : 1849653903
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

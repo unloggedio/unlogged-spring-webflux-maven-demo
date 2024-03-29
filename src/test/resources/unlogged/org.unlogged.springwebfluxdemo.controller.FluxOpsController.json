@@ -1,0 +1,46 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.FluxOpsController#getFluxString#()Lreactor/core/publisher/Flux<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 73, 74 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"stringInput\"",
+          "id" : "e1fc37aa-cd17-432b-adf7-3e1e8df37e9d",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "997e4e45-8d9f-48ee-8454-372755d5a9b4",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "d629c18d-0ae0-4844-84b4-1a53d9523df1",
+      "name" : "getFluxString saved on 2024-03-29 11:14",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\"stringInput\"",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 15279560038666,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 2114279867,
+      "probSerializedValue" : "InN0cmluZ0lucHV0Ig==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getFluxString",
+        "signature" : "()Lreactor/core/publisher/Flux<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
+        "methodHash" : -1504998540
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

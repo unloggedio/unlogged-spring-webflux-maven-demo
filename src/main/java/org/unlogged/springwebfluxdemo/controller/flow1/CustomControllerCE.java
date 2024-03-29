@@ -26,6 +26,7 @@ public class CustomControllerCE extends BaseController<CustomService> {
         return ResponseEntity.ok(customService.getCoffeeList());
     }
 
+    @RequestMapping("/coffee/flux")
     public Flux<Coffee> coffeeFlixList() {
         return customService.getCoffeeList();
     }

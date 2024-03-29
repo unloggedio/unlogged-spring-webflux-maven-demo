@@ -1,0 +1,25 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getCoffeeList#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;" : [ {
+      "id" : "54879867-e857-47c1-8a20-4a58db390ef7",
+      "name" : "mock response for call to customService.getCoffeeList()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getCoffeeList",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"0cc4bb28-91ca-4238-b361-e1ae102593ab\",\"name\":\"Jet Black Redis\"}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Coffee>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getCoffeeList#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
+    } ]
+  }
+}
