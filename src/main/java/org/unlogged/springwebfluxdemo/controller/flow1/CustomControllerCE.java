@@ -26,6 +26,10 @@ public class CustomControllerCE extends BaseController<CustomService> {
         return ResponseEntity.ok(customService.getCoffeeList());
     }
 
+    public Flux<Coffee> coffeeFlixList() {
+        return customService.getCoffeeList();
+    }
+
     @RequestMapping("/staff/get")
     public ResponseEntity<Mono<StaffDTO>> getStaffById(@RequestParam int id) {
         return ResponseEntity.ok(customService.getStaffById(id));
