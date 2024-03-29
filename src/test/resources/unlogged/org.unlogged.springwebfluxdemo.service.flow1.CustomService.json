@@ -20,6 +20,24 @@
         "methodExitType" : "NORMAL"
       } ],
       "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getCoffeeList#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
+    }, {
+      "id" : "497487c9-aa49-490a-b204-4eaf4401b9d5",
+      "name" : "mock response for call to customService.getCoffeeList()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getCoffeeList",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":\"96b7bdc8-70f5-4764-95cc-986494ee6089\",\"name\":\"Black Alert Redis\"},{\"id\":\"595eab07-ee27-425a-b357-2eddddaef235\",\"name\":\"Jet Black Redis\"},{\"id\":\"9969a00c-0c5e-4492-b0bd-2ea05472987b\",\"name\":\"Jet Black Redis\"},{\"id\":\"b65a2a7c-d017-400f-873e-65edd58be8a2\",\"name\":\"Black Alert Redis\"},{\"id\":\"027b507b-6a7d-4f00-bfe2-2d24dd28b2c8\",\"name\":\"Darth Redis\"},{\"id\":\"e4d47069-bf0e-4df3-a02d-a76848eec388\",\"name\":\"Darth Redis\"},{\"id\":\"bf799cd3-02bd-47b8-b5ab-417cdda62cc2\",\"name\":\"Black Alert Redis\"},{\"id\":\"bdb7a3e3-b836-420b-8c3d-0ed14a716086\",\"name\":\"Darth Redis\"},{\"id\":\"b6b78b82-026b-4fa4-af72-66573e8f4c01\",\"name\":\"Jet Black Redis\"}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Coffee>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getCoffeeList#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
     } ]
   }
 }

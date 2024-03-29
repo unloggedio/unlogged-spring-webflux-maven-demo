@@ -5,31 +5,206 @@
       "lineNumbers" : [ 31, 31 ],
       "testAssertions" : {
         "subAssertions" : [ {
-          "subAssertions" : [ ],
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"96b7bdc8-70f5-4764-95cc-986494ee6089\"",
+            "id" : "c9be30d9-e923-496b-9708-9e35a1b5c233",
+            "assertionType" : "EQUAL",
+            "key" : "/0/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Black Alert Redis\"",
+            "id" : "4c163326-0e5d-4906-99ea-abf525935669",
+            "assertionType" : "EQUAL",
+            "key" : "/0/name"
+          } ],
           "expression" : "SELF",
-          "expectedValue" : "\"0cc4bb28-91ca-4238-b361-e1ae102593ab\"",
-          "id" : "9ba091a3-3796-4e10-a2dd-2bdc6a5c3770",
-          "assertionType" : "EQUAL",
-          "key" : "/id"
+          "expectedValue" : "true",
+          "id" : "662f2267-f2c1-41a9-90c7-80444b1d9c49",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
         }, {
-          "subAssertions" : [ ],
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"595eab07-ee27-425a-b357-2eddddaef235\"",
+            "id" : "cf78130f-4bc5-42a9-a3b6-23481b7d9e9d",
+            "assertionType" : "EQUAL",
+            "key" : "/1/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Jet Black Redis\"",
+            "id" : "e20a995f-07d4-4589-b876-fe00d02fc69d",
+            "assertionType" : "EQUAL",
+            "key" : "/1/name"
+          } ],
           "expression" : "SELF",
-          "expectedValue" : "\"Jet Black Redis\"",
-          "id" : "1e80fa33-301f-4cfb-ad8e-a966a55fbe48",
-          "assertionType" : "EQUAL",
-          "key" : "/name"
+          "expectedValue" : "true",
+          "id" : "a5bae850-ea43-46b5-af93-df863880977b",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"9969a00c-0c5e-4492-b0bd-2ea05472987b\"",
+            "id" : "c3e1d8d1-517a-43ea-a3c8-cf74c61fc4a0",
+            "assertionType" : "EQUAL",
+            "key" : "/2/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Jet Black Redis\"",
+            "id" : "0057608c-d51d-4cc9-9c92-de24a9d5ffcd",
+            "assertionType" : "EQUAL",
+            "key" : "/2/name"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "82cb23fa-5f89-4341-8337-663f650d2e8c",
+          "assertionType" : "ALLOF",
+          "key" : "/2"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"b65a2a7c-d017-400f-873e-65edd58be8a2\"",
+            "id" : "87804363-421c-4f8c-b035-d9e16707f577",
+            "assertionType" : "EQUAL",
+            "key" : "/3/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Black Alert Redis\"",
+            "id" : "70f44c4b-ec0e-40b7-b094-b08d3b3c2708",
+            "assertionType" : "EQUAL",
+            "key" : "/3/name"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "01e77bdd-a878-45f1-a637-958c9545324d",
+          "assertionType" : "ALLOF",
+          "key" : "/3"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"027b507b-6a7d-4f00-bfe2-2d24dd28b2c8\"",
+            "id" : "4714f1d5-8e08-4b30-8656-3277ca3df82f",
+            "assertionType" : "EQUAL",
+            "key" : "/4/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Darth Redis\"",
+            "id" : "572ebf82-420f-4b5a-8408-d630a103f36e",
+            "assertionType" : "EQUAL",
+            "key" : "/4/name"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "abb6c1c1-c229-45d9-880f-8b6d1a57e709",
+          "assertionType" : "ALLOF",
+          "key" : "/4"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"e4d47069-bf0e-4df3-a02d-a76848eec388\"",
+            "id" : "243a7554-599c-465c-9e6a-f2d30e15aab1",
+            "assertionType" : "EQUAL",
+            "key" : "/5/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Darth Redis\"",
+            "id" : "3ca04b0a-38ee-46d7-bb7f-0a4d167718d1",
+            "assertionType" : "EQUAL",
+            "key" : "/5/name"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "3940e768-7b01-482b-84a4-0ce7cbb096f3",
+          "assertionType" : "ALLOF",
+          "key" : "/5"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"bf799cd3-02bd-47b8-b5ab-417cdda62cc2\"",
+            "id" : "9b4f194a-805f-4309-81e6-c931af4f26ad",
+            "assertionType" : "EQUAL",
+            "key" : "/6/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Black Alert Redis\"",
+            "id" : "ebe594b8-3a23-4266-9e36-caa719578f36",
+            "assertionType" : "EQUAL",
+            "key" : "/6/name"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "082170ed-493a-4749-86c7-ca034572a975",
+          "assertionType" : "ALLOF",
+          "key" : "/6"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"bdb7a3e3-b836-420b-8c3d-0ed14a716086\"",
+            "id" : "a4836bb5-9164-409d-88ee-c9d1072ae808",
+            "assertionType" : "EQUAL",
+            "key" : "/7/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Darth Redis\"",
+            "id" : "48c1f29f-40fa-4820-8882-acb56e6561c4",
+            "assertionType" : "EQUAL",
+            "key" : "/7/name"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "296a101c-4cba-46d7-a9d1-8a7d4dcd66e5",
+          "assertionType" : "ALLOF",
+          "key" : "/7"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"b6b78b82-026b-4fa4-af72-66573e8f4c01\"",
+            "id" : "5521e12d-77a4-477e-b024-2c6f64f079ad",
+            "assertionType" : "EQUAL",
+            "key" : "/8/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Jet Black Redis\"",
+            "id" : "8ea18607-c7ba-4d6e-ab47-cb49b8088313",
+            "assertionType" : "EQUAL",
+            "key" : "/8/name"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "6b53b45b-1203-464e-8779-ccfdeac5f2bb",
+          "assertionType" : "ALLOF",
+          "key" : "/8"
         } ],
         "expression" : "SELF",
         "expectedValue" : "true",
-        "id" : "d7576464-6b75-422c-a6d8-fac963a79873",
+        "id" : "c0ae8aef-bf6a-4ae7-b42d-663e3093979c",
         "assertionType" : "ALLOF",
         "key" : "/"
       },
-      "candidateId" : "3ea7fdaa-818f-4529-91f9-50d1aa6d65d6",
-      "name" : "coffeeFlixList saved on 2024-03-29 11:13",
+      "candidateId" : "2e367a5c-37a4-415e-b0cf-54c26900a815",
+      "name" : "coffeeFlixList saved on 2024-03-29 11:59",
       "description" : null,
       "methodArguments" : [ ],
-      "returnValue" : "{\"id\":\"0cc4bb28-91ca-4238-b361-e1ae102593ab\",\"name\":\"Jet Black Redis\"}",
+      "returnValue" : "[{\"id\":\"96b7bdc8-70f5-4764-95cc-986494ee6089\",\"name\":\"Black Alert Redis\"},{\"id\":\"595eab07-ee27-425a-b357-2eddddaef235\",\"name\":\"Jet Black Redis\"},{\"id\":\"9969a00c-0c5e-4492-b0bd-2ea05472987b\",\"name\":\"Jet Black Redis\"},{\"id\":\"b65a2a7c-d017-400f-873e-65edd58be8a2\",\"name\":\"Black Alert Redis\"},{\"id\":\"027b507b-6a7d-4f00-bfe2-2d24dd28b2c8\",\"name\":\"Darth Redis\"},{\"id\":\"e4d47069-bf0e-4df3-a02d-a76848eec388\",\"name\":\"Darth Redis\"},{\"id\":\"bf799cd3-02bd-47b8-b5ab-417cdda62cc2\",\"name\":\"Black Alert Redis\"},{\"id\":\"bdb7a3e3-b836-420b-8c3d-0ed14a716086\",\"name\":\"Darth Redis\"},{\"id\":\"b6b78b82-026b-4fa4-af72-66573e8f4c01\",\"name\":\"Jet Black Redis\"}]",
       "returnValueClassname" : "reactor.core.publisher.Flux",
       "metadata" : {
         "recordedBy" : "testerfresher",
@@ -37,15 +212,15 @@
         "timestamp" : 15205738594832,
         "candidateStatus" : "NA"
       },
-      "sessionIdentifier" : -224448458,
-      "probSerializedValue" : "eyJpZCI6IjBjYzRiYjI4LTkxY2EtNDIzOC1iMzYxLWUxYWUxMDI1OTNhYiIsIm5hbWUiOiJKZXQgQmxhY2sgUmVkaXMifQ==",
-      "mockIds" : [ "54879867-e857-47c1-8a20-4a58db390ef7" ],
+      "sessionIdentifier" : -935141996,
+      "probSerializedValue" : "W3siaWQiOiI5NmI3YmRjOC03MGY1LTQ3NjQtOTVjYy05ODY0OTRlZTYwODkiLCJuYW1lIjoiQmxhY2sgQWxlcnQgUmVkaXMifSx7ImlkIjoiNTk1ZWFiMDctZWUyNy00MjVhLWIzNTctMmVkZGRkYWVmMjM1IiwibmFtZSI6IkpldCBCbGFjayBSZWRpcyJ9LHsiaWQiOiI5OTY5YTAwYy0wYzVlLTQ0OTItYjBiZC0yZWEwNTQ3Mjk4N2IiLCJuYW1lIjoiSmV0IEJsYWNrIFJlZGlzIn0seyJpZCI6ImI2NWEyYTdjLWQwMTctNDAwZi04NzNlLTY1ZWRkNThiZThhMiIsIm5hbWUiOiJCbGFjayBBbGVydCBSZWRpcyJ9LHsiaWQiOiIwMjdiNTA3Yi02YTdkLTRmMDAtYmZlMi0yZDI0ZGQyOGIyYzgiLCJuYW1lIjoiRGFydGggUmVkaXMifSx7ImlkIjoiZTRkNDcwNjktYmYwZS00ZGYzLWEwMmQtYTc2ODQ4ZWVjMzg4IiwibmFtZSI6IkRhcnRoIFJlZGlzIn0seyJpZCI6ImJmNzk5Y2QzLTAyYmQtNDdiOC1iNWFiLTQxN2NkZGE2MmNjMiIsIm5hbWUiOiJCbGFjayBBbGVydCBSZWRpcyJ9LHsiaWQiOiJiZGI3YTNlMy1iODM2LTQyMGItOGMzZC0wZWQxNGE3MTYwODYiLCJuYW1lIjoiRGFydGggUmVkaXMifSx7ImlkIjoiYjZiNzhiODItMDI2Yi00ZmE0LWFmNzItNjY1NzNlOGY0YzAxIiwibmFtZSI6IkpldCBCbGFjayBSZWRpcyJ9XQ==",
+      "mockIds" : [ "497487c9-aa49-490a-b204-4eaf4401b9d5" ],
       "exception" : false,
       "method" : {
         "name" : "coffeeFlixList",
         "signature" : "()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
-        "methodHash" : 1849653903
+        "methodHash" : 0
       }
     } ]
   },
