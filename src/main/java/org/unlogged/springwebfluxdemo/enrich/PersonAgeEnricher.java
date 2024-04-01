@@ -8,6 +8,7 @@ public class PersonAgeEnricher implements Enricher<Person> {
     public Mono<Person> enrich(Person obj) {
         return Mono.just(obj).map(person ->
         {
+            System.out.println("L2 A call : " + obj);
             person.setAge(person.getAge() + 1);
             return person;
         });

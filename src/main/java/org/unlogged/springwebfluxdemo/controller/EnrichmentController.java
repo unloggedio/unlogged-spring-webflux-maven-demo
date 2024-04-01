@@ -1,11 +1,16 @@
 package org.unlogged.springwebfluxdemo.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.unlogged.springwebfluxdemo.enrich.CompositeEnricher;
 import org.unlogged.springwebfluxdemo.enrich.Enricher;
 import org.unlogged.springwebfluxdemo.enrich.PersonAgeEnricher;
 import org.unlogged.springwebfluxdemo.enrich.PersonNameEnricher;
+import org.unlogged.springwebfluxdemo.enrich.nonreactive.CompositeEnricherV1;
+import org.unlogged.springwebfluxdemo.enrich.nonreactive.EnricherV1;
+import org.unlogged.springwebfluxdemo.enrich.nonreactive.PersonAgeEnricherV1;
+import org.unlogged.springwebfluxdemo.enrich.nonreactive.PersonNameEnricherV1;
 import org.unlogged.springwebfluxdemo.model.Person;
 import reactor.core.publisher.Mono;
 
@@ -36,5 +41,34 @@ public class EnrichmentController {
                         Arrays.asList(
                                 new PersonNameEnricher(), new PersonAgeEnricher()))
                         .enrich(person));
+    }
+
+
+    @RequestMapping("/person/v0")
+    public Person EnrichNonReactive() {
+        Person def = new Person("p1", 1);
+        List<EnricherV1> enricherList = new ArrayList<>();
+        PersonNameEnricherV1 nameEnricher = new PersonNameEnricherV1();
+        PersonAgeEnricherV1 ageEnricher = new PersonAgeEnricherV1();
+        enricherList.add(nameEnricher);
+        enricherList.add(ageEnricher);
+        CompositeEnricherV1 compositeEnricher = new CompositeEnricherV1(enricherList);
+        return compositeEnricher.enrich(def);
+    }
+
+    @RequestMapping("/simple/m")
+    public Mono<String> simpleAppend(@RequestParam String simple) {
+        return Mono.just(simple).map(simpleString -> {
+            System.out.println("In Map ---------------------||");
+            return simpleString + "#ENG";
+        });
+    }
+
+    @RequestMapping("/simple/f")
+    public Mono<Object> simpleAppendFlat(@RequestParam String simple) {
+        return Mono.just(simple).flatMap(simpleString -> {
+            System.out.println("In FlatMap ---------------------||");
+            return Mono.just("E");
+        });
     }
 }

@@ -2,209 +2,209 @@
   "classname" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
   "storedCandidateMap" : {
     "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE#coffeeFlixList#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;" : [ {
-      "lineNumbers" : [ 31, 31 ],
+      "lineNumbers" : [ 31 ],
       "testAssertions" : {
         "subAssertions" : [ {
           "subAssertions" : [ {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"96b7bdc8-70f5-4764-95cc-986494ee6089\"",
-            "id" : "c9be30d9-e923-496b-9708-9e35a1b5c233",
+            "expectedValue" : "\"c3805d5a-7a80-4cee-af5b-f571723fec80\"",
+            "id" : "48a73228-cacc-4b96-a212-1d8429b8e381",
             "assertionType" : "EQUAL",
             "key" : "/0/id"
           }, {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"Black Alert Redis\"",
-            "id" : "4c163326-0e5d-4906-99ea-abf525935669",
+            "expectedValue" : "\"Darth Redis\"",
+            "id" : "8417ab59-660f-4876-8557-047d14b9a1f5",
             "assertionType" : "EQUAL",
             "key" : "/0/name"
           } ],
           "expression" : "SELF",
           "expectedValue" : "true",
-          "id" : "662f2267-f2c1-41a9-90c7-80444b1d9c49",
+          "id" : "388933e6-8d97-45c5-8c65-db49b4ea5d08",
           "assertionType" : "ALLOF",
           "key" : "/0"
         }, {
           "subAssertions" : [ {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"595eab07-ee27-425a-b357-2eddddaef235\"",
-            "id" : "cf78130f-4bc5-42a9-a3b6-23481b7d9e9d",
+            "expectedValue" : "\"6e8c295a-c0c3-42f6-acc9-3b59b338d6d8\"",
+            "id" : "22f1e1e8-04f0-4d46-818b-a2da9a7b7879",
             "assertionType" : "EQUAL",
             "key" : "/1/id"
           }, {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"Jet Black Redis\"",
-            "id" : "e20a995f-07d4-4589-b876-fe00d02fc69d",
+            "expectedValue" : "\"Darth Redis\"",
+            "id" : "797486ca-111f-404d-b0b0-9b631a0cdf3b",
             "assertionType" : "EQUAL",
             "key" : "/1/name"
           } ],
           "expression" : "SELF",
           "expectedValue" : "true",
-          "id" : "a5bae850-ea43-46b5-af93-df863880977b",
+          "id" : "8d668e75-2efe-4762-ab1e-88c1e9fb747e",
           "assertionType" : "ALLOF",
           "key" : "/1"
         }, {
           "subAssertions" : [ {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"9969a00c-0c5e-4492-b0bd-2ea05472987b\"",
-            "id" : "c3e1d8d1-517a-43ea-a3c8-cf74c61fc4a0",
+            "expectedValue" : "\"4d7d0fbe-6138-4de9-9cca-72c57a6773a8\"",
+            "id" : "5b76d02c-7515-45bd-91d6-a3d665ce75b9",
             "assertionType" : "EQUAL",
             "key" : "/2/id"
           }, {
             "subAssertions" : [ ],
             "expression" : "SELF",
             "expectedValue" : "\"Jet Black Redis\"",
-            "id" : "0057608c-d51d-4cc9-9c92-de24a9d5ffcd",
+            "id" : "4343ace7-0018-4a5a-a5e6-8cc98e2efbce",
             "assertionType" : "EQUAL",
             "key" : "/2/name"
           } ],
           "expression" : "SELF",
           "expectedValue" : "true",
-          "id" : "82cb23fa-5f89-4341-8337-663f650d2e8c",
+          "id" : "ca5247c4-3453-4956-8981-fc25c1a83e6b",
           "assertionType" : "ALLOF",
           "key" : "/2"
         }, {
           "subAssertions" : [ {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"b65a2a7c-d017-400f-873e-65edd58be8a2\"",
-            "id" : "87804363-421c-4f8c-b035-d9e16707f577",
+            "expectedValue" : "\"8c126fe0-8e76-4e08-b2a1-1b9ee4097e75\"",
+            "id" : "6e8eef9a-2b08-4932-a788-693975758faa",
             "assertionType" : "EQUAL",
             "key" : "/3/id"
           }, {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"Black Alert Redis\"",
-            "id" : "70f44c4b-ec0e-40b7-b094-b08d3b3c2708",
+            "expectedValue" : "\"Jet Black Redis\"",
+            "id" : "643d40d2-593b-40b5-950c-7bd8ab446641",
             "assertionType" : "EQUAL",
             "key" : "/3/name"
           } ],
           "expression" : "SELF",
           "expectedValue" : "true",
-          "id" : "01e77bdd-a878-45f1-a637-958c9545324d",
+          "id" : "b995e801-46fc-4fc3-acea-6680e146d5d4",
           "assertionType" : "ALLOF",
           "key" : "/3"
         }, {
           "subAssertions" : [ {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"027b507b-6a7d-4f00-bfe2-2d24dd28b2c8\"",
-            "id" : "4714f1d5-8e08-4b30-8656-3277ca3df82f",
+            "expectedValue" : "\"47cfb3d6-eec4-4df9-9367-f92693782c72\"",
+            "id" : "9e2920a8-66e0-4732-a40e-6bba1b2d27d5",
             "assertionType" : "EQUAL",
             "key" : "/4/id"
           }, {
             "subAssertions" : [ ],
             "expression" : "SELF",
             "expectedValue" : "\"Darth Redis\"",
-            "id" : "572ebf82-420f-4b5a-8408-d630a103f36e",
+            "id" : "ea2c695a-2aa1-4115-bec4-9192afa06a1c",
             "assertionType" : "EQUAL",
             "key" : "/4/name"
           } ],
           "expression" : "SELF",
           "expectedValue" : "true",
-          "id" : "abb6c1c1-c229-45d9-880f-8b6d1a57e709",
+          "id" : "e7cd1e16-864c-457a-b4cf-67562a0c9bb3",
           "assertionType" : "ALLOF",
           "key" : "/4"
         }, {
           "subAssertions" : [ {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"e4d47069-bf0e-4df3-a02d-a76848eec388\"",
-            "id" : "243a7554-599c-465c-9e6a-f2d30e15aab1",
+            "expectedValue" : "\"bfeefb5c-ac07-4fd2-9bb2-bd3458719751\"",
+            "id" : "374686f5-658f-4f95-aab0-fba23cb684d5",
             "assertionType" : "EQUAL",
             "key" : "/5/id"
           }, {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"Darth Redis\"",
-            "id" : "3ca04b0a-38ee-46d7-bb7f-0a4d167718d1",
+            "expectedValue" : "\"Jet Black Redis\"",
+            "id" : "607a3a4d-f164-49c2-a40b-d33972cc1e59",
             "assertionType" : "EQUAL",
             "key" : "/5/name"
           } ],
           "expression" : "SELF",
           "expectedValue" : "true",
-          "id" : "3940e768-7b01-482b-84a4-0ce7cbb096f3",
+          "id" : "59016a31-913d-42d4-9a56-084e30b20545",
           "assertionType" : "ALLOF",
           "key" : "/5"
         }, {
           "subAssertions" : [ {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"bf799cd3-02bd-47b8-b5ab-417cdda62cc2\"",
-            "id" : "9b4f194a-805f-4309-81e6-c931af4f26ad",
+            "expectedValue" : "\"d1f75fd3-2938-45df-b163-433f6282a172\"",
+            "id" : "9943b28b-bde1-4f40-9141-a5b84492ebc2",
             "assertionType" : "EQUAL",
             "key" : "/6/id"
           }, {
             "subAssertions" : [ ],
             "expression" : "SELF",
             "expectedValue" : "\"Black Alert Redis\"",
-            "id" : "ebe594b8-3a23-4266-9e36-caa719578f36",
+            "id" : "fad0b380-f355-470f-a64a-ad5bd374c8b4",
             "assertionType" : "EQUAL",
             "key" : "/6/name"
           } ],
           "expression" : "SELF",
           "expectedValue" : "true",
-          "id" : "082170ed-493a-4749-86c7-ca034572a975",
+          "id" : "1409f004-ce65-4c68-893a-36144c4a59d9",
           "assertionType" : "ALLOF",
           "key" : "/6"
         }, {
           "subAssertions" : [ {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"bdb7a3e3-b836-420b-8c3d-0ed14a716086\"",
-            "id" : "a4836bb5-9164-409d-88ee-c9d1072ae808",
+            "expectedValue" : "\"3945b2cb-6a02-455f-bd71-b1d0ad557226\"",
+            "id" : "440cbdfa-0ce5-4db4-bb3a-2651ba3f7b41",
             "assertionType" : "EQUAL",
             "key" : "/7/id"
           }, {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"Darth Redis\"",
-            "id" : "48c1f29f-40fa-4820-8882-acb56e6561c4",
+            "expectedValue" : "\"Black Alert Redis\"",
+            "id" : "8e0653e1-de96-4eda-9fae-26d44dd85ced",
             "assertionType" : "EQUAL",
             "key" : "/7/name"
           } ],
           "expression" : "SELF",
           "expectedValue" : "true",
-          "id" : "296a101c-4cba-46d7-a9d1-8a7d4dcd66e5",
+          "id" : "12a8d52a-6a82-4305-9543-8a5dac0d3577",
           "assertionType" : "ALLOF",
           "key" : "/7"
         }, {
           "subAssertions" : [ {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"b6b78b82-026b-4fa4-af72-66573e8f4c01\"",
-            "id" : "5521e12d-77a4-477e-b024-2c6f64f079ad",
+            "expectedValue" : "\"7b671dc5-a890-4dfc-b748-bb6e92b72543\"",
+            "id" : "27c9cfcb-e7c5-46a5-85aa-9ad5c75893e6",
             "assertionType" : "EQUAL",
             "key" : "/8/id"
           }, {
             "subAssertions" : [ ],
             "expression" : "SELF",
-            "expectedValue" : "\"Jet Black Redis\"",
-            "id" : "8ea18607-c7ba-4d6e-ab47-cb49b8088313",
+            "expectedValue" : "\"Black Alert Redis\"",
+            "id" : "9ff58e51-d5d9-44a6-81a4-1103bbf6e37f",
             "assertionType" : "EQUAL",
             "key" : "/8/name"
           } ],
           "expression" : "SELF",
           "expectedValue" : "true",
-          "id" : "6b53b45b-1203-464e-8779-ccfdeac5f2bb",
+          "id" : "4450076d-a7d0-41d4-88c7-cc4193275a70",
           "assertionType" : "ALLOF",
           "key" : "/8"
         } ],
         "expression" : "SELF",
         "expectedValue" : "true",
-        "id" : "c0ae8aef-bf6a-4ae7-b42d-663e3093979c",
+        "id" : "18399697-43df-4a3d-bd56-d93602221989",
         "assertionType" : "ALLOF",
         "key" : "/"
       },
-      "candidateId" : "2e367a5c-37a4-415e-b0cf-54c26900a815",
-      "name" : "coffeeFlixList saved on 2024-03-29 11:59",
+      "candidateId" : "968dbdeb-8713-4cd4-8183-9ce1cc526177",
+      "name" : "coffeeFlixList saved on 2024-04-01 10:15",
       "description" : null,
       "methodArguments" : [ ],
-      "returnValue" : "[{\"id\":\"96b7bdc8-70f5-4764-95cc-986494ee6089\",\"name\":\"Black Alert Redis\"},{\"id\":\"595eab07-ee27-425a-b357-2eddddaef235\",\"name\":\"Jet Black Redis\"},{\"id\":\"9969a00c-0c5e-4492-b0bd-2ea05472987b\",\"name\":\"Jet Black Redis\"},{\"id\":\"b65a2a7c-d017-400f-873e-65edd58be8a2\",\"name\":\"Black Alert Redis\"},{\"id\":\"027b507b-6a7d-4f00-bfe2-2d24dd28b2c8\",\"name\":\"Darth Redis\"},{\"id\":\"e4d47069-bf0e-4df3-a02d-a76848eec388\",\"name\":\"Darth Redis\"},{\"id\":\"bf799cd3-02bd-47b8-b5ab-417cdda62cc2\",\"name\":\"Black Alert Redis\"},{\"id\":\"bdb7a3e3-b836-420b-8c3d-0ed14a716086\",\"name\":\"Darth Redis\"},{\"id\":\"b6b78b82-026b-4fa4-af72-66573e8f4c01\",\"name\":\"Jet Black Redis\"}]",
+      "returnValue" : "[{\"id\":\"c3805d5a-7a80-4cee-af5b-f571723fec80\",\"name\":\"Darth Redis\"},{\"id\":\"6e8c295a-c0c3-42f6-acc9-3b59b338d6d8\",\"name\":\"Darth Redis\"},{\"id\":\"4d7d0fbe-6138-4de9-9cca-72c57a6773a8\",\"name\":\"Jet Black Redis\"},{\"id\":\"8c126fe0-8e76-4e08-b2a1-1b9ee4097e75\",\"name\":\"Jet Black Redis\"},{\"id\":\"47cfb3d6-eec4-4df9-9367-f92693782c72\",\"name\":\"Darth Redis\"},{\"id\":\"bfeefb5c-ac07-4fd2-9bb2-bd3458719751\",\"name\":\"Jet Black Redis\"},{\"id\":\"d1f75fd3-2938-45df-b163-433f6282a172\",\"name\":\"Black Alert Redis\"},{\"id\":\"3945b2cb-6a02-455f-bd71-b1d0ad557226\",\"name\":\"Black Alert Redis\"},{\"id\":\"7b671dc5-a890-4dfc-b748-bb6e92b72543\",\"name\":\"Black Alert Redis\"}]",
       "returnValueClassname" : "reactor.core.publisher.Flux",
       "metadata" : {
         "recordedBy" : "testerfresher",
@@ -212,15 +212,1607 @@
         "timestamp" : 15205738594832,
         "candidateStatus" : "NA"
       },
-      "sessionIdentifier" : -935141996,
-      "probSerializedValue" : "W3siaWQiOiI5NmI3YmRjOC03MGY1LTQ3NjQtOTVjYy05ODY0OTRlZTYwODkiLCJuYW1lIjoiQmxhY2sgQWxlcnQgUmVkaXMifSx7ImlkIjoiNTk1ZWFiMDctZWUyNy00MjVhLWIzNTctMmVkZGRkYWVmMjM1IiwibmFtZSI6IkpldCBCbGFjayBSZWRpcyJ9LHsiaWQiOiI5OTY5YTAwYy0wYzVlLTQ0OTItYjBiZC0yZWEwNTQ3Mjk4N2IiLCJuYW1lIjoiSmV0IEJsYWNrIFJlZGlzIn0seyJpZCI6ImI2NWEyYTdjLWQwMTctNDAwZi04NzNlLTY1ZWRkNThiZThhMiIsIm5hbWUiOiJCbGFjayBBbGVydCBSZWRpcyJ9LHsiaWQiOiIwMjdiNTA3Yi02YTdkLTRmMDAtYmZlMi0yZDI0ZGQyOGIyYzgiLCJuYW1lIjoiRGFydGggUmVkaXMifSx7ImlkIjoiZTRkNDcwNjktYmYwZS00ZGYzLWEwMmQtYTc2ODQ4ZWVjMzg4IiwibmFtZSI6IkRhcnRoIFJlZGlzIn0seyJpZCI6ImJmNzk5Y2QzLTAyYmQtNDdiOC1iNWFiLTQxN2NkZGE2MmNjMiIsIm5hbWUiOiJCbGFjayBBbGVydCBSZWRpcyJ9LHsiaWQiOiJiZGI3YTNlMy1iODM2LTQyMGItOGMzZC0wZWQxNGE3MTYwODYiLCJuYW1lIjoiRGFydGggUmVkaXMifSx7ImlkIjoiYjZiNzhiODItMDI2Yi00ZmE0LWFmNzItNjY1NzNlOGY0YzAxIiwibmFtZSI6IkpldCBCbGFjayBSZWRpcyJ9XQ==",
-      "mockIds" : [ "497487c9-aa49-490a-b204-4eaf4401b9d5" ],
+      "sessionIdentifier" : 839063225,
+      "probSerializedValue" : "W3siaWQiOiJjMzgwNWQ1YS03YTgwLTRjZWUtYWY1Yi1mNTcxNzIzZmVjODAiLCJuYW1lIjoiRGFydGggUmVkaXMifSx7ImlkIjoiNmU4YzI5NWEtYzBjMy00MmY2LWFjYzktM2I1OWIzMzhkNmQ4IiwibmFtZSI6IkRhcnRoIFJlZGlzIn0seyJpZCI6IjRkN2QwZmJlLTYxMzgtNGRlOS05Y2NhLTcyYzU3YTY3NzNhOCIsIm5hbWUiOiJKZXQgQmxhY2sgUmVkaXMifSx7ImlkIjoiOGMxMjZmZTAtOGU3Ni00ZTA4LWIyYTEtMWI5ZWU0MDk3ZTc1IiwibmFtZSI6IkpldCBCbGFjayBSZWRpcyJ9LHsiaWQiOiI0N2NmYjNkNi1lZWM0LTRkZjktOTM2Ny1mOTI2OTM3ODJjNzIiLCJuYW1lIjoiRGFydGggUmVkaXMifSx7ImlkIjoiYmZlZWZiNWMtYWMwNy00ZmQyLTliYjItYmQzNDU4NzE5NzUxIiwibmFtZSI6IkpldCBCbGFjayBSZWRpcyJ9LHsiaWQiOiJkMWY3NWZkMy0yOTM4LTQ1ZGYtYjE2My00MzNmNjI4MmExNzIiLCJuYW1lIjoiQmxhY2sgQWxlcnQgUmVkaXMifSx7ImlkIjoiMzk0NWIyY2ItNmEwMi00NTVmLWJkNzEtYjFkMGFkNTU3MjI2IiwibmFtZSI6IkJsYWNrIEFsZXJ0IFJlZGlzIn0seyJpZCI6IjdiNjcxZGM1LWE4OTAtNGRmYy1iNzQ4LWJiNmU5MmI3MjU0MyIsIm5hbWUiOiJCbGFjayBBbGVydCBSZWRpcyJ9XQ==",
+      "mockIds" : [ "5f5e8047-9585-4e0f-ad11-bf849e0fd595" ],
       "exception" : false,
       "method" : {
         "name" : "coffeeFlixList",
         "signature" : "()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
         "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE#getAllStaffNames#()Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Flux;><Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 21, 26 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "1c27777c-b1bf-4b09-a6e7-6abb1b89cee2",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "5c8d7c86-831c-48ea-a8c5-938bbf6bd0aa",
+            "assertionType" : "EQUAL",
+            "key" : "/body/0"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "2",
+            "id" : "ef69dbb6-708e-44e0-8ccb-9b4cf9cee4e9",
+            "assertionType" : "EQUAL",
+            "key" : "/body/1"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3",
+            "id" : "2b6b9ad2-a897-4125-90f3-a0223e60b2d3",
+            "assertionType" : "EQUAL",
+            "key" : "/body/2"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "4",
+            "id" : "1c48efa4-db1c-4a95-97e5-5036f7cec232",
+            "assertionType" : "EQUAL",
+            "key" : "/body/3"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "5",
+            "id" : "a0daa597-1dac-4af8-8d9d-e2464834641b",
+            "assertionType" : "EQUAL",
+            "key" : "/body/4"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "6",
+            "id" : "34421a6d-d3a8-41c2-b0a8-93b7fb82160f",
+            "assertionType" : "EQUAL",
+            "key" : "/body/5"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "7",
+            "id" : "21eb9a52-18c8-410d-9f03-68589e4df61a",
+            "assertionType" : "EQUAL",
+            "key" : "/body/6"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "9",
+            "id" : "93094eb8-c80a-486b-bcad-337df9c5f7d1",
+            "assertionType" : "EQUAL",
+            "key" : "/body/7"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "5655a2e7-afd7-4d68-9c1d-8a1982e98666",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "5d821a49-f418-4f4d-b17d-6391f61fff1d",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "5cdbd777-4209-480b-aafc-75c195af02c3",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "58290a9a-7b64-4211-b13d-26dd99985e8f",
+      "name" : "getAllStaffNames saved on 2024-04-01 10:14",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"headers\":{},\"body\":[1,2,3,4,5,6,7,9],\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 4230694662009,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1311115713,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6WzEsMiwzLDQsNSw2LDcsOV0sInN0YXR1cyI6Ik9LIn0=",
+      "mockIds" : [ "986736a6-42f5-4e6b-9450-d2bfa0489462" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getAllStaffNames",
+        "signature" : "()Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Flux;><Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE#getCoffeeList#()Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Flux;><Lorg/unlogged/springwebfluxdemo/model/Coffee;>;" : [ {
+      "lineNumbers" : [ 26 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "4aa930eb-901f-494f-b50c-1a5b95c5190a",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"c3805d5a-7a80-4cee-af5b-f571723fec80\"",
+              "id" : "b3d8de4c-e586-48d2-84df-f119eb30ca4f",
+              "assertionType" : "EQUAL",
+              "key" : "/body/0/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Darth Redis\"",
+              "id" : "d1525eac-00bb-4d8e-8ed9-b8bade5fd8a7",
+              "assertionType" : "EQUAL",
+              "key" : "/body/0/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "11c31b58-5dc2-4fe8-83b7-e984e045fe1a",
+            "assertionType" : "ALLOF",
+            "key" : "/body/0"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"6e8c295a-c0c3-42f6-acc9-3b59b338d6d8\"",
+              "id" : "81bf94f7-edcf-4a58-ae14-230e17768589",
+              "assertionType" : "EQUAL",
+              "key" : "/body/1/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Darth Redis\"",
+              "id" : "641398dd-e87b-41aa-b5f8-e826384057cf",
+              "assertionType" : "EQUAL",
+              "key" : "/body/1/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "faeab732-7bb7-4607-a43a-f14d99515a93",
+            "assertionType" : "ALLOF",
+            "key" : "/body/1"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"4d7d0fbe-6138-4de9-9cca-72c57a6773a8\"",
+              "id" : "2e5228d6-299b-4ee6-b87d-7b04f68ed1c2",
+              "assertionType" : "EQUAL",
+              "key" : "/body/2/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Jet Black Redis\"",
+              "id" : "6041b70a-87fd-48af-8e4d-f6f6ffa1e10d",
+              "assertionType" : "EQUAL",
+              "key" : "/body/2/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "f55dadb1-cd42-4cfc-8ad9-eef2dadf789c",
+            "assertionType" : "ALLOF",
+            "key" : "/body/2"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"8c126fe0-8e76-4e08-b2a1-1b9ee4097e75\"",
+              "id" : "077e94f5-1f36-426a-b4bd-1c896094097e",
+              "assertionType" : "EQUAL",
+              "key" : "/body/3/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Jet Black Redis\"",
+              "id" : "ea71009d-b444-4c84-bd5d-3f2b1ff2b112",
+              "assertionType" : "EQUAL",
+              "key" : "/body/3/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "b9f4a9c9-1a5a-4308-93c6-3a77daa151df",
+            "assertionType" : "ALLOF",
+            "key" : "/body/3"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"47cfb3d6-eec4-4df9-9367-f92693782c72\"",
+              "id" : "cc56c0e5-157d-4b0b-99f1-3992eba3eb4b",
+              "assertionType" : "EQUAL",
+              "key" : "/body/4/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Darth Redis\"",
+              "id" : "1272baf1-8ef6-4831-89b5-3d4552a8a43f",
+              "assertionType" : "EQUAL",
+              "key" : "/body/4/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "4714a148-a9fd-40c7-9763-2aad4525907c",
+            "assertionType" : "ALLOF",
+            "key" : "/body/4"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"bfeefb5c-ac07-4fd2-9bb2-bd3458719751\"",
+              "id" : "c232b5fd-5325-4a5d-891a-37d4b419b367",
+              "assertionType" : "EQUAL",
+              "key" : "/body/5/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Jet Black Redis\"",
+              "id" : "547a2ebd-d35b-4eb7-b0ec-2c562f1d5712",
+              "assertionType" : "EQUAL",
+              "key" : "/body/5/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "6900bee5-4322-4b5e-ae8a-a8be57f9c1f6",
+            "assertionType" : "ALLOF",
+            "key" : "/body/5"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"d1f75fd3-2938-45df-b163-433f6282a172\"",
+              "id" : "95eb1704-3569-4f33-bc2d-0a36271d77f2",
+              "assertionType" : "EQUAL",
+              "key" : "/body/6/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Black Alert Redis\"",
+              "id" : "0d81b60c-520b-4591-a2f5-0f9c6d71b3bf",
+              "assertionType" : "EQUAL",
+              "key" : "/body/6/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "aeac6352-e93f-4fc5-9b17-ffa08dcf68a3",
+            "assertionType" : "ALLOF",
+            "key" : "/body/6"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"3945b2cb-6a02-455f-bd71-b1d0ad557226\"",
+              "id" : "46472b07-0368-4fc9-a89e-42039444b171",
+              "assertionType" : "EQUAL",
+              "key" : "/body/7/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Black Alert Redis\"",
+              "id" : "9283bf74-8c10-403f-ab8d-998e19a4d5f9",
+              "assertionType" : "EQUAL",
+              "key" : "/body/7/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "7b8cee40-cd63-41a4-b722-78e0e3482188",
+            "assertionType" : "ALLOF",
+            "key" : "/body/7"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"7b671dc5-a890-4dfc-b748-bb6e92b72543\"",
+              "id" : "0f2be434-55fe-4b72-93af-18a1f97e7207",
+              "assertionType" : "EQUAL",
+              "key" : "/body/8/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Black Alert Redis\"",
+              "id" : "b88d1b06-da08-4923-bb75-42d5ec583548",
+              "assertionType" : "EQUAL",
+              "key" : "/body/8/name"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "c6306282-3a0c-414e-9e39-b20596c5b607",
+            "assertionType" : "ALLOF",
+            "key" : "/body/8"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "a9034d84-11bd-4e9f-adcf-5fc55cf4f61f",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "8aec4401-9074-4bb4-a46b-3efc304ac57b",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "a68be03c-fdd2-468d-8693-5d1b65459fb2",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "303909cf-682f-4835-a0a6-46a41da10e10",
+      "name" : "getCoffeeList saved on 2024-04-01 10:14",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"headers\":{},\"body\":[{\"id\":\"c3805d5a-7a80-4cee-af5b-f571723fec80\",\"name\":\"Darth Redis\"},{\"id\":\"6e8c295a-c0c3-42f6-acc9-3b59b338d6d8\",\"name\":\"Darth Redis\"},{\"id\":\"4d7d0fbe-6138-4de9-9cca-72c57a6773a8\",\"name\":\"Jet Black Redis\"},{\"id\":\"8c126fe0-8e76-4e08-b2a1-1b9ee4097e75\",\"name\":\"Jet Black Redis\"},{\"id\":\"47cfb3d6-eec4-4df9-9367-f92693782c72\",\"name\":\"Darth Redis\"},{\"id\":\"bfeefb5c-ac07-4fd2-9bb2-bd3458719751\",\"name\":\"Jet Black Redis\"},{\"id\":\"d1f75fd3-2938-45df-b163-433f6282a172\",\"name\":\"Black Alert Redis\"},{\"id\":\"3945b2cb-6a02-455f-bd71-b1d0ad557226\",\"name\":\"Black Alert Redis\"},{\"id\":\"7b671dc5-a890-4dfc-b748-bb6e92b72543\",\"name\":\"Black Alert Redis\"}],\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 4248353300044,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 403660205,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6W3siaWQiOiJjMzgwNWQ1YS03YTgwLTRjZWUtYWY1Yi1mNTcxNzIzZmVjODAiLCJuYW1lIjoiRGFydGggUmVkaXMifSx7ImlkIjoiNmU4YzI5NWEtYzBjMy00MmY2LWFjYzktM2I1OWIzMzhkNmQ4IiwibmFtZSI6IkRhcnRoIFJlZGlzIn0seyJpZCI6IjRkN2QwZmJlLTYxMzgtNGRlOS05Y2NhLTcyYzU3YTY3NzNhOCIsIm5hbWUiOiJKZXQgQmxhY2sgUmVkaXMifSx7ImlkIjoiOGMxMjZmZTAtOGU3Ni00ZTA4LWIyYTEtMWI5ZWU0MDk3ZTc1IiwibmFtZSI6IkpldCBCbGFjayBSZWRpcyJ9LHsiaWQiOiI0N2NmYjNkNi1lZWM0LTRkZjktOTM2Ny1mOTI2OTM3ODJjNzIiLCJuYW1lIjoiRGFydGggUmVkaXMifSx7ImlkIjoiYmZlZWZiNWMtYWMwNy00ZmQyLTliYjItYmQzNDU4NzE5NzUxIiwibmFtZSI6IkpldCBCbGFjayBSZWRpcyJ9LHsiaWQiOiJkMWY3NWZkMy0yOTM4LTQ1ZGYtYjE2My00MzNmNjI4MmExNzIiLCJuYW1lIjoiQmxhY2sgQWxlcnQgUmVkaXMifSx7ImlkIjoiMzk0NWIyY2ItNmEwMi00NTVmLWJkNzEtYjFkMGFkNTU3MjI2IiwibmFtZSI6IkJsYWNrIEFsZXJ0IFJlZGlzIn0seyJpZCI6IjdiNjcxZGM1LWE4OTAtNGRmYy1iNzQ4LWJiNmU5MmI3MjU0MyIsIm5hbWUiOiJCbGFjayBBbGVydCBSZWRpcyJ9XSwic3RhdHVzIjoiT0sifQ==",
+      "mockIds" : [ "5f5e8047-9585-4e0f-ad11-bf849e0fd595" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getCoffeeList",
+        "signature" : "()Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Flux;><Lorg/unlogged/springwebfluxdemo/model/Coffee;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE#getStaffById#(I)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Lorg/unlogged/springwebfluxdemo/model/StaffDTO;>;" : [ {
+      "lineNumbers" : [ 36 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "66aa7df6-c3dc-4196-858b-222bf7999fc6",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "3c64008f-de97-4e22-8f3e-826d60ff9fd3",
+            "assertionType" : "EQUAL",
+            "key" : "/body/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"string\"",
+            "id" : "96e6962b-cddb-4c23-b9c1-14dcc7d20dd9",
+            "assertionType" : "EQUAL",
+            "key" : "/body/name"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "84f954a5-7ae2-43a1-9034-d1ead9db71e8",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "b32dd7b9-92ed-4f05-a673-1861d30e1224",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "b90c7346-fd77-4029-ab4a-d56461455483",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "08fac096-efe2-4944-bffa-8461078f8edf",
+      "name" : "getStaffById saved on 2024-04-01 10:15",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"id\":1,\"name\":\"string\"},\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 4281861852474,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 740557046,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJpZCI6MSwibmFtZSI6InN0cmluZyJ9LCJzdGF0dXMiOiJPSyJ9",
+      "mockIds" : [ "ea8180d5-34fa-4bab-85e4-229fb1b28550" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getStaffById",
+        "signature" : "(I)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Lorg/unlogged/springwebfluxdemo/model/StaffDTO;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE#saveStaff#(Lorg/unlogged/springwebfluxdemo/model/StaffSaveRequest;)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Ljava/lang/Boolean;>;" : [ {
+      "lineNumbers" : [ 41 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "f80ffd67-47d4-45d7-8b54-9d51eebb779d",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "12b357e3-2fd8-4cc6-9446-36ce0a1e0f6c",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "d86c2d9c-2757-4a7a-a9e9-44f1adafd089",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "a93ca72d-c4ba-446a-8f71-878cc747c03e",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "9cfb0c29-b1fa-49eb-9962-ac9a08e999e7",
+      "name" : "saveStaff saved on 2024-04-01 10:15",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":0,\"name\":\"string\"}" ],
+      "returnValue" : "{\"headers\":{},\"body\":true,\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 4305435427341,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -2012792704,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6dHJ1ZSwic3RhdHVzIjoiT0sifQ==",
+      "mockIds" : [ "b058bb32-15e4-4667-9d38-8cbf5fe2ec09" ],
+      "exception" : false,
+      "method" : {
+        "name" : "saveStaff",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/StaffSaveRequest;)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Ljava/lang/Boolean;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE#updateStaff#(Lorg/unlogged/springwebfluxdemo/model/StaffSaveRequest;)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Ljava/lang/Boolean;>;" : [ {
+      "lineNumbers" : [ 46 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "f4190cbe-9798-477a-a34e-3cd9811775a8",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "false",
+          "id" : "99cc3c2f-d421-4e19-8f29-2189cd8e1b75",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "08519601-d2e4-40a3-8b7c-c8901312e332",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "c081533e-2a54-4c69-b27f-2dd25c55e51e",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "3889f6ee-9d3b-42bd-b725-de31f71a3aa7",
+      "name" : "updateStaff saved on 2024-04-01 10:16",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":0,\"name\":\"string\"}" ],
+      "returnValue" : "{\"headers\":{},\"body\":false,\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 4320784850180,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -2092341272,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6ZmFsc2UsInN0YXR1cyI6Ik9LIn0=",
+      "mockIds" : [ "abfa5ae7-3a51-4cfd-8784-acfa12b3927d" ],
+      "exception" : false,
+      "method" : {
+        "name" : "updateStaff",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/StaffSaveRequest;)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Ljava/lang/Boolean;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE#delete#(I)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Ljava/lang/Boolean;>;" : [ {
+      "lineNumbers" : [ 51 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "26584934-c6cf-475d-8904-72def52fd8be",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "false",
+          "id" : "5e4d17ae-3a6a-43ad-9c25-d67c251a00af",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "aedc2b84-0c28-4afc-bc66-66ac92cc5163",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "5f6610e0-f4a8-4361-b124-4ed6592f9749",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "15cdca06-6b1b-4fb0-8664-ce1e07136010",
+      "name" : "delete saved on 2024-04-01 10:16",
+      "description" : null,
+      "methodArguments" : [ "0" ],
+      "returnValue" : "{\"headers\":{},\"body\":false,\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 4337885279288,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -659630931,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6ZmFsc2UsInN0YXR1cyI6Ik9LIn0=",
+      "mockIds" : [ "594111ec-2b46-4026-adac-8325cbdf1f96" ],
+      "exception" : false,
+      "method" : {
+        "name" : "delete",
+        "signature" : "(I)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Ljava/lang/Boolean;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE#getListofStaffForUniversity#(I)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Lorg/unlogged/springwebfluxdemo/model/UniversityProfileDTO;>;" : [ {
+      "lineNumbers" : [ 56 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "6461d7a0-6d1c-4e53-b972-223956c668eb",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "0bcb618f-399f-4abf-8706-a9d6934d9f72",
+            "assertionType" : "EQUAL",
+            "key" : "/body/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"university1\"",
+            "id" : "ba681fd7-1cb2-4aaf-aaa4-ac55c730b168",
+            "assertionType" : "EQUAL",
+            "key" : "/body/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"place1\"",
+            "id" : "abfa765a-fae9-4899-a4f9-ae89787f3259",
+            "assertionType" : "EQUAL",
+            "key" : "/body/address"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "1",
+                "id" : "3f3b3539-ab9e-4ec7-bf19-98c868666003",
+                "assertionType" : "EQUAL",
+                "key" : "/body/staffList/0/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"string\"",
+                "id" : "b7c68373-a4b8-4185-8106-ee6f44e0076a",
+                "assertionType" : "EQUAL",
+                "key" : "/body/staffList/0/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "6fdab5aa-409a-47da-9fb2-5e79bf433633",
+              "assertionType" : "ALLOF",
+              "key" : "/body/staffList/0"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "1",
+                "id" : "59a58fc6-e393-49a9-a9bc-1f9b9c3f7615",
+                "assertionType" : "EQUAL",
+                "key" : "/body/staffList/1/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"string\"",
+                "id" : "7ee15ebf-267c-46ec-81fa-d615c2a8a2b7",
+                "assertionType" : "EQUAL",
+                "key" : "/body/staffList/1/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "54ac162d-032a-4040-a2c1-331c2ab80625",
+              "assertionType" : "ALLOF",
+              "key" : "/body/staffList/1"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "1",
+                "id" : "e5b3270f-1de6-4c66-8f7e-14aa901133eb",
+                "assertionType" : "EQUAL",
+                "key" : "/body/staffList/2/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"string\"",
+                "id" : "2b21a474-1022-4fb6-941c-a7cf02a9b62c",
+                "assertionType" : "EQUAL",
+                "key" : "/body/staffList/2/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "efac6298-0283-4f9f-9d2e-12b71f4a10d9",
+              "assertionType" : "ALLOF",
+              "key" : "/body/staffList/2"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "64a3a634-dffa-46a7-bf39-7d64b5125ec8",
+            "assertionType" : "ALLOF",
+            "key" : "/body/staffList"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "a4ca339d-2947-4e9b-8256-305c5141938e",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "da53a44b-476b-40d1-9ffe-d014de29ff2e",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "b0cfed4b-b7e9-494f-b167-4602e881bbae",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "7b4c2908-2734-4148-86d1-7cbcae9e95da",
+      "name" : "getListofStaffForUniversity saved on 2024-04-01 10:16",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"id\":1,\"name\":\"university1\",\"address\":\"place1\",\"staffList\":[{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"}]},\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 4356766403617,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1955330462,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJpZCI6MSwibmFtZSI6InVuaXZlcnNpdHkxIiwiYWRkcmVzcyI6InBsYWNlMSIsInN0YWZmTGlzdCI6W3siaWQiOjEsIm5hbWUiOiJzdHJpbmcifSx7ImlkIjoxLCJuYW1lIjoic3RyaW5nIn0seyJpZCI6MSwibmFtZSI6InN0cmluZyJ9XX0sInN0YXR1cyI6Ik9LIn0=",
+      "mockIds" : [ "6cb725ce-3bd8-444e-9245-90eef5c05d35" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getListofStaffForUniversity",
+        "signature" : "(I)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Lorg/unlogged/springwebfluxdemo/model/UniversityProfileDTO;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE#getFoodInfoProfileForUniversity#(I)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Lorg/unlogged/springwebfluxdemo/model/UniversityFoodInfo;>;" : [ {
+      "lineNumbers" : [ 61 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "c679faa9-0c73-41b8-8b9c-c3153ac71255",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "47fe3fa2-8f60-4a9e-8235-82776b7b2aeb",
+            "assertionType" : "EQUAL",
+            "key" : "/body/universityId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"university1\"",
+            "id" : "6280e4ad-eeef-4642-8787-8826379f2471",
+            "assertionType" : "EQUAL",
+            "key" : "/body/universityName"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"c3805d5a-7a80-4cee-af5b-f571723fec80\"",
+                "id" : "bd450c3a-29fa-4f7c-b62a-183621249cd0",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/0/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Darth Redis\"",
+                "id" : "289b9e8c-20a8-4155-aab0-5faa3f19c43e",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/0/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "5228e7df-2e00-4dcd-86b3-ce69d7f9e0ca",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beveragesAvailable/0"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"6e8c295a-c0c3-42f6-acc9-3b59b338d6d8\"",
+                "id" : "7b5f4108-9cab-4d3e-8c79-400f004ef89e",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/1/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Darth Redis\"",
+                "id" : "5530570a-48f8-45a1-a579-89626ca3475b",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/1/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "07bf2cef-b310-4e77-8324-ab939b08f6fe",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beveragesAvailable/1"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"4d7d0fbe-6138-4de9-9cca-72c57a6773a8\"",
+                "id" : "335ccf97-54d6-466f-9643-28ae550b14fe",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/2/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Jet Black Redis\"",
+                "id" : "1939bd5e-e83f-4b86-afb4-f177c673812a",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/2/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "8ff88c00-6ad0-495d-bca6-6133ec01a3a8",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beveragesAvailable/2"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"8c126fe0-8e76-4e08-b2a1-1b9ee4097e75\"",
+                "id" : "45d2afb9-0d7f-4fe4-a0b9-135a486091bf",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/3/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Jet Black Redis\"",
+                "id" : "0c8a2d4d-7246-4727-a35d-58c97dfa3d2f",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/3/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "60f62652-f4b8-4d48-87be-462f8f67ebea",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beveragesAvailable/3"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"47cfb3d6-eec4-4df9-9367-f92693782c72\"",
+                "id" : "54b4c5e2-00d2-4e94-8caa-a90c10f0404c",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/4/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Darth Redis\"",
+                "id" : "dd506fe0-9ff2-410e-9aaa-22c048476fae",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/4/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "1695a315-eb51-4701-ae74-9c4aa15244ce",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beveragesAvailable/4"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"bfeefb5c-ac07-4fd2-9bb2-bd3458719751\"",
+                "id" : "dc55bc63-a5ea-4ea1-8a79-c33c0739ebd7",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/5/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Jet Black Redis\"",
+                "id" : "198d625c-e593-47fb-b25c-4c576e596077",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/5/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "3791e23a-396e-420c-8d6b-b1f75202211e",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beveragesAvailable/5"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"d1f75fd3-2938-45df-b163-433f6282a172\"",
+                "id" : "e1c6c48e-ac42-45ec-859d-6884e714d973",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/6/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Black Alert Redis\"",
+                "id" : "5c2e77e7-2ad1-4f11-a137-b735ddd5e883",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/6/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "a0327d41-893e-425f-8e7d-8d6ef9975a46",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beveragesAvailable/6"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"3945b2cb-6a02-455f-bd71-b1d0ad557226\"",
+                "id" : "695c8d8f-7eb0-4afe-8000-ad909f909dde",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/7/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Black Alert Redis\"",
+                "id" : "487eb339-de18-40aa-88c0-33d081a326c0",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/7/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "5e11b815-4ae2-473f-ac0f-af66e6ac5af7",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beveragesAvailable/7"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"7b671dc5-a890-4dfc-b748-bb6e92b72543\"",
+                "id" : "cb1b304a-cae0-48bd-afd9-1b2c9beef1eb",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/8/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Black Alert Redis\"",
+                "id" : "9205e4c6-5c31-4162-b35c-703401e5a6a3",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beveragesAvailable/8/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "99498850-5712-47bc-badb-7a8b5199c129",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beveragesAvailable/8"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "7e2c1126-6e04-4c7e-878d-7f88f9b34a69",
+            "assertionType" : "ALLOF",
+            "key" : "/body/beveragesAvailable"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "2e5ce4fa-c538-4e49-b78b-6543a164d344",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "6b7faef2-a60e-42ea-8350-48aa5fe5f09f",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "67ea7406-a843-40b1-b8d9-7207580f6d70",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "a2241ee1-5aaf-4b8d-bf8e-6c57c38ab800",
+      "name" : "getFoodInfoProfileForUniversity saved on 2024-04-01 10:17",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"universityId\":1,\"universityName\":\"university1\",\"beveragesAvailable\":[{\"id\":\"c3805d5a-7a80-4cee-af5b-f571723fec80\",\"name\":\"Darth Redis\"},{\"id\":\"6e8c295a-c0c3-42f6-acc9-3b59b338d6d8\",\"name\":\"Darth Redis\"},{\"id\":\"4d7d0fbe-6138-4de9-9cca-72c57a6773a8\",\"name\":\"Jet Black Redis\"},{\"id\":\"8c126fe0-8e76-4e08-b2a1-1b9ee4097e75\",\"name\":\"Jet Black Redis\"},{\"id\":\"47cfb3d6-eec4-4df9-9367-f92693782c72\",\"name\":\"Darth Redis\"},{\"id\":\"bfeefb5c-ac07-4fd2-9bb2-bd3458719751\",\"name\":\"Jet Black Redis\"},{\"id\":\"d1f75fd3-2938-45df-b163-433f6282a172\",\"name\":\"Black Alert Redis\"},{\"id\":\"3945b2cb-6a02-455f-bd71-b1d0ad557226\",\"name\":\"Black Alert Redis\"},{\"id\":\"7b671dc5-a890-4dfc-b748-bb6e92b72543\",\"name\":\"Black Alert Redis\"}]},\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 4379629318483,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -930174705,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJ1bml2ZXJzaXR5SWQiOjEsInVuaXZlcnNpdHlOYW1lIjoidW5pdmVyc2l0eTEiLCJiZXZlcmFnZXNBdmFpbGFibGUiOlt7ImlkIjoiYzM4MDVkNWEtN2E4MC00Y2VlLWFmNWItZjU3MTcyM2ZlYzgwIiwibmFtZSI6IkRhcnRoIFJlZGlzIn0seyJpZCI6IjZlOGMyOTVhLWMwYzMtNDJmNi1hY2M5LTNiNTliMzM4ZDZkOCIsIm5hbWUiOiJEYXJ0aCBSZWRpcyJ9LHsiaWQiOiI0ZDdkMGZiZS02MTM4LTRkZTktOWNjYS03MmM1N2E2NzczYTgiLCJuYW1lIjoiSmV0IEJsYWNrIFJlZGlzIn0seyJpZCI6IjhjMTI2ZmUwLThlNzYtNGUwOC1iMmExLTFiOWVlNDA5N2U3NSIsIm5hbWUiOiJKZXQgQmxhY2sgUmVkaXMifSx7ImlkIjoiNDdjZmIzZDYtZWVjNC00ZGY5LTkzNjctZjkyNjkzNzgyYzcyIiwibmFtZSI6IkRhcnRoIFJlZGlzIn0seyJpZCI6ImJmZWVmYjVjLWFjMDctNGZkMi05YmIyLWJkMzQ1ODcxOTc1MSIsIm5hbWUiOiJKZXQgQmxhY2sgUmVkaXMifSx7ImlkIjoiZDFmNzVmZDMtMjkzOC00NWRmLWIxNjMtNDMzZjYyODJhMTcyIiwibmFtZSI6IkJsYWNrIEFsZXJ0IFJlZGlzIn0seyJpZCI6IjM5NDViMmNiLTZhMDItNDU1Zi1iZDcxLWIxZDBhZDU1NzIyNiIsIm5hbWUiOiJCbGFjayBBbGVydCBSZWRpcyJ9LHsiaWQiOiI3YjY3MWRjNS1hODkwLTRkZmMtYjc0OC1iYjZlOTJiNzI1NDMiLCJuYW1lIjoiQmxhY2sgQWxlcnQgUmVkaXMifV19LCJzdGF0dXMiOiJPSyJ9",
+      "mockIds" : [ "41d1b33a-1c2d-497d-9aba-2b32f8dd591a" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getFoodInfoProfileForUniversity",
+        "signature" : "(I)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Lorg/unlogged/springwebfluxdemo/model/UniversityFoodInfo;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE#getUniversityV2#(I)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Lorg/unlogged/springwebfluxdemo/model/UniversityProfileV2;>;" : [ {
+      "lineNumbers" : [ 80 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "22a0fecb-3a8f-44c4-bd7c-ef0c7d679719",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "f964ae55-0d6d-4866-a3f2-0e8318c2e649",
+            "assertionType" : "EQUAL",
+            "key" : "/body/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"university1\"",
+            "id" : "7345da23-aa68-4f6a-b531-b41f06a0f0a1",
+            "assertionType" : "EQUAL",
+            "key" : "/body/name"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"c3805d5a-7a80-4cee-af5b-f571723fec80\"",
+                "id" : "e06f57bb-42cc-481c-abfd-4da79f9d5420",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/0/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Darth Redis\"",
+                "id" : "06570d16-f011-4c41-990d-dd75c6982f97",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/0/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "a6b62df0-4a66-4487-a2d8-b92825422941",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beverages/0"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"6e8c295a-c0c3-42f6-acc9-3b59b338d6d8\"",
+                "id" : "d07fe88b-8806-426c-96ba-6d851a068d79",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/1/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Darth Redis\"",
+                "id" : "7236decc-3209-46ce-8650-270240f44ca4",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/1/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "2b73f659-e93b-4a18-b89f-23806e5058c2",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beverages/1"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"4d7d0fbe-6138-4de9-9cca-72c57a6773a8\"",
+                "id" : "afdf8ee1-7247-4ddd-8aa1-775caf84a892",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/2/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Jet Black Redis\"",
+                "id" : "8918550e-c789-4a5d-90fc-7e76b19a4088",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/2/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "2a9063d1-7a1e-4142-974e-dc881127da4b",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beverages/2"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"8c126fe0-8e76-4e08-b2a1-1b9ee4097e75\"",
+                "id" : "e490e40e-21f5-4319-a521-b06c65d3dc6f",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/3/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Jet Black Redis\"",
+                "id" : "7ccf389c-d09e-4093-9369-909d058bd7be",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/3/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "e1024fa0-5a3d-4f9c-9b88-a4558ec52b2f",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beverages/3"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"47cfb3d6-eec4-4df9-9367-f92693782c72\"",
+                "id" : "c2136998-f0dd-4dee-9c2e-29023cacba24",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/4/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Darth Redis\"",
+                "id" : "43a07475-7c5d-46ee-97e4-d3896a019fa9",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/4/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "88acbc2f-1b91-4a18-ba37-6b13ba52c786",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beverages/4"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"bfeefb5c-ac07-4fd2-9bb2-bd3458719751\"",
+                "id" : "06e7aa6f-e0bf-40a7-9b20-6714bd27bad1",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/5/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Jet Black Redis\"",
+                "id" : "490f2a57-7ef6-4781-8d21-aba4a6a91c58",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/5/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "510b6c3a-44fa-4f49-9a4d-8ec0b68bb6a9",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beverages/5"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"d1f75fd3-2938-45df-b163-433f6282a172\"",
+                "id" : "91f17275-4543-4fde-88cb-234730fcf76a",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/6/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Black Alert Redis\"",
+                "id" : "1d95a381-e61a-4e05-b1b5-d7dd729ae04e",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/6/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "34e09d25-4262-49c0-b6f8-73fee609a773",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beverages/6"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"3945b2cb-6a02-455f-bd71-b1d0ad557226\"",
+                "id" : "f6f1648b-3142-4cbd-951d-365c6e3815ea",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/7/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Black Alert Redis\"",
+                "id" : "9eded9bc-930d-4a9f-b9e3-7d2a03119da0",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/7/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "2a4210a6-96a4-45f1-9158-d9408afe1ec4",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beverages/7"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"7b671dc5-a890-4dfc-b748-bb6e92b72543\"",
+                "id" : "56f5d360-745f-4f67-a4c2-77f676ce66a7",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/8/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Black Alert Redis\"",
+                "id" : "80756b94-b652-4375-b40e-4f366e3c91cb",
+                "assertionType" : "EQUAL",
+                "key" : "/body/beverages/8/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "7eee4688-9dee-4ef6-a119-86dfec1f981c",
+              "assertionType" : "ALLOF",
+              "key" : "/body/beverages/8"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "da899e0d-7507-449e-9b21-a84216946b2e",
+            "assertionType" : "ALLOF",
+            "key" : "/body/beverages"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"65dc19bca9251b174f3f7a24\"",
+                "id" : "5665c134-10cf-4ec8-83b2-e7bb130423ef",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfStudents/0/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"amg\"",
+                "id" : "190fd668-b0ce-4229-9334-64a402f0a43e",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfStudents/0/name"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "26",
+                "id" : "039a4103-135c-42c6-aad4-130108302258",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfStudents/0/age"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "98776c36-6ae6-4aab-bcf4-8e4c2a51de87",
+              "assertionType" : "ALLOF",
+              "key" : "/body/listOfStudents/0"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"65dc46237cad7f231af36f0c\"",
+                "id" : "7fcae53c-206a-45d0-9cc7-fcb347fdfd84",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfStudents/1/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"amg\"",
+                "id" : "31d4d25d-f358-449c-8af0-33ef0f220414",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfStudents/1/name"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "26",
+                "id" : "03e79d6f-2d98-4469-9c1c-0164b755d3c0",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfStudents/1/age"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "92b8841e-53af-475f-a645-dc82370b561a",
+              "assertionType" : "ALLOF",
+              "key" : "/body/listOfStudents/1"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"65dc476d6ab2e823a98f1446\"",
+                "id" : "2fd73205-56cc-48aa-b577-52b4baed271e",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfStudents/2/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"amg\"",
+                "id" : "510427c2-43d4-4c7c-b398-476af09fa6c2",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfStudents/2/name"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "26",
+                "id" : "dea3d97d-6e0c-4a8f-bff4-4a6a36397f87",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfStudents/2/age"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "0063ffc5-55c3-4563-8b44-23d6bdb9f2d7",
+              "assertionType" : "ALLOF",
+              "key" : "/body/listOfStudents/2"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "41cd3b2a-cb5f-46fb-8527-6c1c984da77b",
+            "assertionType" : "ALLOF",
+            "key" : "/body/listOfStudents"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"65dc47c1d81d7e5d0d6946c1\"",
+                "id" : "891988f9-d0a5-4973-b1c1-82ba5588d65e",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/0/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"bababooey\"",
+                "id" : "f520cc89-5356-48c4-857d-252e9e3413e8",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/0/name"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "420",
+                "id" : "04005e3d-9945-4e93-851c-712ba66deaab",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/0/age"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "ca0c9c0c-e7a9-4f75-8b14-5c7af6f5d23b",
+              "assertionType" : "ALLOF",
+              "key" : "/body/listOfSeniorMembers/0"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"65dc6e65a51e4e2079024dcf\"",
+                "id" : "5f00e086-48ab-45a7-a684-b0770c9eace3",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/1/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"personX\"",
+                "id" : "5274a719-4350-464a-be2e-0834c52e9fe3",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/1/name"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "64",
+                "id" : "7aee2c2c-879b-4660-b6d1-c8a2813be565",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/1/age"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "7831c67e-d9dd-4fc6-bc57-2aa0f0f17b8c",
+              "assertionType" : "ALLOF",
+              "key" : "/body/listOfSeniorMembers/1"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"65e1de11bb4de67e4d8565a3\"",
+                "id" : "302ca037-b907-46d5-8eb5-0061ee48de19",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/2/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"personY\"",
+                "id" : "766d2212-6725-4dbb-92b1-6c76d52a20dc",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/2/name"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "63",
+                "id" : "3d1fda10-ae89-459b-85b6-94674aeb011b",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/2/age"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "ecc61ae5-2e18-4848-b0c7-3584becc9a8d",
+              "assertionType" : "ALLOF",
+              "key" : "/body/listOfSeniorMembers/2"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"66029f0ba2c25d2c50130b84\"",
+                "id" : "88e0549d-5e40-4c90-9b9a-4a9229399eb4",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/3/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"personY\"",
+                "id" : "aa733002-e0a2-4599-b35c-9022d7b7ce82",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/3/name"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "63",
+                "id" : "b6af5471-845d-4243-b792-b6a100caae5e",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/3/age"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "92bd19dc-8bae-4939-ba5b-562c485bb6b0",
+              "assertionType" : "ALLOF",
+              "key" : "/body/listOfSeniorMembers/3"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"66029f0ba2c25d2c50130b83\"",
+                "id" : "b969470c-c603-4f8a-b732-42f0cabf93ba",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/4/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"personY\"",
+                "id" : "ad638fc8-e557-4c83-bea5-51529d1bc0a3",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/4/name"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "63",
+                "id" : "0ca89a78-7ed4-422c-92f6-ed742d4d65d8",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/4/age"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "968d7562-4f76-49da-9289-258755c2444d",
+              "assertionType" : "ALLOF",
+              "key" : "/body/listOfSeniorMembers/4"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"66029f0ba2c25d2c50130b82\"",
+                "id" : "bb7e4a31-f8f0-4613-8a2b-ce647f03d6af",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/5/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"personY\"",
+                "id" : "31d9c13c-1143-4b01-81be-56ee86d04875",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/5/name"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "63",
+                "id" : "f43ac93f-60d1-48a7-b51a-c78de7162739",
+                "assertionType" : "EQUAL",
+                "key" : "/body/listOfSeniorMembers/5/age"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "7297f282-34b7-4471-a2d9-24f7e0a6daa1",
+              "assertionType" : "ALLOF",
+              "key" : "/body/listOfSeniorMembers/5"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "ac3207c7-9519-4eea-bce3-7ccd6dd3e6ed",
+            "assertionType" : "ALLOF",
+            "key" : "/body/listOfSeniorMembers"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "1",
+                "id" : "8dfaf783-aa04-45b6-a7f1-79f3c49817d6",
+                "assertionType" : "EQUAL",
+                "key" : "/body/staffDTOList/0/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"string\"",
+                "id" : "284796a6-414a-4e65-9b9a-4e6f5e6dcf8d",
+                "assertionType" : "EQUAL",
+                "key" : "/body/staffDTOList/0/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "1079bf23-ec9b-4d6f-92c8-0ab12b3f5ee4",
+              "assertionType" : "ALLOF",
+              "key" : "/body/staffDTOList/0"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "1",
+                "id" : "34948151-9057-4ccf-8c9b-5a8ad2d9f47f",
+                "assertionType" : "EQUAL",
+                "key" : "/body/staffDTOList/1/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"string\"",
+                "id" : "aec5da2e-17c3-420d-98c8-fc54e7309aaa",
+                "assertionType" : "EQUAL",
+                "key" : "/body/staffDTOList/1/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "48c30b8e-2ebb-43a5-9111-aecb4372683f",
+              "assertionType" : "ALLOF",
+              "key" : "/body/staffDTOList/1"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "1",
+                "id" : "be9b5c4b-6bc8-4d8d-b708-364805b37da9",
+                "assertionType" : "EQUAL",
+                "key" : "/body/staffDTOList/2/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"string\"",
+                "id" : "30922be7-ca99-4779-80bf-4e0f3c909cf4",
+                "assertionType" : "EQUAL",
+                "key" : "/body/staffDTOList/2/name"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "414d7a28-aeb7-44b7-bc2d-936b9cfb9dab",
+              "assertionType" : "ALLOF",
+              "key" : "/body/staffDTOList/2"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "8a20aa7b-052c-4e7b-9801-77501be1f791",
+            "assertionType" : "ALLOF",
+            "key" : "/body/staffDTOList"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "439c330f-fb93-495c-a2aa-1340e4615010",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "03e7916b-24f8-4e87-a83f-22ffb27279f5",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "bf10fab5-8d88-4713-ab29-1376391418e7",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "437e6806-508a-4037-b7eb-483de6f71f1d",
+      "name" : "getUniversityV2 saved on 2024-04-01 10:17",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"id\":1,\"name\":\"university1\",\"beverages\":[{\"id\":\"c3805d5a-7a80-4cee-af5b-f571723fec80\",\"name\":\"Darth Redis\"},{\"id\":\"6e8c295a-c0c3-42f6-acc9-3b59b338d6d8\",\"name\":\"Darth Redis\"},{\"id\":\"4d7d0fbe-6138-4de9-9cca-72c57a6773a8\",\"name\":\"Jet Black Redis\"},{\"id\":\"8c126fe0-8e76-4e08-b2a1-1b9ee4097e75\",\"name\":\"Jet Black Redis\"},{\"id\":\"47cfb3d6-eec4-4df9-9367-f92693782c72\",\"name\":\"Darth Redis\"},{\"id\":\"bfeefb5c-ac07-4fd2-9bb2-bd3458719751\",\"name\":\"Jet Black Redis\"},{\"id\":\"d1f75fd3-2938-45df-b163-433f6282a172\",\"name\":\"Black Alert Redis\"},{\"id\":\"3945b2cb-6a02-455f-bd71-b1d0ad557226\",\"name\":\"Black Alert Redis\"},{\"id\":\"7b671dc5-a890-4dfc-b748-bb6e92b72543\",\"name\":\"Black Alert Redis\"}],\"listOfStudents\":[{\"id\":\"65dc19bca9251b174f3f7a24\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc46237cad7f231af36f0c\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc476d6ab2e823a98f1446\",\"name\":\"amg\",\"age\":26}],\"listOfSeniorMembers\":[{\"id\":\"65dc47c1d81d7e5d0d6946c1\",\"name\":\"bababooey\",\"age\":420},{\"id\":\"65dc6e65a51e4e2079024dcf\",\"name\":\"personX\",\"age\":64},{\"id\":\"65e1de11bb4de67e4d8565a3\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b84\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b83\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b82\",\"name\":\"personY\",\"age\":63}],\"staffDTOList\":[{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"}]},\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 4401935103218,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1406734723,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJpZCI6MSwibmFtZSI6InVuaXZlcnNpdHkxIiwiYmV2ZXJhZ2VzIjpbeyJpZCI6ImMzODA1ZDVhLTdhODAtNGNlZS1hZjViLWY1NzE3MjNmZWM4MCIsIm5hbWUiOiJEYXJ0aCBSZWRpcyJ9LHsiaWQiOiI2ZThjMjk1YS1jMGMzLTQyZjYtYWNjOS0zYjU5YjMzOGQ2ZDgiLCJuYW1lIjoiRGFydGggUmVkaXMifSx7ImlkIjoiNGQ3ZDBmYmUtNjEzOC00ZGU5LTljY2EtNzJjNTdhNjc3M2E4IiwibmFtZSI6IkpldCBCbGFjayBSZWRpcyJ9LHsiaWQiOiI4YzEyNmZlMC04ZTc2LTRlMDgtYjJhMS0xYjllZTQwOTdlNzUiLCJuYW1lIjoiSmV0IEJsYWNrIFJlZGlzIn0seyJpZCI6IjQ3Y2ZiM2Q2LWVlYzQtNGRmOS05MzY3LWY5MjY5Mzc4MmM3MiIsIm5hbWUiOiJEYXJ0aCBSZWRpcyJ9LHsiaWQiOiJiZmVlZmI1Yy1hYzA3LTRmZDItOWJiMi1iZDM0NTg3MTk3NTEiLCJuYW1lIjoiSmV0IEJsYWNrIFJlZGlzIn0seyJpZCI6ImQxZjc1ZmQzLTI5MzgtNDVkZi1iMTYzLTQzM2Y2MjgyYTE3MiIsIm5hbWUiOiJCbGFjayBBbGVydCBSZWRpcyJ9LHsiaWQiOiIzOTQ1YjJjYi02YTAyLTQ1NWYtYmQ3MS1iMWQwYWQ1NTcyMjYiLCJuYW1lIjoiQmxhY2sgQWxlcnQgUmVkaXMifSx7ImlkIjoiN2I2NzFkYzUtYTg5MC00ZGZjLWI3NDgtYmI2ZTkyYjcyNTQzIiwibmFtZSI6IkJsYWNrIEFsZXJ0IFJlZGlzIn1dLCJsaXN0T2ZTdHVkZW50cyI6W3siaWQiOiI2NWRjMTliY2E5MjUxYjE3NGYzZjdhMjQiLCJuYW1lIjoiYW1nIiwiYWdlIjoyNn0seyJpZCI6IjY1ZGM0NjIzN2NhZDdmMjMxYWYzNmYwYyIsIm5hbWUiOiJhbWciLCJhZ2UiOjI2fSx7ImlkIjoiNjVkYzQ3NmQ2YWIyZTgyM2E5OGYxNDQ2IiwibmFtZSI6ImFtZyIsImFnZSI6MjZ9XSwibGlzdE9mU2VuaW9yTWVtYmVycyI6W3siaWQiOiI2NWRjNDdjMWQ4MWQ3ZTVkMGQ2OTQ2YzEiLCJuYW1lIjoiYmFiYWJvb2V5IiwiYWdlIjo0MjB9LHsiaWQiOiI2NWRjNmU2NWE1MWU0ZTIwNzkwMjRkY2YiLCJuYW1lIjoicGVyc29uWCIsImFnZSI6NjR9LHsiaWQiOiI2NWUxZGUxMWJiNGRlNjdlNGQ4NTY1YTMiLCJuYW1lIjoicGVyc29uWSIsImFnZSI6NjN9LHsiaWQiOiI2NjAyOWYwYmEyYzI1ZDJjNTAxMzBiODQiLCJuYW1lIjoicGVyc29uWSIsImFnZSI6NjN9LHsiaWQiOiI2NjAyOWYwYmEyYzI1ZDJjNTAxMzBiODMiLCJuYW1lIjoicGVyc29uWSIsImFnZSI6NjN9LHsiaWQiOiI2NjAyOWYwYmEyYzI1ZDJjNTAxMzBiODIiLCJuYW1lIjoicGVyc29uWSIsImFnZSI6NjN9XSwic3RhZmZEVE9MaXN0IjpbeyJpZCI6MSwibmFtZSI6InN0cmluZyJ9LHsiaWQiOjEsIm5hbWUiOiJzdHJpbmcifSx7ImlkIjoxLCJuYW1lIjoic3RyaW5nIn1dfSwic3RhdHVzIjoiT0sifQ==",
+      "mockIds" : [ "ca6788de-d5ba-43dc-b0c1-1ed49d24932f" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getUniversityV2",
+        "signature" : "(I)Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Lorg/unlogged/springwebfluxdemo/model/UniversityProfileV2;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+        "methodHash" : 1865212938
       }
     } ]
   },

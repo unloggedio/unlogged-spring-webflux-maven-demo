@@ -38,6 +38,204 @@
         "methodExitType" : "NORMAL"
       } ],
       "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getCoffeeList#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
+    }, {
+      "id" : "5f5e8047-9585-4e0f-ad11-bf849e0fd595",
+      "name" : "mock response for call to customService.getCoffeeList()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getCoffeeList",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":\"c3805d5a-7a80-4cee-af5b-f571723fec80\",\"name\":\"Darth Redis\"},{\"id\":\"6e8c295a-c0c3-42f6-acc9-3b59b338d6d8\",\"name\":\"Darth Redis\"},{\"id\":\"4d7d0fbe-6138-4de9-9cca-72c57a6773a8\",\"name\":\"Jet Black Redis\"},{\"id\":\"8c126fe0-8e76-4e08-b2a1-1b9ee4097e75\",\"name\":\"Jet Black Redis\"},{\"id\":\"47cfb3d6-eec4-4df9-9367-f92693782c72\",\"name\":\"Darth Redis\"},{\"id\":\"bfeefb5c-ac07-4fd2-9bb2-bd3458719751\",\"name\":\"Jet Black Redis\"},{\"id\":\"d1f75fd3-2938-45df-b163-433f6282a172\",\"name\":\"Black Alert Redis\"},{\"id\":\"3945b2cb-6a02-455f-bd71-b1d0ad557226\",\"name\":\"Black Alert Redis\"},{\"id\":\"7b671dc5-a890-4dfc-b748-bb6e92b72543\",\"name\":\"Black Alert Redis\"}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Coffee>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getCoffeeList#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getAllStaffNames#()Lreactor/core/publisher/Flux<Ljava/lang/Integer;>;" : [ {
+      "id" : "986736a6-42f5-4e6b-9450-d2bfa0489462",
+      "name" : "mock response for call to customService.getAllStaffNames()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getAllStaffNames",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[1,2,3,4,5,6,7,9]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<java.lang.Integer>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getAllStaffNames#()Lreactor/core/publisher/Flux<Ljava/lang/Integer;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getStaffById#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/StaffDTO;>;" : [ {
+      "id" : "ea8180d5-34fa-4bab-85e4-229fb1b28550",
+      "name" : "mock response for call to customService.getStaffById(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getStaffById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":1,\"name\":\"string\"}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.StaffDTO>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getStaffById#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/StaffDTO;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomService#addStaff#(Lorg/unlogged/springwebfluxdemo/model/StaffSaveRequest;)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;" : [ {
+      "id" : "b058bb32-15e4-4667-9d38-8cbf5fe2ec09",
+      "name" : "mock response for call to customService.addStaff(saveRequest)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "addStaff",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":0,\"name\":\"string\"}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "true",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.lang.Boolean>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#addStaff#(Lorg/unlogged/springwebfluxdemo/model/StaffSaveRequest;)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomService#updateStaff#(Lorg/unlogged/springwebfluxdemo/model/StaffSaveRequest;)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;" : [ {
+      "id" : "abfa5ae7-3a51-4cfd-8784-acfa12b3927d",
+      "name" : "mock response for call to customService.updateStaff(updateRequest)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "updateStaff",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":0,\"name\":\"string\"}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "false",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.lang.Boolean>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#updateStaff#(Lorg/unlogged/springwebfluxdemo/model/StaffSaveRequest;)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomService#deleteStaff#(I)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;" : [ {
+      "id" : "594111ec-2b46-4026-adac-8325cbdf1f96",
+      "name" : "mock response for call to customService.deleteStaff(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "deleteStaff",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "0"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "false",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.lang.Boolean>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#deleteStaff#(I)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getUniversityProfile#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfileDTO;>;" : [ {
+      "id" : "6cb725ce-3bd8-444e-9245-90eef5c05d35",
+      "name" : "mock response for call to customService.getUniversityProfile(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getUniversityProfile",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":1,\"name\":\"university1\",\"address\":\"place1\",\"staffList\":[{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"}]}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.UniversityProfileDTO>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getUniversityProfile#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfileDTO;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getFoodProfileForUniversity#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityFoodInfo;>;" : [ {
+      "id" : "41d1b33a-1c2d-497d-9aba-2b32f8dd591a",
+      "name" : "mock response for call to customService.getFoodProfileForUniversity(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getFoodProfileForUniversity",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"universityId\":1,\"universityName\":\"university1\",\"beveragesAvailable\":[{\"id\":\"c3805d5a-7a80-4cee-af5b-f571723fec80\",\"name\":\"Darth Redis\"},{\"id\":\"6e8c295a-c0c3-42f6-acc9-3b59b338d6d8\",\"name\":\"Darth Redis\"},{\"id\":\"4d7d0fbe-6138-4de9-9cca-72c57a6773a8\",\"name\":\"Jet Black Redis\"},{\"id\":\"8c126fe0-8e76-4e08-b2a1-1b9ee4097e75\",\"name\":\"Jet Black Redis\"},{\"id\":\"47cfb3d6-eec4-4df9-9367-f92693782c72\",\"name\":\"Darth Redis\"},{\"id\":\"bfeefb5c-ac07-4fd2-9bb2-bd3458719751\",\"name\":\"Jet Black Redis\"},{\"id\":\"d1f75fd3-2938-45df-b163-433f6282a172\",\"name\":\"Black Alert Redis\"},{\"id\":\"3945b2cb-6a02-455f-bd71-b1d0ad557226\",\"name\":\"Black Alert Redis\"},{\"id\":\"7b671dc5-a890-4dfc-b748-bb6e92b72543\",\"name\":\"Black Alert Redis\"}]}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.UniversityFoodInfo>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getFoodProfileForUniversity#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityFoodInfo;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getUniversityV2#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfileV2;>;" : [ {
+      "id" : "ca6788de-d5ba-43dc-b0c1-1ed49d24932f",
+      "name" : "mock response for call to customService.getUniversityV2(universityId)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getUniversityV2",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":1,\"name\":\"university1\",\"beverages\":[{\"id\":\"c3805d5a-7a80-4cee-af5b-f571723fec80\",\"name\":\"Darth Redis\"},{\"id\":\"6e8c295a-c0c3-42f6-acc9-3b59b338d6d8\",\"name\":\"Darth Redis\"},{\"id\":\"4d7d0fbe-6138-4de9-9cca-72c57a6773a8\",\"name\":\"Jet Black Redis\"},{\"id\":\"8c126fe0-8e76-4e08-b2a1-1b9ee4097e75\",\"name\":\"Jet Black Redis\"},{\"id\":\"47cfb3d6-eec4-4df9-9367-f92693782c72\",\"name\":\"Darth Redis\"},{\"id\":\"bfeefb5c-ac07-4fd2-9bb2-bd3458719751\",\"name\":\"Jet Black Redis\"},{\"id\":\"d1f75fd3-2938-45df-b163-433f6282a172\",\"name\":\"Black Alert Redis\"},{\"id\":\"3945b2cb-6a02-455f-bd71-b1d0ad557226\",\"name\":\"Black Alert Redis\"},{\"id\":\"7b671dc5-a890-4dfc-b748-bb6e92b72543\",\"name\":\"Black Alert Redis\"}],\"listOfStudents\":[{\"id\":\"65dc19bca9251b174f3f7a24\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc46237cad7f231af36f0c\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc476d6ab2e823a98f1446\",\"name\":\"amg\",\"age\":26}],\"listOfSeniorMembers\":[{\"id\":\"65dc47c1d81d7e5d0d6946c1\",\"name\":\"bababooey\",\"age\":420},{\"id\":\"65dc6e65a51e4e2079024dcf\",\"name\":\"personX\",\"age\":64},{\"id\":\"65e1de11bb4de67e4d8565a3\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b84\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b83\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b82\",\"name\":\"personY\",\"age\":63}],\"staffDTOList\":[{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"}]}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.UniversityProfileV2>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getUniversityV2#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfileV2;>;"
     } ]
   }
 }
