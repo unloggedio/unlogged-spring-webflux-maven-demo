@@ -20,6 +20,24 @@
         "methodExitType" : "NORMAL"
       } ],
       "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo#all#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
+    }, {
+      "id" : "0693972d-8c25-4be6-96f1-8ed5cc35e349",
+      "name" : "mock response for call to repo.all()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "fieldName" : "repo",
+      "methodName" : "all",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":\"d4575d44-a7f2-47e1-98c7-1f7dd9cde8a3\",\"name\":\"Darth Redis\"},{\"id\":\"6ce6a5db-8945-43e8-baef-c6bbcbee859e\",\"name\":\"Jet Black Redis\"},{\"id\":\"6977e30a-de3e-4007-8a27-af8616c7497f\",\"name\":\"Black Alert Redis\"}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Coffee>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo#all#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
     } ]
   }
 }
