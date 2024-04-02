@@ -1,0 +1,94 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo#findStaffById#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/StaffDTO;>;" : [ {
+      "id" : "81e7c748-d48b-45c9-b535-bf5c15f06d8d",
+      "name" : "mock response for call to sqlRepo.findStaffById(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "fieldName" : "sqlRepo",
+      "methodName" : "findStaffById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":1,\"name\":\"string\"}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.StaffDTO>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo#findStaffById#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/StaffDTO;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo#getAllStaffNames#()Lreactor/core/publisher/Flux<Ljava/lang/Integer;>;" : [ {
+      "id" : "c40e89b4-6795-4535-919b-c3b91b294868",
+      "name" : "mock response for call to sqlRepo.getAllStaffNames()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "fieldName" : "sqlRepo",
+      "methodName" : "getAllStaffNames",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[1,2,3,4,5,6,7,9]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<java.lang.Integer>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo#getAllStaffNames#()Lreactor/core/publisher/Flux<Ljava/lang/Integer;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo#getStaffForUniversity#(I)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/StaffDTO;>;" : [ {
+      "id" : "b50beb12-f71d-4fd0-9b78-f7eda4b1e62a",
+      "name" : "mock response for call to sqlRepo.getStaffForUniversity(universityId)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "fieldName" : "sqlRepo",
+      "methodName" : "getStaffForUniversity",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.StaffDTO>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo#getStaffForUniversity#(I)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/StaffDTO;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo#getUniversityProfile#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfile;>;" : [ {
+      "id" : "678690bb-a171-4adb-8352-a6f5be26a6fa",
+      "name" : "mock response for call to sqlRepo.getUniversityProfile(universityId)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "fieldName" : "sqlRepo",
+      "methodName" : "getUniversityProfile",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":1,\"name\":\"university1\",\"address\":\"place1\"}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.UniversityProfile>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo#getUniversityProfile#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfile;>;"
+    } ]
+  }
+}
