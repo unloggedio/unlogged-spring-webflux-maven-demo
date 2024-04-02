@@ -74,6 +74,24 @@
         "methodExitType" : "NORMAL"
       } ],
       "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getCoffeeList#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
+    }, {
+      "id" : "810ab471-8cd1-4ecf-b199-3b8e1d6d7532",
+      "name" : "mock response for call to customService.getCoffeeList()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getCoffeeList",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"},{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"},{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Coffee>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getCoffeeList#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
     } ],
     "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getAllStaffNames#()Lreactor/core/publisher/Flux<Ljava/lang/Integer;>;" : [ {
       "id" : "986736a6-42f5-4e6b-9450-d2bfa0489462",
@@ -337,6 +355,50 @@
         "methodExitType" : "NORMAL"
       } ],
       "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getFoodProfileForUniversity#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityFoodInfo;>;"
+    }, {
+      "id" : "f02d0001-261a-4598-8374-41348eb053ca",
+      "name" : "mock response for call to customService.getFoodProfileForUniversity(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getFoodProfileForUniversity",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"universityId\":1,\"universityName\":\"university1\",\"beveragesAvailable\":[{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"}]},{\"universityId\":1,\"universityName\":\"university1\",\"beveragesAvailable\":[{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"}]},{\"universityId\":1,\"universityName\":\"university1\",\"beveragesAvailable\":[{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"}]}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.UniversityFoodInfo>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getFoodProfileForUniversity#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityFoodInfo;>;"
+    }, {
+      "id" : "f640fdd5-4eb7-459d-ae40-b9612a74c2a0",
+      "name" : "mock response for call to customService.getFoodProfileForUniversity(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getFoodProfileForUniversity",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "2"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"universityId\":2,\"universityName\":\"university2\",\"beveragesAvailable\":[{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"}]}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.UniversityFoodInfo>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getFoodProfileForUniversity#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityFoodInfo;>;"
     } ],
     "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getUniversityV2#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfileV2;>;" : [ {
       "id" : "ca6788de-d5ba-43dc-b0c1-1ed49d24932f",
@@ -404,6 +466,50 @@
         "methodExitType" : "NORMAL"
       } ],
       "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getUniversityV2#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfileV2;>;"
+    }, {
+      "id" : "68102572-f5c1-4705-bef9-eea120106d19",
+      "name" : "mock response for call to customService.getUniversityV2(universityId)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getUniversityV2",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "2"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":2,\"name\":\"university2\",\"beverages\":[{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"}],\"listOfStudents\":[{\"id\":\"65dc19bca9251b174f3f7a24\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc46237cad7f231af36f0c\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc476d6ab2e823a98f1446\",\"name\":\"amg\",\"age\":26}],\"listOfSeniorMembers\":[{\"id\":\"65dc47c1d81d7e5d0d6946c1\",\"name\":\"bababooey\",\"age\":420},{\"id\":\"65dc6e65a51e4e2079024dcf\",\"name\":\"personX\",\"age\":64},{\"id\":\"65e1de11bb4de67e4d8565a3\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b84\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b83\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b82\",\"name\":\"personY\",\"age\":63},{\"id\":\"660a50fbce49d51bb684c227\",\"name\":\"personY\",\"age\":63}],\"staffDTOList\":[{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"}]}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.UniversityProfileV2>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getUniversityV2#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfileV2;>;"
+    }, {
+      "id" : "f8ddf4e7-d6d1-4a44-8e1e-4d383c55f748",
+      "name" : "mock response for call to customService.getUniversityV2(universityId)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.flow1.CustomControllerCE",
+      "fieldName" : "customService",
+      "methodName" : "getUniversityV2",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "2"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":2,\"name\":\"university2\",\"beverages\":[{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"}],\"listOfStudents\":[{\"id\":\"65dc19bca9251b174f3f7a24\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc46237cad7f231af36f0c\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc476d6ab2e823a98f1446\",\"name\":\"amg\",\"age\":26}],\"listOfSeniorMembers\":[{\"id\":\"65dc47c1d81d7e5d0d6946c1\",\"name\":\"bababooey\",\"age\":420},{\"id\":\"65dc6e65a51e4e2079024dcf\",\"name\":\"personX\",\"age\":64},{\"id\":\"65e1de11bb4de67e4d8565a3\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b84\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b83\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b82\",\"name\":\"personY\",\"age\":63},{\"id\":\"660a50fbce49d51bb684c227\",\"name\":\"personY\",\"age\":63}],\"staffDTOList\":[{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"}]},{\"id\":2,\"name\":\"university2\",\"beverages\":[{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"}],\"listOfStudents\":[{\"id\":\"65dc19bca9251b174f3f7a24\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc46237cad7f231af36f0c\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc476d6ab2e823a98f1446\",\"name\":\"amg\",\"age\":26}],\"listOfSeniorMembers\":[{\"id\":\"65dc47c1d81d7e5d0d6946c1\",\"name\":\"bababooey\",\"age\":420},{\"id\":\"65dc6e65a51e4e2079024dcf\",\"name\":\"personX\",\"age\":64},{\"id\":\"65e1de11bb4de67e4d8565a3\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b84\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b83\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b82\",\"name\":\"personY\",\"age\":63},{\"id\":\"660a50fbce49d51bb684c227\",\"name\":\"personY\",\"age\":63}],\"staffDTOList\":[{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"}]},{\"id\":2,\"name\":\"university2\",\"beverages\":[{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"}],\"listOfStudents\":[{\"id\":\"65dc19bca9251b174f3f7a24\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc46237cad7f231af36f0c\",\"name\":\"amg\",\"age\":26},{\"id\":\"65dc476d6ab2e823a98f1446\",\"name\":\"amg\",\"age\":26}],\"listOfSeniorMembers\":[{\"id\":\"65dc47c1d81d7e5d0d6946c1\",\"name\":\"bababooey\",\"age\":420},{\"id\":\"65dc6e65a51e4e2079024dcf\",\"name\":\"personX\",\"age\":64},{\"id\":\"65e1de11bb4de67e4d8565a3\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b84\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b83\",\"name\":\"personY\",\"age\":63},{\"id\":\"66029f0ba2c25d2c50130b82\",\"name\":\"personY\",\"age\":63},{\"id\":\"660a50fbce49d51bb684c227\",\"name\":\"personY\",\"age\":63}],\"staffDTOList\":[{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"}]}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.UniversityProfileV2>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService#getUniversityV2#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfileV2;>;"
     } ],
     "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo#getUniversityProfile#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfile;>;" : [ {
       "id" : "a2fb1c95-3207-4029-b128-740f8264ae73",
@@ -421,6 +527,50 @@
         "returnParameter" : {
           "declaredMocks" : [ ],
           "value" : "{\"id\":1,\"name\":\"university1\",\"address\":\"place1\",\"staffList\":[{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"}]}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.UniversityProfile>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo#getUniversityProfile#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfile;>;"
+    }, {
+      "id" : "ed739921-0145-4aa4-bac0-d752b3397440",
+      "name" : "mock response for call to sqlRepo.getUniversityProfile(universityId)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "fieldName" : "sqlRepo",
+      "methodName" : "getUniversityProfile",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":1,\"name\":\"university1\",\"address\":\"place1\",\"staffList\":[{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"}]},{\"id\":1,\"name\":\"university1\",\"address\":\"place1\",\"staffList\":[{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"}]},{\"id\":1,\"name\":\"university1\",\"address\":\"place1\",\"staffList\":[{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"},{\"id\":1,\"name\":\"string\"}]}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.UniversityProfile>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo#getUniversityProfile#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/UniversityProfile;>;"
+    }, {
+      "id" : "a13acd11-a62b-4acb-8db7-6b4cc91b3ffd",
+      "name" : "mock response for call to sqlRepo.getUniversityProfile(universityId)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "fieldName" : "sqlRepo",
+      "methodName" : "getUniversityProfile",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "2"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":2,\"name\":\"university2\",\"address\":\"place2\",\"staffList\":[{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"},{\"id\":2,\"name\":\"staff2\"}]}",
           "returnValueType" : "REAL",
           "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.UniversityProfile>"
         },
