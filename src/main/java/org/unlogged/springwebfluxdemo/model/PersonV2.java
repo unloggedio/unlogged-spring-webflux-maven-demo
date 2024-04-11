@@ -4,31 +4,23 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
 public class PersonV2 extends AuditEntity {
 
-    @Size(min = 3, max = 15, message = "Name must be between 3 and 15 characters.")
     String name;
 
-    @Size(min = 3, max = 15, message = "username must not be empty.")
     String username;
 
     Long phone;
 
-    @Size(max = 255, message = "Must be a valid email id")
     String emailPrimary;
 
-    @Pattern(regexp = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$")
     String emailSecondary;
 
     int age;
 
-    @Size(min = 6, max = 15, message = "password must not be empty.")
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @Size(max = 100)
     String password;
 
     @JsonFormat(pattern = "dd-MM-yyyy", timezone = "Asia/Kolkata")
