@@ -1,6 +1,5 @@
 package org.unlogged.springwebfluxdemo.exception;
 
-import jakarta.annotation.Nonnull;
 import org.springframework.boot.autoconfigure.web.ErrorProperties;
 import org.springframework.boot.autoconfigure.web.WebProperties;
 import org.springframework.boot.autoconfigure.web.reactive.error.DefaultErrorWebExceptionHandler;

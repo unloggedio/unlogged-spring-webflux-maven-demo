@@ -1,6 +1,6 @@
 package org.unlogged.springwebfluxdemo.exception;
 
-import jakarta.annotation.Nonnull;
+import reactor.util.annotation.NonNull;
 
 import java.text.MessageFormat;
 
@@ -14,7 +14,7 @@ public enum WebfluxError {
     private final ErrorTypes errorType;
 
     WebfluxError(Integer errorCode, Integer appErrorCode,
-                 String message, @Nonnull ErrorTypes errorType) {
+                 String message, @NonNull ErrorTypes errorType) {
         this.errorCode = errorCode;
         this.appErrorCode = appErrorCode;
         this.message = message;

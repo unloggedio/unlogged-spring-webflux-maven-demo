@@ -1,7 +1,6 @@
 package org.unlogged.springwebfluxdemo;
 
-import jakarta.annotation.PostConstruct;
-import jakarta.annotation.PreDestroy;
+
 import org.reactivestreams.Subscription;
 import org.slf4j.MDC;
 import org.springframework.context.annotation.Configuration;
@@ -9,6 +8,9 @@ import reactor.core.CoreSubscriber;
 import reactor.core.publisher.Hooks;
 import reactor.core.publisher.Operators;
 import reactor.util.context.Context;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 //@Configuration
 public class MDCConfig {

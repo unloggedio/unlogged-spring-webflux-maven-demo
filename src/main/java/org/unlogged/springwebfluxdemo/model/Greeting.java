@@ -1,6 +1,7 @@
 package org.unlogged.springwebfluxdemo.model;
 
 
+import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.context.annotation.Bean;
 
 import java.lang.annotation.Annotation;
@@ -55,6 +56,11 @@ public class Greeting {
             @Override
             public String[] name() {
                 return new String[0];
+            }
+
+            @Override
+            public Autowire autowire() {
+                return null;
             }
 
             @Override

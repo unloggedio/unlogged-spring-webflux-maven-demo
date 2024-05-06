@@ -1,6 +1,5 @@
 package org.unlogged.springwebfluxdemo.controller;
 
-import io.micrometer.observation.ObservationRegistry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +8,6 @@ import org.unlogged.springwebfluxdemo.client.GreetingClient;
 import org.unlogged.springwebfluxdemo.exception.WebFluxException;
 import org.unlogged.springwebfluxdemo.exception.WebfluxError;
 import org.unlogged.springwebfluxdemo.model.TypeWrapper;
-import reactor.core.observability.micrometer.Micrometer;
 import reactor.core.publisher.Mono;
 
 import java.util.Observable;
@@ -22,7 +20,6 @@ public class MonoOpsController {
     private GreetingClient greetingClient;
     private MockUtils mockUtils = new MockUtils();
 
-    private ObservationRegistry observationRegistry = ObservationRegistry.create();
 
     @RequestMapping("/ser/typewrapper/1")
     public Mono<ResponseEntity<TypeWrapper>> getMonoRespTypeEntity() {
@@ -50,13 +47,6 @@ public class MonoOpsController {
     public String getBlockedString() {
         Mono<String> monoString = Mono.just("MonoString");
         return monoString.block();
-    }
-
-    @RequestMapping("/tap/1")
-    public Mono<TypeWrapper> getMr3() {
-        return greetingClient.getTypeWrappedObject()
-                .name("Some name")
-                .tap(Micrometer.observation(observationRegistry));
     }
 
     @RequestMapping("/mono/error")

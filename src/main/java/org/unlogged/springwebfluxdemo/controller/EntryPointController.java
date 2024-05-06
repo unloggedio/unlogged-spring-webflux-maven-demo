@@ -1,6 +1,5 @@
 package org.unlogged.springwebfluxdemo.controller;
 
-import ch.qos.logback.core.model.Model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.context.annotation.Bean;

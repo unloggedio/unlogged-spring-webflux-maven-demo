@@ -44,7 +44,8 @@ public class EmployeeV1 implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof EmployeeV1 employeeV1)) return false;
+        if (!(o instanceof EmployeeV1)) return false;
+        EmployeeV1 employeeV1 = (EmployeeV1) o;
         return Objects.equals(id, employeeV1.id) && Objects.equals(name, employeeV1.name) && Objects.equals(department, employeeV1.department);
     }
 

@@ -2,7 +2,6 @@ package org.unlogged.springwebfluxdemo.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import reactor.core.observability.DefaultSignalListener;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.util.context.Context;
@@ -30,7 +29,6 @@ public class CasesController {
                 .delayElement(Duration.ofMillis(1))
                 .flatMap(product ->
                         Flux.concat(
-                                addProduct(product),
                                 notifyShopV1(product)).then());
     }
 
@@ -39,28 +37,18 @@ public class CasesController {
         return Mono.empty();
     }
 
-    Mono<Void> addProduct(String productName) {
-        return Mono.<Void>empty()
-                .tap(() -> new DefaultSignalListener<>() {
-                    @Override
-                    public void doOnComplete() throws Throwable {
-                        log("Adding product: " + productName);
-                    }
-                });
-    }
 
     Mono<Void> handleRequestV() {
         return Mono.just("test-product")
                 .delayElement(Duration.ofMillis(1)) // <3>
                 .flatMap(product ->
                         Flux.concat(
-                                addProduct(product), // <4>
                                 notifyShopV1(product)).then());
     }
 
     Mono<Boolean> notifyShopV1(String productName) {
         log("Notifying shop about: " + productName);
-        return Mono.just(true).contextCapture();
+        return Mono.just(true);
     }
 
 

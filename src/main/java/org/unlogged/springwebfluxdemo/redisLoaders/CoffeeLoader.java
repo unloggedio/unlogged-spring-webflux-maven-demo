@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 import org.unlogged.springwebfluxdemo.model.Coffee;
 import reactor.core.publisher.Flux;
 
-import jakarta.annotation.PostConstruct;
 
+import javax.annotation.PostConstruct;
 import java.util.UUID;
 
 @Component
