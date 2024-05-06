@@ -156,4 +156,20 @@ public class FluxOpsController {
         return elements;
     }
 
+    @RequestMapping("/distinct/1")
+    public Flux<Integer> distinctElements() {
+        return Flux.just(1, 1, 2, 2, 2, 3, 4, 5, 5, 6, 6, 5, 4, 1, 7)
+                .distinct()
+                .log()
+                .map(i -> i - 1);
+    }
+
+    @RequestMapping("/nested-flux")
+    public Flux<Flux<String>> getNestedFluxData() {
+        Flux<Flux<String>> nestedFlux = Flux.just(
+                Flux.just("Sample Data 1", "Sample Data 2"),
+                Flux.just("Sample Data 3", "Sample Data 4", "Sample Data 5")
+        );
+        return nestedFlux;
+    }
 }

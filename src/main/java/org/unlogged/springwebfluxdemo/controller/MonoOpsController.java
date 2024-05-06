@@ -34,6 +34,21 @@ public class MonoOpsController {
         return mockUtils.returnMockString();
     }
 
+    @RequestMapping("/ser/nested-mono/1")
+    public Mono<Mono<String>> getNestedMonoString() {
+        return mockUtils.returnNestedMockStringMono();
+    }
+
+    @RequestMapping("/ser/combined-strings/1")
+    public Mono<String> getCombinedExtractedString() {
+        Mono<String> mockStringMono = mockUtils.returnMockString();
+        Mono<Mono<String>> nestedMockStringMono = mockUtils.returnNestedMockStringMono();
+        return nestedMockStringMono
+                .flatMap(nestedMono -> nestedMono.zipWith(mockStringMono,
+                        (nestedString, mockString) -> mockString + " - " + nestedString))
+                .flatMap(Mono::just);
+    }
+
     @RequestMapping("/ser/typewrapper/2")
     public Mono<ResponseEntity<Mono<TypeWrapper>>> getMr2() {
         return Mono.just(ResponseEntity.ok(greetingClient.getTypeWrappedObject()));
