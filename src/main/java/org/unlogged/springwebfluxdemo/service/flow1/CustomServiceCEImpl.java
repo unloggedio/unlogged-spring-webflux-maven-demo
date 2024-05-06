@@ -7,6 +7,8 @@ import org.unlogged.springwebfluxdemo.repository.flow1.RxJavaSqlRepo;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class CustomServiceCEImpl extends BaseServiceAbstract<RedisCoffeeInteractionRepo, RxJavaSqlRepo, PersonReactiveMongoRepository> implements CustomServiceCE {
@@ -139,7 +141,7 @@ public class CustomServiceCEImpl extends BaseServiceAbstract<RedisCoffeeInteract
                     UniversityProfileV2 v2 = tuple.getT2();
                     Person p = tuple.getT1();
 
-                    v2.setListOfSeniorMembers(List.of(p));
+                    v2.setListOfSeniorMembers(Collections.singletonList(p));
                     return v2;
                 });
         return v2Flux

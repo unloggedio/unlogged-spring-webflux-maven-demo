@@ -2,7 +2,6 @@ package org.unlogged.springwebfluxdemo.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.querydsl.core.types.dsl.ListPath;
-import com.querydsl.core.types.dsl.PathInits;
 import com.querydsl.core.types.dsl.StringPath;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.buffer.DataBuffer;
@@ -13,30 +12,24 @@ import org.springframework.http.MediaType;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.reactive.function.server.RouterFunction;
-import org.springframework.web.reactive.function.server.ServerResponse;
 import org.unlogged.springwebfluxdemo.exception.WebfluxError;
-import org.unlogged.springwebfluxdemo.model.GenericTypeWrapper;
 import org.unlogged.springwebfluxdemo.model.Person;
-import org.unlogged.springwebfluxdemo.model.circle.CircleChild;
 import org.unlogged.springwebfluxdemo.model.circle.CircleParent;
 import org.unlogged.springwebfluxdemo.service.flow1.CustomService;
 import reactor.core.publisher.Mono;
 import reactor.core.publisher.Signal;
 
 import javax.imageio.ImageIO;
-//import javax.validation.constraints.Null;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.util.List;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 import java.util.function.Consumer;
 
 import static org.springframework.data.mongodb.core.query.Criteria.where;
 import static org.springframework.data.mongodb.core.query.Query.query;
-import static org.springframework.web.reactive.function.server.RequestPredicates.all;
-import static org.springframework.web.reactive.function.server.RouterFunctions.route;
 
 @RestController
 @RequestMapping("/others")
@@ -44,8 +37,7 @@ public class Others {
 
     @Autowired
     private CustomService customService;
-    private static final Set<String> ALLOWED_CONTENT_TYPES =
-            Set.of(MediaType.IMAGE_JPEG_VALUE, MediaType.IMAGE_PNG_VALUE);
+    private static final Set<String> ALLOWED_CONTENT_TYPES = new HashSet<>(Arrays.asList(MediaType.IMAGE_JPEG_VALUE, MediaType.IMAGE_PNG_VALUE));
 
     private Boolean checkImageValidity(DataBuffer dataBuffer, MediaType contentType) throws IOException {
         BufferedImage bufferedImage = ImageIO.read(dataBuffer.asInputStream());
@@ -63,7 +55,7 @@ public class Others {
                 .map(optional ->
                 {
                     String returnVal = "";
-                    if (optional.isEmpty()) {
+                    if (!optional.isPresent()) {
                         returnVal = "Empty";
                     } else {
                         returnVal = webfluxError.get().getMessage();
