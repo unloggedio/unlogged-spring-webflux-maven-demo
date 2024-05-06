@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringWebfluxDemoApplication {
 
-	@Unlogged
-	public static void main(String[] args) {
-		SpringApplication.run(SpringWebfluxDemoApplication.class, args);
-	}
+    @Unlogged
+    public static void main(String[] args) {
+        SpringApplication.run(SpringWebfluxDemoApplication.class, args);
+    }
 
 }
