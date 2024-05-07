@@ -1,0 +1,85 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.filter.ContextEnrichmentFilter",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.filter.ContextEnrichmentFilter#filter#(Lorg/springframework/web/server/ServerWebExchange;Lorg/springframework/web/server/WebFilterChain;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;" : [ {
+      "lineNumbers" : [ 16, 17, 18, 20 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"\\u0000\\u0000?����/\"",
+          "id" : "a2ce0ebd-7719-46ed-a395-6225c4fb6de5",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "74dfb54f-be46-4551-adf8-eea1563d89a0",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "246e7d93-3e9e-47ab-951d-54076389742e",
+      "name" : "filter_happyPath",
+      "description" : null,
+      "methodArguments" : [ "1180996379", "293961436" ],
+      "returnValue" : "\u0000\u0000?����/",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 70019230605416,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 405487668,
+      "probSerializedValue" : "AAA/rqD7jC8=",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "filter",
+        "signature" : "(Lorg/springframework/web/server/ServerWebExchange;Lorg/springframework/web/server/WebFilterChain;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;",
+        "className" : "org.unlogged.springwebfluxdemo.filter.ContextEnrichmentFilter",
+        "methodHash" : 0
+      },
+      "exception" : false
+    }, {
+      "lineNumbers" : [ 16, 17, 18, 20 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"\\u0000\\u0000?��X\"",
+          "id" : "569f1b40-fc7a-4428-8d25-809856fdacef",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "37004d23-1432-406f-af0c-7343cc9d4c57",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "d6d0501f-954d-4eee-94be-f1cdcfdb3da2",
+      "name" : "filter_happyPath",
+      "description" : null,
+      "methodArguments" : [ "410428748", "293961436" ],
+      "returnValue" : "\u0000\u0000?��X",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 70293628197750,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1637596134,
+      "probSerializedValue" : "AAA/7oLojlg=",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "filter",
+        "signature" : "(Lorg/springframework/web/server/ServerWebExchange;Lorg/springframework/web/server/WebFilterChain;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;",
+        "className" : "org.unlogged.springwebfluxdemo.filter.ContextEnrichmentFilter",
+        "methodHash" : 1140790587
+      },
+      "exception" : false
+    } ]
+  },
+  "declaredMockMap" : { }
+}

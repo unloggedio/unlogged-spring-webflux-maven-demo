@@ -8,18 +8,18 @@
           "subAssertions" : [ ],
           "expression" : "SELF",
           "expectedValue" : "\"Cors-Enabled\"",
-          "id" : "a6112c32-e0bc-4119-a618-29f22f54a697",
+          "id" : "ce57494d-9a27-4c0f-9824-8b60bce0e94b",
           "assertionType" : "EQUAL",
           "key" : "/"
         } ],
         "expression" : "SELF",
         "expectedValue" : null,
-        "id" : "31b374af-8910-4ec7-b133-5f88015d19ac",
+        "id" : "bc0b89f1-16b6-43c2-8c7b-9856cdf468c8",
         "assertionType" : "ALLOF",
         "key" : null
       },
-      "candidateId" : "3189f967-076c-4c85-98e8-957068052b66",
-      "name" : "corsEnabledEndpoint saved on 2024-03-26 15:36",
+      "candidateId" : "e731ceac-0d55-4a85-b7a0-d735b43d567c",
+      "name" : "corsEnabledEndpoint_happyPath",
       "description" : null,
       "methodArguments" : [ ],
       "returnValue" : "\"Cors-Enabled\"",
@@ -30,16 +30,16 @@
         "timestamp" : 14431158176518,
         "candidateStatus" : "NA"
       },
-      "sessionIdentifier" : -1747902412,
+      "sessionIdentifier" : -757743254,
       "probSerializedValue" : "IkNvcnMtRW5hYmxlZCI=",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "corsEnabledEndpoint",
         "signature" : "()Lreactor/core/publisher/Mono<Ljava/lang/String;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.CorsOnClassController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.CorsOnClassController#corsEnabledWithExtraAllowedOrigin#()Lreactor/core/publisher/Mono<Ljava/lang/String;>;" : [ {
       "lineNumbers" : [ 23 ],
@@ -48,18 +48,18 @@
           "subAssertions" : [ ],
           "expression" : "SELF",
           "expectedValue" : "\"Cors-Enabled-with-ExtractAllowedOrigin\"",
-          "id" : "9c511ede-aa15-4455-b102-535a73b1b41f",
+          "id" : "6559b2d8-fcd4-499d-ac13-a7ba72a12c9b",
           "assertionType" : "EQUAL",
           "key" : "/"
         } ],
         "expression" : "SELF",
         "expectedValue" : null,
-        "id" : "fa1ea0b7-a067-42a5-ab9f-321beae982cf",
+        "id" : "034b2ba7-0395-4cf7-9da9-364b2a1058b9",
         "assertionType" : "ALLOF",
         "key" : null
       },
-      "candidateId" : "cbb44c55-d52d-442c-aeca-4a38f9daf8a2",
-      "name" : "corsEnabledWithExtraAllowedOrigin saved on 2024-03-26 15:36",
+      "candidateId" : "4203245c-e835-4ae9-a8d1-bc6b80550dd2",
+      "name" : "corsEnabledWithExtraAllowedOrigin_happyPath",
       "description" : null,
       "methodArguments" : [ ],
       "returnValue" : "\"Cors-Enabled-with-ExtractAllowedOrigin\"",
@@ -70,16 +70,16 @@
         "timestamp" : 14444194712105,
         "candidateStatus" : "NA"
       },
-      "sessionIdentifier" : 765132536,
+      "sessionIdentifier" : 1575231871,
       "probSerializedValue" : "IkNvcnMtRW5hYmxlZC13aXRoLUV4dHJhY3RBbGxvd2VkT3JpZ2luIg==",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "corsEnabledWithExtraAllowedOrigin",
         "signature" : "()Lreactor/core/publisher/Mono<Ljava/lang/String;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.CorsOnClassController",
-        "methodHash" : 949156800
-      }
+        "methodHash" : 0
+      },
+      "exception" : false
     } ]
   },
   "declaredMockMap" : { }

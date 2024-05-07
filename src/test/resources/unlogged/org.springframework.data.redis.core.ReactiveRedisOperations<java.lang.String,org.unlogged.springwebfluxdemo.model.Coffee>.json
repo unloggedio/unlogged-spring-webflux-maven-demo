@@ -1,0 +1,48 @@
+{
+  "classname" : "org.springframework.data.redis.core.ReactiveRedisOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.Coffee>",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.springframework.data.redis.core.ReactiveRedisOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.Coffee>#keys#(Ljava/lang/String;)Lreactor/core/publisher/Flux<Ljava/lang/String;>;" : [ {
+      "id" : "d412fea3-1a4d-4869-99e5-6e28dead631d",
+      "name" : "mock response for call to coffeeOps.keys(\"*\")",
+      "fieldTypeName" : "org.springframework.data.redis.core.ReactiveRedisOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.Coffee>",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.CoffeeController",
+      "fieldName" : "coffeeOps",
+      "methodName" : "keys",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"*\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[\"d009df99-3cb7-4979-8c8f-589f8d05355c\",\"e5dcb7dc-2700-4996-85a1-a2436d19f957\",\"e736c86f-e058-48e4-a5d0-fcb00fb07ea1\"]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<java.lang.String>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.redis.core.ReactiveRedisOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.Coffee>#keys#(Ljava/lang/String;)Lreactor/core/publisher/Flux<Ljava/lang/String;>;"
+    } ],
+    "org.springframework.data.redis.core.ReactiveRedisOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.Coffee>#opsForValue#()Lorg/springframework/data/redis/core/ReactiveValueOperations<Ljava/lang/String;,Lorg/unlogged/springwebfluxdemo/model/Coffee;>;" : [ {
+      "id" : "127417f0-82b2-4b3b-a24e-c6fdb8bcb4b4",
+      "name" : "mock response for call to coffeeOps.opsForValue()",
+      "fieldTypeName" : "org.springframework.data.redis.core.ReactiveRedisOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.Coffee>",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.CoffeeController",
+      "fieldName" : "coffeeOps",
+      "methodName" : "opsForValue",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{}",
+          "returnValueType" : "REAL",
+          "className" : "org.springframework.data.redis.core.ReactiveValueOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.Coffee>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.redis.core.ReactiveRedisOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.Coffee>#opsForValue#()Lorg/springframework/data/redis/core/ReactiveValueOperations<Ljava/lang/String;,Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
+    } ]
+  }
+}

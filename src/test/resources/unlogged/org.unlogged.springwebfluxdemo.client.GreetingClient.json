@@ -1,0 +1,46 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.client.GreetingClient",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.client.GreetingClient#getMessage#()Lreactor/core/publisher/Mono<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 46, 47, 48, 49 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"org.springframework.core.codec.DecodingException: JSON decoding error: (was java.lang.UnsupportedOperationException)\"",
+          "id" : "9a1ff00e-c972-41f6-94fe-56a71dd37490",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "c59ef1cd-9355-4e86-a755-7b30351a6b07",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "1752df89-cf1b-4b4a-9d99-aca413bbf949",
+      "name" : "getMessage_UnloggedInterferingWithException",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "org.springframework.core.codec.DecodingException: JSON decoding error: (was java.lang.UnsupportedOperationException)",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 70079198025166,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -222168802,
+      "probSerializedValue" : "b3JnLnNwcmluZ2ZyYW1ld29yay5jb3JlLmNvZGVjLkRlY29kaW5nRXhjZXB0aW9uOiBKU09OIGRlY29kaW5nIGVycm9yOiAod2FzIGphdmEubGFuZy5VbnN1cHBvcnRlZE9wZXJhdGlvbkV4Y2VwdGlvbik=",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "getMessage",
+        "signature" : "()Lreactor/core/publisher/Mono<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.client.GreetingClient",
+        "methodHash" : -573581324
+      },
+      "exception" : false
+    } ]
+  },
+  "declaredMockMap" : { }
+}

@@ -1,0 +1,114 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.EntryPointController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.EntryPointController#getArgs1#()Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 45, 46, 47, 48, 49 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "58427570-db20-4bff-966c-718021885209",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "dfbdb4f0-de0f-435b-a34c-677d75ee25b5",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "d0a9a57d-f59c-49e7-8d5a-b62e833aa0c2",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "63d62d28-b688-4bd2-89d8-d95f69744252",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "25054f5a-88d8-44de-b414-0ee34bb60099",
+      "name" : "getArgs1_UnloggedInterferingWithException",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"headers\":{},\"body\":{},\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 70079197986750,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 290062997,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6e30sInN0YXR1cyI6Ik9LIn0=",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "getArgs1",
+        "signature" : "()Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Mono;><Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.EntryPointController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.EntryPointController#getMonoStringText#()Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 70 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "d676be7c-5355-4bef-a5d9-6e116dfee34b",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"SomeString\"",
+          "id" : "e332b452-e99e-411c-879e-31e1634f3433",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "2d93ad29-f423-45ce-88ab-0f90c6c312e5",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "c770530c-522b-4d4f-ab36-f1628da38d0b",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "6d045d88-7d65-491b-b03d-c084e2baae7a",
+      "name" : "getMonoStringText_happyPath",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"headers\":{},\"body\":\"SomeString\",\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 70733439013666,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1104892551,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6IlNvbWVTdHJpbmciLCJzdGF0dXMiOiJPSyJ9",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "getMonoStringText",
+        "signature" : "()Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.EntryPointController",
+        "methodHash" : 1438034136
+      },
+      "exception" : false
+    } ]
+  },
+  "declaredMockMap" : { }
+}
