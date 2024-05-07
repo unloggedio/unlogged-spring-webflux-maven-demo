@@ -1,0 +1,79 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo#all#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;" : [ {
+      "id" : "43e2d91e-ba80-4886-b864-917838e78b7a",
+      "name" : "mock response for call to repo.all()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "fieldName" : "repo",
+      "methodName" : "all",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":\"bbae7598-60ad-416f-b3f7-912e218c4a7a\",\"name\":\"Jet Black Redis\"},{\"id\":\"3124ea99-ce91-426e-b294-280c5a0b508d\",\"name\":\"Black Alert Redis\"},{\"id\":\"50c67b74-492c-4b8d-adb3-3791a0784f97\",\"name\":\"Darth Redis\"}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Coffee>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo#all#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
+    }, {
+      "id" : "0693972d-8c25-4be6-96f1-8ed5cc35e349",
+      "name" : "mock response for call to repo.all()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "fieldName" : "repo",
+      "methodName" : "all",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":\"d4575d44-a7f2-47e1-98c7-1f7dd9cde8a3\",\"name\":\"Darth Redis\"},{\"id\":\"6ce6a5db-8945-43e8-baef-c6bbcbee859e\",\"name\":\"Jet Black Redis\"},{\"id\":\"6977e30a-de3e-4007-8a27-af8616c7497f\",\"name\":\"Black Alert Redis\"}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Coffee>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo#all#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
+    }, {
+      "id" : "a35c563a-f81b-46dc-9e91-15858b8dc5b6",
+      "name" : "mock response for call to repo.all()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "fieldName" : "repo",
+      "methodName" : "all",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"},{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"},{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Coffee>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo#all#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
+    }, {
+      "id" : "8afe4a15-b7c5-4504-bca2-ccace709b8dd",
+      "name" : "mock response for call to repo.all()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.flow1.CustomService",
+      "fieldName" : "repo",
+      "methodName" : "all",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":\"694e7603-6d11-46e5-9be2-600cc6949f9b\",\"name\":\"Jet Black Redis\"},{\"id\":\"37e3582f-2cf7-4e86-8ba3-9be27cb0e7c9\",\"name\":\"Black Alert Redis\"},{\"id\":\"8e1a9508-773a-4912-8f36-aabf5d0b58e0\",\"name\":\"Darth Redis\"}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Coffee>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.RedisCoffeeInteractionRepo#all#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;"
+    } ]
+  }
+}

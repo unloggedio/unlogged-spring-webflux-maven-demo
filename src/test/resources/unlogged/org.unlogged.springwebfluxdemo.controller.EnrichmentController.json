@@ -1,0 +1,248 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.EnrichmentController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.EnrichmentController#enrichDefaultPerson#()Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Person;>;" : [ {
+      "lineNumbers" : [ 27, 28, 29, 30, 31, 32, 33, 34 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "cf943ab7-6c43-4d8f-82bb-d921dbe52ca7",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"p1#En\"",
+          "id" : "0ef4e133-ba12-4d2d-9f9b-fc36fba966c3",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "f5bd6d3f-d4ae-47ab-a82b-5c74e2b1ba55",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "78407d48-cec9-4bec-a2a7-e4f0d8fcee53",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "0104ff30-1805-40af-9e8c-ba6f10840016",
+      "name" : "enrichDefaultPerson_happyPath",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"id\":null,\"name\":\"p1#En\",\"age\":1}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 14472322865408,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -329879933,
+      "probSerializedValue" : "eyJpZCI6bnVsbCwibmFtZSI6InAxI0VuIiwiYWdlIjoxfQ==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "enrichDefaultPerson",
+        "signature" : "()Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Person;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.EnrichmentController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.EnrichmentController#enrichDefaultPersonReactive#()Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Person;>;" : [ {
+      "lineNumbers" : [ 39, 40 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "288008f8-c694-435e-95b2-c26f566dc0f4",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"p2#En\"",
+          "id" : "d56c95ae-b8b7-40a1-85e8-9ec588a01d87",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "76ef81b9-ca30-4495-b3e7-68aeca3e7a29",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "2adfbf4d-a975-493a-996e-2a731fd15087",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "3290f6d4-3df2-4f56-a7a5-f36316676463",
+      "name" : "enrichDefaultPersonReactive_happyPath",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"id\":null,\"name\":\"p2#En\",\"age\":1}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 14511401422343,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1339048328,
+      "probSerializedValue" : "eyJpZCI6bnVsbCwibmFtZSI6InAyI0VuIiwiYWdlIjoxfQ==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "enrichDefaultPersonReactive",
+        "signature" : "()Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Person;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.EnrichmentController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.EnrichmentController#simpleAppendFlat#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/Object;>;" : [ {
+      "lineNumbers" : [ 69 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"E\"",
+          "id" : "54e63d1e-1b64-4140-93c5-9ffd69537630",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "04dfd6cf-8e4c-4829-a760-95e9e00604b5",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "f41035d6-54b2-4f9c-a006-ad6f52d06f8b",
+      "name" : "simpleAppendFlat_happyPath",
+      "description" : null,
+      "methodArguments" : [ "\"testStringAppendFlat\"" ],
+      "returnValue" : "\"E\"",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 46174616908583,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1090189497,
+      "probSerializedValue" : "IkUi",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "simpleAppendFlat",
+        "signature" : "(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/Object;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.EnrichmentController",
+        "methodHash" : 1221966898
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.EnrichmentController#simpleAppend#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 61 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"TestStringAppend#ENG\"",
+          "id" : "ad7932a2-29d9-454c-9d04-1b97a2926b4c",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "b7a26195-e2ea-47cd-8a0e-843721709348",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "ac550007-ecf7-49a7-97c7-bec91ffa3657",
+      "name" : "simpleAppend_happyPath",
+      "description" : null,
+      "methodArguments" : [ "\"TestStringAppend\"" ],
+      "returnValue" : "\"TestStringAppend#ENG\"",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 46144142475250,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 959879071,
+      "probSerializedValue" : "IlRlc3RTdHJpbmdBcHBlbmQjRU5HIg==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "simpleAppend",
+        "signature" : "(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.EnrichmentController",
+        "methodHash" : 445177364
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.EnrichmentController#EnrichNonReactive#()Lorg/unlogged/springwebfluxdemo/model/Person;" : [ {
+      "lineNumbers" : [ 49, 50, 51, 52, 53, 54, 55, 56 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "b2146d43-be9a-4801-8a74-fd6e8b45eeae",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"p1#En\"",
+          "id" : "d5ffd552-962b-463a-9386-cd486fbaf582",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "2",
+          "id" : "5e198f24-7a90-4663-a446-87185629752c",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "29730017-3625-4a0c-82ba-1747dc341fa7",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "07eabd3a-a058-4335-95ae-3b369263b759",
+      "name" : "EnrichNonReactive_happyPath",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"id\":null,\"name\":\"p1#En\",\"age\":2}",
+      "returnValueClassname" : "org.unlogged.springwebfluxdemo.model.Person",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 46068892118500,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1237900800,
+      "probSerializedValue" : "eyJpZCI6bnVsbCwibmFtZSI6InAxI0VuIiwiYWdlIjoyfQ==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "EnrichNonReactive",
+        "signature" : "()Lorg/unlogged/springwebfluxdemo/model/Person;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.EnrichmentController",
+        "methodHash" : -100882911
+      },
+      "exception" : false
+    } ]
+  },
+  "declaredMockMap" : { }
+}

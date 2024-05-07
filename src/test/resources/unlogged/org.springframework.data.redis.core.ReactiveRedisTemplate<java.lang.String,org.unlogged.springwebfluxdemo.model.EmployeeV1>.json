@@ -1,0 +1,25 @@
+{
+  "classname" : "org.springframework.data.redis.core.ReactiveRedisTemplate<java.lang.String,org.unlogged.springwebfluxdemo.model.EmployeeV1>",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.springframework.data.redis.core.ReactiveRedisTemplate<java.lang.String,org.unlogged.springwebfluxdemo.model.EmployeeV1>#opsForValue#()Lorg/springframework/data/redis/core/ReactiveValueOperations<Ljava/lang/String;,Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;>;" : [ {
+      "id" : "1c5f5dd8-a431-4754-a3df-2039c3460bf7",
+      "name" : "mock response for call to redisTemplate.opsForValue()",
+      "fieldTypeName" : "org.springframework.data.redis.core.ReactiveRedisTemplate<java.lang.String,org.unlogged.springwebfluxdemo.model.EmployeeV1>",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.RedisOpsController",
+      "fieldName" : "redisTemplate",
+      "methodName" : "opsForValue",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{}",
+          "returnValueType" : "REAL",
+          "className" : "org.springframework.data.redis.core.ReactiveValueOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.EmployeeV1>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.redis.core.ReactiveRedisTemplate<java.lang.String,org.unlogged.springwebfluxdemo.model.EmployeeV1>#opsForValue#()Lorg/springframework/data/redis/core/ReactiveValueOperations<Ljava/lang/String;,Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;>;"
+    } ]
+  }
+}

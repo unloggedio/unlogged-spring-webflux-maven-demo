@@ -1,0 +1,1743 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#getStringFromObservable#()Ljava/lang/String;" : [ {
+      "lineNumbers" : [ 29, 30, 31, 32 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Do you know da way\"",
+          "id" : "e2989403-215f-4a9b-8185-094353bd76dc",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "c47f1a72-1693-4687-98d4-54b9fd5e483d",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "708a860a-d9b9-48ed-873d-5dc7e0d7bdbb",
+      "name" : "getStringFromObservable saved on 2024-03-28 12:51",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\"Do you know da way\"",
+      "returnValueClassname" : "java.lang.Object",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44550281380533,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1439053170,
+      "probSerializedValue" : "IkRvIHlvdSBrbm93IGRhIHdheSI=",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "getStringFromObservable",
+        "signature" : "()Ljava/lang/String;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#getObservableString#()Lio/reactivex/rxjava3/core/Observable<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 37, 38 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Do you know da way\"",
+          "id" : "26228665-b2cf-449a-9fcc-ebd7cbfb2c92",
+          "assertionType" : "EQUAL",
+          "key" : "/value"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "5305ca94-5f1a-47df-9a6b-a478ab240b1a",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "3ba9b00a-7953-4415-b05b-3b994539d162",
+      "name" : "getObservableString saved on 2024-03-28 12:51",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"value\":\"Do you know da way\"}",
+      "returnValueClassname" : "io.reactivex.rxjava3.core.Observable",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44573609918929,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -687071500,
+      "probSerializedValue" : "eyJ2YWx1ZSI6IkRvIHlvdSBrbm93IGRhIHdheSJ9",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "getObservableString",
+        "signature" : "()Lio/reactivex/rxjava3/core/Observable<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#mapAndFilter#()Ljava/lang/String;" : [ {
+      "lineNumbers" : [ 43, 44, 45, 46, 47, 48, 49, 54 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"E,678,1015,760,740,489_Completed\"",
+          "id" : "414bcd30-111a-45ec-8def-44b36d4fe72f",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "b86131fc-9e55-4284-96aa-148fa76af736",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "fe5c62d7-d87c-4172-ad3f-2910ceaa563a",
+      "name" : "mapAndFilter saved on 2024-03-28 12:51",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\"E,678,1015,760,740,489_Completed\"",
+      "returnValueClassname" : "java.lang.String",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44593499494635,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1829433680,
+      "probSerializedValue" : "IkUsNjc4LDEwMTUsNzYwLDc0MCw0ODlfQ29tcGxldGVkIg==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "mapAndFilter",
+        "signature" : "()Ljava/lang/String;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#nestedObservables#()Ljava/lang/String;" : [ {
+      "lineNumbers" : [ 76, 77, 78, 80, 81, 82, 83, 85, 86, 91 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\",R1,RSV4,ZX-10R,R1,RSV4,ZX-10R_Completed\"",
+          "id" : "dda68df0-41dd-40c4-8391-d6d370b5a946",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "883fc93d-24a7-4a70-acd6-2f5988f81beb",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "d8510f11-85d6-497b-b681-1f17c9d107b3",
+      "name" : "nestedObservables saved on 2024-03-28 12:52",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\",R1,RSV4,ZX-10R,R1,RSV4,ZX-10R_Completed\"",
+      "returnValueClassname" : "java.lang.String",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44633110523895,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 114605243,
+      "probSerializedValue" : "IixSMSxSU1Y0LFpYLTEwUixSMSxSU1Y0LFpYLTEwUl9Db21wbGV0ZWQi",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "nestedObservables",
+        "signature" : "()Ljava/lang/String;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#scanObs#()Ljava/lang/String;" : [ {
+      "lineNumbers" : [ 96, 97, 98, 99, 100, 101, 102 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"aababc\"",
+          "id" : "57424c8f-9d04-41e9-b936-2c1776531b6e",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "4d7686da-2309-4dd7-9b16-9987bd4a19a8",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "c9b71ad9-7791-47e4-983b-3e8d6a8fc63d",
+      "name" : "scanObs saved on 2024-03-28 12:52",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\"aababc\"",
+      "returnValueClassname" : "java.lang.String",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44647470416144,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 370016559,
+      "probSerializedValue" : "ImFhYmFiYyI=",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "scanObs",
+        "signature" : "()Ljava/lang/String;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#groupByObs#()Ljava/lang/String;" : [ {
+      "lineNumbers" : [ 107, 108, 109, 110, 111, 112, 113, 122 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OS : 9 - ES : 6\"",
+          "id" : "cf32082a-954b-478b-b7b0-2f3c61710653",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "f8cac47a-67e4-470e-a5cd-0cc7d88e3535",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "841ace33-e726-448f-ba5b-f3aab94064d1",
+      "name" : "groupByObs saved on 2024-03-28 12:52",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\"OS : 9 - ES : 6\"",
+      "returnValueClassname" : "java.lang.String",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44673954861516,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 110387064,
+      "probSerializedValue" : "Ik9TIDogOSAtIEVTIDogNiI=",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "groupByObs",
+        "signature" : "()Ljava/lang/String;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#single#()Ljava/lang/String;" : [ {
+      "lineNumbers" : [ 127, 128, 129, 130, 133, 134 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Hello\"",
+          "id" : "04cc37ad-30b9-4187-bf89-0257d3fe824c",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "06c36d93-1516-4129-a581-e6b51e247f5d",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "37e965cf-30f7-4173-b105-c5b8345bfa5a",
+      "name" : "single saved on 2024-03-28 12:53",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\"Hello\"",
+      "returnValueClassname" : "java.lang.String",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44684806987214,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1147571377,
+      "probSerializedValue" : "IkhlbGxvIg==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "single",
+        "signature" : "()Ljava/lang/String;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#conditionals#()[Ljava/lang/String;" : [ {
+      "lineNumbers" : [ 139, 140, 141, 142, 144, 145, 146, 147, 149, 150, 151, 152, 153, 154 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"nullObservable is empty\"",
+          "id" : "1d80282d-2fc9-4756-8a12-9c963633838e",
+          "assertionType" : "EQUAL",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"nulla\"",
+          "id" : "8488ad10-9e3c-4be7-9cb1-fc9149e45040",
+          "assertionType" : "EQUAL",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"10\"",
+          "id" : "f0bcf88b-0236-4160-9ecc-932d2ec5f685",
+          "assertionType" : "EQUAL",
+          "key" : "/2"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "573aa57c-308d-4d77-93db-98a67d664475",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "25c7af67-7f55-420a-b8a1-f92438d0837c",
+      "name" : "conditionals saved on 2024-03-28 12:53",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[\"nullObservable is empty\",\"nulla\",\"10\"]",
+      "returnValueClassname" : "java.lang.String[]",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44732636646441,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1275845284,
+      "probSerializedValue" : "WyJudWxsT2JzZXJ2YWJsZSBpcyBlbXB0eSIsIm51bGxhIiwiMTAiXQ==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "conditionals",
+        "signature" : "()[Ljava/lang/String;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#connectableObs#()Ljava/lang/String;" : [ {
+      "lineNumbers" : [ 159, 160, 161, 162, 164, 165, 166 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"01\"",
+          "id" : "1f549137-f3ae-4cbe-a3f4-771b1a889ea0",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "528e51e8-f787-48be-bd9a-202e8f6d9d4b",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "dc836f21-d64d-41ca-abf8-bd4fb3913872",
+      "name" : "connectableObs saved on 2024-03-28 12:55",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\"01\"",
+      "returnValueClassname" : "java.lang.String",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44791952405769,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1973293505,
+      "probSerializedValue" : "IjAxIg==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "connectableObs",
+        "signature" : "()Ljava/lang/String;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#subjectObs#()I" : [ {
+      "lineNumbers" : [ 171, 172, 173, 195, 217, 218, 219, 220, 221, 222, 223, 224, 225 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "14",
+          "id" : "6958ef2e-6f17-48c2-af80-0e67cee44f88",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "b7f4ac99-50c0-40ff-8ab3-36a46b83b6d2",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "4cdb6fa3-be37-4a38-b550-adbb7b767924",
+      "name" : "subjectObs saved on 2024-03-28 12:55",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "14",
+      "returnValueClassname" : "I",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44836627450069,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -996166394,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "subjectObs",
+        "signature" : "()I",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#resourceManagementExample#()Ljava/lang/String;" : [ {
+      "lineNumbers" : [ 230, 231, 243, 247 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Resource String\"",
+          "id" : "57e21a1a-22b4-4e6f-94e9-20d7903a3e85",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "68bb0725-0e9f-4c12-a06f-83c1145f3eee",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "daa104a8-ab21-4e6c-8e6f-ae5b93beebb1",
+      "name" : "resourceManagementExample saved on 2024-03-28 12:56",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\"Resource String\"",
+      "returnValueClassname" : "java.lang.String",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44857565359110,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1677766236,
+      "probSerializedValue" : "IlJlc291cmNlIFN0cmluZyI=",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "resourceManagementExample",
+        "signature" : "()Ljava/lang/String;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#flowable1#()Lio/reactivex/rxjava3/core/Flowable<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 251, 252 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "c0ee0655-f825-4ae3-bdb9-cb7a7999d0b4",
+            "assertionType" : "EQUAL",
+            "key" : "/array/0"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "2",
+            "id" : "eabeb258-e7e2-4987-b55b-6374e861b986",
+            "assertionType" : "EQUAL",
+            "key" : "/array/1"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3",
+            "id" : "e60f75c2-2130-4057-99e7-573891169750",
+            "assertionType" : "EQUAL",
+            "key" : "/array/2"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "4",
+            "id" : "105ce508-d168-4b10-a7cf-144f5ed74e31",
+            "assertionType" : "EQUAL",
+            "key" : "/array/3"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "b1fbbcc5-fd30-4f96-9bc5-fb719f71659f",
+          "assertionType" : "ALLOF",
+          "key" : "/array"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "737612c1-cedf-4fe1-8cb0-40d12961607f",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "754add01-ef24-4495-b21c-ec8cf6e3f94e",
+      "name" : "flowable1 saved on 2024-03-28 12:56",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"array\":[1,2,3,4]}",
+      "returnValueClassname" : "io.reactivex.rxjava3.core.Flowable",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44882619953460,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 460457780,
+      "probSerializedValue" : "eyJhcnJheSI6WzEsMiwzLDRdfQ==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "flowable1",
+        "signature" : "()Lio/reactivex/rxjava3/core/Flowable<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#fromObs#()Lio/reactivex/rxjava3/core/Flowable<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 256, 257, 258, 259 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "1",
+                "id" : "357c7112-bd34-4922-aeee-f927029b0c70",
+                "assertionType" : "EQUAL",
+                "key" : "/source/upstream/array/0"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "2",
+                "id" : "0c74f1c3-0706-446c-97e1-12ca24c55212",
+                "assertionType" : "EQUAL",
+                "key" : "/source/upstream/array/1"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "3",
+                "id" : "74e6a12a-4899-4731-bfe3-90f300303543",
+                "assertionType" : "EQUAL",
+                "key" : "/source/upstream/array/2"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "ce253d91-c31a-4a3f-b744-91abe1a0574c",
+              "assertionType" : "ALLOF",
+              "key" : "/source/upstream/array"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "e593ee7f-af2e-4143-b8e4-49bf251c217f",
+            "assertionType" : "ALLOF",
+            "key" : "/source/upstream"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "2eb207ff-ed57-417d-83a9-45bffa9cda8e",
+          "assertionType" : "ALLOF",
+          "key" : "/source"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "128",
+          "id" : "2166f7d0-0b4b-4bb9-9bd9-4651c6ec5852",
+          "assertionType" : "EQUAL",
+          "key" : "/bufferSize"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "38eac044-cbcc-4420-941a-75fff82bff6f",
+          "assertionType" : "EQUAL",
+          "key" : "/unbounded"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "false",
+          "id" : "acf88799-8bbc-4352-bf22-38492eb72f2c",
+          "assertionType" : "EQUAL",
+          "key" : "/delayError"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "f26a7b9e-4ea3-40c7-b205-94cb3bdf68cc",
+          "assertionType" : "ALLOF",
+          "key" : "/onOverflow"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "5197e62e-4895-4672-9ba5-e0926d0a233e",
+          "assertionType" : "ALLOF",
+          "key" : "/onDropped"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "8bbdca33-9666-4029-a4a0-10c51f122403",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "226584c0-a9f8-4a0e-921c-1b9406ad28e1",
+      "name" : "fromObs saved on 2024-03-28 12:56",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"source\":{\"upstream\":{\"array\":[1,2,3]}},\"bufferSize\":128,\"unbounded\":true,\"delayError\":false,\"onOverflow\":{},\"onDropped\":{}}",
+      "returnValueClassname" : "io.reactivex.rxjava3.core.Flowable",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 44910802345086,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1204817410,
+      "probSerializedValue" : "eyJzb3VyY2UiOnsidXBzdHJlYW0iOnsiYXJyYXkiOlsxLDIsM119fSwiYnVmZmVyU2l6ZSI6MTI4LCJ1bmJvdW5kZWQiOnRydWUsImRlbGF5RXJyb3IiOmZhbHNlLCJvbk92ZXJmbG93Ijp7fSwib25Ecm9wcGVkIjp7fX0=",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "fromObs",
+        "signature" : "()Lio/reactivex/rxjava3/core/Flowable<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#backPressureBufferedStrat#()Ljava/util/List<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 278, 279, 280, 282, 283, 284, 285, 287, 289, 290, 291, 292, 293, 294 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "0",
+          "id" : "45ddbbbf-d6ee-428b-a621-6ee4d4fe923b",
+          "assertionType" : "EQUAL",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "bada9cb4-101e-4ed9-b6dc-bf5a802c0059",
+          "assertionType" : "EQUAL",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "2",
+          "id" : "b6b46710-18cc-4e8e-97e9-7dfc7e7546d8",
+          "assertionType" : "EQUAL",
+          "key" : "/2"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "3",
+          "id" : "657afed3-0ce7-4be2-bf3e-2bd5e97d6299",
+          "assertionType" : "EQUAL",
+          "key" : "/3"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "4",
+          "id" : "5f3e3a75-3012-4807-879e-8ec3e9a72427",
+          "assertionType" : "EQUAL",
+          "key" : "/4"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "5",
+          "id" : "4cf24115-d2b9-44b2-b1e1-1352f46eeafa",
+          "assertionType" : "EQUAL",
+          "key" : "/5"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "6",
+          "id" : "b9bd2938-487b-432e-bce0-fc13ba421b4e",
+          "assertionType" : "EQUAL",
+          "key" : "/6"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "7",
+          "id" : "a42d364e-1be7-4ad9-90a6-1f9951f7fbc1",
+          "assertionType" : "EQUAL",
+          "key" : "/7"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "8",
+          "id" : "0c4b92f3-82e4-4839-b9d7-b6481c55eaea",
+          "assertionType" : "EQUAL",
+          "key" : "/8"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "9",
+          "id" : "d190cb2d-1595-426a-8000-0eca99e41d12",
+          "assertionType" : "EQUAL",
+          "key" : "/9"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "10",
+          "id" : "91f99d8c-948b-4616-9605-67fcaa79c522",
+          "assertionType" : "EQUAL",
+          "key" : "/10"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "11",
+          "id" : "c57b9e74-d4e7-4d1f-9d0f-7ee03abfeb9e",
+          "assertionType" : "EQUAL",
+          "key" : "/11"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "12",
+          "id" : "b4ae3930-a7e7-4ac6-8b19-3a3858395b57",
+          "assertionType" : "EQUAL",
+          "key" : "/12"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "13",
+          "id" : "59069b52-622b-40a0-95d1-c71d0ba72add",
+          "assertionType" : "EQUAL",
+          "key" : "/13"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "14",
+          "id" : "3b00f192-9e52-4148-846b-88258a7d4265",
+          "assertionType" : "EQUAL",
+          "key" : "/14"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "15",
+          "id" : "a18f6c07-a3c0-4ad6-8d5d-c05b16f0b5f6",
+          "assertionType" : "EQUAL",
+          "key" : "/15"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "16",
+          "id" : "56330b7f-30f2-41be-b33d-f8666d7bcc87",
+          "assertionType" : "EQUAL",
+          "key" : "/16"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "17",
+          "id" : "3e7483c1-bfd7-4861-a0df-36e5c64830c7",
+          "assertionType" : "EQUAL",
+          "key" : "/17"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "18",
+          "id" : "60c7e65d-432c-49ee-9592-af9067f18fff",
+          "assertionType" : "EQUAL",
+          "key" : "/18"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "19",
+          "id" : "8203fa7c-d367-4186-b71b-923160f72985",
+          "assertionType" : "EQUAL",
+          "key" : "/19"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "20",
+          "id" : "b6471da6-9929-4d6e-9ad5-52e6d6d3cf9d",
+          "assertionType" : "EQUAL",
+          "key" : "/20"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "21",
+          "id" : "2ac88cb8-65f3-4713-9755-c02911a06361",
+          "assertionType" : "EQUAL",
+          "key" : "/21"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "22",
+          "id" : "7fd51b69-c996-4399-b62d-a0fd1d603d35",
+          "assertionType" : "EQUAL",
+          "key" : "/22"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "23",
+          "id" : "22e686b9-03c6-4064-9acf-15a2cfbc2a7f",
+          "assertionType" : "EQUAL",
+          "key" : "/23"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "24",
+          "id" : "c74e1724-5080-4cc1-9e8a-d65cda1bb066",
+          "assertionType" : "EQUAL",
+          "key" : "/24"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "25",
+          "id" : "f2e0c7c4-92bf-4d0f-8424-e2860ce7816c",
+          "assertionType" : "EQUAL",
+          "key" : "/25"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "26",
+          "id" : "06c30856-4242-4be6-a498-a81d465e85aa",
+          "assertionType" : "EQUAL",
+          "key" : "/26"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "27",
+          "id" : "c117fb7c-1c6d-485b-94e2-a0b389d29e86",
+          "assertionType" : "EQUAL",
+          "key" : "/27"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "28",
+          "id" : "475deac5-dbdf-4d56-8a1a-4b86c206170a",
+          "assertionType" : "EQUAL",
+          "key" : "/28"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "29",
+          "id" : "7cf3a681-59a5-4b36-b0cc-741b96e45e6b",
+          "assertionType" : "EQUAL",
+          "key" : "/29"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "30",
+          "id" : "55adc6da-14ae-484b-b373-112b49db2d2d",
+          "assertionType" : "EQUAL",
+          "key" : "/30"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "31",
+          "id" : "fa79d801-c3f3-4fa1-9438-1d56f068b93f",
+          "assertionType" : "EQUAL",
+          "key" : "/31"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "32",
+          "id" : "6d6f603c-89ac-4868-abbd-86bb15177357",
+          "assertionType" : "EQUAL",
+          "key" : "/32"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "33",
+          "id" : "9bf30713-4884-4220-a2d2-663169342544",
+          "assertionType" : "EQUAL",
+          "key" : "/33"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "34",
+          "id" : "20b9c466-5769-4122-80cd-2f3b73149a6d",
+          "assertionType" : "EQUAL",
+          "key" : "/34"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "35",
+          "id" : "f87361e3-981e-4110-aa60-b215ffd9a959",
+          "assertionType" : "EQUAL",
+          "key" : "/35"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "36",
+          "id" : "616e7892-e789-49eb-a709-cc4ff2e80a7e",
+          "assertionType" : "EQUAL",
+          "key" : "/36"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "37",
+          "id" : "f1bd5166-da24-4a75-978b-6e02281f0d9b",
+          "assertionType" : "EQUAL",
+          "key" : "/37"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "38",
+          "id" : "00313000-862c-4cac-87e6-5e008e3738ce",
+          "assertionType" : "EQUAL",
+          "key" : "/38"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "39",
+          "id" : "59911f9a-a6d7-4a68-a50f-78eda320773b",
+          "assertionType" : "EQUAL",
+          "key" : "/39"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "40",
+          "id" : "e97817b8-51bb-4176-8e01-000701c03a06",
+          "assertionType" : "EQUAL",
+          "key" : "/40"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "41",
+          "id" : "05055ca7-f0db-4097-b934-944e96b847ca",
+          "assertionType" : "EQUAL",
+          "key" : "/41"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "42",
+          "id" : "717bab93-e4ed-44c0-a8b4-1f92c1feb33c",
+          "assertionType" : "EQUAL",
+          "key" : "/42"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "43",
+          "id" : "2edf653a-b4bf-4c74-81f0-aaddeb802d7b",
+          "assertionType" : "EQUAL",
+          "key" : "/43"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "44",
+          "id" : "6c0b716e-9402-4c6a-b927-3c21b49c928c",
+          "assertionType" : "EQUAL",
+          "key" : "/44"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "45",
+          "id" : "4a576004-cb38-449d-91db-ae59e4866da1",
+          "assertionType" : "EQUAL",
+          "key" : "/45"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "46",
+          "id" : "d852fc80-b8aa-478a-b16d-bdda9adcbfe6",
+          "assertionType" : "EQUAL",
+          "key" : "/46"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "47",
+          "id" : "0847c611-42e3-4508-9c8c-ce8d07385998",
+          "assertionType" : "EQUAL",
+          "key" : "/47"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "48",
+          "id" : "08331ee7-1f01-4f69-9973-a9a07b443f54",
+          "assertionType" : "EQUAL",
+          "key" : "/48"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "49",
+          "id" : "5e104c7e-b225-4f78-b5dd-5c4a2046799d",
+          "assertionType" : "EQUAL",
+          "key" : "/49"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "50",
+          "id" : "2286119f-600c-48a8-bc3d-2deb50cb5f3a",
+          "assertionType" : "EQUAL",
+          "key" : "/50"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "51",
+          "id" : "0f1b9fdf-7e98-4f03-b919-a1d407171773",
+          "assertionType" : "EQUAL",
+          "key" : "/51"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "52",
+          "id" : "8c5c82c7-edb1-43fe-b1d4-f41207ab9ca5",
+          "assertionType" : "EQUAL",
+          "key" : "/52"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "53",
+          "id" : "74d7c803-f851-430f-aa17-e94e60ddaad5",
+          "assertionType" : "EQUAL",
+          "key" : "/53"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "54",
+          "id" : "b2e2ddf1-cbd9-4df8-99a1-58ae9c828be6",
+          "assertionType" : "EQUAL",
+          "key" : "/54"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "55",
+          "id" : "0566d43e-16b6-4a38-bbed-081289ef0ed3",
+          "assertionType" : "EQUAL",
+          "key" : "/55"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "56",
+          "id" : "20e7c4fc-bde2-4c94-9123-512849fb0dc4",
+          "assertionType" : "EQUAL",
+          "key" : "/56"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "57",
+          "id" : "39194152-58c5-485c-917d-2200a5cdfed3",
+          "assertionType" : "EQUAL",
+          "key" : "/57"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "58",
+          "id" : "b7d3dd42-99ab-44e9-ada2-09ba46bfeeae",
+          "assertionType" : "EQUAL",
+          "key" : "/58"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "59",
+          "id" : "af0ab933-fef4-4a64-9b19-1833ee46d7b8",
+          "assertionType" : "EQUAL",
+          "key" : "/59"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "60",
+          "id" : "79bd070d-2d25-4ad1-bd7f-799fa225380d",
+          "assertionType" : "EQUAL",
+          "key" : "/60"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "61",
+          "id" : "5966f6c5-2b13-4d15-b51a-7d3c3cea4259",
+          "assertionType" : "EQUAL",
+          "key" : "/61"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "62",
+          "id" : "490ae726-1733-4210-90cd-3c6645631a7c",
+          "assertionType" : "EQUAL",
+          "key" : "/62"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "63",
+          "id" : "ef42033d-c955-48d3-909f-3f09671dbefc",
+          "assertionType" : "EQUAL",
+          "key" : "/63"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "64",
+          "id" : "6a0785f8-36c4-4400-8cca-571c6fff4774",
+          "assertionType" : "EQUAL",
+          "key" : "/64"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "65",
+          "id" : "c44481c1-3ef0-4c7a-b365-890cae7a2609",
+          "assertionType" : "EQUAL",
+          "key" : "/65"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "66",
+          "id" : "03f55513-23ff-4e8f-adbf-437bd1ccf779",
+          "assertionType" : "EQUAL",
+          "key" : "/66"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "67",
+          "id" : "628b2731-0323-40e6-a478-246a30256963",
+          "assertionType" : "EQUAL",
+          "key" : "/67"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "68",
+          "id" : "179d9c83-a188-4b6f-81b7-6db50f837374",
+          "assertionType" : "EQUAL",
+          "key" : "/68"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "69",
+          "id" : "cb523728-cb1a-4ef5-ad35-2ef97178dd30",
+          "assertionType" : "EQUAL",
+          "key" : "/69"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "70",
+          "id" : "3ae4871a-4077-49fc-af53-7e07ffa19795",
+          "assertionType" : "EQUAL",
+          "key" : "/70"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "71",
+          "id" : "36117d22-028a-415c-bfba-eedb41e50375",
+          "assertionType" : "EQUAL",
+          "key" : "/71"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "72",
+          "id" : "e9ddcd4b-2dfb-48d7-8cd4-24d31fb3d3ac",
+          "assertionType" : "EQUAL",
+          "key" : "/72"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "73",
+          "id" : "a18e10d7-37e1-4d24-a7a2-6ae70e1e0425",
+          "assertionType" : "EQUAL",
+          "key" : "/73"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "74",
+          "id" : "68ee0f94-f882-427c-9c2a-74472a6cdda9",
+          "assertionType" : "EQUAL",
+          "key" : "/74"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "75",
+          "id" : "ee2c3ebf-65e4-4c64-8949-7e0484fa81e6",
+          "assertionType" : "EQUAL",
+          "key" : "/75"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "76",
+          "id" : "7713dfbe-a3ab-4141-a857-7789eeabb02d",
+          "assertionType" : "EQUAL",
+          "key" : "/76"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "77",
+          "id" : "1d0620bd-3792-4708-9ea9-4f275b335caf",
+          "assertionType" : "EQUAL",
+          "key" : "/77"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "78",
+          "id" : "160f58d6-eac2-441b-90b0-7e198be16900",
+          "assertionType" : "EQUAL",
+          "key" : "/78"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "79",
+          "id" : "b65bf2dd-43bc-4575-abc2-d4d7c9a0e0ce",
+          "assertionType" : "EQUAL",
+          "key" : "/79"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "80",
+          "id" : "719bfd6b-dbd4-45b0-bace-273d1b3bb164",
+          "assertionType" : "EQUAL",
+          "key" : "/80"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "81",
+          "id" : "7be523bd-e2b6-44e4-857f-14f4fdd1be03",
+          "assertionType" : "EQUAL",
+          "key" : "/81"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "82",
+          "id" : "012f50be-d3f2-4e88-b724-b90ae767378f",
+          "assertionType" : "EQUAL",
+          "key" : "/82"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "83",
+          "id" : "8c7ee97d-c582-47c1-a76e-7f3aabdb82d4",
+          "assertionType" : "EQUAL",
+          "key" : "/83"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "84",
+          "id" : "21fd5894-1321-4c58-a1a4-3642935fdc4f",
+          "assertionType" : "EQUAL",
+          "key" : "/84"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "85",
+          "id" : "e488a2b1-92e1-4930-91bd-e426ccf2911d",
+          "assertionType" : "EQUAL",
+          "key" : "/85"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "86",
+          "id" : "b1ac26f7-c5cd-4dae-8995-02d99984468a",
+          "assertionType" : "EQUAL",
+          "key" : "/86"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "87",
+          "id" : "8479b662-4419-45d6-bd67-f11bdd6e9284",
+          "assertionType" : "EQUAL",
+          "key" : "/87"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "88",
+          "id" : "f4400ec3-d3e5-4bfc-9a2a-d820f8072c4f",
+          "assertionType" : "EQUAL",
+          "key" : "/88"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "89",
+          "id" : "e99d2244-c566-4c6e-a06d-1041a908277a",
+          "assertionType" : "EQUAL",
+          "key" : "/89"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "90",
+          "id" : "40ddf137-70d4-4158-9d97-715aa26a7f37",
+          "assertionType" : "EQUAL",
+          "key" : "/90"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "91",
+          "id" : "dd1f5b90-e114-4949-a7bf-a668750ac8b0",
+          "assertionType" : "EQUAL",
+          "key" : "/91"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "92",
+          "id" : "96dba968-567c-4b39-ac25-fde73f0ee2ba",
+          "assertionType" : "EQUAL",
+          "key" : "/92"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "93",
+          "id" : "bbdb216a-31a8-4695-96aa-ae1546c13f46",
+          "assertionType" : "EQUAL",
+          "key" : "/93"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "94",
+          "id" : "d476d49d-389d-4948-b572-c5e2dd752bc9",
+          "assertionType" : "EQUAL",
+          "key" : "/94"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "95",
+          "id" : "598d9745-9ab1-47c4-a9f3-7ffa6b98a250",
+          "assertionType" : "EQUAL",
+          "key" : "/95"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "96",
+          "id" : "7d2b830e-15e4-41b1-8722-36750678ccb6",
+          "assertionType" : "EQUAL",
+          "key" : "/96"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "97",
+          "id" : "399ccd97-a516-4235-8816-fe1703727a6b",
+          "assertionType" : "EQUAL",
+          "key" : "/97"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "98",
+          "id" : "0975574e-e7f1-4d22-bfa5-d7cdadfa4f79",
+          "assertionType" : "EQUAL",
+          "key" : "/98"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "99",
+          "id" : "6e75501b-690b-4c67-9e37-f39e6d4d40e6",
+          "assertionType" : "EQUAL",
+          "key" : "/99"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "1c20897d-6070-404b-985f-792d1fa09044",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "111c53d4-a1f1-4906-b3ca-b9fbb23698dc",
+      "name" : "backPressureBufferedStrat saved on 2024-03-28 12:58",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99]",
+      "returnValueClassname" : "java.util.List",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 45010177336911,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -234935466,
+      "probSerializedValue" : "WzAsMSwyLDMsNCw1LDYsNyw4LDksMTAsMTEsMTIsMTMsMTQsMTUsMTYsMTcsMTgsMTksMjAsMjEsMjIsMjMsMjQsMjUsMjYsMjcsMjgsMjksMzAsMzEsMzIsMzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsNDIsNDMsNDQsNDUsNDYsNDcsNDgsNDksNTAsNTEsNTIsNTMsNTQsNTUsNTYsNTcsNTgsNTksNjAsNjEsNjIsNjMsNjQsNjUsNjYsNjcsNjgsNjksNzAsNzEsNzIsNzMsNzQsNzUsNzYsNzcsNzgsNzksODAsODEsODIsODMsODQsODUsODYsODcsODgsODksOTAsOTEsOTIsOTMsOTQsOTUsOTYsOTcsOTgsOTld",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "backPressureBufferedStrat",
+        "signature" : "()Ljava/util/List<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#maybe2#()Ljava/util/List<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 378, 379, 380, 388 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "d7dcec9a-597a-4550-bfe5-82cafd22d1ea",
+          "assertionType" : "EQUAL",
+          "key" : "/0"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "bd22a200-62eb-432b-9340-fa942e0390ea",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "0040ff2c-3b48-4084-8ade-4d7716586844",
+      "name" : "maybe2 saved on 2024-03-28 13:55",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[1]",
+      "returnValueClassname" : "java.util.ArrayList",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 508686742461,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1559498614,
+      "probSerializedValue" : "WzFd",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "maybe2",
+        "signature" : "()Ljava/util/List<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#maybe3#()Ljava/util/List<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 393, 394, 395, 396, 397, 398, 405, 406 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"a2\"",
+          "id" : "3d455d00-1357-494d-9df5-f0c6e88519c7",
+          "assertionType" : "EQUAL",
+          "key" : "/0"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "01cea656-2f39-46c8-8868-8f17279e4011",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "d464a59a-2081-4877-94fc-55301189519e",
+      "name" : "maybe3 saved on 2024-03-28 13:56",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[\"a2\"]",
+      "returnValueClassname" : "java.util.ArrayList",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 523612235976,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 106036287,
+      "probSerializedValue" : "WyJhMiJd",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "maybe3",
+        "signature" : "()Ljava/util/List<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#getCompletable#()Ljava/lang/Boolean;" : [ {
+      "lineNumbers" : [ 411, 413, 414, 427 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "85d8c062-b360-4d98-b3c5-b564d633bd62",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "8380d8ec-02c0-4aa4-ab92-b7cd77a581bf",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "7522c0df-8096-4f53-b86d-c817a0e68c2b",
+      "name" : "getCompletable saved on 2024-03-28 13:56",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "1",
+      "returnValueClassname" : "java.lang.Boolean",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 539023841139,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1316896580,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "getCompletable",
+        "signature" : "()Ljava/lang/Boolean;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#fromFlowable#()Lio/reactivex/rxjava3/core/Completable;" : [ {
+      "lineNumbers" : [ 433, 434, 435, 436, 437, 438 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "f41b29a7-1cc2-4dec-9cbf-01260635f1a0",
+            "assertionType" : "EQUAL",
+            "key" : "/single/value"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "94f2cf43-625a-42c3-b86c-adc6868d3bad",
+          "assertionType" : "ALLOF",
+          "key" : "/single"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "ce3f74e6-1481-4cd6-8ffc-3dbd8464c971",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "afe8d45b-b99a-4bdf-95ea-25a8d3235ae0",
+      "name" : "fromFlowable saved on 2024-03-28 13:56",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"single\":{\"value\":1}}",
+      "returnValueClassname" : "io.reactivex.rxjava3.core.Completable",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 553987625563,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1697226457,
+      "probSerializedValue" : "eyJzaW5nbGUiOnsidmFsdWUiOjF9fQ==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "fromFlowable",
+        "signature" : "()Lio/reactivex/rxjava3/core/Completable;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#comp1#()V" : [ {
+      "lineNumbers" : [ 444, 445, 446, 449, 450, 451, 452 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "ffa2cf69-b081-441e-9647-79ce5b55f4d9",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "5640e008-059a-4eb8-9b60-80f6ded423f9",
+      "name" : "comp1 saved on 2024-03-28 13:56",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "0",
+      "returnValueClassname" : null,
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 567546374393,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 347048889,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "comp1",
+        "signature" : "()V",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#mergeComp1#()V" : [ {
+      "lineNumbers" : [ 457, 458, 459, 462, 463, 464, 466, 467, 468, 470, 471, 472, 473 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "4e2bf7b0-c980-4b21-b9db-11962bb4b238",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "6095958d-c830-4432-a714-f724fbe29357",
+      "name" : "mergeComp1 saved on 2024-03-28 13:57",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "0",
+      "returnValueClassname" : null,
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 580356228787,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1577255431,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "mergeComp1",
+        "signature" : "()V",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#getObservablePostSubscribe#()Lio/reactivex/rxjava3/core/Observable<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 60, 61, 62, 63, 64, 65, 66, 71 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"{\\\"error\\\": \\\"failed to serialize object\\\", \\\"message\\\":\\\"Cannot invoke \\\"String.contains(java.lang.CharSequence)\\\" because the return value of \\\"java.lang.Class.getCanonicalName()\\\" is null (through reference chain: io.reactivex.rxjava3.internal.operators.observable.ObservableFilter[\\\"source\\\"]->io.reactivex.rxjava3.internal.operators.observable.ObservableMap[\\\"function\\\"])\\\"}\"",
+          "id" : "2ef61e2e-1c6d-4b86-b7f1-cb73aa6f9b11",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "8de93a4d-fe80-4dce-8ad0-0fa91a520b1e",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "da203af0-cb60-49f7-915f-80bef391774c",
+      "name" : "getObservablePostSubscribe_returnsObservableFilter",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"error\": \"failed to serialize object\", \"message\":\"Cannot invoke \"String.contains(java.lang.CharSequence)\" because the return value of \"java.lang.Class.getCanonicalName()\" is null (through reference chain: io.reactivex.rxjava3.internal.operators.observable.ObservableFilter[\"source\"]->io.reactivex.rxjava3.internal.operators.observable.ObservableMap[\"function\"])\"}",
+      "returnValueClassname" : "io.reactivex.rxjava3.core.Observable",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 52230926338875,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1492790286,
+      "probSerializedValue" : "eyJlcnJvciI6ICJmYWlsZWQgdG8gc2VyaWFsaXplIG9iamVjdCIsICJtZXNzYWdlIjoiQ2Fubm90IGludm9rZSAiU3RyaW5nLmNvbnRhaW5zKGphdmEubGFuZy5DaGFyU2VxdWVuY2UpIiBiZWNhdXNlIHRoZSByZXR1cm4gdmFsdWUgb2YgImphdmEubGFuZy5DbGFzcy5nZXRDYW5vbmljYWxOYW1lKCkiIGlzIG51bGwgKHRocm91Z2ggcmVmZXJlbmNlIGNoYWluOiBpby5yZWFjdGl2ZXgucnhqYXZhMy5pbnRlcm5hbC5vcGVyYXRvcnMub2JzZXJ2YWJsZS5PYnNlcnZhYmxlRmlsdGVyWyJzb3VyY2UiXS0+aW8ucmVhY3RpdmV4LnJ4amF2YTMuaW50ZXJuYWwub3BlcmF0b3JzLm9ic2VydmFibGUuT2JzZXJ2YWJsZU1hcFsiZnVuY3Rpb24iXSkifQ==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "getObservablePostSubscribe",
+        "signature" : "()Lio/reactivex/rxjava3/core/Observable<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#backPressureErrorStart#()V" : [ {
+      "lineNumbers" : [ 344, 345, 346, 347, 348, 350, 351, 353 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "d1a5b896-1c82-4f43-b98e-393569cc70bf",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "2ae5f143-94ec-4f5b-8b97-22a07cecfe8c",
+      "name" : "backPressureErrorStart_returnsNull_noErrorThrown",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "0",
+      "returnValueClassname" : "V",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 52287740243166,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1124374749,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "backPressureErrorStart",
+        "signature" : "()V",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#backPressureMissingStrat#()V" : [ {
+      "lineNumbers" : [ 358, 359, 360, 361, 362, 363, 364, 365 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : "",
+        "id" : "be6f2220-7914-45f5-8396-53ee62b83fc4",
+        "assertionType" : "EQUAL",
+        "key" : "/message"
+      },
+      "candidateId" : "b066d96d-4029-41fa-80b9-62393e60bc13",
+      "name" : "backPressureMissingStrat_exception_errorNotPresent",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"error\": \"failed to serialize object\", \"message\":\"Invalid type definition for type `io.reactivex.rxjava3.exceptions.QueueOverflowException`: Failed to construct BeanSerializer for [simple type, class io.reactivex.rxjava3.exceptions.QueueOverflowException]: (java.lang.IllegalArgumentException) Failed to call `setAccess()` on Field 'detailMessage' (of class `java.lang.Throwable`) due to `java.lang.reflect.InaccessibleObjectException`, problem: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not \"opens java.lang\" to unnamed module @18df8434 (through reference chain: java.lang.AssertionError[\"cause\"])\"}",
+      "returnValueClassname" : "V",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 52352956522125,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 2029275716,
+      "probSerializedValue" : "eyJlcnJvciI6ICJmYWlsZWQgdG8gc2VyaWFsaXplIG9iamVjdCIsICJtZXNzYWdlIjoiSW52YWxpZCB0eXBlIGRlZmluaXRpb24gZm9yIHR5cGUgYGlvLnJlYWN0aXZleC5yeGphdmEzLmV4Y2VwdGlvbnMuUXVldWVPdmVyZmxvd0V4Y2VwdGlvbmA6IEZhaWxlZCB0byBjb25zdHJ1Y3QgQmVhblNlcmlhbGl6ZXIgZm9yIFtzaW1wbGUgdHlwZSwgY2xhc3MgaW8ucmVhY3RpdmV4LnJ4amF2YTMuZXhjZXB0aW9ucy5RdWV1ZU92ZXJmbG93RXhjZXB0aW9uXTogKGphdmEubGFuZy5JbGxlZ2FsQXJndW1lbnRFeGNlcHRpb24pIEZhaWxlZCB0byBjYWxsIGBzZXRBY2Nlc3MoKWAgb24gRmllbGQgJ2RldGFpbE1lc3NhZ2UnIChvZiBjbGFzcyBgamF2YS5sYW5nLlRocm93YWJsZWApIGR1ZSB0byBgamF2YS5sYW5nLnJlZmxlY3QuSW5hY2Nlc3NpYmxlT2JqZWN0RXhjZXB0aW9uYCwgcHJvYmxlbTogVW5hYmxlIHRvIG1ha2UgZmllbGQgcHJpdmF0ZSBqYXZhLmxhbmcuU3RyaW5nIGphdmEubGFuZy5UaHJvd2FibGUuZGV0YWlsTWVzc2FnZSBhY2Nlc3NpYmxlOiBtb2R1bGUgamF2YS5iYXNlIGRvZXMgbm90ICJvcGVucyBqYXZhLmxhbmciIHRvIHVubmFtZWQgbW9kdWxlIEAxOGRmODQzNCAodGhyb3VnaCByZWZlcmVuY2UgY2hhaW46IGphdmEubGFuZy5Bc3NlcnRpb25FcnJvclsiY2F1c2UiXSkifQ==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "backPressureMissingStrat",
+        "signature" : "()V",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : true
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#maybe1#()Lio/reactivex/rxjava3/observers/TestObserver<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 369, 370, 371, 372, 373 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "e1d4f598-3803-4abb-95e9-50db14a4940c",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "0c97940c-3d9b-46b3-aecc-c358882dbfb1",
+      "name" : "maybe1_happyPath",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "73915374",
+      "returnValueClassname" : "io.reactivex.rxjava3.observers.TestObserver",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 52557937825000,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 472132864,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "maybe1",
+        "signature" : "()Lio/reactivex/rxjava3/observers/TestObserver<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 2043169390
+      },
+      "exception" : false
+    } ]
+  },
+  "declaredMockMap" : { }
+}
