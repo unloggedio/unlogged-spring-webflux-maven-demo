@@ -1,0 +1,56 @@
+{
+  "classname" : "org.springframework.data.redis.core.ReactiveValueOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.EmployeeV1>",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.springframework.data.redis.core.ReactiveValueOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.EmployeeV1>#get#(Ljava/lang/Object;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;>;" : [ {
+      "id" : "0e583cde-79c7-47cc-9d0e-a1ca6bf35fac",
+      "name" : "mock response for call to reactiveValueOps.get(\"123\")",
+      "fieldTypeName" : "org.springframework.data.redis.core.ReactiveValueOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.EmployeeV1>",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.RedisOpsController",
+      "fieldName" : "reactiveValueOps",
+      "methodName" : "get",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"123\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u00001Wo��H\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.EmployeeV1>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.redis.core.ReactiveValueOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.EmployeeV1>#get#(Ljava/lang/Object;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;>;"
+    } ],
+    "org.springframework.data.redis.core.ReactiveValueOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.EmployeeV1>#set#(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;" : [ {
+      "id" : "52e20172-e7d8-4cf5-b23c-e9407cdac64f",
+      "name" : "mock response for call to reactiveValueOps.set(\"123\",\n                new EmployeeV1(\"123\", \"Bill\", \"Accounts\"))",
+      "fieldTypeName" : "org.springframework.data.redis.core.ReactiveValueOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.EmployeeV1>",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.RedisOpsController",
+      "fieldName" : "reactiveValueOps",
+      "methodName" : "set",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"123\""
+      }, {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":\"123\",\"name\":\"Bill\",\"department\":\"Accounts\"}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u00001Wo�5M\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.lang.Boolean>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.redis.core.ReactiveValueOperations<java.lang.String,org.unlogged.springwebfluxdemo.model.EmployeeV1>#set#(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;"
+    } ]
+  }
+}

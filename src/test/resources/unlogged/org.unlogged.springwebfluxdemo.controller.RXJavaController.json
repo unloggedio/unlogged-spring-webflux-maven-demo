@@ -33,13 +33,13 @@
       "sessionIdentifier" : -1439053170,
       "probSerializedValue" : "IkRvIHlvdSBrbm93IGRhIHdheSI=",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "getStringFromObservable",
         "signature" : "()Ljava/lang/String;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#getObservableString#()Lio/reactivex/rxjava3/core/Observable<Ljava/lang/String;>;" : [ {
       "lineNumbers" : [ 37, 38 ],
@@ -73,13 +73,13 @@
       "sessionIdentifier" : -687071500,
       "probSerializedValue" : "eyJ2YWx1ZSI6IkRvIHlvdSBrbm93IGRhIHdheSJ9",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "getObservableString",
         "signature" : "()Lio/reactivex/rxjava3/core/Observable<Ljava/lang/String;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#mapAndFilter#()Ljava/lang/String;" : [ {
       "lineNumbers" : [ 43, 44, 45, 46, 47, 48, 49, 54 ],
@@ -113,13 +113,13 @@
       "sessionIdentifier" : -1829433680,
       "probSerializedValue" : "IkUsNjc4LDEwMTUsNzYwLDc0MCw0ODlfQ29tcGxldGVkIg==",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "mapAndFilter",
         "signature" : "()Ljava/lang/String;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#nestedObservables#()Ljava/lang/String;" : [ {
       "lineNumbers" : [ 76, 77, 78, 80, 81, 82, 83, 85, 86, 91 ],
@@ -153,13 +153,13 @@
       "sessionIdentifier" : 114605243,
       "probSerializedValue" : "IixSMSxSU1Y0LFpYLTEwUixSMSxSU1Y0LFpYLTEwUl9Db21wbGV0ZWQi",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "nestedObservables",
         "signature" : "()Ljava/lang/String;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#scanObs#()Ljava/lang/String;" : [ {
       "lineNumbers" : [ 96, 97, 98, 99, 100, 101, 102 ],
@@ -193,13 +193,13 @@
       "sessionIdentifier" : 370016559,
       "probSerializedValue" : "ImFhYmFiYyI=",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "scanObs",
         "signature" : "()Ljava/lang/String;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#groupByObs#()Ljava/lang/String;" : [ {
       "lineNumbers" : [ 107, 108, 109, 110, 111, 112, 113, 122 ],
@@ -233,13 +233,13 @@
       "sessionIdentifier" : 110387064,
       "probSerializedValue" : "Ik9TIDogOSAtIEVTIDogNiI=",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "groupByObs",
         "signature" : "()Ljava/lang/String;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#single#()Ljava/lang/String;" : [ {
       "lineNumbers" : [ 127, 128, 129, 130, 133, 134 ],
@@ -273,13 +273,13 @@
       "sessionIdentifier" : 1147571377,
       "probSerializedValue" : "IkhlbGxvIg==",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "single",
         "signature" : "()Ljava/lang/String;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#conditionals#()[Ljava/lang/String;" : [ {
       "lineNumbers" : [ 139, 140, 141, 142, 144, 145, 146, 147, 149, 150, 151, 152, 153, 154 ],
@@ -327,13 +327,13 @@
       "sessionIdentifier" : -1275845284,
       "probSerializedValue" : "WyJudWxsT2JzZXJ2YWJsZSBpcyBlbXB0eSIsIm51bGxhIiwiMTAiXQ==",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "conditionals",
         "signature" : "()[Ljava/lang/String;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#connectableObs#()Ljava/lang/String;" : [ {
       "lineNumbers" : [ 159, 160, 161, 162, 164, 165, 166 ],
@@ -367,13 +367,13 @@
       "sessionIdentifier" : 1973293505,
       "probSerializedValue" : "IjAxIg==",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "connectableObs",
         "signature" : "()Ljava/lang/String;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#subjectObs#()I" : [ {
       "lineNumbers" : [ 171, 172, 173, 195, 217, 218, 219, 220, 221, 222, 223, 224, 225 ],
@@ -407,13 +407,13 @@
       "sessionIdentifier" : -996166394,
       "probSerializedValue" : "",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "subjectObs",
         "signature" : "()I",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#resourceManagementExample#()Ljava/lang/String;" : [ {
       "lineNumbers" : [ 230, 231, 243, 247 ],
@@ -447,13 +447,13 @@
       "sessionIdentifier" : -1677766236,
       "probSerializedValue" : "IlJlc291cmNlIFN0cmluZyI=",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "resourceManagementExample",
         "signature" : "()Ljava/lang/String;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#flowable1#()Lio/reactivex/rxjava3/core/Flowable<Ljava/lang/Integer;>;" : [ {
       "lineNumbers" : [ 251, 252 ],
@@ -515,13 +515,13 @@
       "sessionIdentifier" : 460457780,
       "probSerializedValue" : "eyJhcnJheSI6WzEsMiwzLDRdfQ==",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "flowable1",
         "signature" : "()Lio/reactivex/rxjava3/core/Flowable<Ljava/lang/Integer;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#fromObs#()Lio/reactivex/rxjava3/core/Flowable<Ljava/lang/Integer;>;" : [ {
       "lineNumbers" : [ 256, 257, 258, 259 ],
@@ -625,13 +625,13 @@
       "sessionIdentifier" : -1204817410,
       "probSerializedValue" : "eyJzb3VyY2UiOnsidXBzdHJlYW0iOnsiYXJyYXkiOlsxLDIsM119fSwiYnVmZmVyU2l6ZSI6MTI4LCJ1bmJvdW5kZWQiOnRydWUsImRlbGF5RXJyb3IiOmZhbHNlLCJvbk92ZXJmbG93Ijp7fSwib25Ecm9wcGVkIjp7fX0=",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "fromObs",
         "signature" : "()Lio/reactivex/rxjava3/core/Flowable<Ljava/lang/Integer;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#backPressureBufferedStrat#()Ljava/util/List<Ljava/lang/Integer;>;" : [ {
       "lineNumbers" : [ 278, 279, 280, 282, 283, 284, 285, 287, 289, 290, 291, 292, 293, 294 ],
@@ -1358,13 +1358,13 @@
       "sessionIdentifier" : -234935466,
       "probSerializedValue" : "WzAsMSwyLDMsNCw1LDYsNyw4LDksMTAsMTEsMTIsMTMsMTQsMTUsMTYsMTcsMTgsMTksMjAsMjEsMjIsMjMsMjQsMjUsMjYsMjcsMjgsMjksMzAsMzEsMzIsMzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsNDIsNDMsNDQsNDUsNDYsNDcsNDgsNDksNTAsNTEsNTIsNTMsNTQsNTUsNTYsNTcsNTgsNTksNjAsNjEsNjIsNjMsNjQsNjUsNjYsNjcsNjgsNjksNzAsNzEsNzIsNzMsNzQsNzUsNzYsNzcsNzgsNzksODAsODEsODIsODMsODQsODUsODYsODcsODgsODksOTAsOTEsOTIsOTMsOTQsOTUsOTYsOTcsOTgsOTld",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "backPressureBufferedStrat",
         "signature" : "()Ljava/util/List<Ljava/lang/Integer;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#maybe2#()Ljava/util/List<Ljava/lang/Integer;>;" : [ {
       "lineNumbers" : [ 378, 379, 380, 388 ],
@@ -1398,13 +1398,13 @@
       "sessionIdentifier" : 1559498614,
       "probSerializedValue" : "WzFd",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "maybe2",
         "signature" : "()Ljava/util/List<Ljava/lang/Integer;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#maybe3#()Ljava/util/List<Ljava/lang/String;>;" : [ {
       "lineNumbers" : [ 393, 394, 395, 396, 397, 398, 405, 406 ],
@@ -1438,13 +1438,13 @@
       "sessionIdentifier" : 106036287,
       "probSerializedValue" : "WyJhMiJd",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "maybe3",
         "signature" : "()Ljava/util/List<Ljava/lang/String;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#getCompletable#()Ljava/lang/Boolean;" : [ {
       "lineNumbers" : [ 411, 413, 414, 427 ],
@@ -1478,13 +1478,13 @@
       "sessionIdentifier" : -1316896580,
       "probSerializedValue" : "",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "getCompletable",
         "signature" : "()Ljava/lang/Boolean;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#fromFlowable#()Lio/reactivex/rxjava3/core/Completable;" : [ {
       "lineNumbers" : [ 433, 434, 435, 436, 437, 438 ],
@@ -1525,13 +1525,13 @@
       "sessionIdentifier" : 1697226457,
       "probSerializedValue" : "eyJzaW5nbGUiOnsidmFsdWUiOjF9fQ==",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "fromFlowable",
         "signature" : "()Lio/reactivex/rxjava3/core/Completable;",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#comp1#()V" : [ {
       "lineNumbers" : [ 444, 445, 446, 449, 450, 451, 452 ],
@@ -1558,13 +1558,13 @@
       "sessionIdentifier" : 347048889,
       "probSerializedValue" : "",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "comp1",
         "signature" : "()V",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
         "methodHash" : 0
-      }
+      },
+      "exception" : false
     } ],
     "org.unlogged.springwebfluxdemo.controller.RXJavaController#mergeComp1#()V" : [ {
       "lineNumbers" : [ 457, 458, 459, 462, 463, 464, 466, 467, 468, 470, 471, 472, 473 ],
@@ -1591,13 +1591,152 @@
       "sessionIdentifier" : 1577255431,
       "probSerializedValue" : "",
       "mockIds" : [ ],
-      "exception" : false,
       "method" : {
         "name" : "mergeComp1",
         "signature" : "()V",
         "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
-        "methodHash" : -1877893572
-      }
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#getObservablePostSubscribe#()Lio/reactivex/rxjava3/core/Observable<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 60, 61, 62, 63, 64, 65, 66, 71 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"{\\\"error\\\": \\\"failed to serialize object\\\", \\\"message\\\":\\\"Cannot invoke \\\"String.contains(java.lang.CharSequence)\\\" because the return value of \\\"java.lang.Class.getCanonicalName()\\\" is null (through reference chain: io.reactivex.rxjava3.internal.operators.observable.ObservableFilter[\\\"source\\\"]->io.reactivex.rxjava3.internal.operators.observable.ObservableMap[\\\"function\\\"])\\\"}\"",
+          "id" : "2ef61e2e-1c6d-4b86-b7f1-cb73aa6f9b11",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "8de93a4d-fe80-4dce-8ad0-0fa91a520b1e",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "da203af0-cb60-49f7-915f-80bef391774c",
+      "name" : "getObservablePostSubscribe_returnsObservableFilter",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"error\": \"failed to serialize object\", \"message\":\"Cannot invoke \"String.contains(java.lang.CharSequence)\" because the return value of \"java.lang.Class.getCanonicalName()\" is null (through reference chain: io.reactivex.rxjava3.internal.operators.observable.ObservableFilter[\"source\"]->io.reactivex.rxjava3.internal.operators.observable.ObservableMap[\"function\"])\"}",
+      "returnValueClassname" : "io.reactivex.rxjava3.core.Observable",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 52230926338875,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1492790286,
+      "probSerializedValue" : "eyJlcnJvciI6ICJmYWlsZWQgdG8gc2VyaWFsaXplIG9iamVjdCIsICJtZXNzYWdlIjoiQ2Fubm90IGludm9rZSAiU3RyaW5nLmNvbnRhaW5zKGphdmEubGFuZy5DaGFyU2VxdWVuY2UpIiBiZWNhdXNlIHRoZSByZXR1cm4gdmFsdWUgb2YgImphdmEubGFuZy5DbGFzcy5nZXRDYW5vbmljYWxOYW1lKCkiIGlzIG51bGwgKHRocm91Z2ggcmVmZXJlbmNlIGNoYWluOiBpby5yZWFjdGl2ZXgucnhqYXZhMy5pbnRlcm5hbC5vcGVyYXRvcnMub2JzZXJ2YWJsZS5PYnNlcnZhYmxlRmlsdGVyWyJzb3VyY2UiXS0+aW8ucmVhY3RpdmV4LnJ4amF2YTMuaW50ZXJuYWwub3BlcmF0b3JzLm9ic2VydmFibGUuT2JzZXJ2YWJsZU1hcFsiZnVuY3Rpb24iXSkifQ==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "getObservablePostSubscribe",
+        "signature" : "()Lio/reactivex/rxjava3/core/Observable<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#backPressureErrorStart#()V" : [ {
+      "lineNumbers" : [ 344, 345, 346, 347, 348, 350, 351, 353 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "d1a5b896-1c82-4f43-b98e-393569cc70bf",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "2ae5f143-94ec-4f5b-8b97-22a07cecfe8c",
+      "name" : "backPressureErrorStart_returnsNull_noErrorThrown",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "0",
+      "returnValueClassname" : "V",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 52287740243166,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1124374749,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "backPressureErrorStart",
+        "signature" : "()V",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#backPressureMissingStrat#()V" : [ {
+      "lineNumbers" : [ 358, 359, 360, 361, 362, 363, 364, 365 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : "",
+        "id" : "be6f2220-7914-45f5-8396-53ee62b83fc4",
+        "assertionType" : "EQUAL",
+        "key" : "/message"
+      },
+      "candidateId" : "b066d96d-4029-41fa-80b9-62393e60bc13",
+      "name" : "backPressureMissingStrat_exception_errorNotPresent",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"error\": \"failed to serialize object\", \"message\":\"Invalid type definition for type `io.reactivex.rxjava3.exceptions.QueueOverflowException`: Failed to construct BeanSerializer for [simple type, class io.reactivex.rxjava3.exceptions.QueueOverflowException]: (java.lang.IllegalArgumentException) Failed to call `setAccess()` on Field 'detailMessage' (of class `java.lang.Throwable`) due to `java.lang.reflect.InaccessibleObjectException`, problem: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not \"opens java.lang\" to unnamed module @18df8434 (through reference chain: java.lang.AssertionError[\"cause\"])\"}",
+      "returnValueClassname" : "V",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 52352956522125,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 2029275716,
+      "probSerializedValue" : "eyJlcnJvciI6ICJmYWlsZWQgdG8gc2VyaWFsaXplIG9iamVjdCIsICJtZXNzYWdlIjoiSW52YWxpZCB0eXBlIGRlZmluaXRpb24gZm9yIHR5cGUgYGlvLnJlYWN0aXZleC5yeGphdmEzLmV4Y2VwdGlvbnMuUXVldWVPdmVyZmxvd0V4Y2VwdGlvbmA6IEZhaWxlZCB0byBjb25zdHJ1Y3QgQmVhblNlcmlhbGl6ZXIgZm9yIFtzaW1wbGUgdHlwZSwgY2xhc3MgaW8ucmVhY3RpdmV4LnJ4amF2YTMuZXhjZXB0aW9ucy5RdWV1ZU92ZXJmbG93RXhjZXB0aW9uXTogKGphdmEubGFuZy5JbGxlZ2FsQXJndW1lbnRFeGNlcHRpb24pIEZhaWxlZCB0byBjYWxsIGBzZXRBY2Nlc3MoKWAgb24gRmllbGQgJ2RldGFpbE1lc3NhZ2UnIChvZiBjbGFzcyBgamF2YS5sYW5nLlRocm93YWJsZWApIGR1ZSB0byBgamF2YS5sYW5nLnJlZmxlY3QuSW5hY2Nlc3NpYmxlT2JqZWN0RXhjZXB0aW9uYCwgcHJvYmxlbTogVW5hYmxlIHRvIG1ha2UgZmllbGQgcHJpdmF0ZSBqYXZhLmxhbmcuU3RyaW5nIGphdmEubGFuZy5UaHJvd2FibGUuZGV0YWlsTWVzc2FnZSBhY2Nlc3NpYmxlOiBtb2R1bGUgamF2YS5iYXNlIGRvZXMgbm90ICJvcGVucyBqYXZhLmxhbmciIHRvIHVubmFtZWQgbW9kdWxlIEAxOGRmODQzNCAodGhyb3VnaCByZWZlcmVuY2UgY2hhaW46IGphdmEubGFuZy5Bc3NlcnRpb25FcnJvclsiY2F1c2UiXSkifQ==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "backPressureMissingStrat",
+        "signature" : "()V",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 0
+      },
+      "exception" : true
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RXJavaController#maybe1#()Lio/reactivex/rxjava3/observers/TestObserver<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 369, 370, 371, 372, 373 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "e1d4f598-3803-4abb-95e9-50db14a4940c",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "0c97940c-3d9b-46b3-aecc-c358882dbfb1",
+      "name" : "maybe1_happyPath",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "73915374",
+      "returnValueClassname" : "io.reactivex.rxjava3.observers.TestObserver",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 52557937825000,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 472132864,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "maybe1",
+        "signature" : "()Lio/reactivex/rxjava3/observers/TestObserver<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RXJavaController",
+        "methodHash" : 2043169390
+      },
+      "exception" : false
     } ]
   },
   "declaredMockMap" : { }
