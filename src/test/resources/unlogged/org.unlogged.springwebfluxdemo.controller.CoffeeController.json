@@ -1,0 +1,102 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.CoffeeController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.CoffeeController#all#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;" : [ {
+      "lineNumbers" : [ 19, 20 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"d009df99-3cb7-4979-8c8f-589f8d05355c\"",
+            "id" : "6a28b813-0c7b-4af3-abef-7a36bf218691",
+            "assertionType" : "EQUAL",
+            "key" : "/0/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Darth Redis\"",
+            "id" : "4605d664-6e01-443c-8df2-4393782c810b",
+            "assertionType" : "EQUAL",
+            "key" : "/0/name"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "cf3497cc-4c4c-4e33-bff9-7a8b5595ca0b",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"e5dcb7dc-2700-4996-85a1-a2436d19f957\"",
+            "id" : "91680e7e-f553-4f5f-9010-5909366413ca",
+            "assertionType" : "EQUAL",
+            "key" : "/1/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Jet Black Redis\"",
+            "id" : "57487e84-c3b4-4fd3-8565-ae5284704a39",
+            "assertionType" : "EQUAL",
+            "key" : "/1/name"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "c1d5e75b-2140-40bb-8918-aab38ca94551",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"e736c86f-e058-48e4-a5d0-fcb00fb07ea1\"",
+            "id" : "00c01ade-3d82-47b6-b649-2ac789e135cf",
+            "assertionType" : "EQUAL",
+            "key" : "/2/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Black Alert Redis\"",
+            "id" : "7eb2624e-47d8-4c65-8e31-f348797edb3e",
+            "assertionType" : "EQUAL",
+            "key" : "/2/name"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "156ba12b-e744-47b6-a30f-31b230d5c405",
+          "assertionType" : "ALLOF",
+          "key" : "/2"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "106408d5-e717-4dac-8f45-6ed087133606",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "d0dfa4cb-2589-44de-b11c-035060b5c614",
+      "name" : "all_failureDueToMocks",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[{\"id\":\"d009df99-3cb7-4979-8c8f-589f8d05355c\",\"name\":\"Darth Redis\"},{\"id\":\"e5dcb7dc-2700-4996-85a1-a2436d19f957\",\"name\":\"Jet Black Redis\"},{\"id\":\"e736c86f-e058-48e4-a5d0-fcb00fb07ea1\",\"name\":\"Black Alert Redis\"}]",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 48199025029291,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1243988359,
+      "probSerializedValue" : "W3siaWQiOiJkMDA5ZGY5OS0zY2I3LTQ5NzktOGM4Zi01ODlmOGQwNTM1NWMiLCJuYW1lIjoiRGFydGggUmVkaXMifSx7ImlkIjoiZTVkY2I3ZGMtMjcwMC00OTk2LTg1YTEtYTI0MzZkMTlmOTU3IiwibmFtZSI6IkpldCBCbGFjayBSZWRpcyJ9LHsiaWQiOiJlNzM2Yzg2Zi1lMDU4LTQ4ZTQtYTVkMC1mY2IwMGZiMDdlYTEiLCJuYW1lIjoiQmxhY2sgQWxlcnQgUmVkaXMifV0=",
+      "mockIds" : [ "127417f0-82b2-4b3b-a24e-c6fdb8bcb4b4", "d412fea3-1a4d-4869-99e5-6e28dead631d" ],
+      "method" : {
+        "name" : "all",
+        "signature" : "()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Coffee;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.CoffeeController",
+        "methodHash" : 1482747756
+      },
+      "exception" : false
+    } ]
+  },
+  "declaredMockMap" : { }
+}
