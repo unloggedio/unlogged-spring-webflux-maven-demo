@@ -63,7 +63,8 @@ public class MonoOpsController {
 
     @RequestMapping("/block/1")
     public String getBlockedString() {
-        Mono<String> monoString = Mono.just("MonoString");
+        var testString = "MonoString";
+        Mono<String> monoString = Mono.just(testString);
         return monoString.block();
     }
 
@@ -90,4 +91,34 @@ public class MonoOpsController {
         }
         return Mono.just("Exception");
     }
+
+    @RequestMapping("/multiline")
+    public Mono<String> getMultilineString() {
+        String multilineString = """
+                This is a multiline string.
+                It is being used to test jdk21
+                """;
+        return Mono.just(multilineString);
+    }
+
+    public Mono<Integer> calculate(String operation, int a, int b) {
+        Mono<Integer> answer = switch (operation) {
+            case "+" -> Mono.just(a + b);
+            case "-" -> Mono.just(a - b);
+            default -> Mono.just(a * b);
+        };
+        return answer;
+
+    }
+
+    public Mono<Integer> calculateYield(String operation, int a, int b) {
+        Mono<Integer> answer = switch (operation) {
+            case "+" : yield Mono.just(a + b);
+            case "-" : yield Mono.just(a - b);
+            default : yield Mono.just(a * b);
+        };
+        return answer;
+
+    }
+
 }
