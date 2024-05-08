@@ -107,6 +107,7 @@ public class MonoOpsController {
         Mono<Integer> answer = switch (operation) {
 //            case String s when s == "+" -> Mono.just(a + b);
             case "-" -> Mono.just(a - b);
+//            case null -> Mono.just(0);
             default -> Mono.just(a * b);
         };
         return answer;
@@ -117,6 +118,7 @@ public class MonoOpsController {
 //            case String s when s == "+" : yield Mono.just(a + b);
             case "-":
                 yield Mono.just(a - b);
+//            case null : yield Mono.just(0);
             default:
                 yield Mono.just(a * b);
         };
