@@ -4,6 +4,7 @@ import io.micrometer.observation.ObservationRegistry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.unlogged.springwebfluxdemo.client.GreetingClient;
 import org.unlogged.springwebfluxdemo.exception.WebFluxException;
@@ -101,21 +102,23 @@ public class MonoOpsController {
         return Mono.just(multilineString);
     }
 
-    public Mono<Integer> calculate(String operation, int a, int b) {
+    @RequestMapping("/enhanced/switch/1")
+    public Mono<Integer> calculate(@RequestParam String operation, @RequestParam int a, @RequestParam int b) {
         Mono<Integer> answer = switch (operation) {
 //            case String s when s == "+" -> Mono.just(a + b);
             case "-" -> Mono.just(a - b);
             default -> Mono.just(a * b);
         };
         return answer;
-
     }
 
     public Mono<Integer> calculateYield(String operation, int a, int b) {
         Mono<Integer> answer = switch (operation) {
 //            case String s when s == "+" : yield Mono.just(a + b);
-            case "-" : yield Mono.just(a - b);
-            default : yield Mono.just(a * b);
+            case "-":
+                yield Mono.just(a - b);
+            default:
+                yield Mono.just(a * b);
         };
         return answer;
 
