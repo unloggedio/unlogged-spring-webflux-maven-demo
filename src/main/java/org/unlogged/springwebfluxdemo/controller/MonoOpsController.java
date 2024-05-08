@@ -86,6 +86,15 @@ public class MonoOpsController {
                 """;
         return Mono.just(multilineString);
     }
+//
+//    It is a java preview feature
+//    @RequestMapping("/string-template")
+//    public Mono<String> getStringTemplate() {
+//        int a = 5;
+//        int b = 8;
+//        String result = "\{a} + \{b} = \{a+b}";
+//        return Mono.just(result);
+//    }
 
     @RequestMapping("/enhanced/switch/1")
     public Mono<Integer> calculate(@RequestParam String operation, @RequestParam int a, @RequestParam int b) {
@@ -97,6 +106,20 @@ public class MonoOpsController {
         };
         return answer;
     }
+
+//    Currently this will fail with Unlogged.
+
+//    public Mono<Integer> switchJDK21(Object operation, int a, int b) {
+//        Mono<Integer> answer = switch (operation) {
+//            case String s when s == "+" -> Mono.just(a + b);
+//            case String s when s == "-" -> Mono.just(a - b);
+//            case Integer i -> Mono.just(i + i);
+//            case null -> Mono.just(0);
+//            default -> Mono.just(a * b);
+//        };
+//        return answer;
+//
+//    }
 
     public Mono<Integer> calculateYield(String operation, int a, int b) {
         Mono<Integer> answer = switch (operation) {
