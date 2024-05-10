@@ -114,9 +114,9 @@ public class MonoOpsController {
     @RequestMapping("/enhanced/switch/1")
     public Mono<Integer> calculate(@RequestParam String operation, @RequestParam int a, @RequestParam int b) {
         Mono<Integer> answer = switch (operation) {
-//            case String s when s == "+" -> Mono.just(a + b);
+            case String s when s == "+" -> Mono.just(a + b);
             case "-" -> Mono.just(a - b);
-//            case null -> Mono.just(0);
+            case null -> Mono.just(0);
             default -> Mono.just(a * b);
         };
         return answer;
@@ -138,10 +138,10 @@ public class MonoOpsController {
 
     public Mono<Integer> calculateYield(String operation, int a, int b) {
         Mono<Integer> answer = switch (operation) {
-//            case String s when s == "+" : yield Mono.just(a + b);
+            case String s when s == "+" : yield Mono.just(a + b);
             case "-":
                 yield Mono.just(a - b);
-//            case null : yield Mono.just(0);
+            case null : yield Mono.just(0);
             default:
                 yield Mono.just(a * b);
         };
