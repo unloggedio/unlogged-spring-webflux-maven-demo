@@ -1,0 +1,72 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.MonoOpsController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.MonoOpsController#calculateYield#(Ljava/lang/String;II)Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 140, 141, 143, 146, 148 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "ffaee802-2a1f-4756-9781-e6abbe5e1c10",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "352128c5-1cc4-41a0-bb9b-ec5c3142fc06",
+      "name" : "calculateYield saved on 2024-05-10 16:02",
+      "description" : null,
+      "methodArguments" : [ "\"-\"", "10", "2" ],
+      "returnValue" : "8",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 196192972956291,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 34619558,
+      "probSerializedValue" : "OA==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "calculateYield",
+        "signature" : "(Ljava/lang/String;II)Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.MonoOpsController",
+        "methodHash" : -1549165187
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.MonoOpsController#calculate#(Ljava/lang/String;II)Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 116, 117, 118, 120, 122 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "df69eae9-3639-4f1c-8c4e-598901dfabea",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "6af46053-56c0-4aa2-ab5d-b72192a4fb8a",
+      "name" : "calculate saved on 2024-05-10 16:02",
+      "description" : null,
+      "methodArguments" : [ "\"-\"", "10", "3" ],
+      "returnValue" : "7",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 196171992776083,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1349503084,
+      "probSerializedValue" : "Nw==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "calculate",
+        "signature" : "(Ljava/lang/String;II)Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.MonoOpsController",
+        "methodHash" : 887390795
+      },
+      "exception" : false
+    } ]
+  },
+  "declaredMockMap" : { }
+}

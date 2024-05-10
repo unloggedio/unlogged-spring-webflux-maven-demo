@@ -2,24 +2,24 @@
   "classname" : "org.unlogged.springwebfluxdemo.controller.VirtualThreadControllerOps",
   "storedCandidateMap" : {
     "org.unlogged.springwebfluxdemo.controller.VirtualThreadControllerOps#threadName#()Ljava/lang/String;" : [ {
-      "lineNumbers" : [ 9, 10, 11, 14, 15, 16, 17 ],
+      "lineNumbers" : [ 27, 28, 29, 32, 33, 34, 35 ],
       "testAssertions" : {
         "subAssertions" : [ {
           "subAssertions" : [ ],
           "expression" : "SELF",
           "expectedValue" : "\"Virtual Thread: test thread\"",
-          "id" : "8bfe7d7f-b171-45a9-a7fc-5a2cb8a083fd",
+          "id" : "625d0dd8-41a2-4bad-9588-d79b8fc6db85",
           "assertionType" : "EQUAL",
           "key" : "/"
         } ],
         "expression" : "SELF",
         "expectedValue" : null,
-        "id" : "3b4d9b15-c5d8-4a5d-a9ec-214d3ddfd9df",
+        "id" : "c3502cf7-915e-4214-8f26-d8814acfcaca",
         "assertionType" : "ALLOF",
         "key" : null
       },
       "candidateId" : "cc34e07b-8235-4448-b817-5195b46edbfb",
-      "name" : "threadName saved on 2024-05-10 13:32",
+      "name" : "threadName saved on 2024-05-10 16:28",
       "description" : null,
       "methodArguments" : [ ],
       "returnValue" : "\"Virtual Thread: test thread\"",
@@ -27,7 +27,7 @@
       "metadata" : {
         "recordedBy" : "akshatjain",
         "hostMachineName" : "akshatjain",
-        "timestamp" : 192089170269625,
+        "timestamp" : 197765531973833,
         "candidateStatus" : "NA"
       },
       "sessionIdentifier" : -118512055,
@@ -37,7 +37,47 @@
         "name" : "threadName",
         "signature" : "()Ljava/lang/String;",
         "className" : "org.unlogged.springwebfluxdemo.controller.VirtualThreadControllerOps",
-        "methodHash" : 1941217488
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.VirtualThreadControllerOps#processRequest#()Lreactor/core/publisher/Mono<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 18, 23 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Processing complete!\"",
+          "id" : "c34e62e5-60fb-4882-8f6a-437ade6ae0b3",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "093e4558-f8cd-42f5-b0aa-5fdc2cc1364d",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "e8228cb4-6ea8-4e88-b2ec-4bb830016509",
+      "name" : "processRequest saved on 2024-05-10 16:28",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\"Processing complete!\"",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 197618927923708,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -33588804,
+      "probSerializedValue" : "IlByb2Nlc3NpbmcgY29tcGxldGUhIg==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "processRequest",
+        "signature" : "()Lreactor/core/publisher/Mono<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.VirtualThreadControllerOps",
+        "methodHash" : 12125831
       },
       "exception" : false
     } ]

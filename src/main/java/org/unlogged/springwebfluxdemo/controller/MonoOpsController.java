@@ -111,7 +111,7 @@ public class MonoOpsController {
 //        return Mono.just(result);
 //    }
 
-    @RequestMapping("/enhanced/switch/1")
+    @RequestMapping("/enhanced/switch-1/")
     public Mono<Integer> calculate(@RequestParam String operation, @RequestParam int a, @RequestParam int b) {
         Mono<Integer> answer = switch (operation) {
             case String s when s == "+" -> Mono.just(a + b);
