@@ -37,6 +37,12 @@ public class RecordPatternController {
         return -999;
     }
 
+    @RequestMapping("/points/equals")
+    public Mono<Boolean> equalController() {
+        Line line = new Line(new Point(1, 1), new Point(1, 1));
+        return Mono.just(checkEqualPoints(line.start(),line.end()));
+    }
+
     private boolean checkEqualPoints(Point point1, Point point2) {
         return point1.equals(point2);
     }
