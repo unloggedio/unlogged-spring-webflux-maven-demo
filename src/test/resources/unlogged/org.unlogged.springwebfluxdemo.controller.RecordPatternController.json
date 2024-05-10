@@ -1,0 +1,232 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.RecordPatternController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.RecordPatternController#lengthController#()Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 23, 24 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "b2d429c9-90a7-4598-948b-5f8b125cc1b7",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "7f1cae57-bc59-4918-ba7f-cb05cfb616ba",
+      "name" : "lengthController saved on 2024-05-09 16:47",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "1",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 150663390150458,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -399115912,
+      "probSerializedValue" : "MQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "lengthController",
+        "signature" : "()Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RecordPatternController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RecordPatternController#sumController#(II)Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 17, 18 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "d2dabd1f-0374-44a0-81e6-6447d68ff542",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "d44c2fbd-3359-4600-8f7c-368cdbd948ff",
+      "name" : "sumController saved on 2024-05-09 16:47",
+      "description" : null,
+      "methodArguments" : [ "2", "3" ],
+      "returnValue" : "5",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 150647128798166,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -976639868,
+      "probSerializedValue" : "NQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "sumController",
+        "signature" : "(II)Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RecordPatternController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RecordPatternController#lengthOfLine#(Lorg/unlogged/springwebfluxdemo/controller/RecordPatternController/Line;)I" : [ {
+      "lineNumbers" : [ 34, 35 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "ad6bd6e1-abc7-4fd9-997b-c4f8bdc26ff3",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "d81ffe5b-2174-4ff8-8a15-875c4df58354",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "ddedc269-7ce9-4b03-b040-447a58018e75",
+      "name" : "lengthOfLine saved on 2024-05-09 18:34",
+      "description" : null,
+      "methodArguments" : [ "{\"start\":{\"x\":1,\"y\":1},\"end\":{\"x\":2,\"y\":2}}" ],
+      "returnValue" : "1",
+      "returnValueClassname" : "I",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 156625408835916,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 124055232,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "lengthOfLine",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/controller/RecordPatternController/Line;)I",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RecordPatternController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RecordPatternController#sumOfCoordinates#(Lorg/unlogged/springwebfluxdemo/controller/RecordPatternController/Point;)I" : [ {
+      "lineNumbers" : [ 28, 29 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "9",
+          "id" : "618df895-f87b-417d-b245-2f239e9ce4b8",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "ce70fd34-8789-4c59-b750-7bd4b8744a57",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "4de0c9fd-48de-49bd-8e02-572af6bd06f0",
+      "name" : "sumOfCoordinates saved on 2024-05-09 18:34",
+      "description" : null,
+      "methodArguments" : [ "{\"x\":4,\"y\":5}" ],
+      "returnValue" : "9",
+      "returnValueClassname" : "I",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 156538556068875,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 937932980,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "sumOfCoordinates",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/controller/RecordPatternController/Point;)I",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RecordPatternController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RecordPatternController#checkEqualPoints#(Lorg/unlogged/springwebfluxdemo/controller/RecordPatternController/Point;Lorg/unlogged/springwebfluxdemo/controller/RecordPatternController/Point;)Z" : [ {
+      "lineNumbers" : [ 47 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "0ca8c144-06b1-47d2-a945-3a9b27e99871",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "60f821ab-5817-4eb6-9279-464967d6d8bc",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "60343292-c0b1-4b9f-9e1f-67734f81f636",
+      "name" : "checkEqualPoints saved on 2024-05-10 10:09",
+      "description" : null,
+      "methodArguments" : [ "{\"x\":1,\"y\":1}", "{\"x\":1,\"y\":1}" ],
+      "returnValue" : "1",
+      "returnValueClassname" : "Z",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 180474392052958,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1135617489,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "checkEqualPoints",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/controller/RecordPatternController/Point;Lorg/unlogged/springwebfluxdemo/controller/RecordPatternController/Point;)Z",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RecordPatternController",
+        "methodHash" : -544114286
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RecordPatternController#equalController#()Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;" : [ {
+      "lineNumbers" : [ 42, 43 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "14837d35-5a4a-4a16-bf99-f70affa8dbf2",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "4e0af187-2434-497b-b27a-8cceee1a581b",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "1c31720c-5902-4a95-a4ec-3a95910423f4",
+      "name" : "equalController saved on 2024-05-10 10:09",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "true",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 180474386330625,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1220974675,
+      "probSerializedValue" : "dHJ1ZQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "equalController",
+        "signature" : "()Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RecordPatternController",
+        "methodHash" : -2043886476
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}
