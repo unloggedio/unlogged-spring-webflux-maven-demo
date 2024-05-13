@@ -1,5 +1,8 @@
 package org.unlogged.springwebfluxdemo.model;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -48,6 +51,15 @@ public class EmployeeV1 implements Serializable {
         return Objects.equals(id, employeeV1.id) && Objects.equals(name, employeeV1.name) && Objects.equals(department, employeeV1.department);
     }
 
+    public String toJson() {
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            return mapper.writeValueAsString(this);
+        } catch (JsonProcessingException e) {
+            // Handle serialization exception (e.g., log the error)
+            throw new RuntimeException("Error serializing EmployeeV1 to JSON", e);
+        }
+    }
     @Override
     public int hashCode() {
         return Objects.hash(id, name, department);
