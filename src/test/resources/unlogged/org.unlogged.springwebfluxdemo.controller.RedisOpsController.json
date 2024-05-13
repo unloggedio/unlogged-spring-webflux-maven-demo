@@ -1,0 +1,100 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.RedisOpsController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.RedisOpsController#setValue#(Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;" : [ {
+      "lineNumbers" : [ 36 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "b9646a18-a1dc-41d5-ae11-d213cf43dca9",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "d657576c-37d6-4994-9e3f-7206221ce8d5",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "ac09962f-2cc3-4d0e-8c0d-f5ede9066ada",
+      "name" : "setValue saved on 2024-05-13 16:23",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":\"112\",\"name\":\"Test User 1\",\"department\":\"Accounts\"}" ],
+      "returnValue" : "true",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 270769699741250,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1769893693,
+      "probSerializedValue" : "dHJ1ZQ==",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "setValue",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RedisOpsController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RedisOpsController#getValue#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;>;" : [ {
+      "lineNumbers" : [ 41, 42 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"112\"",
+          "id" : "54d366ea-05b9-46c9-a03e-3c7439f39048",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Test User 1\"",
+          "id" : "cb12e336-69ba-4325-8d80-7def7cf9d40d",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Accounts\"",
+          "id" : "01fe8af9-8ca4-46ab-aba1-6904114a5c19",
+          "assertionType" : "EQUAL",
+          "key" : "/department"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "bd525230-d66c-4788-b84c-8b995cb39311",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "d2f9e909-6cb5-4283-901c-009b7c2f9179",
+      "name" : "getValue saved on 2024-05-13 16:23",
+      "description" : null,
+      "methodArguments" : [ "\"112\"" ],
+      "returnValue" : "{\"id\":\"112\",\"name\":\"Test User 1\",\"department\":\"Accounts\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 270780191061041,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 415966952,
+      "probSerializedValue" : "eyJpZCI6IjExMiIsIm5hbWUiOiJUZXN0IFVzZXIgMSIsImRlcGFydG1lbnQiOiJBY2NvdW50cyJ9",
+      "mockIds" : [ ],
+      "method" : {
+        "name" : "getValue",
+        "signature" : "(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RedisOpsController",
+        "methodHash" : 0
+      },
+      "exception" : false
+    } ]
+  },
+  "declaredMockMap" : { }
+}

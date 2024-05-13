@@ -2,14 +2,16 @@ package org.unlogged.springwebfluxdemo.model.ecommerce;
 
 import java.util.List;
 
-public class Seller {
+public class SellerDto {
     
     private String id;
     private String name;
     private String email;
     private int age;
+    private List<ProductDto> products;
+    private List<ShippingServiceDto> shippingServices;
 
-    public Seller(String id, String name, String email, int age, List<Product> products, List<ShippingService> shippingServices) {
+    public SellerDto(String id, String name, String email, int age, List<ProductDto> products, List<ShippingServiceDto> shippingServices) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -50,24 +52,21 @@ public class Seller {
         this.age = age;
     }
 
-    public List<Product> getProducts() {
+    public List<ProductDto> getProducts() {
         return products;
     }
 
-    public void setProducts(List<Product> products) {
+    public void setProducts(List<ProductDto> products) {
         this.products = products;
     }
 
-    public List<ShippingService> getShippingServices() {
+    public List<ShippingServiceDto> getShippingServices() {
         return shippingServices;
     }
 
-    public void setShippingServices(List<ShippingService> shippingServices) {
+    public void setShippingServices(List<ShippingServiceDto> shippingServices) {
         this.shippingServices = shippingServices;
     }
-
-    private List<Product> products;
-    private List<ShippingService> shippingServices;
 
     @Override
     public String toString() {

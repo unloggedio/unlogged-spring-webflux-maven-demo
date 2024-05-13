@@ -1,7 +1,11 @@
-package org.unlogged.springwebfluxdemo.model.ecommerce;
+package org.unlogged.springwebfluxdemo.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "products")
 public class Product {
-
+    @Id
     private String productId;
     private String productName;
     private String brand;
@@ -14,6 +18,9 @@ public class Product {
         this.brand = brand;
         this.countInStock = countInStock;
         this.pricePerProduct = pricePerProduct;
+    }
+    public Product() {
+
     }
 
     public String getProductId() {
@@ -54,16 +61,5 @@ public class Product {
 
     public void setPricePerProduct(double pricePerProduct) {
         this.pricePerProduct = pricePerProduct;
-    }
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "productId='" + productId + '\'' +
-                ", productName='" + productName + '\'' +
-                ", brand='" + brand + '\'' +
-                ", countInStock=" + countInStock +
-                ", pricePerProduct=" + pricePerProduct +
-                '}';
     }
 }

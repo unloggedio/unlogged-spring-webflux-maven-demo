@@ -2,20 +2,22 @@ package org.unlogged.springwebfluxdemo.model.ecommerce;
 
 import java.util.List;
 
-public class ShippingService {
+public class ShippingServiceDto {
 
     private String id;
     private String serviceProvider;
     private List<String> operationPinCodes;
     private double shippingCostPerItem;
     private long maxCapacity;
+    private List<RateCardDto> rateCards;
 
-    public ShippingService(String id, String serviceProvider, List<String> operationPinCodes, double shippingCostPerItem, long maxCapacity) {
+    public ShippingServiceDto(String id, String serviceProvider, List<String> operationPinCodes, double shippingCostPerItem, long maxCapacity, List<RateCardDto> rateCards) {
         this.id = id;
         this.serviceProvider = serviceProvider;
         this.operationPinCodes = operationPinCodes;
         this.shippingCostPerItem = shippingCostPerItem;
         this.maxCapacity = maxCapacity;
+        this.rateCards = rateCards;
     }
 
     public String getId() {
@@ -58,14 +60,23 @@ public class ShippingService {
         this.maxCapacity = maxCapacity;
     }
 
+    public List<RateCardDto> getRateCards() {
+        return rateCards;
+    }
+
+    public void setRateCards(List<RateCardDto> rateCards) {
+        this.rateCards = rateCards;
+    }
+
     @Override
     public String toString() {
-        return "ShippingService{" +
+        return "ShippingServiceDto{" +
                 "id='" + id + '\'' +
                 ", serviceProvider='" + serviceProvider + '\'' +
                 ", operationPinCodes=" + operationPinCodes +
                 ", shippingCostPerItem=" + shippingCostPerItem +
                 ", maxCapacity=" + maxCapacity +
+                ", rateCards=" + rateCards +
                 '}';
     }
 }
