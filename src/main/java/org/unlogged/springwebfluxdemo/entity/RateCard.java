@@ -1,11 +1,17 @@
-package org.unlogged.springwebfluxdemo.model.ecommerce;
+package org.unlogged.springwebfluxdemo.entity;
 
-public class RateCardDto {
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "ratecards")
+public class RateCard {
+
+    @Id
     String id;
     String name;
     String percentCharge;
 
-    public RateCardDto(String id, String name, String percentCharge) {
+    public RateCard(String id, String name, String percentCharge) {
         this.id = id;
         this.name = name;
         this.percentCharge = percentCharge;
@@ -19,7 +25,7 @@ public class RateCardDto {
         this.percentCharge = percentCharge;
     }
 
-    public RateCardDto() {}
+    public RateCard() {}
 
     public String getId() {
         return id;
@@ -35,14 +41,5 @@ public class RateCardDto {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "RateCardDto{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", percentCharge='" + percentCharge + '\'' +
-                '}';
     }
 }

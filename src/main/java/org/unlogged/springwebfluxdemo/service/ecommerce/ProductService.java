@@ -1,9 +1,9 @@
-package org.unlogged.springwebfluxdemo.service;
+package org.unlogged.springwebfluxdemo.service.ecommerce;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.unlogged.springwebfluxdemo.model.ecommerce.ProductDto;
-import org.unlogged.springwebfluxdemo.repository.ProductRepository;
+import org.unlogged.springwebfluxdemo.repository.ecommerce.ProductRepository;
 import org.unlogged.springwebfluxdemo.utils.ProductUtil;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

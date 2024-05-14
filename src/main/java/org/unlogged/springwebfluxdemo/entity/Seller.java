@@ -1,17 +1,21 @@
-package org.unlogged.springwebfluxdemo.model.ecommerce;
+package org.unlogged.springwebfluxdemo.entity;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
-public class SellerDto {
-    
+@Document(collection = "sellers")
+public class Seller {
+    @Id
     private String id;
     private String name;
     private String email;
     private int age;
-    private List<ProductDto> products;
-    private List<ShippingServiceDto> shippingServices;
+    private List<Product> products;
+    private List<ShippingServices> shippingServices;
 
-    public SellerDto(String id, String name, String email, int age, List<ProductDto> products, List<ShippingServiceDto> shippingServices) {
+    public Seller(String id, String name, String email, int age, List<Product> products, List<ShippingServices> shippingServices) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -20,7 +24,7 @@ public class SellerDto {
         this.shippingServices = shippingServices;
     }
 
-    public SellerDto() {}
+    public Seller() { }
 
     public String getId() {
         return id;
@@ -54,31 +58,19 @@ public class SellerDto {
         this.age = age;
     }
 
-    public List<ProductDto> getProducts() {
+    public List<Product> getProducts() {
         return products;
     }
 
-    public void setProducts(List<ProductDto> products) {
+    public void setProducts(List<Product> products) {
         this.products = products;
     }
 
-    public List<ShippingServiceDto> getShippingServices() {
+    public List<ShippingServices> getShippingServices() {
         return shippingServices;
     }
 
-    public void setShippingServices(List<ShippingServiceDto> shippingServices) {
+    public void setShippingServices(List<ShippingServices> shippingServices) {
         this.shippingServices = shippingServices;
-    }
-
-    @Override
-    public String toString() {
-        return "Seller{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", age=" + age +
-                ", products=" + products +
-                ", shippingServices=" + shippingServices +
-                '}';
     }
 }

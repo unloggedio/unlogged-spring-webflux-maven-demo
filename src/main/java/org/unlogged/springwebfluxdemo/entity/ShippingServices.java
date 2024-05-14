@@ -1,17 +1,21 @@
-package org.unlogged.springwebfluxdemo.model.ecommerce;
+package org.unlogged.springwebfluxdemo.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.List;
 
-public class ShippingServiceDto {
+@Document(collection = "shippingservices")
+public class ShippingServices {
 
+    @Id
     private String id;
     private String serviceProvider;
     private List<String> operationPinCodes;
     private double shippingCostPerItem;
     private long maxCapacity;
-    private List<RateCardDto> rateCards;
+    private List<RateCard> rateCards;
 
-    public ShippingServiceDto(String id, String serviceProvider, List<String> operationPinCodes, double shippingCostPerItem, long maxCapacity, List<RateCardDto> rateCards) {
+    public ShippingServices(String id, String serviceProvider, List<String> operationPinCodes, double shippingCostPerItem, long maxCapacity, List<RateCard> rateCards) {
         this.id = id;
         this.serviceProvider = serviceProvider;
         this.operationPinCodes = operationPinCodes;
@@ -20,7 +24,7 @@ public class ShippingServiceDto {
         this.rateCards = rateCards;
     }
 
-    public ShippingServiceDto() {}
+    public ShippingServices() { }
 
     public String getId() {
         return id;
@@ -62,23 +66,11 @@ public class ShippingServiceDto {
         this.maxCapacity = maxCapacity;
     }
 
-    public List<RateCardDto> getRateCards() {
+    public List<RateCard> getRateCards() {
         return rateCards;
     }
 
-    public void setRateCards(List<RateCardDto> rateCards) {
+    public void setRateCards(List<RateCard> rateCards) {
         this.rateCards = rateCards;
-    }
-
-    @Override
-    public String toString() {
-        return "ShippingServiceDto{" +
-                "id='" + id + '\'' +
-                ", serviceProvider='" + serviceProvider + '\'' +
-                ", operationPinCodes=" + operationPinCodes +
-                ", shippingCostPerItem=" + shippingCostPerItem +
-                ", maxCapacity=" + maxCapacity +
-                ", rateCards=" + rateCards +
-                '}';
     }
 }

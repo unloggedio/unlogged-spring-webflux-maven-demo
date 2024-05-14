@@ -1,23 +1,27 @@
-package org.unlogged.springwebfluxdemo.model.ecommerce;
+package org.unlogged.springwebfluxdemo.entity;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
-public class PlatformsDto {
+@Document(collection = "platforms")
+public class Platform {
+    @Id
     private String id;
     private String platformName;
     private String registeredCountry;
     private List<String> operatingCategories;
-    private List<SellerDto> listedSellers;
+    private List<Seller> listedSellers;
 
-    public PlatformsDto(String id, String platformName, String registeredCountry, List<String> operatingCategories, List<SellerDto> listedSellers) {
+    public Platform(String id, String platformName, String registeredCountry, List<String> operatingCategories, List<Seller> listedSellers) {
         this.id = id;
         this.platformName = platformName;
         this.registeredCountry = registeredCountry;
         this.operatingCategories = operatingCategories;
         this.listedSellers = listedSellers;
     }
-
-    public PlatformsDto() {}
+    public Platform() {}
 
     public String getId() {
         return id;
@@ -51,22 +55,11 @@ public class PlatformsDto {
         this.operatingCategories = operatingCategories;
     }
 
-    public List<SellerDto> getListedSellers() {
+    public List<Seller> getListedSellers() {
         return listedSellers;
     }
 
-    public void setListedSellers(List<SellerDto> listedSellers) {
+    public void setListedSellers(List<Seller> listedSellers) {
         this.listedSellers = listedSellers;
-    }
-
-    @Override
-    public String toString() {
-        return "PlatformsDto{" +
-                "id='" + id + '\'' +
-                ", platformName='" + platformName + '\'' +
-                ", registeredCountry='" + registeredCountry + '\'' +
-                ", operatingCategories=" + operatingCategories +
-                ", listedSellers=" + listedSellers +
-                '}';
     }
 }
