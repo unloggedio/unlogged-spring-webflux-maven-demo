@@ -3,7 +3,6 @@ package org.unlogged.springwebfluxdemo.controller.ecommerce;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.unlogged.springwebfluxdemo.model.ecommerce.PlatformsDto;
-import org.unlogged.springwebfluxdemo.model.ecommerce.SellerDto;
 import org.unlogged.springwebfluxdemo.service.ecommerce.PlatformService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -12,8 +11,12 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/ecommerce/platform")
 public class PlatformController {
 
+    private final PlatformService platformService;
+
     @Autowired
-    PlatformService platformService;
+    public PlatformController(PlatformService platformService) {
+        this.platformService = platformService;
+    }
 
     @GetMapping("/all")
     public Flux<PlatformsDto> getPlatforms() {

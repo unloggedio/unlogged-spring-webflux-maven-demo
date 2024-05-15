@@ -11,8 +11,12 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/ecommerce/seller")
 public class SellerController {
 
+    private final SellerService sellerService;
+
     @Autowired
-    SellerService sellerService;
+    public SellerController(SellerService sellerService) {
+        this.sellerService = sellerService;
+    }
 
     @GetMapping("/all")
     public Flux<SellerDto> getSellers() {

@@ -1,6 +1,7 @@
 package org.unlogged.springwebfluxdemo.utils;
 
 import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Component;
 import org.unlogged.springwebfluxdemo.entity.*;
 import org.unlogged.springwebfluxdemo.model.ecommerce.*;
 
@@ -8,9 +9,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class PlatformUtil {
+@Component
+public class CommonEcommUtil {
 
-    public static PlatformsDto platformEntityToPlatformDto(Platform platform) {
+    public PlatformsDto platformEntityToPlatformDto(Platform platform) {
         PlatformsDto platformDto = new PlatformsDto();
         platformDto.setId(platform.getId());
         platformDto.setPlatformName(platform.getPlatformName());
@@ -21,7 +23,7 @@ public class PlatformUtil {
         return platformDto;
     }
 
-    public static Platform platformDtoToPlatformEntity(PlatformsDto platformDto) {
+    public Platform platformDtoToPlatformEntity(PlatformsDto platformDto) {
         Platform platform = new Platform();
         platform.setId(platformDto.getId());
         platform.setPlatformName(platformDto.getPlatformName());
@@ -32,7 +34,41 @@ public class PlatformUtil {
         return platform;
     }
 
-    private static List<SellerDto> mapSellers(List<Seller> sellers) {
+    public SellerDto sellerEntityToSellerDto(Seller seller) {
+        SellerDto sellerDto = new SellerDto();
+        sellerDto.setId(seller.getId());
+        sellerDto.setName(seller.getName());
+        sellerDto.setEmail(seller.getEmail());
+        sellerDto.setAge(seller.getAge());
+        sellerDto.setProducts(mapProducts(seller.getProducts()));
+        sellerDto.setShippingServices(mapShippingServices(seller.getShippingServices()));
+        return sellerDto;
+    }
+
+    public Seller sellerDtoToSellerEntity(SellerDto sellerDto) {
+        Seller seller = new Seller();
+        seller.setId(sellerDto.getId());
+        seller.setName(sellerDto.getName());
+        seller.setEmail(sellerDto.getEmail());
+        seller.setAge(sellerDto.getAge());
+        seller.setProducts(mapProductDtos(sellerDto.getProducts()));
+        seller.setShippingServices(mapShippingServiceDtos(sellerDto.getShippingServices()));
+        return seller;
+    }
+
+    public ProductDto productEntityToProductDto(Product product) {
+        ProductDto productDto = new ProductDto();
+        BeanUtils.copyProperties(product, productDto);
+        return productDto;
+    }
+
+    public Product productDtoToProductEntity(ProductDto productDto) {
+        Product product = new Product();
+        BeanUtils.copyProperties(productDto, product);
+        return product;
+    }
+
+    private List<SellerDto> mapSellers(List<Seller> sellers) {
         if(sellers == null) return Collections.emptyList();
         return sellers.stream()
                 .map(seller -> {
@@ -46,7 +82,7 @@ public class PlatformUtil {
                     return sellerDto;
                 }).collect(Collectors.toList());
     }
-    private static List<ShippingServiceDto> mapShippingServices(List<ShippingServices> shippingServices) {
+    private List<ShippingServiceDto> mapShippingServices(List<ShippingServices> shippingServices) {
         if (shippingServices == null) {
             return Collections.emptyList();
         }
@@ -64,7 +100,7 @@ public class PlatformUtil {
                 .collect(Collectors.toList());
     }
 
-    private static List<RateCardDto> mapRateCards(List<RateCard> rateCards) {
+    private List<RateCardDto> mapRateCards(List<RateCard> rateCards) {
         if (rateCards == null) {
             return Collections.emptyList();
         }
@@ -77,7 +113,7 @@ public class PlatformUtil {
                 .collect(Collectors.toList());
     }
 
-    private static List<ProductDto> mapProducts(List<Product> products) {
+    private List<ProductDto> mapProducts(List<Product> products) {
         if (products == null) {
             return Collections.emptyList();
         }
@@ -90,7 +126,7 @@ public class PlatformUtil {
                 .collect(Collectors.toList());
     }
 
-    private static List<Product> mapProductDtos(List<ProductDto> productDtos) {
+    private List<Product> mapProductDtos(List<ProductDto> productDtos) {
         return productDtos.stream()
                 .map(productDto -> {
                     Product product = new Product();
@@ -100,7 +136,7 @@ public class PlatformUtil {
                 .collect(Collectors.toList());
     }
 
-    private static List<Seller> mapSellerDtos(List<SellerDto> sellerDtos) {
+    private List<Seller> mapSellerDtos(List<SellerDto> sellerDtos) {
         return sellerDtos.stream()
                 .map(sellerDto -> {
                     Seller seller = new Seller();
@@ -115,7 +151,7 @@ public class PlatformUtil {
                 }).collect(Collectors.toList());
     }
 
-    private static List<ShippingServices> mapShippingServiceDtos(List<ShippingServiceDto> shippingServiceDtos) {
+    private List<ShippingServices> mapShippingServiceDtos(List<ShippingServiceDto> shippingServiceDtos) {
         return shippingServiceDtos.stream()
                 .map(shippingServiceDto -> {
                     ShippingServices shippingService = new ShippingServices();
@@ -130,7 +166,7 @@ public class PlatformUtil {
                 .collect(Collectors.toList());
     }
 
-    private static List<RateCard> mapRateCardDtos(List<RateCardDto> rateCardDtos) {
+    private List<RateCard> mapRateCardDtos(List<RateCardDto> rateCardDtos) {
         return rateCardDtos.stream()
                 .map(rateCardDto -> {
                     RateCard rateCard = new RateCard();
