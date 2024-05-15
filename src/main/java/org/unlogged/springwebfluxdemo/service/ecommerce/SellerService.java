@@ -30,7 +30,7 @@ public class SellerService {
 
     public Mono<SellerDto> updateSeller(Mono<SellerDto> sellerDtoMono, String sellerId) {
         return repository.findById(sellerId)
-                .flatMap(product -> sellerDtoMono.map(SellerUtil::sellerDtoToSellerEntity)
+                .flatMap(seller -> sellerDtoMono.map(SellerUtil::sellerDtoToSellerEntity)
                         .doOnNext(e-> e.setId(sellerId)))
                 .flatMap(repository::save)
                 .map(SellerUtil::sellerEntityToSellerDto);
