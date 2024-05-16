@@ -21,17 +21,17 @@ public class PlatformService {
     }
 
     public Flux<PlatformsDto> getAllPlatforms() {
-        return repository.findAll().map(commonEcommUtil::platformEntityToPlatformDto);
+        return repository.findAll().flatMap(commonEcommUtil::platformEntityToPlatformDto);
     }
 
     public Mono<PlatformsDto> getPlatform(String platformId) {
-        return repository.findById(platformId).map(commonEcommUtil::platformEntityToPlatformDto);
+        return repository.findById(platformId).flatMap(commonEcommUtil::platformEntityToPlatformDto);
     }
 
     public Mono<PlatformsDto> savePlatform(Mono<PlatformsDto> platformsDtoMono) {
         return platformsDtoMono.map(commonEcommUtil::platformDtoToPlatformEntity)
                 .flatMap(repository::insert)
-                .map(commonEcommUtil::platformEntityToPlatformDto);
+                .flatMap(commonEcommUtil::platformEntityToPlatformDto);
     }
 
     public Mono<PlatformsDto> updatePlatform(Mono<PlatformsDto> platformsDtoMono, String platformId) {
@@ -39,11 +39,16 @@ public class PlatformService {
                 .flatMap(platform -> platformsDtoMono.map(commonEcommUtil::platformDtoToPlatformEntity)
                         .doOnNext(e-> e.setId(platformId)))
                 .flatMap(repository::save)
-                .map(commonEcommUtil::platformEntityToPlatformDto);
+                .flatMap(commonEcommUtil::platformEntityToPlatformDto);
     }
 
     public Mono<Void> deletePlatform(String platformId) {
         return repository.deleteById(platformId);
     }
+
+    public Mono<Void> deleteAllPlatforms() {
+        return repository.deleteAll();
+    }
+
 
 }

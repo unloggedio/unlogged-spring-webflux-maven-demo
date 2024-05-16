@@ -1,6 +1,7 @@
 package org.unlogged.springwebfluxdemo.entity;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -12,14 +13,14 @@ public class Platform {
     private String platformName;
     private String registeredCountry;
     private List<String> operatingCategories;
-    private List<Seller> listedSellers;
+    private List<String> listedSellerIds;
 
-    public Platform(String id, String platformName, String registeredCountry, List<String> operatingCategories, List<Seller> listedSellers) {
+    public Platform(String id, String platformName, String registeredCountry, List<String> operatingCategories, List<String> listedSellerIds) {
         this.id = id;
         this.platformName = platformName;
         this.registeredCountry = registeredCountry;
         this.operatingCategories = operatingCategories;
-        this.listedSellers = listedSellers;
+        this.listedSellerIds = listedSellerIds;
     }
     public Platform() {}
 
@@ -55,11 +56,11 @@ public class Platform {
         this.operatingCategories = operatingCategories;
     }
 
-    public List<Seller> getListedSellers() {
-        return listedSellers;
+    public List<String> getListedSellerIds() {
+        return listedSellerIds;
     }
 
-    public void setListedSellers(List<Seller> listedSellers) {
-        this.listedSellers = listedSellers;
+    public void setListedSellerIds(List<String> listedSellerIds) {
+        this.listedSellerIds = listedSellerIds;
     }
 }

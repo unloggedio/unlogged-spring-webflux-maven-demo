@@ -4,7 +4,11 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Component;
 import org.unlogged.springwebfluxdemo.entity.*;
 import org.unlogged.springwebfluxdemo.model.ecommerce.*;
+import org.unlogged.springwebfluxdemo.service.ecommerce.SellerService;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -12,26 +16,28 @@ import java.util.stream.Collectors;
 @Component
 public class CommonEcommUtil {
 
-    public PlatformsDto platformEntityToPlatformDto(Platform platform) {
-        PlatformsDto platformDto = new PlatformsDto();
-        platformDto.setId(platform.getId());
-        platformDto.setPlatformName(platform.getPlatformName());
-        platformDto.setRegisteredCountry(platform.getRegisteredCountry());
-        platformDto.setOperatingCategories(platform.getOperatingCategories());
-        platformDto.setListedSellers(mapSellers(platform.getListedSellers()));
-//        private List<String> operatingCategories;
-        return platformDto;
+    private final SellerService sellerService;
+
+    public CommonEcommUtil(SellerService sellerService) {
+        this.sellerService = sellerService;
+    }
+
+    public Mono<PlatformsDto> platformEntityToPlatformDto(Platform platform) {
+
+        Flux<String> sellerIdFlux = Flux.fromIterable(platform.getListedSellerIds());
+        return sellerIdFlux
+                .flatMap(sellerId -> {
+                    return sellerService.getSeller(sellerId);
+                })
+                .collectList()
+                .map(sellerDtos -> new PlatformsDto(platform.getId(), platform.getPlatformName(),
+                        platform.getRegisteredCountry(), platform.getOperatingCategories(), sellerDtos));
+
     }
 
     public Platform platformDtoToPlatformEntity(PlatformsDto platformDto) {
-        Platform platform = new Platform();
-        platform.setId(platformDto.getId());
-        platform.setPlatformName(platformDto.getPlatformName());
-        platform.setRegisteredCountry(platformDto.getRegisteredCountry());
-        platform.setOperatingCategories(platformDto.getOperatingCategories());
-        platform.setListedSellers(mapSellerDtos(platformDto.getListedSellers()));
-//      operatingCategories
-        return platform;
+        return new Platform(platformDto.getId(), platformDto.getPlatformName(),
+                platformDto.getRegisteredCountry(), platformDto.getOperatingCategories(), new ArrayList<>());
     }
 
     public SellerDto sellerEntityToSellerDto(Seller seller) {
@@ -40,8 +46,8 @@ public class CommonEcommUtil {
         sellerDto.setName(seller.getName());
         sellerDto.setEmail(seller.getEmail());
         sellerDto.setAge(seller.getAge());
-        sellerDto.setProducts(mapProducts(seller.getProducts()));
-        sellerDto.setShippingServices(mapShippingServices(seller.getShippingServices()));
+        sellerDto.setProducts(new ArrayList<>()); //have to fetch these
+        sellerDto.setShippingServices(new ArrayList<>());
         return sellerDto;
     }
 
@@ -51,8 +57,9 @@ public class CommonEcommUtil {
         seller.setName(sellerDto.getName());
         seller.setEmail(sellerDto.getEmail());
         seller.setAge(sellerDto.getAge());
-        seller.setProducts(mapProductDtos(sellerDto.getProducts()));
-        seller.setShippingServices(mapShippingServiceDtos(sellerDto.getShippingServices()));
+        seller.setPlatformIds(new ArrayList<>());
+        seller.setProducts(new ArrayList<>());
+        seller.setShippingServices(new ArrayList<>());
         return seller;
     }
 
