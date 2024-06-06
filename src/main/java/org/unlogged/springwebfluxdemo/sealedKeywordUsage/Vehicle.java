@@ -1,6 +1,6 @@
 package org.unlogged.springwebfluxdemo.sealedKeywordUsage;
 
-public sealed class Vehicle permits Car, Truck {
+public sealed class Vehicle implements VehicleType permits Car, Truck {
     private String model;
 
     public Vehicle(String model) {
@@ -13,5 +13,10 @@ public sealed class Vehicle permits Car, Truck {
 
     public String getInfo() {
         return "Vehicle Model: " + model;
+    }
+
+    @Override
+    public String getType() {
+        return "General Vehicle";
     }
 }

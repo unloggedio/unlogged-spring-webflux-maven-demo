@@ -1,8 +1,5 @@
 package org.unlogged.springwebfluxdemo.sealedKeywordUsage;
 
-//non-sealed public class C extends B {
-//}
-
 public non-sealed class ElectricCar extends Car {
     private int batteryCapacity;
 
