@@ -20,6 +20,8 @@ public class SellerDto {
         this.shippingServices = shippingServices;
     }
 
+    public SellerDto() {}
+
     public String getId() {
         return id;
     }
