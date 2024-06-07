@@ -32,7 +32,7 @@ public class UserService {
 
     public Mono<UserDto> createUser(UserDto userDto) {
         User userEntity = userUtil.userDtoToUserEntity(userDto);
-        return userRepository.insert(userEntity)
+        return userRepository.save(userEntity)
                 .map(userUtil::userEntityToUserDto);
     }
 
