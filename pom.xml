@@ -36,6 +36,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
             <artifactId>unlogged-sdk</artifactId>
             <groupId>video.bug</groupId>
             <version>0.6.1</version>
