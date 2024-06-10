@@ -4,9 +4,12 @@ import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.Disposable;
 import reactor.core.publisher.ConnectableFlux;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.ParallelFlux;
 import reactor.core.scheduler.Schedulers;
+import reactor.util.function.Tuple4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -155,5 +158,49 @@ public class FluxOpsController {
 
         return elements;
     }
+
+    @RequestMapping("/parallel")
+    public List<Integer> parallelFluxExample() throws InterruptedException {
+        List<Integer> elements = new ArrayList<>();
+        ParallelFlux<Integer> parallelFlux = Flux.just(1, 2, 3, 4, 5, 6, 7, 8)
+                .parallel()
+                .runOn(Schedulers.parallel())
+                .map(i -> i * 2);
+
+        parallelFlux.subscribe(elements::add);
+
+        // Sleep to ensure all parallel tasks are completed
+        Thread.sleep(500);
+        return elements;
+    }
+
+    @RequestMapping("/disposable")
+    public List<Integer> disposableExample() throws InterruptedException {
+        List<Integer> elements = new ArrayList<>();
+        Disposable disposable = Flux.just(1, 2, 3, 4, 5)
+                .delayElements(ofSeconds(1))
+                .subscribe(elements::add);
+
+        // Dispose the subscription after 3.5 seconds
+        Thread.sleep(3500);
+        disposable.dispose();
+
+        // Sleep to ensure disposal has time to take effect
+        Thread.sleep(2000);
+        return elements; //3 elements should be returned
+    }
+
+    @RequestMapping("/tuple4")
+    public Flux<Tuple4<Integer, String, Double, Boolean>> tuple4Example() {
+        Flux<Integer> flux1 = Flux.just(1, 2, 3, 4);
+        Flux<String> flux2 = Flux.just("A", "B", "C", "D");
+        Flux<Double> flux3 = Flux.just(1.1, 2.2, 3.3, 4.4);
+        Flux<Boolean> flux4 = Flux.just(true, false, true, false);
+
+        Flux<Tuple4<Integer, String, Double, Boolean>> combinedFlux = Flux.zip(flux1, flux2, flux3, flux4);
+
+        return combinedFlux;
+    }
+
 
 }
