@@ -1,11 +1,14 @@
 package org.unlogged.springwebfluxdemo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.unlogged.springwebfluxdemo.model.Player;
 import org.unlogged.springwebfluxdemo.service.PlayerService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/players")
@@ -21,6 +24,13 @@ public class PlayerController {
     @PostMapping
     public Mono<Player> createPlayer(@RequestBody Player player) {
         return playerService.createPlayer(player);
+    }
+
+    @PostMapping("/batch")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Flux<Player> batchInsertProducts(@RequestBody List<Player> players) {
+        players.forEach(player -> player.setId(null));
+        return playerService.saveAll(players);
     }
 
     @GetMapping
