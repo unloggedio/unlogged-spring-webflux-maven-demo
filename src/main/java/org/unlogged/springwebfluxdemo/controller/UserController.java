@@ -30,6 +30,9 @@ public class UserController {
         return userService.getAllUsers();
     }
 
+    /**
+     * This is an unautheticated path, made so for testing
+     * */
     @GetMapping("/{id}")
     public Mono<ResponseEntity<UserDto>> getUserById(@PathVariable String id) {
         return userService.getUserById(id)
@@ -42,6 +45,9 @@ public class UserController {
         return userService.createUser(userDto);
     }
 
+    /**
+     * This is an unautheticated path, made so for testing
+     * */
     @PutMapping("/{id}")
     public Mono<ResponseEntity<UserDto>> updateUser(@PathVariable String id, @Valid @RequestBody UserDto userDto) {
         return userService.updateUser(id, userDto)
@@ -49,6 +55,9 @@ public class UserController {
                 .defaultIfEmpty(ResponseEntity.notFound().build());
     }
 
+    /**
+     * This is an unautheticated path, made so for testing
+     * */
     @DeleteMapping("/{id}")
     public Mono<ResponseEntity<Void>> deleteUser(@PathVariable String id) {
         return userService.deleteUser(id)
