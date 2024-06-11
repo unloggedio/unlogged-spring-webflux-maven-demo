@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
-import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 import org.unlogged.springwebfluxdemo.model.Product;
 import reactor.core.publisher.Flux;
@@ -30,9 +29,12 @@ public class ProductService {
 
     public Mono<Product> updateProduct(String id, Product product) {
         Query query = new Query(Criteria.where("id").is(id));
-        return mongoTemplate.findAndModify(query,
-                new Update().set("name", product.getName()).set("price", product.getPrice()),
-                Product.class);
+        return mongoTemplate.findOne(query, Product.class)
+                .flatMap(existingProduct -> {
+                    existingProduct.setName(product.getName());
+                    existingProduct.setPrice(product.getPrice());
+                    return mongoTemplate.save(existingProduct);
+                });
     }
 
     public Mono<Void> deleteProduct(String id) {

@@ -69,6 +69,7 @@ public class PlayerService {
      * */
     @Transactional
     public Flux<Player> saveAll(List<Player> players) {
+        players.forEach(player -> player.setId(null));
         return repository.saveAll(players)
                 .doOnNext(this::throwStatusExceptionWhenNameIsEmpty);
     }

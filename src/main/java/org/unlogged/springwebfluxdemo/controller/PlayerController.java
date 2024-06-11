@@ -29,7 +29,6 @@ public class PlayerController {
     @PostMapping("/batch")
     @ResponseStatus(HttpStatus.CREATED)
     public Flux<Player> batchInsertProducts(@RequestBody List<Player> players) {
-        players.forEach(player -> player.setId(null));
         return playerService.saveAll(players);
     }
 
