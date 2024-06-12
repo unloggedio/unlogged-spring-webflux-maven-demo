@@ -10,7 +10,6 @@ import org.springframework.data.redis.core.ReactiveRedisOperations;
 import org.springframework.data.redis.core.ReactiveRedisTemplate;
 import org.springframework.data.redis.serializer.*;
 
-import java.awt.print.Book;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -30,6 +29,7 @@ public class ReactiveRedisConfig {
     }
 
     @Bean
+    @Primary
     ReactiveRedisOperations<String, String> reactiveRedisOperations(ReactiveRedisConnectionFactory factory) {
         Jackson2JsonRedisSerializer<String> serializer = new Jackson2JsonRedisSerializer<>(String.class);
 
@@ -95,17 +95,4 @@ public class ReactiveRedisConfig {
 //                builder.value(valueSerializer).build();
 //        return new ReactiveRedisTemplate<>(factory, context);
 //    }
-
-    @Bean
-    public ReactiveRedisTemplate<String, Book> reactiveRedisTemplate(
-            ReactiveRedisConnectionFactory factory) {
-        Jackson2JsonRedisSerializer<Book> serializer = new Jackson2JsonRedisSerializer<>(Book.class);
-
-        RedisSerializationContext<String, Book> context =
-                RedisSerializationContext.<String, Book>newSerializationContext(new StringRedisSerializer())
-                        .value(serializer)
-                        .build();
-
-        return new ReactiveRedisTemplate<>(factory, context);
-    }
 }

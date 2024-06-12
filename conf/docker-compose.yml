@@ -9,6 +9,9 @@ services:
     environment:
       MYSQL_DATABASE: udemo2
       MYSQL_ROOT_PASSWORD: root_password
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # Mount SQL initialization script
+    command: ['--init-file', '/docker-entrypoint-initdb.d/init.sql']  # Execute script
 
   redis-r:
     image: redis:latest
@@ -17,6 +20,7 @@ services:
       - unlogged_network
     environment:
       REDIS_MASTER_HOST: localhost
+
   mongodb:
     image: mongo:latest
     restart: always
@@ -32,8 +36,8 @@ services:
     build:
       context: ../
     volumes:
-      - /Users/testerfresher/.unlogged/:/root/.unlogged/
-      - /Users/testerfresher/.m2/repository/video/bug/unlogged-sdk:/root/.m2/repository/video/bug/unlogged-sdk
+      - /Users/akshatjain/.unlogged/:/root/.unlogged/
+      - /Users/akshatjain/.m2/repository/video/bug/unlogged-sdk:/root/.m2/repository/video/bug/unlogged-sdk
     ports:
       - "8080:8080"
       - "12100:12100"
@@ -45,7 +49,9 @@ services:
       - unlogged_network
     environment:
       SPRING_DATA_MONGODB_HOST: mongodb:27017
-
+      SPRING_R2DBC_URL: r2dbc:mysql://mysqldb:3306/unlogged
+      SPRING_R2DBC_USERNAME: root
+      SPRING_R2DBC_PASSWORD: root_password
 
 networks:
   unlogged_network:
