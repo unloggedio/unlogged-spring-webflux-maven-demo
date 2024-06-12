@@ -12,6 +12,7 @@ import org.unlogged.springwebfluxdemo.enrich.nonreactive.EnricherV1;
 import org.unlogged.springwebfluxdemo.enrich.nonreactive.PersonAgeEnricherV1;
 import org.unlogged.springwebfluxdemo.enrich.nonreactive.PersonNameEnricherV1;
 import org.unlogged.springwebfluxdemo.model.Person;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.util.ArrayList;
@@ -70,5 +71,23 @@ public class EnrichmentController {
             System.out.println("In FlatMap ---------------------||");
             return Mono.just("E");
         });
+    }
+    //more complex operations and pojos
+
+    @RequestMapping("/person/parallel")
+    public Flux<Person> enrichPersonsInParallel() {
+        List<Person> persons = Arrays.asList(
+                new Person("Alice", 25),
+                new Person("Bob", 30),
+                new Person("Charlie", 28)
+        );
+
+        return Flux.fromIterable(persons)
+                .parallel()
+                .flatMap(person -> Mono.just(person)
+                        .flatMap(p -> new CompositeEnricher(
+                                Arrays.asList(new PersonNameEnricher(), new PersonAgeEnricher()))
+                                .enrich(p)))
+                .sequential(); // Merge back to sequential Flux
     }
 }
