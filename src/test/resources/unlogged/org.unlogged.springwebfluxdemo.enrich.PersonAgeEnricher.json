@@ -1,0 +1,60 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.enrich.PersonAgeEnricher",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.enrich.PersonAgeEnricher#enrich#(Lorg/unlogged/springwebfluxdemo/model/Person;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Person;>;" : [ {
+      "lineNumbers" : [ 9 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "fdd64ef6-3515-42b9-9044-8dbfba690854",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "f54fc39e-5011-4469-b93d-557e022f6454",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "2",
+          "id" : "97f45923-2413-4b1a-bcbd-24700193a965",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "6638720b-2f98-4b25-8c3e-5188fc51db1c",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "0458d4cf-34b0-4920-9c84-6b5a61944c32",
+      "name" : "enrich saved on 2024-03-28 14:00",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":\"string\",\"name\":\"string\",\"age\":0}" ],
+      "returnValue" : "{\"id\":\"string\",\"name\":\"string\",\"age\":2}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 14806601247111,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1270075809,
+      "probSerializedValue" : "eyJpZCI6InN0cmluZyIsIm5hbWUiOiJzdHJpbmciLCJhZ2UiOjJ9",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "enrich",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/Person;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Person;>;",
+        "className" : "org.unlogged.springwebfluxdemo.enrich.PersonAgeEnricher",
+        "methodHash" : 0
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

@@ -1,0 +1,5 @@
+# application.yml
+
+spring:
+  r2dbc:
+    username: root

@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.unlogged.springwebfluxdemo.exception.WebfluxError;
 import org.unlogged.springwebfluxdemo.model.Person;
 import org.unlogged.springwebfluxdemo.model.PersonV2;
+import org.unlogged.springwebfluxdemo.model.circle.CircleParent;
 import org.unlogged.springwebfluxdemo.service.flow1.CustomService;
 import reactor.core.publisher.Mono;
 import reactor.core.publisher.Signal;
@@ -127,5 +128,9 @@ public class Others {
         return Arrays.asList(new PersonV2("A", "A", 123l, "a@amg.com",
                 "b@amg.com", 111, "Axor123*amg", LocalDate.now(),
                 true, "somewhere"));
+    }
+
+    public Mono<CircleParent> getCircleParent() {
+        return Mono.just(new CircleParent(1));
     }
 }

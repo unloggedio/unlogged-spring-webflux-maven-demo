@@ -4,6 +4,7 @@ import io.micrometer.observation.ObservationRegistry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.unlogged.springwebfluxdemo.client.GreetingClient;
 import org.unlogged.springwebfluxdemo.exception.WebFluxException;
@@ -48,7 +49,8 @@ public class MonoOpsController {
 
     @RequestMapping("/block/1")
     public String getBlockedString() {
-        Mono<String> monoString = Mono.just("MonoString");
+        var testString = "MonoString";
+        Mono<String> monoString = Mono.just(testString);
         return monoString.block();
     }
 
@@ -75,4 +77,61 @@ public class MonoOpsController {
         }
         return Mono.just("Exception");
     }
+
+    @RequestMapping("/multiline")
+    public Mono<String> getMultilineString() {
+        String multilineString = """
+                This is a multiline string.
+                It is being used to test jdk21
+                """;
+        return Mono.just(multilineString);
+    }
+//
+//    It is a java preview feature
+//    @RequestMapping("/string-template")
+//    public Mono<String> getStringTemplate() {
+//        int a = 5;
+//        int b = 8;
+//        String result = "\{a} + \{b} = \{a+b}";
+//        return Mono.just(result);
+//    }
+
+    @RequestMapping("/enhanced/switch/1")
+    public Mono<Integer> calculate(@RequestParam String operation, @RequestParam int a, @RequestParam int b) {
+        Mono<Integer> answer = switch (operation) {
+//            case String s when s == "+" -> Mono.just(a + b);
+            case "-" -> Mono.just(a - b);
+//            case null -> Mono.just(0);
+            default -> Mono.just(a * b);
+        };
+        return answer;
+    }
+
+//    Currently this will fail with Unlogged.
+
+//    public Mono<Integer> switchJDK21(Object operation, int a, int b) {
+//        Mono<Integer> answer = switch (operation) {
+//            case String s when s == "+" -> Mono.just(a + b);
+//            case String s when s == "-" -> Mono.just(a - b);
+//            case Integer i -> Mono.just(i + i);
+//            case null -> Mono.just(0);
+//            default -> Mono.just(a * b);
+//        };
+//        return answer;
+//
+//    }
+
+    public Mono<Integer> calculateYield(String operation, int a, int b) {
+        Mono<Integer> answer = switch (operation) {
+//            case String s when s == "+" : yield Mono.just(a + b);
+            case "-":
+                yield Mono.just(a - b);
+//            case null : yield Mono.just(0);
+            default:
+                yield Mono.just(a * b);
+        };
+        return answer;
+
+    }
+
 }

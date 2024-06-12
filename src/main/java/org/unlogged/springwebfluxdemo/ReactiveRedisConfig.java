@@ -9,12 +9,16 @@ import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactor
 import org.springframework.data.redis.core.ReactiveRedisOperations;
 import org.springframework.data.redis.core.ReactiveRedisTemplate;
 import org.springframework.data.redis.serializer.*;
-import org.springframework.data.redis.util.ByteUtils;
 
+import java.awt.print.Book;
 import java.util.HashMap;
 import java.util.Map;
 
 import static org.springframework.data.redis.serializer.RedisSerializationContext.newSerializationContext;
+
+import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.RedisSerializationContext;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 @Configuration
 public class ReactiveRedisConfig {
@@ -55,9 +59,9 @@ public class ReactiveRedisConfig {
 
     private static class JSONSessionRedisSerializer implements RedisSerializer<Object> {
 
-        private static final byte[] SESSION_DATA_PREFIX = "appsmith-session:".getBytes();
+        private static final byte[] SESSION_DATA_PREFIX = "webflux-session:".getBytes();
 
-        private static final byte[] OAUTH_CLIENT_PREFIX = "appsmith-oauth-client:".getBytes();
+        private static final byte[] OAUTH_CLIENT_PREFIX = "webflux-oauth-client:".getBytes();
 
         private final JdkSerializationRedisSerializer fallback = new JdkSerializationRedisSerializer();
 
@@ -91,4 +95,17 @@ public class ReactiveRedisConfig {
 //                builder.value(valueSerializer).build();
 //        return new ReactiveRedisTemplate<>(factory, context);
 //    }
+
+    @Bean
+    public ReactiveRedisTemplate<String, Book> reactiveRedisTemplate(
+            ReactiveRedisConnectionFactory factory) {
+        Jackson2JsonRedisSerializer<Book> serializer = new Jackson2JsonRedisSerializer<>(Book.class);
+
+        RedisSerializationContext<String, Book> context =
+                RedisSerializationContext.<String, Book>newSerializationContext(new StringRedisSerializer())
+                        .value(serializer)
+                        .build();
+
+        return new ReactiveRedisTemplate<>(factory, context);
+    }
 }

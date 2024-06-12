@@ -1,0 +1,1575 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.MonoOpsController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.MonoOpsController#getMonostring#()Lreactor/core/publisher/Mono<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 34, 7 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Test String\"",
+          "id" : "07b7b1e2-ea7c-422a-821c-b88fada5a86a",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "34569ed6-214d-4e0b-87a8-7f3fde2ae65b",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "34e4b670-8640-422a-895b-6dc2450e6093",
+      "name" : "getMonostring saved on 2024-03-26 15:27",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\"Test String\"",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 13882953357891,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -803741941,
+      "probSerializedValue" : "IlRlc3QgU3RyaW5nIg==",
+      "mockIds" : [ "f62339a1-6cb7-4148-b90f-3c2eec4f96aa" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getMonostring",
+        "signature" : "()Lreactor/core/publisher/Mono<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.MonoOpsController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.MonoOpsController#returnMonoErrorBasic#()Lreactor/core/publisher/Mono<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 65 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "1b8e71c1-d809-4009-a7cb-e28074361515",
+          "assertionType" : "EQUAL",
+          "key" : "/cause"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"app\"",
+              "id" : "b6de7f3c-844b-4b96-a105-9a3ef5869799",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "d534d962-5702-4662-b6a5-c480d22c0114",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "9c5618c7-447a-48e3-9cd9-fe79d0836e45",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"returnMonoErrorBasic\"",
+              "id" : "d0c1cf54-b0c0-446c-9431-c708aca7a1d6",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"MonoOpsController.java\"",
+              "id" : "1d98228b-068a-4b29-bf19-fedc57a93f35",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "65",
+              "id" : "10a100c4-7f76-4518-8a5b-82156b9c8ee3",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "5142ae5a-f7e5-4822-96b1-c1928d66ac15",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"org.unlogged.springwebfluxdemo.controller.MonoOpsController\"",
+              "id" : "e79e16e6-f451-4954-a88e-b66251727682",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "6d5e3f83-f54d-4943-ac11-487cd9dbb282",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/0"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "bbdacfb7-c617-4f82-a876-d116aab5d7c9",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.base\"",
+              "id" : "02900bfb-ee58-4d2d-9ed1-96e416f5f169",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"17.0.7\"",
+              "id" : "94361bcb-8f8c-4e67-89f0-c30b76d2c1ff",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"invoke0\"",
+              "id" : "88d17eea-41af-413e-827c-12d0ba94755d",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"NativeMethodAccessorImpl.java\"",
+              "id" : "01ac3a76-dced-4f6d-a8d7-10e9419e913a",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "-2",
+              "id" : "37d8ae44-3e62-4927-b204-cbf7c939dfe8",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "cd0340e7-8a5e-41eb-a421-d8846b9b1e07",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"jdk.internal.reflect.NativeMethodAccessorImpl\"",
+              "id" : "e3f762ca-566f-472b-b38f-5305d71e5fe2",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "76e65d68-6efd-4b90-88a5-7a58dd90a5f6",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/1"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "1c1958ba-c422-466e-9bf5-da6f3117564a",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.base\"",
+              "id" : "3849bec3-86f6-4e10-95b7-c4ef254fd3d3",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"17.0.7\"",
+              "id" : "1f441931-5576-446d-a885-ad24b188ad84",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"invoke\"",
+              "id" : "8cf3efe0-3224-4cde-a004-73b22f69a0e4",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"NativeMethodAccessorImpl.java\"",
+              "id" : "85ec4ed5-1a75-40d3-90d2-669ef60ee0d2",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "77",
+              "id" : "257e8407-9f00-43df-b5da-a45c9f39ccc6",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "31e45b76-7af4-49ba-a1c5-6f61d5203bd0",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"jdk.internal.reflect.NativeMethodAccessorImpl\"",
+              "id" : "5b0dc1ef-f5f7-45af-ad60-a99a828c5a89",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "6559320f-227e-4596-a56a-c598ab86acab",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/2"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "cc2d63ff-67ba-4ae3-a741-ac4d3e77d692",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.base\"",
+              "id" : "e506bae4-443b-479b-8c12-72f4fa3bf816",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"17.0.7\"",
+              "id" : "bb34e242-be27-4531-b60d-5050ea6ceb99",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"invoke\"",
+              "id" : "2eafe06f-01cd-4b08-8e8c-b865bf00892b",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"DelegatingMethodAccessorImpl.java\"",
+              "id" : "d69d9608-5636-4693-a1fc-bfa54130767c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "43",
+              "id" : "45991c4c-1992-4e31-aa45-aca0e4d16aa9",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "0b68955b-d866-4477-9df3-180bdea08ce2",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"jdk.internal.reflect.DelegatingMethodAccessorImpl\"",
+              "id" : "a4e1d1be-ac6d-4e04-9095-a2c64d81d9c5",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "7cd61be3-9214-44f3-a0e0-413aa74729cd",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/3"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "c66060c9-b25b-454d-8c36-671518795dc4",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.base\"",
+              "id" : "e7aeb70b-e6e4-4346-aef3-2e413a05ed29",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"17.0.7\"",
+              "id" : "6ac1c670-322b-4209-82b3-223d7bf8273f",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"invoke\"",
+              "id" : "0b594d1d-651c-4ca6-b2c9-0f583372b5d0",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Method.java\"",
+              "id" : "9c38f839-ffba-4204-a1fb-e0c394310eb8",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "568",
+              "id" : "75072738-d020-470e-963a-a5e42a8bee1d",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "79dadf1b-d72a-462b-8958-7ebd21cc3a11",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.lang.reflect.Method\"",
+              "id" : "56756293-c70f-4729-b7a0-5a6f67f12215",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "2c743b05-4e31-46a5-9978-788c29284fc1",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/4"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"app\"",
+              "id" : "e4f532f6-805a-4d15-a678-1d3626b7473c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "6629b8b5-6ef4-4f48-8d14-d00b61ddaeae",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "fd3876ef-fa76-4ebc-a978-f1aba932f677",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"executeCommandRaw\"",
+              "id" : "d47e5d65-4eb8-4107-8267-183f38aecf1a",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"AgentCommandExecutorImpl.java\"",
+              "id" : "1d9f3999-e302-4a72-be1d-239520e00995",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "386",
+              "id" : "622ccfaa-4108-4270-a193-36a6946ae0b7",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "94658821-f059-4790-92b0-550562e5886c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"io.unlogged.AgentCommandExecutorImpl\"",
+              "id" : "d110f640-8c37-426b-b331-f79b0838a1a7",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "06d98188-1cc5-4a54-b8e0-34b81a4e9744",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/5"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"app\"",
+              "id" : "de14e4ae-8d01-4dea-9e8b-83b92fa270f0",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "806b038d-0ef8-47d8-9e0b-8afe539139e4",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "d9ad823c-6a4f-46f8-924a-dd22da5c1290",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"executeCommand\"",
+              "id" : "aa6f7ad1-0cc5-4546-bf07-3685fd2062b3",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"AgentCommandExecutorImpl.java\"",
+              "id" : "05d2e8ae-52c5-4f82-9758-349cb07af624",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "456",
+              "id" : "35bc6a31-f13e-45b9-8bf5-86ea8d3fc8c3",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "eaae5705-b226-4379-9226-a2f3eb842440",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"io.unlogged.AgentCommandExecutorImpl\"",
+              "id" : "d8a20f3a-c52c-46cb-b59a-c10842a3fd8f",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "12aeec35-46b2-406a-bbf6-f02f95604b95",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/6"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"app\"",
+              "id" : "3e5746bc-f1a6-494b-87f2-5288c652cd44",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "5ba6ab54-a6fb-45d6-9455-0a3c2720d04c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "95cd9a4f-cbf0-415d-b258-c8d7cf2488a6",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"serve\"",
+              "id" : "6441081f-a9d8-43bc-bf2d-8693829e1276",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"AgentCommandServer.java\"",
+              "id" : "caaaf4b9-961b-4c9f-adc9-abda0c8748b6",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "69",
+              "id" : "05f5d042-989b-4daf-87ad-b37d5436b967",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "820fb2b7-3b72-4f24-aedb-d24a50c39d41",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"io.unlogged.command.AgentCommandServer\"",
+              "id" : "a55bc8aa-8970-4c55-a914-56a83a4d34d2",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "0ac86e4d-391f-4f52-9d96-cd3acaa121ef",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/7"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"app\"",
+              "id" : "74e09974-d57c-4f02-833e-f41e1e4de435",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "2396dc06-39d6-4b83-a08c-365d5c492eff",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "6166f5f2-c65c-49f6-b9b4-8e1fbb08837d",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"execute\"",
+              "id" : "613ada0e-05ab-4484-9264-7e9fc52a62b1",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"NanoHTTPD.java\"",
+              "id" : "35dda3c7-85c8-4385-8cea-d1abc084fd77",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "945",
+              "id" : "198535ed-85e6-43f7-94a8-8b1dd53fecb1",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "662f063a-f0bc-4fdb-88d5-856fa86a7f55",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"fi.iki.elonen.NanoHTTPD$HTTPSession\"",
+              "id" : "39f87e1d-2f19-456c-a0e7-18dd47338086",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "700e9498-cf60-4739-9db0-abb3afb73075",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/8"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"app\"",
+              "id" : "58d1e45a-c39c-4775-beb8-65161563142f",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "b7fb0f57-8f64-4f11-84c1-5960a8b84bef",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "63f49d67-db9f-4681-b57d-badea7a18a8a",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"run\"",
+              "id" : "0e12ac3d-e4d7-4b37-a578-b83fc5913be6",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"NanoHTTPD.java\"",
+              "id" : "6daec373-c533-4674-bfd7-9ca9c70f1983",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "192",
+              "id" : "57440e46-e694-43a0-b73b-9d3364c7af35",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "7147a878-013f-479a-977d-0ab65468791a",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"fi.iki.elonen.NanoHTTPD$ClientHandler\"",
+              "id" : "a82c5e5b-93e1-4606-a22b-4544455b13bd",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "0bb4893c-72b6-4d91-946f-7d4ec6de21d9",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/9"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "1284207a-c656-4d2b-8f65-09f2506918a3",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.base\"",
+              "id" : "66ce622b-5078-4cc5-acc4-84914d8fa64c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"17.0.7\"",
+              "id" : "96893366-ca14-4315-83e0-e7c392680f66",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"run\"",
+              "id" : "5127fb40-0f03-44cc-a787-83a4528ab618",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Thread.java\"",
+              "id" : "99081a06-847f-477a-aa43-cff7419c1f27",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "833",
+              "id" : "2485b2c0-9757-49f1-830b-735194fc892d",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "19b90eb4-13a3-4a58-850c-8bb9c61d33b7",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.lang.Thread\"",
+              "id" : "90eef3a0-43dc-4c9b-87e8-2ced3fcc3202",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "07461c02-5211-4c2c-8080-bea8a10de7cd",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/10"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "1305cd33-54db-4939-bb62-53a9f9217b9e",
+          "assertionType" : "ALLOF",
+          "key" : "/stackTrace"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Custom throw\"",
+          "id" : "247874c3-ef00-49ca-9c03-6b9e69a4c02f",
+          "assertionType" : "EQUAL",
+          "key" : "/message"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "a6a0848c-b6f9-4cd0-966e-b9c2503f0023",
+          "assertionType" : "ALLOF",
+          "key" : "/suppressed"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Custom throw\"",
+          "id" : "ca55d502-43a4-44e3-ad4a-0bbd51cb641f",
+          "assertionType" : "EQUAL",
+          "key" : "/localizedMessage"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "34358e86-7862-490b-9734-d9785b90e19b",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "43c6f1fe-1b9e-4148-bd2c-c7752fc98a38",
+      "name" : "returnMonoErrorBasic saved on 2024-03-26 15:33",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"cause\":null,\"stackTrace\":[{\"classLoaderName\":\"app\",\"moduleName\":null,\"moduleVersion\":null,\"methodName\":\"returnMonoErrorBasic\",\"fileName\":\"MonoOpsController.java\",\"lineNumber\":65,\"nativeMethod\":false,\"className\":\"org.unlogged.springwebfluxdemo.controller.MonoOpsController\"},{\"classLoaderName\":null,\"moduleName\":\"java.base\",\"moduleVersion\":\"17.0.7\",\"methodName\":\"invoke0\",\"fileName\":\"NativeMethodAccessorImpl.java\",\"lineNumber\":-2,\"nativeMethod\":true,\"className\":\"jdk.internal.reflect.NativeMethodAccessorImpl\"},{\"classLoaderName\":null,\"moduleName\":\"java.base\",\"moduleVersion\":\"17.0.7\",\"methodName\":\"invoke\",\"fileName\":\"NativeMethodAccessorImpl.java\",\"lineNumber\":77,\"nativeMethod\":false,\"className\":\"jdk.internal.reflect.NativeMethodAccessorImpl\"},{\"classLoaderName\":null,\"moduleName\":\"java.base\",\"moduleVersion\":\"17.0.7\",\"methodName\":\"invoke\",\"fileName\":\"DelegatingMethodAccessorImpl.java\",\"lineNumber\":43,\"nativeMethod\":false,\"className\":\"jdk.internal.reflect.DelegatingMethodAccessorImpl\"},{\"classLoaderName\":null,\"moduleName\":\"java.base\",\"moduleVersion\":\"17.0.7\",\"methodName\":\"invoke\",\"fileName\":\"Method.java\",\"lineNumber\":568,\"nativeMethod\":false,\"className\":\"java.lang.reflect.Method\"},{\"classLoaderName\":\"app\",\"moduleName\":null,\"moduleVersion\":null,\"methodName\":\"executeCommandRaw\",\"fileName\":\"AgentCommandExecutorImpl.java\",\"lineNumber\":386,\"nativeMethod\":false,\"className\":\"io.unlogged.AgentCommandExecutorImpl\"},{\"classLoaderName\":\"app\",\"moduleName\":null,\"moduleVersion\":null,\"methodName\":\"executeCommand\",\"fileName\":\"AgentCommandExecutorImpl.java\",\"lineNumber\":456,\"nativeMethod\":false,\"className\":\"io.unlogged.AgentCommandExecutorImpl\"},{\"classLoaderName\":\"app\",\"moduleName\":null,\"moduleVersion\":null,\"methodName\":\"serve\",\"fileName\":\"AgentCommandServer.java\",\"lineNumber\":69,\"nativeMethod\":false,\"className\":\"io.unlogged.command.AgentCommandServer\"},{\"classLoaderName\":\"app\",\"moduleName\":null,\"moduleVersion\":null,\"methodName\":\"execute\",\"fileName\":\"NanoHTTPD.java\",\"lineNumber\":945,\"nativeMethod\":false,\"className\":\"fi.iki.elonen.NanoHTTPD$HTTPSession\"},{\"classLoaderName\":\"app\",\"moduleName\":null,\"moduleVersion\":null,\"methodName\":\"run\",\"fileName\":\"NanoHTTPD.java\",\"lineNumber\":192,\"nativeMethod\":false,\"className\":\"fi.iki.elonen.NanoHTTPD$ClientHandler\"},{\"classLoaderName\":null,\"moduleName\":\"java.base\",\"moduleVersion\":\"17.0.7\",\"methodName\":\"run\",\"fileName\":\"Thread.java\",\"lineNumber\":833,\"nativeMethod\":false,\"className\":\"java.lang.Thread\"}],\"message\":\"Custom throw\",\"suppressed\":[],\"localizedMessage\":\"Custom throw\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 14284738413734,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1541029109,
+      "probSerializedValue" : "eyJjYXVzZSI6bnVsbCwic3RhY2tUcmFjZSI6W3siY2xhc3NMb2FkZXJOYW1lIjoiYXBwIiwibW9kdWxlTmFtZSI6bnVsbCwibW9kdWxlVmVyc2lvbiI6bnVsbCwibWV0aG9kTmFtZSI6InJldHVybk1vbm9FcnJvckJhc2ljIiwiZmlsZU5hbWUiOiJNb25vT3BzQ29udHJvbGxlci5qYXZhIiwibGluZU51bWJlciI6NjUsIm5hdGl2ZU1ldGhvZCI6ZmFsc2UsImNsYXNzTmFtZSI6Im9yZy51bmxvZ2dlZC5zcHJpbmd3ZWJmbHV4ZGVtby5jb250cm9sbGVyLk1vbm9PcHNDb250cm9sbGVyIn0seyJjbGFzc0xvYWRlck5hbWUiOm51bGwsIm1vZHVsZU5hbWUiOiJqYXZhLmJhc2UiLCJtb2R1bGVWZXJzaW9uIjoiMTcuMC43IiwibWV0aG9kTmFtZSI6Imludm9rZTAiLCJmaWxlTmFtZSI6Ik5hdGl2ZU1ldGhvZEFjY2Vzc29ySW1wbC5qYXZhIiwibGluZU51bWJlciI6LTIsIm5hdGl2ZU1ldGhvZCI6dHJ1ZSwiY2xhc3NOYW1lIjoiamRrLmludGVybmFsLnJlZmxlY3QuTmF0aXZlTWV0aG9kQWNjZXNzb3JJbXBsIn0seyJjbGFzc0xvYWRlck5hbWUiOm51bGwsIm1vZHVsZU5hbWUiOiJqYXZhLmJhc2UiLCJtb2R1bGVWZXJzaW9uIjoiMTcuMC43IiwibWV0aG9kTmFtZSI6Imludm9rZSIsImZpbGVOYW1lIjoiTmF0aXZlTWV0aG9kQWNjZXNzb3JJbXBsLmphdmEiLCJsaW5lTnVtYmVyIjo3NywibmF0aXZlTWV0aG9kIjpmYWxzZSwiY2xhc3NOYW1lIjoiamRrLmludGVybmFsLnJlZmxlY3QuTmF0aXZlTWV0aG9kQWNjZXNzb3JJbXBsIn0seyJjbGFzc0xvYWRlck5hbWUiOm51bGwsIm1vZHVsZU5hbWUiOiJqYXZhLmJhc2UiLCJtb2R1bGVWZXJzaW9uIjoiMTcuMC43IiwibWV0aG9kTmFtZSI6Imludm9rZSIsImZpbGVOYW1lIjoiRGVsZWdhdGluZ01ldGhvZEFjY2Vzc29ySW1wbC5qYXZhIiwibGluZU51bWJlciI6NDMsIm5hdGl2ZU1ldGhvZCI6ZmFsc2UsImNsYXNzTmFtZSI6Impkay5pbnRlcm5hbC5yZWZsZWN0LkRlbGVnYXRpbmdNZXRob2RBY2Nlc3NvckltcGwifSx7ImNsYXNzTG9hZGVyTmFtZSI6bnVsbCwibW9kdWxlTmFtZSI6ImphdmEuYmFzZSIsIm1vZHVsZVZlcnNpb24iOiIxNy4wLjciLCJtZXRob2ROYW1lIjoiaW52b2tlIiwiZmlsZU5hbWUiOiJNZXRob2QuamF2YSIsImxpbmVOdW1iZXIiOjU2OCwibmF0aXZlTWV0aG9kIjpmYWxzZSwiY2xhc3NOYW1lIjoiamF2YS5sYW5nLnJlZmxlY3QuTWV0aG9kIn0seyJjbGFzc0xvYWRlck5hbWUiOiJhcHAiLCJtb2R1bGVOYW1lIjpudWxsLCJtb2R1bGVWZXJzaW9uIjpudWxsLCJtZXRob2ROYW1lIjoiZXhlY3V0ZUNvbW1hbmRSYXciLCJmaWxlTmFtZSI6IkFnZW50Q29tbWFuZEV4ZWN1dG9ySW1wbC5qYXZhIiwibGluZU51bWJlciI6Mzg2LCJuYXRpdmVNZXRob2QiOmZhbHNlLCJjbGFzc05hbWUiOiJpby51bmxvZ2dlZC5BZ2VudENvbW1hbmRFeGVjdXRvckltcGwifSx7ImNsYXNzTG9hZGVyTmFtZSI6ImFwcCIsIm1vZHVsZU5hbWUiOm51bGwsIm1vZHVsZVZlcnNpb24iOm51bGwsIm1ldGhvZE5hbWUiOiJleGVjdXRlQ29tbWFuZCIsImZpbGVOYW1lIjoiQWdlbnRDb21tYW5kRXhlY3V0b3JJbXBsLmphdmEiLCJsaW5lTnVtYmVyIjo0NTYsIm5hdGl2ZU1ldGhvZCI6ZmFsc2UsImNsYXNzTmFtZSI6ImlvLnVubG9nZ2VkLkFnZW50Q29tbWFuZEV4ZWN1dG9ySW1wbCJ9LHsiY2xhc3NMb2FkZXJOYW1lIjoiYXBwIiwibW9kdWxlTmFtZSI6bnVsbCwibW9kdWxlVmVyc2lvbiI6bnVsbCwibWV0aG9kTmFtZSI6InNlcnZlIiwiZmlsZU5hbWUiOiJBZ2VudENvbW1hbmRTZXJ2ZXIuamF2YSIsImxpbmVOdW1iZXIiOjY5LCJuYXRpdmVNZXRob2QiOmZhbHNlLCJjbGFzc05hbWUiOiJpby51bmxvZ2dlZC5jb21tYW5kLkFnZW50Q29tbWFuZFNlcnZlciJ9LHsiY2xhc3NMb2FkZXJOYW1lIjoiYXBwIiwibW9kdWxlTmFtZSI6bnVsbCwibW9kdWxlVmVyc2lvbiI6bnVsbCwibWV0aG9kTmFtZSI6ImV4ZWN1dGUiLCJmaWxlTmFtZSI6Ik5hbm9IVFRQRC5qYXZhIiwibGluZU51bWJlciI6OTQ1LCJuYXRpdmVNZXRob2QiOmZhbHNlLCJjbGFzc05hbWUiOiJmaS5pa2kuZWxvbmVuLk5hbm9IVFRQRCRIVFRQU2Vzc2lvbiJ9LHsiY2xhc3NMb2FkZXJOYW1lIjoiYXBwIiwibW9kdWxlTmFtZSI6bnVsbCwibW9kdWxlVmVyc2lvbiI6bnVsbCwibWV0aG9kTmFtZSI6InJ1biIsImZpbGVOYW1lIjoiTmFub0hUVFBELmphdmEiLCJsaW5lTnVtYmVyIjoxOTIsIm5hdGl2ZU1ldGhvZCI6ZmFsc2UsImNsYXNzTmFtZSI6ImZpLmlraS5lbG9uZW4uTmFub0hUVFBEJENsaWVudEhhbmRsZXIifSx7ImNsYXNzTG9hZGVyTmFtZSI6bnVsbCwibW9kdWxlTmFtZSI6ImphdmEuYmFzZSIsIm1vZHVsZVZlcnNpb24iOiIxNy4wLjciLCJtZXRob2ROYW1lIjoicnVuIiwiZmlsZU5hbWUiOiJUaHJlYWQuamF2YSIsImxpbmVOdW1iZXIiOjgzMywibmF0aXZlTWV0aG9kIjpmYWxzZSwiY2xhc3NOYW1lIjoiamF2YS5sYW5nLlRocmVhZCJ9XSwibWVzc2FnZSI6IkN1c3RvbSB0aHJvdyIsInN1cHByZXNzZWQiOltdLCJsb2NhbGl6ZWRNZXNzYWdlIjoiQ3VzdG9tIHRocm93In0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "returnMonoErrorBasic",
+        "signature" : "()Lreactor/core/publisher/Mono<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.MonoOpsController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.MonoOpsController#returnCustomExceptionFromMono#()Lreactor/core/publisher/Mono<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 73 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Custom error throw\"",
+          "id" : "f2f65686-a839-4673-9413-ec41b21a9cb3",
+          "assertionType" : "EQUAL",
+          "key" : "/detailMessage"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "08ccf3df-376e-4c07-a1a9-5fb735f5f401",
+          "assertionType" : "EQUAL",
+          "key" : "/cause"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"app\"",
+              "id" : "588bd10c-215d-4c54-9879-48534e817431",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "940bcb51-0db8-4a11-9566-c90b83eb392a",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "b3736600-2fc9-44c1-b8b3-bc89736e04a0",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"returnCustomExceptionFromMono\"",
+              "id" : "217fa9ac-af4c-4bb0-ab7a-8894015de602",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"MonoOpsController.java\"",
+              "id" : "70b0834b-8413-42a8-a06d-a3480df6288d",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "73",
+              "id" : "cc1a9d25-4af5-4123-b8d3-31c5411f7391",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "c8c815b0-4265-46ec-a020-524aa89fa3db",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"org.unlogged.springwebfluxdemo.controller.MonoOpsController\"",
+              "id" : "fc587fcc-c06a-438b-ac0f-ee9f0d46c6b5",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/0/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "71377a31-34e0-48c9-8523-01bb69bc74bf",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/0"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "0c8ac354-d899-49d7-84fd-df9578e59e84",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.base\"",
+              "id" : "cded4ea0-7005-4005-b335-8de0529ee79b",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"17.0.7\"",
+              "id" : "39693f6d-2eab-491f-9233-93d7cb765294",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"invoke0\"",
+              "id" : "b7e71e03-04b5-45f4-aa3c-9a3f51c8dcd4",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"NativeMethodAccessorImpl.java\"",
+              "id" : "dfc57575-09d5-445a-ac8d-46a5f5344082",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "-2",
+              "id" : "166a290d-6e84-4f0b-834b-5ab6af331868",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "5be168d7-cf9f-40d1-907f-4f16aca8310c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"jdk.internal.reflect.NativeMethodAccessorImpl\"",
+              "id" : "a394c383-0062-4eba-a5e3-7bf79dc54f2c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/1/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "dcacbe6b-e289-4bf6-ba12-14cd8bee98a7",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/1"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "9677477e-6466-40f4-9568-0ce6e006d955",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.base\"",
+              "id" : "73c1b7a1-7c33-4411-b6ba-e284c7d446c7",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"17.0.7\"",
+              "id" : "f1542421-bccd-4d3c-9dc7-6e09b133675c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"invoke\"",
+              "id" : "df3fe518-2706-47b7-96ac-5bddbafd2c08",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"NativeMethodAccessorImpl.java\"",
+              "id" : "953b3f04-256a-47b3-aa25-868e096b5195",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "77",
+              "id" : "d5698a1b-a142-4af8-8828-4945a3b3c75f",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "0b962cd4-332a-4e53-b4ba-dc4e229f3f0a",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"jdk.internal.reflect.NativeMethodAccessorImpl\"",
+              "id" : "8205141f-f2bd-41b3-a27b-462c333c5cf2",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/2/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "57c5bbcc-9241-4f3c-af82-e9239e7e2e26",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/2"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "dfa1aa83-7757-490f-b41b-332c9efbb98d",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.base\"",
+              "id" : "d3e7a3a1-0512-47c1-bb2b-a054aae9b874",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"17.0.7\"",
+              "id" : "d8c7b36a-903c-4e93-8632-8f8cec10a95d",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"invoke\"",
+              "id" : "4a6757a6-41dd-4035-9e08-0537ad624e0b",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"DelegatingMethodAccessorImpl.java\"",
+              "id" : "5a001ea9-e284-46a4-a70c-6fa6078beba2",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "43",
+              "id" : "7e6aeac8-9921-4332-ba61-d361a628a960",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "a71da9df-c157-41f9-a494-7548feca9d33",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"jdk.internal.reflect.DelegatingMethodAccessorImpl\"",
+              "id" : "0b4ac2f3-e972-40e7-8aef-08c59e407982",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/3/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "e357ca02-8f90-4022-95f2-66fce3d375cb",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/3"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "1026c228-06b9-4153-8e2f-41a2981b9026",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.base\"",
+              "id" : "ae547efb-147e-4e19-bd35-94dac5117bcd",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"17.0.7\"",
+              "id" : "f79f1982-a211-40ad-b7b5-d92d7d2b9043",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"invoke\"",
+              "id" : "5d684c76-7da1-41d6-bb88-d3d972f6285f",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Method.java\"",
+              "id" : "f70828d1-266d-4d61-87b8-7de8255978b3",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "568",
+              "id" : "49e615dc-bcca-4975-a0d7-4258c68f29c1",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "33d8721b-f767-421d-8c31-30a98d86ff28",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.lang.reflect.Method\"",
+              "id" : "e60752ac-06a8-4c32-b67c-50bc7149942a",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/4/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "ab2e3f26-81f4-4c59-bdb1-0d6453290a1d",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/4"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"app\"",
+              "id" : "a68da641-aff0-4c25-94ed-e35a5cd4cabc",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "8a4d3747-a76d-4287-ba02-38a35e27dfc8",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "39ae30ba-ad0a-4c7e-aa05-22eaad1dc53b",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"executeCommandRaw\"",
+              "id" : "b449a44e-f151-4ff6-887f-c1f9c8ffcd3e",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"AgentCommandExecutorImpl.java\"",
+              "id" : "df4b04dd-b812-4996-ba05-1090f4a883d8",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "386",
+              "id" : "0265960c-3ba1-43a7-9d80-22a06aa9b9c1",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "1d9b79a1-ee34-4206-b275-fbe5ee9a7292",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"io.unlogged.AgentCommandExecutorImpl\"",
+              "id" : "56c6f894-046d-4bea-995d-a48835130def",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/5/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "119028f8-c1cb-4479-b754-af3721823de2",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/5"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"app\"",
+              "id" : "ff673323-ebba-46d2-86dc-abe11f865d86",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "57f008c4-8316-44f9-8e93-d27465e989c5",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "e02b8069-c352-42c1-8f3c-92be49dc4a66",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"executeCommand\"",
+              "id" : "73be53b5-6586-4f28-bf7f-75f247fce235",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"AgentCommandExecutorImpl.java\"",
+              "id" : "20882c8b-30d1-475b-895f-80f7378ca87c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "456",
+              "id" : "11e29a37-6128-491b-8002-c518404d6b6c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "039c8b6a-16fa-4b9a-98a4-3c601e720dfb",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"io.unlogged.AgentCommandExecutorImpl\"",
+              "id" : "ecd84ba7-84ac-4a5a-9c72-6475d7665951",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/6/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "9c4041e1-81c9-4277-a77b-e09b375ce00c",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/6"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"app\"",
+              "id" : "3c6027ca-e8b9-4fbb-b1c3-49150ac71767",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "0c5b7876-9775-43ca-8223-df73e7b81b93",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "6560919a-c5f3-4450-97c0-e1aadee9ad5d",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"serve\"",
+              "id" : "86356e8b-9de0-47a1-9d17-f5a4d45e7046",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"AgentCommandServer.java\"",
+              "id" : "b74e3d4f-8c4d-4e69-8a6d-52a09a258f58",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "69",
+              "id" : "f908c890-8e6e-4b8c-85dc-497f1a7a90c3",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "51ef66a5-a189-4ab5-8a46-793c06f56a98",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"io.unlogged.command.AgentCommandServer\"",
+              "id" : "b65ab6a4-99b0-44a8-bf72-1882c506594e",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/7/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "1827e4e8-79c9-444f-a0b5-843bbd330c51",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/7"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"app\"",
+              "id" : "a39694fe-a37f-4974-a1b3-f3437a1ce571",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "81fb84c3-b6cf-4575-82af-fcfbb2b54f8e",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "e057f410-5cb8-499c-8e2d-23300c71a40c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"execute\"",
+              "id" : "1aca4d0b-82f7-4493-b5ac-de0501ece31c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"NanoHTTPD.java\"",
+              "id" : "ac3e3533-1699-4c26-95bb-f11b4f57aef0",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "945",
+              "id" : "d441fbd7-1c88-4f99-a533-f245d20339a4",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "287b2a11-f2d9-4cce-93f6-c54fc60e8d91",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"fi.iki.elonen.NanoHTTPD$HTTPSession\"",
+              "id" : "219bebab-8f89-477f-b99e-d02cff945296",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/8/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "68346a3f-e495-457e-8cd5-4450560f42c8",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/8"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"app\"",
+              "id" : "87569b11-57d8-4db8-b2b1-90f18111598e",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "eafa6e8b-62d6-41a8-a733-ca87404c0d86",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "c9af7134-fb2b-4ab9-82ab-fc1edb923002",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"run\"",
+              "id" : "b56764b4-b3cb-488b-8698-1122979e15ac",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"NanoHTTPD.java\"",
+              "id" : "f5cde32f-1f58-4646-b838-fe840f048e9a",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "192",
+              "id" : "22916e0b-0dba-46bf-92fa-9b1201719242",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "9098d98c-c241-4e69-9455-91c9df09c602",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"fi.iki.elonen.NanoHTTPD$ClientHandler\"",
+              "id" : "bc66e8ce-2b26-4403-91d0-5ad0d11487b6",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/9/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "6d59b3b9-c0b4-43be-8d91-5bab81a73a2e",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/9"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "3cd978ef-eac2-4987-9fe0-a705449f8845",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/classLoaderName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.base\"",
+              "id" : "a9a2725c-bf1a-4012-9979-c599c7bb91d0",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/moduleName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"17.0.7\"",
+              "id" : "bca1b55b-910f-4358-aa0d-11cd9cf18bcf",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/moduleVersion"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"run\"",
+              "id" : "04652cbc-8153-4af8-9eeb-d11db3376e4d",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/methodName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Thread.java\"",
+              "id" : "dc3c9cf7-4a31-4972-a734-07ca6c761328",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/fileName"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "833",
+              "id" : "8ac31609-2245-413f-928b-87e0e3d9b5e9",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/lineNumber"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "false",
+              "id" : "2dcd986d-806d-41d2-bae0-c91c3d5e682f",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/nativeMethod"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"java.lang.Thread\"",
+              "id" : "918be22a-1b13-4d48-a39b-509a7241077c",
+              "assertionType" : "EQUAL",
+              "key" : "/stackTrace/10/className"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "4ad88259-8bb6-455b-a35a-2ea3b061a7bf",
+            "assertionType" : "ALLOF",
+            "key" : "/stackTrace/10"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "8aba7b51-4d23-4597-9fa9-05397c7ced03",
+          "assertionType" : "ALLOF",
+          "key" : "/stackTrace"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "cb2687ea-0ea0-4a44-97bc-1739185ca44a",
+          "assertionType" : "ALLOF",
+          "key" : "/suppressedExceptions"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "2c57714c-fd4a-47c5-b793-17a1e2c6014e",
+          "assertionType" : "ALLOF",
+          "key" : "/contextMap"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"CUSTOM_THROW\"",
+          "id" : "ae276843-025d-4cd9-8b8a-b326ac008b1b",
+          "assertionType" : "EQUAL",
+          "key" : "/error"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "d585bda4-5206-4c52-9faa-47256bd34813",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "871ec04c-7cdc-40ee-b401-187f8b198f6f",
+      "name" : "returnCustomExceptionFromMono saved on 2024-03-26 15:33",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"detailMessage\":\"Custom error throw\",\"cause\":null,\"stackTrace\":[{\"classLoaderName\":\"app\",\"moduleName\":null,\"moduleVersion\":null,\"methodName\":\"returnCustomExceptionFromMono\",\"fileName\":\"MonoOpsController.java\",\"lineNumber\":73,\"nativeMethod\":false,\"className\":\"org.unlogged.springwebfluxdemo.controller.MonoOpsController\"},{\"classLoaderName\":null,\"moduleName\":\"java.base\",\"moduleVersion\":\"17.0.7\",\"methodName\":\"invoke0\",\"fileName\":\"NativeMethodAccessorImpl.java\",\"lineNumber\":-2,\"nativeMethod\":true,\"className\":\"jdk.internal.reflect.NativeMethodAccessorImpl\"},{\"classLoaderName\":null,\"moduleName\":\"java.base\",\"moduleVersion\":\"17.0.7\",\"methodName\":\"invoke\",\"fileName\":\"NativeMethodAccessorImpl.java\",\"lineNumber\":77,\"nativeMethod\":false,\"className\":\"jdk.internal.reflect.NativeMethodAccessorImpl\"},{\"classLoaderName\":null,\"moduleName\":\"java.base\",\"moduleVersion\":\"17.0.7\",\"methodName\":\"invoke\",\"fileName\":\"DelegatingMethodAccessorImpl.java\",\"lineNumber\":43,\"nativeMethod\":false,\"className\":\"jdk.internal.reflect.DelegatingMethodAccessorImpl\"},{\"classLoaderName\":null,\"moduleName\":\"java.base\",\"moduleVersion\":\"17.0.7\",\"methodName\":\"invoke\",\"fileName\":\"Method.java\",\"lineNumber\":568,\"nativeMethod\":false,\"className\":\"java.lang.reflect.Method\"},{\"classLoaderName\":\"app\",\"moduleName\":null,\"moduleVersion\":null,\"methodName\":\"executeCommandRaw\",\"fileName\":\"AgentCommandExecutorImpl.java\",\"lineNumber\":386,\"nativeMethod\":false,\"className\":\"io.unlogged.AgentCommandExecutorImpl\"},{\"classLoaderName\":\"app\",\"moduleName\":null,\"moduleVersion\":null,\"methodName\":\"executeCommand\",\"fileName\":\"AgentCommandExecutorImpl.java\",\"lineNumber\":456,\"nativeMethod\":false,\"className\":\"io.unlogged.AgentCommandExecutorImpl\"},{\"classLoaderName\":\"app\",\"moduleName\":null,\"moduleVersion\":null,\"methodName\":\"serve\",\"fileName\":\"AgentCommandServer.java\",\"lineNumber\":69,\"nativeMethod\":false,\"className\":\"io.unlogged.command.AgentCommandServer\"},{\"classLoaderName\":\"app\",\"moduleName\":null,\"moduleVersion\":null,\"methodName\":\"execute\",\"fileName\":\"NanoHTTPD.java\",\"lineNumber\":945,\"nativeMethod\":false,\"className\":\"fi.iki.elonen.NanoHTTPD$HTTPSession\"},{\"classLoaderName\":\"app\",\"moduleName\":null,\"moduleVersion\":null,\"methodName\":\"run\",\"fileName\":\"NanoHTTPD.java\",\"lineNumber\":192,\"nativeMethod\":false,\"className\":\"fi.iki.elonen.NanoHTTPD$ClientHandler\"},{\"classLoaderName\":null,\"moduleName\":\"java.base\",\"moduleVersion\":\"17.0.7\",\"methodName\":\"run\",\"fileName\":\"Thread.java\",\"lineNumber\":833,\"nativeMethod\":false,\"className\":\"java.lang.Thread\"}],\"suppressedExceptions\":[],\"contextMap\":{},\"error\":\"CUSTOM_THROW\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "testerfresher",
+        "hostMachineName" : "testerfresher",
+        "timestamp" : 14301896329870,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 111032350,
+      "probSerializedValue" : "eyJkZXRhaWxNZXNzYWdlIjoiQ3VzdG9tIGVycm9yIHRocm93IiwiY2F1c2UiOm51bGwsInN0YWNrVHJhY2UiOlt7ImNsYXNzTG9hZGVyTmFtZSI6ImFwcCIsIm1vZHVsZU5hbWUiOm51bGwsIm1vZHVsZVZlcnNpb24iOm51bGwsIm1ldGhvZE5hbWUiOiJyZXR1cm5DdXN0b21FeGNlcHRpb25Gcm9tTW9ubyIsImZpbGVOYW1lIjoiTW9ub09wc0NvbnRyb2xsZXIuamF2YSIsImxpbmVOdW1iZXIiOjczLCJuYXRpdmVNZXRob2QiOmZhbHNlLCJjbGFzc05hbWUiOiJvcmcudW5sb2dnZWQuc3ByaW5nd2ViZmx1eGRlbW8uY29udHJvbGxlci5Nb25vT3BzQ29udHJvbGxlciJ9LHsiY2xhc3NMb2FkZXJOYW1lIjpudWxsLCJtb2R1bGVOYW1lIjoiamF2YS5iYXNlIiwibW9kdWxlVmVyc2lvbiI6IjE3LjAuNyIsIm1ldGhvZE5hbWUiOiJpbnZva2UwIiwiZmlsZU5hbWUiOiJOYXRpdmVNZXRob2RBY2Nlc3NvckltcGwuamF2YSIsImxpbmVOdW1iZXIiOi0yLCJuYXRpdmVNZXRob2QiOnRydWUsImNsYXNzTmFtZSI6Impkay5pbnRlcm5hbC5yZWZsZWN0Lk5hdGl2ZU1ldGhvZEFjY2Vzc29ySW1wbCJ9LHsiY2xhc3NMb2FkZXJOYW1lIjpudWxsLCJtb2R1bGVOYW1lIjoiamF2YS5iYXNlIiwibW9kdWxlVmVyc2lvbiI6IjE3LjAuNyIsIm1ldGhvZE5hbWUiOiJpbnZva2UiLCJmaWxlTmFtZSI6Ik5hdGl2ZU1ldGhvZEFjY2Vzc29ySW1wbC5qYXZhIiwibGluZU51bWJlciI6NzcsIm5hdGl2ZU1ldGhvZCI6ZmFsc2UsImNsYXNzTmFtZSI6Impkay5pbnRlcm5hbC5yZWZsZWN0Lk5hdGl2ZU1ldGhvZEFjY2Vzc29ySW1wbCJ9LHsiY2xhc3NMb2FkZXJOYW1lIjpudWxsLCJtb2R1bGVOYW1lIjoiamF2YS5iYXNlIiwibW9kdWxlVmVyc2lvbiI6IjE3LjAuNyIsIm1ldGhvZE5hbWUiOiJpbnZva2UiLCJmaWxlTmFtZSI6IkRlbGVnYXRpbmdNZXRob2RBY2Nlc3NvckltcGwuamF2YSIsImxpbmVOdW1iZXIiOjQzLCJuYXRpdmVNZXRob2QiOmZhbHNlLCJjbGFzc05hbWUiOiJqZGsuaW50ZXJuYWwucmVmbGVjdC5EZWxlZ2F0aW5nTWV0aG9kQWNjZXNzb3JJbXBsIn0seyJjbGFzc0xvYWRlck5hbWUiOm51bGwsIm1vZHVsZU5hbWUiOiJqYXZhLmJhc2UiLCJtb2R1bGVWZXJzaW9uIjoiMTcuMC43IiwibWV0aG9kTmFtZSI6Imludm9rZSIsImZpbGVOYW1lIjoiTWV0aG9kLmphdmEiLCJsaW5lTnVtYmVyIjo1NjgsIm5hdGl2ZU1ldGhvZCI6ZmFsc2UsImNsYXNzTmFtZSI6ImphdmEubGFuZy5yZWZsZWN0Lk1ldGhvZCJ9LHsiY2xhc3NMb2FkZXJOYW1lIjoiYXBwIiwibW9kdWxlTmFtZSI6bnVsbCwibW9kdWxlVmVyc2lvbiI6bnVsbCwibWV0aG9kTmFtZSI6ImV4ZWN1dGVDb21tYW5kUmF3IiwiZmlsZU5hbWUiOiJBZ2VudENvbW1hbmRFeGVjdXRvckltcGwuamF2YSIsImxpbmVOdW1iZXIiOjM4NiwibmF0aXZlTWV0aG9kIjpmYWxzZSwiY2xhc3NOYW1lIjoiaW8udW5sb2dnZWQuQWdlbnRDb21tYW5kRXhlY3V0b3JJbXBsIn0seyJjbGFzc0xvYWRlck5hbWUiOiJhcHAiLCJtb2R1bGVOYW1lIjpudWxsLCJtb2R1bGVWZXJzaW9uIjpudWxsLCJtZXRob2ROYW1lIjoiZXhlY3V0ZUNvbW1hbmQiLCJmaWxlTmFtZSI6IkFnZW50Q29tbWFuZEV4ZWN1dG9ySW1wbC5qYXZhIiwibGluZU51bWJlciI6NDU2LCJuYXRpdmVNZXRob2QiOmZhbHNlLCJjbGFzc05hbWUiOiJpby51bmxvZ2dlZC5BZ2VudENvbW1hbmRFeGVjdXRvckltcGwifSx7ImNsYXNzTG9hZGVyTmFtZSI6ImFwcCIsIm1vZHVsZU5hbWUiOm51bGwsIm1vZHVsZVZlcnNpb24iOm51bGwsIm1ldGhvZE5hbWUiOiJzZXJ2ZSIsImZpbGVOYW1lIjoiQWdlbnRDb21tYW5kU2VydmVyLmphdmEiLCJsaW5lTnVtYmVyIjo2OSwibmF0aXZlTWV0aG9kIjpmYWxzZSwiY2xhc3NOYW1lIjoiaW8udW5sb2dnZWQuY29tbWFuZC5BZ2VudENvbW1hbmRTZXJ2ZXIifSx7ImNsYXNzTG9hZGVyTmFtZSI6ImFwcCIsIm1vZHVsZU5hbWUiOm51bGwsIm1vZHVsZVZlcnNpb24iOm51bGwsIm1ldGhvZE5hbWUiOiJleGVjdXRlIiwiZmlsZU5hbWUiOiJOYW5vSFRUUEQuamF2YSIsImxpbmVOdW1iZXIiOjk0NSwibmF0aXZlTWV0aG9kIjpmYWxzZSwiY2xhc3NOYW1lIjoiZmkuaWtpLmVsb25lbi5OYW5vSFRUUEQkSFRUUFNlc3Npb24ifSx7ImNsYXNzTG9hZGVyTmFtZSI6ImFwcCIsIm1vZHVsZU5hbWUiOm51bGwsIm1vZHVsZVZlcnNpb24iOm51bGwsIm1ldGhvZE5hbWUiOiJydW4iLCJmaWxlTmFtZSI6Ik5hbm9IVFRQRC5qYXZhIiwibGluZU51bWJlciI6MTkyLCJuYXRpdmVNZXRob2QiOmZhbHNlLCJjbGFzc05hbWUiOiJmaS5pa2kuZWxvbmVuLk5hbm9IVFRQRCRDbGllbnRIYW5kbGVyIn0seyJjbGFzc0xvYWRlck5hbWUiOm51bGwsIm1vZHVsZU5hbWUiOiJqYXZhLmJhc2UiLCJtb2R1bGVWZXJzaW9uIjoiMTcuMC43IiwibWV0aG9kTmFtZSI6InJ1biIsImZpbGVOYW1lIjoiVGhyZWFkLmphdmEiLCJsaW5lTnVtYmVyIjo4MzMsIm5hdGl2ZU1ldGhvZCI6ZmFsc2UsImNsYXNzTmFtZSI6ImphdmEubGFuZy5UaHJlYWQifV0sInN1cHByZXNzZWRFeGNlcHRpb25zIjpbXSwiY29udGV4dE1hcCI6e30sImVycm9yIjoiQ1VTVE9NX1RIUk9XIn0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "returnCustomExceptionFromMono",
+        "signature" : "()Lreactor/core/publisher/Mono<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.MonoOpsController",
+        "methodHash" : 1388986617
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}
