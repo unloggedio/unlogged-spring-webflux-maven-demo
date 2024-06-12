@@ -9,12 +9,15 @@ import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactor
 import org.springframework.data.redis.core.ReactiveRedisOperations;
 import org.springframework.data.redis.core.ReactiveRedisTemplate;
 import org.springframework.data.redis.serializer.*;
-import org.springframework.data.redis.util.ByteUtils;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import static org.springframework.data.redis.serializer.RedisSerializationContext.newSerializationContext;
+
+import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.RedisSerializationContext;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 @Configuration
 public class ReactiveRedisConfig {
@@ -26,6 +29,7 @@ public class ReactiveRedisConfig {
     }
 
     @Bean
+    @Primary
     ReactiveRedisOperations<String, String> reactiveRedisOperations(ReactiveRedisConnectionFactory factory) {
         Jackson2JsonRedisSerializer<String> serializer = new Jackson2JsonRedisSerializer<>(String.class);
 
@@ -55,9 +59,9 @@ public class ReactiveRedisConfig {
 
     private static class JSONSessionRedisSerializer implements RedisSerializer<Object> {
 
-        private static final byte[] SESSION_DATA_PREFIX = "appsmith-session:".getBytes();
+        private static final byte[] SESSION_DATA_PREFIX = "webflux-session:".getBytes();
 
-        private static final byte[] OAUTH_CLIENT_PREFIX = "appsmith-oauth-client:".getBytes();
+        private static final byte[] OAUTH_CLIENT_PREFIX = "webflux-oauth-client:".getBytes();
 
         private final JdkSerializationRedisSerializer fallback = new JdkSerializationRedisSerializer();
 

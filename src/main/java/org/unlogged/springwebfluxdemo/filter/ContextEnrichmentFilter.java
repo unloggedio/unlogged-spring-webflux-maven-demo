@@ -9,7 +9,7 @@ import reactor.core.publisher.Mono;
 import reactor.util.context.Context;
 
 //@Component
-@Configuration
+//@Configuration
 public class ContextEnrichmentFilter implements WebFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, WebFilterChain chain) {
