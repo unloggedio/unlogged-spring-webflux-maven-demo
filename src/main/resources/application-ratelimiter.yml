@@ -1,0 +1,6 @@
+resilience4j.ratelimiter:
+  instances:
+    calculator-service:
+      limitRefreshPeriod: 20s
+      limitForPeriod: 5
+      timeoutDuration: 5s
