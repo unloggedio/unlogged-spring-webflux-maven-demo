@@ -34,7 +34,6 @@ public class MockReviewController {
             Thread.sleep(600);
         } else if(id == 3) {
             // For id == 3, throw a server error
-//            throw new InterruptedException("Simulated server error");
             System.out.println("Retried this call");
             return ResponseEntity.internalServerError().build();
         } else {

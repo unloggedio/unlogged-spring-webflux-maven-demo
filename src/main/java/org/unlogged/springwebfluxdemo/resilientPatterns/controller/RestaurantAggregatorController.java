@@ -31,6 +31,7 @@ public class RestaurantAggregatorController {
  * 2 500 milli timeout reviews
  * 3 Retry reviews
  * 4 Not found reviews and 50-60 ms for reviews
- * 5 404 as both will be empty retry with 100 ms gap
+ * 5 404 as both will be empty retry with a 100 ms gap. Hence total 500 ms approx
  * 6 Both not found and hence 10-50 ms
+ * With id 2 circuit breaker also implemented
  * */
