@@ -1,6 +1,7 @@
 package org.unlogged.springwebfluxdemo.resilientPatterns.client;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.unlogged.springwebfluxdemo.resilientPatterns.dto.Review;
@@ -26,8 +27,10 @@ public class ReviewClient {
                 .get()
                 .uri("/{id}", id)
                 .retrieve()
+                .onStatus(HttpStatusCode::is4xxClientError, clientResponse -> Mono.empty())
                 .bodyToFlux(Review.class)
                 .collectList()
+                .retry(5)
                 .timeout(Duration.ofMillis(500))
                 .onErrorReturn(Collections.emptyList());
     }

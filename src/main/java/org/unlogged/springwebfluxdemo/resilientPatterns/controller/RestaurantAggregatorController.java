@@ -25,3 +25,12 @@ public class RestaurantAggregatorController {
     }
 
 }
+
+/**
+ * 1 Everything works fine
+ * 2 500 milli timeout reviews
+ * 3 Retry reviews
+ * 4 Not found reviews and 50-60 ms for reviews
+ * 5 404 as both will be empty retry with 100 ms gap
+ * 6 Both not found and hence 10-50 ms
+ * */

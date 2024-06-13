@@ -1,5 +1,6 @@
 package org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.review;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +16,7 @@ import java.util.List;
 public class MockReviewController {
 
     @GetMapping("/review/{id}")
-    public List<Review> getReviews(@PathVariable Integer id) throws InterruptedException {
+    public ResponseEntity<List<Review>> getReviews(@PathVariable Integer id) throws InterruptedException {
         // Simulate fetching reviews based on restaurant ID
         Review review1;
         Review review2;
@@ -31,12 +32,16 @@ public class MockReviewController {
 
             // Introduce a delay of 600 milliseconds (0.6 seconds) for id == 2
             Thread.sleep(600);
-        }
-        else {
-            return new ArrayList<Review>();
+        } else if(id == 3) {
+            // For id == 3, throw a server error
+//            throw new InterruptedException("Simulated server error");
+            System.out.println("Retried this call");
+            return ResponseEntity.internalServerError().build();
+        } else {
+            System.out.println("Should not print multiple times, as retries should not happen for not found");
+            return ResponseEntity.notFound().build();
         }
 
-
-        return Arrays.asList(review1, review2);
+        return ResponseEntity.ok(Arrays.asList(review1, review2));
     }
 }
