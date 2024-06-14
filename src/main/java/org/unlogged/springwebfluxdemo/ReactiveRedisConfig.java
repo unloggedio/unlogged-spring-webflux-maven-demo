@@ -9,7 +9,6 @@ import org.springframework.data.redis.core.ReactiveRedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializationContext;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
-import org.unlogged.springwebfluxdemo.entity.Book;
 
 @Configuration
 public class ReactiveRedisConfig {
@@ -33,16 +32,16 @@ public class ReactiveRedisConfig {
 //        return new ReactiveRedisTemplate<>(factory, context);
 //    }
 
-    @Bean
-    public ReactiveRedisTemplate<String, Book> reactiveRedisTemplate(
-            ReactiveRedisConnectionFactory factory) {
-        Jackson2JsonRedisSerializer<Book> serializer = new Jackson2JsonRedisSerializer<>(Book.class);
-
-        RedisSerializationContext<String, Book> context =
-                RedisSerializationContext.<String, Book>newSerializationContext(new StringRedisSerializer())
-                        .value(serializer)
-                        .build();
-
-        return new ReactiveRedisTemplate<>(factory, context);
-    }
+//    @Bean
+//    public ReactiveRedisTemplate<String, Book> reactiveRedisTemplate(
+//            ReactiveRedisConnectionFactory factory) {
+//        Jackson2JsonRedisSerializer<Book> serializer = new Jackson2JsonRedisSerializer<>(Book.class);
+//
+//        RedisSerializationContext<String, Book> context =
+//                RedisSerializationContext.<String, Book>newSerializationContext(new StringRedisSerializer())
+//                        .value(serializer)
+//                        .build();
+//
+//        return new ReactiveRedisTemplate<>(factory, context);
+//    }
 }
