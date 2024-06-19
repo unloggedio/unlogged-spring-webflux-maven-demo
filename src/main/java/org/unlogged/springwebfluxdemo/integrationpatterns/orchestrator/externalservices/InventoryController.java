@@ -2,9 +2,9 @@ package org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.external
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.sec03.dto.InventoryRequest;
-import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.sec03.dto.InventoryResponse;
-import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.sec03.dto.Status;
+import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.InventoryResponse;
+import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.Status;
+import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.InventoryRequest;
 import reactor.core.publisher.Mono;
 
 @RestController

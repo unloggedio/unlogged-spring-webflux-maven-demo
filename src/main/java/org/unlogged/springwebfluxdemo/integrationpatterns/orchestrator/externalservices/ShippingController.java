@@ -2,10 +2,10 @@ package org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.external
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.sec03.dto.Address;
-import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.sec03.dto.ShippingRequest;
-import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.sec03.dto.ShippingResponse;
-import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.sec03.dto.Status;
+import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.ShippingRequest;
+import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.ShippingResponse;
+import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.Status;
+import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.Address;
 import reactor.core.publisher.Mono;
 
 import java.time.LocalDate;

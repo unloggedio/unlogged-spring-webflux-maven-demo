@@ -2,7 +2,7 @@ package org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.external
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.sec03.dto.Product;
+import org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.Product;
 import reactor.core.publisher.Mono;
 
 @RestController
