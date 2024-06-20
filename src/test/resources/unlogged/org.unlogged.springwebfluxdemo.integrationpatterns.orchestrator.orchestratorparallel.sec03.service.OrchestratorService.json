@@ -103,7 +103,110 @@
         "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.OrchestratorService",
         "methodHash" : 0
       }
-    } ],
+    },
+      {
+        "lineNumbers" : [ 51, 52, 53, 54, 55, 56, 57, 58 ],
+        "testAssertions" : {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "b5a82bc1-9cb6-4455-83c1-da079460f174",
+            "assertionType" : "EQUAL",
+            "key" : "/userId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101",
+            "id" : "9c9aaa06-7fbd-4cc4-89a1-0c1cc28a0832",
+            "assertionType" : "EQUAL",
+            "key" : "/productId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"a6e39091-2908-441c-b755-962b74988374\"",
+            "id" : "d9aa4287-039d-4416-bbfb-09fe48809ec9",
+            "assertionType" : "NOT_NULL",
+            "key" : "/orderId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "d6ad2483-3c82-4c00-a3e4-1c6ab918276c",
+            "assertionType" : "EQUAL",
+            "key" : "/status"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"123 Main St\"",
+              "id" : "66f3edf1-a8d4-4188-a4aa-67f5b7636c68",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingAddress/street"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Anytown\"",
+              "id" : "9f8b5864-148b-46cb-9fa0-5ed7ae34510d",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingAddress/city"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"AnyState\"",
+              "id" : "a74aa22c-1073-47c1-a34b-99fe9a4364b8",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingAddress/state"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"12345\"",
+              "id" : "2865e45f-6807-40b1-81cb-34f62835e45d",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingAddress/zipCode"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "ab3223ff-0180-477a-b60d-c7fa089f6e3b",
+            "assertionType" : "ALLOF",
+            "key" : "/shippingAddress"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-23\"",
+            "id" : "5aa7f356-c49f-4fc5-992f-97001374fa61",
+            "assertionType" : "NOT_NULL",
+            "key" : "/expectedDelivery"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "8c4634ef-98b9-43b6-93c6-32f7cab2a573",
+          "assertionType" : "ALLOF",
+          "key" : "/"
+        },
+        "candidateId" : "4df69c0f-89f8-406b-bb6e-fb0a7575c5d8",
+        "name" : "toOrderResponse_integrationMode",
+        "description" : null,
+        "methodArguments" : [ "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"orderRequest\":{\"userId\":1,\"productId\":101,\"quantity\":5},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"paymentResponse\":{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"},\"inventoryRequest\":{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5},\"inventoryResponse\":{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"shippingRequest\":{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"shippingResponse\":{\"orderId\":\"c5d82308-0193-46c7-b793-80bd31b8cf89\",\"quantity\":5,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}},\"status\":\"SUCCESS\"}" ],
+        "returnValue" : "{\"userId\":1,\"productId\":101,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"status\":\"SUCCESS\",\"shippingAddress\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"},\"expectedDelivery\":\"2024-06-23\"}",
+        "returnValueClassname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.OrderResponse",
+        "metadata" : {
+          "recordedBy" : "akshatjain",
+          "hostMachineName" : "akshatjain",
+          "timestamp" : 465303440415333,
+          "candidateStatus" : "NA"
+        },
+        "sessionIdentifier" : 200544098,
+        "probSerializedValue" : "eyJ1c2VySWQiOjEsInByb2R1Y3RJZCI6MTAxLCJvcmRlcklkIjoiYTZlMzkwOTEtMjkwOC00NDFjLWI3NTUtOTYyYjc0OTg4Mzc0Iiwic3RhdHVzIjoiU1VDQ0VTUyIsInNoaXBwaW5nQWRkcmVzcyI6eyJzdHJlZXQiOiIxMjMgTWFpbiBTdCIsImNpdHkiOiJBbnl0b3duIiwic3RhdGUiOiJBbnlTdGF0ZSIsInppcENvZGUiOiIxMjM0NSJ9LCJleHBlY3RlZERlbGl2ZXJ5IjoiMjAyNC0wNi0yMyJ9",
+        "mockIds" : [ ],
+        "exception" : false,
+        "method" : {
+          "name" : "toOrderResponse",
+          "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;)Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrderResponse;",
+          "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.OrchestratorService",
+          "methodHash" : 0
+        }
+      } ],
     "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.OrchestratorService#doOrderPostProcessing#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;)V" : [ {
       "lineNumbers" : [ 46, 48 ],
       "testAssertions" : {
@@ -136,7 +239,41 @@
         "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.OrchestratorService",
         "methodHash" : 0
       }
-    } ],
+    },
+      {
+        "lineNumbers" : [ 46, 48 ],
+        "testAssertions" : {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : null,
+          "id" : "b7193ed8-c119-4468-9d9d-d493c4b60fa0",
+          "assertionType" : "ALLOF",
+          "key" : null
+        },
+        "candidateId" : "b8f941d6-aed9-4596-91c0-02eac2997e16",
+        "name" : "doOrderPostProcessing_integrationMode",
+        "description" : null,
+        "methodArguments" : [ "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"orderRequest\":{\"userId\":1,\"productId\":101,\"quantity\":5},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"paymentResponse\":{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"},\"inventoryRequest\":{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5},\"inventoryResponse\":{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"shippingRequest\":{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"shippingResponse\":{\"orderId\":\"c5d82308-0193-46c7-b793-80bd31b8cf89\",\"quantity\":5,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}},\"status\":\"SUCCESS\"}" ],
+        "returnValue" : "0",
+        "returnValueClassname" : "V",
+        "metadata" : {
+          "recordedBy" : "akshatjain",
+          "hostMachineName" : "akshatjain",
+          "timestamp" : 465303434388208,
+          "candidateStatus" : "NA"
+        },
+        "sessionIdentifier" : 1867512824,
+        "probSerializedValue" : "",
+        "mockIds" : [ ],
+        "exception" : false,
+        "method" : {
+          "name" : "doOrderPostProcessing",
+          "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;)V",
+          "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.OrchestratorService",
+          "methodHash" : 0
+        }
+      }
+    ],
     "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.OrchestratorService#getProduct#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;>;" : [ {
       "lineNumbers" : [ 39, 40, 41, 42, 21, 22, 23, 24, 25, 26 ],
       "testAssertions" : {
@@ -260,7 +397,131 @@
         "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.OrchestratorService",
         "methodHash" : 1562172668
       }
-    } ],
+    },
+      {
+        "lineNumbers" : [ 39, 40, 41, 42, 21, 22, 23, 24, 25, 26 ],
+        "testAssertions" : {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"a6e39091-2908-441c-b755-962b74988374\"",
+            "id" : "33215b82-44a9-4d97-be94-662be41cc33a",
+            "assertionType" : "NOT_NULL",
+            "key" : "/orderId"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1",
+              "id" : "f56a4527-60c6-4f97-962c-6f7515b78608",
+              "assertionType" : "EQUAL",
+              "key" : "/orderRequest/userId"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "101",
+              "id" : "01061b18-c447-4b08-a6b3-122dcad1b4e5",
+              "assertionType" : "EQUAL",
+              "key" : "/orderRequest/productId"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "5",
+              "id" : "eb0f3b5d-2146-4cac-86b5-329486ab42d4",
+              "assertionType" : "EQUAL",
+              "key" : "/orderRequest/quantity"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "ba8e73aa-6692-4b27-9b14-6ff3c641464d",
+            "assertionType" : "ALLOF",
+            "key" : "/orderRequest"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "100",
+            "id" : "964126ef-92d8-4528-bb2f-317052f5b630",
+            "assertionType" : "EQUAL",
+            "key" : "/productPrice"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "3e1040ab-197e-4002-bd55-fbfeeb43dba2",
+            "assertionType" : "EQUAL",
+            "key" : "/paymentRequest"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "2b9f5e4f-ba4d-48e3-b13d-d73de03ec562",
+            "assertionType" : "EQUAL",
+            "key" : "/paymentResponse"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "7bd0b851-11e0-4a92-99d3-b018b43cf276",
+            "assertionType" : "EQUAL",
+            "key" : "/inventoryRequest"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "a1b3bbcc-23a0-4a86-a062-7c79ef7ff79e",
+            "assertionType" : "EQUAL",
+            "key" : "/inventoryResponse"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "8293f5ba-08e4-4b73-aad0-a8ee079a93d1",
+            "assertionType" : "EQUAL",
+            "key" : "/shippingRequest"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "409b3c56-0c8c-49a9-a2e9-63e993b95907",
+            "assertionType" : "EQUAL",
+            "key" : "/shippingResponse"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "433ae483-de86-4570-9b94-7ce9f0aaf29e",
+            "assertionType" : "EQUAL",
+            "key" : "/status"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "2d74ddc7-b78d-4ecc-8dda-39d5cedc59c6",
+          "assertionType" : "ALLOF",
+          "key" : "/"
+        },
+        "candidateId" : "6734f31d-f7dc-412a-824f-1470347d4e72",
+        "name" : "getProduct_integrationMode",
+        "description" : null,
+        "methodArguments" : [ "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"orderRequest\":{\"userId\":1,\"productId\":101,\"quantity\":5},\"productPrice\":null,\"paymentRequest\":null,\"paymentResponse\":null,\"inventoryRequest\":null,\"inventoryResponse\":null,\"shippingRequest\":null,\"shippingResponse\":null,\"status\":null}" ],
+        "returnValue" : "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"orderRequest\":{\"userId\":1,\"productId\":101,\"quantity\":5},\"productPrice\":100,\"paymentRequest\":null,\"paymentResponse\":null,\"inventoryRequest\":null,\"inventoryResponse\":null,\"shippingRequest\":null,\"shippingResponse\":null,\"status\":null}",
+        "returnValueClassname" : "reactor.core.publisher.Mono",
+        "metadata" : {
+          "recordedBy" : "akshatjain",
+          "hostMachineName" : "akshatjain",
+          "timestamp" : 465303400337708,
+          "candidateStatus" : "NA"
+        },
+        "sessionIdentifier" : -1074870468,
+        "probSerializedValue" : "eyJvcmRlcklkIjoiYTZlMzkwOTEtMjkwOC00NDFjLWI3NTUtOTYyYjc0OTg4Mzc0Iiwib3JkZXJSZXF1ZXN0Ijp7InVzZXJJZCI6MSwicHJvZHVjdElkIjoxMDEsInF1YW50aXR5Ijo1fSwicHJvZHVjdFByaWNlIjoxMDAsInBheW1lbnRSZXF1ZXN0IjpudWxsLCJwYXltZW50UmVzcG9uc2UiOm51bGwsImludmVudG9yeVJlcXVlc3QiOm51bGwsImludmVudG9yeVJlc3BvbnNlIjpudWxsLCJzaGlwcGluZ1JlcXVlc3QiOm51bGwsInNoaXBwaW5nUmVzcG9uc2UiOm51bGwsInN0YXR1cyI6bnVsbH0=",
+        "mockIds" : [ ],
+        "exception" : false,
+        "method" : {
+          "name" : "getProduct",
+          "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;>;",
+          "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.OrchestratorService",
+          "methodHash" : 1562172668
+        }
+      } ],
     "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.OrchestratorService#placeOrder#(Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrderRequest;>;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrderResponse;>;" : [ {
       "lineNumbers" : [ 28, 29, 30, 31, 32, 33, 34, 35 ],
       "testAssertions" : {
