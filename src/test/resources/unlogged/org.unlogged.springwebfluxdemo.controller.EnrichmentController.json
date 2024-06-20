@@ -96,7 +96,7 @@
         "key" : "/"
       },
       "candidateId" : "ebac9dfe-0322-439b-a52d-d808ac392839",
-      "name" : "enrichPersonsInParallel_happyPath",
+      "name" : "EnrichmentController.enrichPersonsInParallel - normal",
       "description" : null,
       "methodArguments" : [ ],
       "returnValue" : "[{\"id\":null,\"name\":\"Alice#En\",\"age\":25},{\"id\":null,\"name\":\"Bob#En\",\"age\":30},{\"id\":null,\"name\":\"Charlie#En\",\"age\":28}]",

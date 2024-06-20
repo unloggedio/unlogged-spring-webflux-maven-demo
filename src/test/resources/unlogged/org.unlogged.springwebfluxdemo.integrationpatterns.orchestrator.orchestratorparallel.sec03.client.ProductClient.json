@@ -40,7 +40,7 @@
         "key" : "/"
       },
       "candidateId" : "5736d50a-274b-44d6-9269-2dbd17c1ea10",
-      "name" : "getProduct saved on 2024-06-20 13:52",
+      "name" : "ProductClient.getProduct - mock mismatch",
       "description" : null,
       "methodArguments" : [ "101" ],
       "returnValue" : "{\"id\":101,\"category\":\"Electronics\",\"description\":\"Sample Product Description\",\"price\":100}",
@@ -101,7 +101,7 @@
           "key" : "/"
         },
         "candidateId" : "5736d50a-274b-44d6-9269-2dbd17c1ea10",
-        "name" : "getProduct_integrationMode",
+        "name" : "ProductClient.getProduct - mock mismatch integMode",
         "description" : null,
         "methodArguments" : [ "101" ],
         "returnValue" : "{\"id\":101,\"category\":\"Electronics\",\"description\":\"Sample Product Description\",\"price\":100}",

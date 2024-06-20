@@ -19,7 +19,7 @@
         "key" : null
       },
       "candidateId" : "bca08afd-eff8-4afc-8971-664d0419d980",
-      "name" : "cronHello_mockMode_happyPath",
+      "name" : "CronController.cronHello - normal mockMode",
       "description" : null,
       "methodArguments" : [ ],
       "returnValue" : "\"Hello Cron: 1\"",
@@ -59,7 +59,7 @@
           "key" : null
         },
         "candidateId" : "bca08afd-eff8-4afc-8971-664d0419d980",
-        "name" : "cronHello_integrationMode_happyPath",
+        "name" : "CronController.cronHello - normal integMode",
         "description" : null,
         "methodArguments" : [ ],
         "returnValue" : "\"Hello Cron: 1\"",

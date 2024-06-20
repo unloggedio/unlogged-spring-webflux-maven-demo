@@ -89,7 +89,7 @@
         "key" : "/"
       },
       "candidateId" : "79a21499-a2ce-4916-87f7-ef6b57c199ca",
-      "name" : "schedule saved on 2024-06-20 14:24",
+      "name" : "ShippingController.schedule - normal",
       "description" : null,
       "methodArguments" : [ "{\"quantity\":6,\"userId\":1,\"orderId\":null}" ],
       "returnValue" : "{\"headers\":{},\"body\":{\"orderId\":\"60d3f77b-5222-4875-86c8-cb1a41b3937e\",\"quantity\":6,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}},\"status\":\"OK\"}",
@@ -205,7 +205,7 @@
         "key" : "/"
       },
       "candidateId" : "37aef393-b45e-4f81-8791-8bdef19d0ff6",
-      "name" : "schedule saved on 2024-06-20 13:52",
+      "name" : "ShippingController.schedule - normal",
       "description" : null,
       "methodArguments" : [ "{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
       "returnValue" : "{\"headers\":{},\"body\":{\"orderId\":\"c5d82308-0193-46c7-b793-80bd31b8cf89\",\"quantity\":5,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}},\"status\":\"OK\"}",

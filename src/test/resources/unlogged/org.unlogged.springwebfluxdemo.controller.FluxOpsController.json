@@ -33,7 +33,7 @@
         "key" : "/"
       },
       "candidateId" : "3744f40e-afd3-48a0-bc2f-f1a2d426d775",
-      "name" : "disposableExample_happyPath",
+      "name" : "FluxOpsController.disposableExample - normal",
       "description" : null,
       "methodArguments" : [ ],
       "returnValue" : "[1,2,3]",
@@ -115,7 +115,7 @@
         "key" : "/"
       },
       "candidateId" : "1b4d2ff0-0ec1-406c-bafc-93cbf891a11e",
-      "name" : "parallelFluxExample_happyPath",
+      "name" : "FluxOpsController.parallelFluxExample - normal",
       "description" : null,
       "methodArguments" : [ ],
       "returnValue" : "[8,2,10,6,16,4,12]",
@@ -288,7 +288,7 @@
         "key" : "/"
       },
       "candidateId" : "7f867547-c05e-45fb-940b-73bc0bcdc1aa",
-      "name" : "tuple4Example_happyPath",
+      "name" : "FluxOpsController.tuple4Example - normal",
       "description" : null,
       "methodArguments" : [ ],
       "returnValue" : "[[1,\"A\",1.1,true],[2,\"B\",2.2,false],[3,\"C\",3.3,true],[4,\"D\",4.4,false]]",

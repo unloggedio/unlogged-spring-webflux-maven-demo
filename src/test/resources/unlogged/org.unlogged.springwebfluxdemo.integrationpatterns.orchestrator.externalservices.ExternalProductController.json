@@ -61,7 +61,7 @@
         "key" : "/"
       },
       "candidateId" : "826ea191-8f55-4521-903a-94eed9b1b34c",
-      "name" : "getProduct saved on 2024-06-20 14:24",
+      "name" : "ExternalProductController.getProduct - normal",
       "description" : null,
       "methodArguments" : [ "11" ],
       "returnValue" : "{\"headers\":{},\"body\":{\"id\":11,\"category\":\"Electronics\",\"description\":\"Sample Product Description\",\"price\":100},\"status\":\"OK\"}",

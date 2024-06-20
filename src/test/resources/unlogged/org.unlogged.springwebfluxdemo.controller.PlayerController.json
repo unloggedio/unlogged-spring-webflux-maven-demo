@@ -26,7 +26,7 @@
         "key" : "/"
       },
       "candidateId" : "4ddc2d19-6068-4e8c-9484-7814c863c595",
-      "name" : "createPlayer_mockMode_happyPath",
+      "name" : "PlayerController.createPlayer - normal mockMode",
       "description" : null,
       "methodArguments" : [ "{\"id\":0,\"name\":\"string1\",\"age\":22}" ],
       "returnValue" : "{\"id\":35,\"name\":\"string1\",\"age\":22}",
@@ -73,7 +73,7 @@
           "key" : "/"
         },
         "candidateId" : "4ddc2d19-6068-4e8c-9484-7814c863c595",
-        "name" : "createPlayer_integrationMode_happyPath",
+        "name" : "PlayerController.createPlayer - mock mismatch integrationMode",
         "description" : null,
         "methodArguments" : [ "{\"id\":0,\"name\":\"string1\",\"age\":22}" ],
         "returnValue" : "{\"id\":35,\"name\":\"string1\",\"age\":22}",
@@ -106,7 +106,7 @@
         "key" : null
       },
       "candidateId" : "2fdddcde-8d70-4d9d-99ed-dcb8a6b8ecdf",
-      "name" : "deletePlayerById_mockMode",
+      "name" : "PlayerController.deletePlayerById - normal mockMode",
       "description" : null,
       "methodArguments" : [ "36" ],
       "returnValue" : "\u0000\u0001��\u001Aa^�",
@@ -139,7 +139,7 @@
           "key" : null
         },
         "candidateId" : "2fdddcde-8d70-4d9d-99ed-dcb8a6b8ecdf",
-        "name" : "deletePlayerById_integrationMode_happyPath",
+        "name" : "PlayerController.deletePlayerById - normal integrationMode",
         "description" : null,
         "methodArguments" : [ "36" ],
         "returnValue" : "\u0000\u0001��\u001Aa^�",

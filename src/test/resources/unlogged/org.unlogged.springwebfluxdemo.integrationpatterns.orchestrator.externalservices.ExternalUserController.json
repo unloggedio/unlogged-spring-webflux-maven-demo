@@ -61,7 +61,7 @@
         "key" : "/"
       },
       "candidateId" : "ceb56032-63a3-4071-ab24-3f2697951c7d",
-      "name" : "deduct saved on 2024-06-20 13:52",
+      "name" : "ExternalUserController.deduct - normal",
       "description" : null,
       "methodArguments" : [ "{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
       "returnValue" : "{\"headers\":{},\"body\":{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"},\"status\":\"OK\"}",
@@ -142,7 +142,7 @@
         "key" : "/"
       },
       "candidateId" : "15e74a36-bc54-40f6-bf77-6e945b35fa45",
-      "name" : "deduct saved on 2024-06-20 14:24",
+      "name" : "ExternalUserController.deduct - normal",
       "description" : null,
       "methodArguments" : [ "{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"}" ],
       "returnValue" : "{\"headers\":{},\"body\":{\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"},\"status\":\"OK\"}",

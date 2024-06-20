@@ -61,7 +61,7 @@
         "key" : "/"
       },
       "candidateId" : "ee58de6e-4a89-4905-a6d8-38c686eab014",
-      "name" : "deduct saved on 2024-06-20 14:24",
+      "name" : "InventoryController.deduct - normal",
       "description" : null,
       "methodArguments" : [ "{\"orderId\":null,\"productId\":11,\"quantity\":6}" ],
       "returnValue" : "{\"headers\":{},\"body\":{\"productId\":11,\"quantity\":6,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"status\":\"OK\"}",
@@ -142,7 +142,7 @@
         "key" : "/"
       },
       "candidateId" : "76392d2d-921b-427d-91b7-78a87d211cc3",
-      "name" : "deduct saved on 2024-06-20 13:52",
+      "name" : "InventoryController.deduct - normal",
       "description" : null,
       "methodArguments" : [ "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5}" ],
       "returnValue" : "{\"headers\":{},\"body\":{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"status\":\"OK\"}",
