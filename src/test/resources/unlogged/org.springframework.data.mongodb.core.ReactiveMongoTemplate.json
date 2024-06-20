@@ -1,0 +1,83 @@
+{
+  "classname" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.springframework.data.mongodb.core.ReactiveMongoTemplate#findAll#(Ljava/lang/Class<T>;)Lreactor/core/publisher/Flux<T>;" : [ {
+      "id" : "118ea2f4-b794-4629-b067-fdba20fbf745",
+      "name" : "mock response for call to mongoTemplate.findAll(Product.class)",
+      "fieldTypeName" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.ProductService",
+      "fieldName" : "mongoTemplate",
+      "methodName" : "findAll",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"org.unlogged.springwebfluxdemo.model.Product\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"1\",\"name\":\"apple\",\"price\":100.0}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<T>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate#findAll#(Ljava/lang/Class<T>;)Lreactor/core/publisher/Flux<T>;"
+    } ],
+    "org.springframework.data.mongodb.core.ReactiveMongoTemplate#findById#(Ljava/lang/Object;Ljava/lang/Class<T>;)Lreactor/core/publisher/Mono<T>;" : [ {
+      "id" : "357b6f32-2835-4796-a883-7eef596d73f3",
+      "name" : "mock response for call to mongoTemplate.findById(id, Product.class)",
+      "fieldTypeName" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.ProductService",
+      "fieldName" : "mongoTemplate",
+      "methodName" : "findById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"1\""
+      }, {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"org.unlogged.springwebfluxdemo.model.Product\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"1\",\"name\":\"apple\",\"price\":100.0}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<T>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate#findById#(Ljava/lang/Object;Ljava/lang/Class<T>;)Lreactor/core/publisher/Mono<T>;"
+    } ],
+    "org.springframework.data.mongodb.core.ReactiveMongoTemplate#findOne#(Lorg/springframework/data/mongodb/core/query/Query;Ljava/lang/Class<T>;)Lreactor/core/publisher/Mono<T>;" : [ {
+      "id" : "99093fdd-c577-45ca-ae19-aad40cffefc5",
+      "name" : "mock response for call to mongoTemplate.findOne(query, Product.class)",
+      "fieldTypeName" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.ProductService",
+      "fieldName" : "mongoTemplate",
+      "methodName" : "findOne",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "456962387"
+      }, {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"org.unlogged.springwebfluxdemo.model.Product\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u0001��\\u0005{�{\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<T>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate#findOne#(Lorg/springframework/data/mongodb/core/query/Query;Ljava/lang/Class<T>;)Lreactor/core/publisher/Mono<T>;"
+    } ]
+  }
+}

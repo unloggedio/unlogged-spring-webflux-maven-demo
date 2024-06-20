@@ -1,0 +1,224 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.service.ProductService",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.service.ProductService#getAllProducts#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Product;>;" : [ {
+      "lineNumbers" : [ 27 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"1\"",
+          "id" : "4255af7f-bd77-41a8-9193-85a3f25a0c8a",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"apple\"",
+          "id" : "444b3b6a-7592-4c18-a9b4-02fe558d68de",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "100.0",
+          "id" : "ad173918-cb94-4901-b409-57ecc0c9ed8b",
+          "assertionType" : "EQUAL",
+          "key" : "/price"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "b9f0bac0-fa55-4c3d-b600-c0af9637a251",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "42afe7fc-71d4-425c-af48-bf100c2fba36",
+      "name" : "ProductService.getAllProducts - no class def",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"id\":\"1\",\"name\":\"apple\",\"price\":100.0}",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 479913636639375,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1062105164,
+      "probSerializedValue" : "eyJpZCI6IjEiLCJuYW1lIjoiYXBwbGUiLCJwcmljZSI6MTAwLjB9",
+      "mockIds" : [ "118ea2f4-b794-4629-b067-fdba20fbf745" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getAllProducts",
+        "signature" : "()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Product;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.ProductService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.ProductService#getProductById#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;" : [ {
+      "lineNumbers" : [ 23 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"1\"",
+          "id" : "751755ba-d42f-4ff8-b3b8-c2922a9cafa0",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"apple\"",
+          "id" : "a2e5eff0-b48e-4cda-844b-2ce73d4baf16",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "100.0",
+          "id" : "796650fe-dac8-4444-b133-0c0047e75264",
+          "assertionType" : "EQUAL",
+          "key" : "/price"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "81710439-2b0d-41f5-9564-4eb836c07686",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "54d05e66-2c97-4ea2-9b72-4050ff81127a",
+      "name" : "ProductService.getProductById - no class def",
+      "description" : null,
+      "methodArguments" : [ "\"1\"" ],
+      "returnValue" : "{\"id\":\"1\",\"name\":\"apple\",\"price\":100.0}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 479925115502541,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1839728112,
+      "probSerializedValue" : "eyJpZCI6IjEiLCJuYW1lIjoiYXBwbGUiLCJwcmljZSI6MTAwLjB9",
+      "mockIds" : [ "357b6f32-2835-4796-a883-7eef596d73f3" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getProductById",
+        "signature" : "(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.ProductService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.ProductService#updateProduct#(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/model/Product;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;" : [ {
+      "lineNumbers" : [ 31, 32, 33 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"\\u0000\\u0001��\\u0005��J\"",
+          "id" : "dae6bc06-2760-437b-baaa-d556d1a802e7",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "4caca880-a9db-4abe-83c3-74374c9716c6",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "cdcafc33-4d0c-4c4f-9b01-d71d464d5581",
+      "name" : "ProductService.updateProduct - no class def",
+      "description" : null,
+      "methodArguments" : [ "\"string\"", "{\"id\":\"string\",\"name\":\"string\",\"price\":0.0}" ],
+      "returnValue" : "\u0000\u0001��\u0005��J",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 479941199569041,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1934337989,
+      "probSerializedValue" : "AAG0gQWi+Uo=",
+      "mockIds" : [ "99093fdd-c577-45ca-ae19-aad40cffefc5" ],
+      "exception" : false,
+      "method" : {
+        "name" : "updateProduct",
+        "signature" : "(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/model/Product;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.ProductService",
+        "methodHash" : -148127669
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.service.ProductService#getAllProducts#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Product;>;" : [ {
+      "id" : "3e98c8f4-421b-4926-880d-5397ce794214",
+      "name" : "mock response for call to productService.getAllProducts()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.ProductService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.ProductController",
+      "fieldName" : "productService",
+      "methodName" : "getAllProducts",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"1\",\"name\":\"apple\",\"price\":100.0}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Product>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.ProductService#getAllProducts#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Product;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.ProductService#getProductById#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;" : [ {
+      "id" : "22a9cf8c-188c-45e5-843c-f650efdc3f17",
+      "name" : "mock response for call to productService.getProductById(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.ProductService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.ProductController",
+      "fieldName" : "productService",
+      "methodName" : "getProductById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"1\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"1\",\"name\":\"apple\",\"price\":100.0}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.Product>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.ProductService#getProductById#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.ProductService#updateProduct#(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/model/Product;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;" : [ {
+      "id" : "11255b84-082a-4cf3-9075-36494d0e32ac",
+      "name" : "mock response for call to productService.updateProduct(id, product)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.ProductService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.ProductController",
+      "fieldName" : "productService",
+      "methodName" : "updateProduct",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"string\""
+      }, {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":\"string\",\"name\":\"string\",\"price\":0.0}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u0001��\\u0005��J\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.Product>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.ProductService#updateProduct#(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/model/Product;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;"
+    } ]
+  }
+}
