@@ -471,4 +471,39 @@ public class RXJavaController {
                 .test()
                 .assertError(throwable);
     }
+
+    @RequestMapping("/obs/blockingFirst")
+    public String getBlockingFirst() {
+        // Create an Observable
+        Observable<String> observable = Observable.just("First", "Second", "Third");
+
+        // Get the first item using blockingFirst
+        String result = observable.blockingFirst();
+        return result;
+    }
+
+    @RequestMapping("/obs/blockingLast")
+    public String getBlockingLast() {
+        // Create an Observable
+        Observable<String> observable = Observable.just("First", "Second", "Third");
+
+        // Get the last item using blockingLast
+        String result = observable.blockingLast();
+        return result;
+    }
+
+    @RequestMapping("/obs/blockingIterable")
+    public List<String> getBlockingIterable() {
+        // Create an Observable
+        Observable<String> observable = Observable.just("First", "Second", "Third");
+
+        // Get all items as an Iterable using blockingIterable
+        Iterable<String> iterable = observable.blockingIterable();
+
+        List<String> resultList = new ArrayList<>();
+        for (String item : iterable) {
+            resultList.add(item);
+        }
+        return resultList;
+    }
 }
