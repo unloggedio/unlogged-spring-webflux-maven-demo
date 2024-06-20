@@ -1,0 +1,166 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.util.UserUtil",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.util.UserUtil#userDtoToUserEntity#(Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lorg/unlogged/springwebfluxdemo/entity/User;" : [ {
+      "lineNumbers" : [ 22 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "68f6dc77-e6b0-47b7-b103-1ac03d78e4c6",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "49b65566-e39b-45ba-b2b1-78bf0ed71dab",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "9bdd77d3-e790-4dfb-8571-810fe2495b55",
+          "assertionType" : "EQUAL",
+          "key" : "/email"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "7932da02-9cbd-41a7-beb9-06ce89b13690",
+          "assertionType" : "EQUAL",
+          "key" : "/password"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "0",
+          "id" : "30e88186-81b1-49ac-a767-4811646d07a3",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "453b02b9-c6ad-4bd3-95d1-6602773811c8",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "ab11d7f0-9e02-476d-854f-a57643780511",
+      "name" : "userDtoToUserEntity saved on 2024-06-20 11:39",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}" ],
+      "returnValue" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}",
+      "returnValueClassname" : "org.unlogged.springwebfluxdemo.entity.User",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456872121382708,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -39378346,
+      "probSerializedValue" : "eyJpZCI6InN0cmluZyIsIm5hbWUiOiJzdHJpbmciLCJlbWFpbCI6InN0cmluZyIsInBhc3N3b3JkIjoic3RyaW5nIiwiYWdlIjowfQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "userDtoToUserEntity",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lorg/unlogged/springwebfluxdemo/entity/User;",
+        "className" : "org.unlogged.springwebfluxdemo.util.UserUtil",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.util.UserUtil#userEntityToUserDto#(Lorg/unlogged/springwebfluxdemo/entity/User;)Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;" : [ {
+      "lineNumbers" : [ 18 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "d9f32c09-1d7b-4ba3-b76b-ded74f6d0dae",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "d95533e3-5749-4376-a132-70e849511309",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "c9c07fb3-cdda-4299-93ed-9e39b8703f77",
+          "assertionType" : "EQUAL",
+          "key" : "/email"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "a2201402-c14b-4454-a89f-01706778c323",
+          "assertionType" : "EQUAL",
+          "key" : "/password"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "0",
+          "id" : "a83b0323-ff92-46be-bffc-a9c2959179ef",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "e3c374c0-ddd3-4a1b-bf76-4cfe4cc69d63",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "4d3f5796-2527-4317-bea8-40dd8cf7428c",
+      "name" : "userEntityToUserDto saved on 2024-06-20 11:39",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}" ],
+      "returnValue" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}",
+      "returnValueClassname" : "org.unlogged.springwebfluxdemo.model.dto.UserDto",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458371746926708,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1008965049,
+      "probSerializedValue" : "eyJpZCI6InN0cmluZyIsIm5hbWUiOiJzdHJpbmciLCJlbWFpbCI6InN0cmluZyIsInBhc3N3b3JkIjoic3RyaW5nIiwiYWdlIjowfQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "userEntityToUserDto",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/entity/User;)Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;",
+        "className" : "org.unlogged.springwebfluxdemo.util.UserUtil",
+        "methodHash" : 655577770
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.util.UserUtil#userDtoToUserEntity#(Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lorg/unlogged/springwebfluxdemo/entity/User;" : [ {
+      "id" : "a8405b0d-1958-4862-a47c-8368403ade07",
+      "name" : "mock response for call to userUtil.userDtoToUserEntity(userDto)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.util.UserUtil",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.UserService",
+      "fieldName" : "userUtil",
+      "methodName" : "userDtoToUserEntity",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}",
+          "returnValueType" : "REAL",
+          "className" : "org.unlogged.springwebfluxdemo.entity.User"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.util.UserUtil#userDtoToUserEntity#(Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lorg/unlogged/springwebfluxdemo/entity/User;"
+    } ]
+  }
+}

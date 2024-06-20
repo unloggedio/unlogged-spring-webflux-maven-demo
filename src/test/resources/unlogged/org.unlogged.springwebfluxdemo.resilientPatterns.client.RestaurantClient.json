@@ -1,0 +1,166 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.RestaurantClient",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.client.RestaurantClient#getRestaurant#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;" : [ {
+      "lineNumbers" : [ 24, 25, 26, 27, 28, 29, 30, 31, 32 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "3",
+          "id" : "e8ef6302-32a3-4ac4-9243-98c8358772b8",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Japanese\"",
+          "id" : "2faa4fc8-4bed-4d7f-925a-868d34164f6a",
+          "assertionType" : "EQUAL",
+          "key" : "/cuisine"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Japanese good cuisine\"",
+          "id" : "51e8d34a-0fd8-46e0-8851-468e8fbc0a45",
+          "assertionType" : "EQUAL",
+          "key" : "/description"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "100",
+          "id" : "a1d733b6-e404-4e14-9bf4-57dd5b932ea2",
+          "assertionType" : "EQUAL",
+          "key" : "/price"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "6baef7c0-b5a2-48d4-bd5c-2e6517ef2778",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "c721f680-b7d9-4ba5-991d-0a39fda3a74c",
+      "name" : "getRestaurant saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "3" ],
+      "returnValue" : "{\"id\":3,\"cuisine\":\"Japanese\",\"description\":\"Japanese good cuisine\",\"price\":100}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458621183812416,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1423647379,
+      "probSerializedValue" : "eyJpZCI6MywiY3Vpc2luZSI6IkphcGFuZXNlIiwiZGVzY3JpcHRpb24iOiJKYXBhbmVzZSBnb29kIGN1aXNpbmUiLCJwcmljZSI6MTAwfQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getRestaurant",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.RestaurantClient",
+        "methodHash" : 1173105330
+      }
+    }, {
+      "lineNumbers" : [ 24, 25, 26, 27, 28, 29, 30, 31, 32 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "4",
+          "id" : "d3c245ae-d391-4ebc-8c15-ab63a0294750",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Indian\"",
+          "id" : "5349c211-4158-4ded-9369-7c93f8f078a4",
+          "assertionType" : "EQUAL",
+          "key" : "/cuisine"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Mimicking an indian Item for which no reviews yet\"",
+          "id" : "5038e66b-a14a-4dcb-bbf8-b65273379870",
+          "assertionType" : "EQUAL",
+          "key" : "/description"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "90",
+          "id" : "9eceaa2e-fb65-4d32-b2c6-f5c9904d19f9",
+          "assertionType" : "EQUAL",
+          "key" : "/price"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "efc80f18-c4e3-4cb1-a648-5e526f80f744",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "57ccf656-2cb9-4b6e-a748-c1393d8acd0c",
+      "name" : "getRestaurant saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "4" ],
+      "returnValue" : "{\"id\":4,\"cuisine\":\"Indian\",\"description\":\"Mimicking an indian Item for which no reviews yet\",\"price\":90}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458627358284458,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -812085602,
+      "probSerializedValue" : "eyJpZCI6NCwiY3Vpc2luZSI6IkluZGlhbiIsImRlc2NyaXB0aW9uIjoiTWltaWNraW5nIGFuIGluZGlhbiBJdGVtIGZvciB3aGljaCBubyByZXZpZXdzIHlldCIsInByaWNlIjo5MH0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getRestaurant",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.RestaurantClient",
+        "methodHash" : 1173105330
+      }
+    }, {
+      "lineNumbers" : [ 24, 25, 26, 27, 28, 29, 30, 31, 32 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"\\u0000\\u0001�\\u001F����\"",
+          "id" : "a2699981-7425-4989-8a3c-a8b5fed99a23",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "9bfa68c0-9d51-4b98-8ef4-4e5eced148f1",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "0df1b9c3-c8a8-4c15-8e7f-8f0871730116",
+      "name" : "getRestaurant saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "5" ],
+      "returnValue" : "\u0000\u0001�\u001F����",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458632947514541,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1134083658,
+      "probSerializedValue" : "AAGhH83zxuA=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getRestaurant",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.RestaurantClient",
+        "methodHash" : 1173105330
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

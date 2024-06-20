@@ -1,0 +1,60 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.review.MockReviewController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.review.MockReviewController#getReviews#(Ljava/lang/Integer;)Lorg/springframework/http/ResponseEntity<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;" : [ {
+      "lineNumbers" : [ 24, 28, 35, 40, 41 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "d552382f-de31-457e-9ff9-eba32c3d63b4",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "9dd35959-ba42-4973-a818-e71bb1e15604",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"NOT_FOUND\"",
+          "id" : "bb5a5e43-0f62-40c4-a164-35e1c668c43b",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "ccc4a8d1-01f5-40ff-b0d7-0f2f2aef4854",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "ba6ea961-f434-4920-b4ea-bd8a08112db2",
+      "name" : "getReviews saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "5" ],
+      "returnValue" : "{\"headers\":{},\"body\":null,\"status\":\"NOT_FOUND\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458632953446666,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1096990421,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6bnVsbCwic3RhdHVzIjoiTk9UX0ZPVU5EIn0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getReviews",
+        "signature" : "(Ljava/lang/Integer;)Lorg/springframework/http/ResponseEntity<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.review.MockReviewController",
+        "methodHash" : 1683816737
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

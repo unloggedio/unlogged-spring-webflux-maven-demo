@@ -1,0 +1,156 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.externalservices.dhl.MockDHLController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.externalservices.dhl.MockDHLController#getServiceOptions#(Ljava/lang/String;Ljava/lang/String;)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/integrationpatterns/scattergather/externalservices/dhl/DHLResponse;>;" : [ {
+      "lineNumbers" : [ 21, 22 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101.11",
+            "id" : "b587ff26-c2f6-4ac1-82ed-0c347125a63c",
+            "assertionType" : "EQUAL",
+            "key" : "/0/price"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-20\"",
+            "id" : "1219727f-add9-4549-bcac-88e2b794fa11",
+            "assertionType" : "EQUAL",
+            "key" : "/0/date"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "4117803f-0a22-4b1e-be8b-d0c5649143ad",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101.11",
+            "id" : "8d15d45a-5e00-4307-aed8-f349b92ca7bb",
+            "assertionType" : "EQUAL",
+            "key" : "/1/price"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-20\"",
+            "id" : "51b68784-4d32-4c5c-a0a2-aee14fd86ded",
+            "assertionType" : "EQUAL",
+            "key" : "/1/date"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "c8f21d89-fc98-4b3a-ab91-83d5c685ac99",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "32f6d086-bef9-4c9e-a0ea-8214f7eeda93",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "c5ba25a7-537c-4c07-84a1-71afaf1eef4f",
+      "name" : "getServiceOptions saved on 2024-06-20 11:51",
+      "description" : null,
+      "methodArguments" : [ "\"dehradun\"", "\"delhi\"" ],
+      "returnValue" : "[{\"price\":101.11,\"date\":\"2024-06-20\"},{\"price\":101.11,\"date\":\"2024-06-20\"}]",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 459109873626916,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1472790218,
+      "probSerializedValue" : "W3sicHJpY2UiOjEwMS4xMSwiZGF0ZSI6IjIwMjQtMDYtMjAifSx7InByaWNlIjoxMDEuMTEsImRhdGUiOiIyMDI0LTA2LTIwIn1d",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getServiceOptions",
+        "signature" : "(Ljava/lang/String;Ljava/lang/String;)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/integrationpatterns/scattergather/externalservices/dhl/DHLResponse;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.externalservices.dhl.MockDHLController",
+        "methodHash" : 2106317085
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.externalservices.dhl.MockDHLController#responseList#(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List<Lorg/unlogged/springwebfluxdemo/integrationpatterns/scattergather/externalservices/dhl/DHLResponse;>;" : [ {
+      "lineNumbers" : [ 26, 27, 28, 29, 31 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101.11",
+            "id" : "f35b4eef-a144-474b-9183-ee63172fa1d2",
+            "assertionType" : "EQUAL",
+            "key" : "/0/price"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-20\"",
+            "id" : "852db998-b040-4df1-8f41-4b2645991944",
+            "assertionType" : "EQUAL",
+            "key" : "/0/date"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "d25480bd-4f3b-4a45-b880-1ff83244c202",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101.11",
+            "id" : "287d7d22-4e9c-4c94-b1f7-d59995615bf2",
+            "assertionType" : "EQUAL",
+            "key" : "/1/price"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-20\"",
+            "id" : "f4099093-9dc2-4dff-a429-09e562759b3f",
+            "assertionType" : "EQUAL",
+            "key" : "/1/date"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "a12bee25-e00f-480a-a920-5f80f87ddec5",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "bc7af8a6-f9ed-4235-8db3-a80e938157dd",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "6bfed9f6-2101-47e0-93d4-9219ffdb0b90",
+      "name" : "responseList saved on 2024-06-20 11:51",
+      "description" : null,
+      "methodArguments" : [ "\"dehradun\"", "\"delhi\"" ],
+      "returnValue" : "[{\"price\":101.11,\"date\":\"2024-06-20\"},{\"price\":101.11,\"date\":\"2024-06-20\"}]",
+      "returnValueClassname" : "java.util.List",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 459109873689541,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -990595631,
+      "probSerializedValue" : "W3sicHJpY2UiOjEwMS4xMSwiZGF0ZSI6IjIwMjQtMDYtMjAifSx7InByaWNlIjoxMDEuMTEsImRhdGUiOiIyMDI0LTA2LTIwIn1d",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "responseList",
+        "signature" : "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List<Lorg/unlogged/springwebfluxdemo/integrationpatterns/scattergather/externalservices/dhl/DHLResponse;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.externalservices.dhl.MockDHLController",
+        "methodHash" : 533606245
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

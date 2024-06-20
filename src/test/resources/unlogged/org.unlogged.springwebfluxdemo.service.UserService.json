@@ -1,0 +1,378 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.service.UserService",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.service.UserService#getAllUsers#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;" : [ {
+      "lineNumbers" : [ 26 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"\\u0000\\u0001�����:\"",
+          "id" : "5bb9bcbf-3ba8-48f3-993f-b770c11a1abb",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "6f4bf40f-17d8-40bf-b52c-a6483bb2867a",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "75317256-da62-4797-99c8-60dc6850e0f8",
+      "name" : "getAllUsers saved on 2024-06-20 11:14",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\u0000\u0001�����:",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456859145885083,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -761054341,
+      "probSerializedValue" : "AAGfgtDq1To=",
+      "mockIds" : [ "476b70c7-f108-47b7-b23b-da26ce5fab81" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getAllUsers",
+        "signature" : "()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.UserService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.UserService#getUserById#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;" : [ {
+      "lineNumbers" : [ 30 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"\\u0000\\u0001���\\u0000.\\u0016\"",
+          "id" : "de6f62f6-9f0b-49e8-a194-e5a4f39290db",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "aef506d9-5927-408a-9543-60f92bef2876",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "c4a2d129-bb9b-475c-8a69-bca2807d4bc9",
+      "name" : "getUserById saved on 2024-06-20 11:14",
+      "description" : null,
+      "methodArguments" : [ "\"string\"" ],
+      "returnValue" : "\u0000\u0001���\u0000.\u0016",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456864090732541,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1402523851,
+      "probSerializedValue" : "AAGfg/YALhY=",
+      "mockIds" : [ "3d684e5d-54c1-4847-9511-66e912ded1c9" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getUserById",
+        "signature" : "(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.UserService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.UserService#createUser#(Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;" : [ {
+      "lineNumbers" : [ 34, 35, 36, 22 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "2fa5de10-cd85-492d-9a8a-e630a630c1e7",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "2eb270f1-d10a-49b4-bfc9-7768dbd0b838",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "74a26c70-5253-48b4-b567-3b2029007c5d",
+          "assertionType" : "EQUAL",
+          "key" : "/email"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "8dcd55fb-910b-4bc8-9fb2-a8636558c55a",
+          "assertionType" : "EQUAL",
+          "key" : "/password"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "0",
+          "id" : "869aa94b-5f81-4d03-aa01-7cd06b13a841",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "76dc56d7-dfa5-40b2-9f92-6cf45623ecfd",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "a7c5c47b-b258-4a4e-8910-2ab17dccad91",
+      "name" : "createUser saved on 2024-06-20 11:14",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}" ],
+      "returnValue" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456872121335250,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1559942650,
+      "probSerializedValue" : "eyJpZCI6InN0cmluZyIsIm5hbWUiOiJzdHJpbmciLCJlbWFpbCI6InN0cmluZyIsInBhc3N3b3JkIjoic3RyaW5nIiwiYWdlIjowfQ==",
+      "mockIds" : [ "f02ceb38-02f9-4df9-8164-caf70ac65e20", "a8405b0d-1958-4862-a47c-8368403ade07" ],
+      "exception" : false,
+      "method" : {
+        "name" : "createUser",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.UserService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.UserService#updateUser#(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;" : [ {
+      "lineNumbers" : [ 40, 41, 45 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "c19de49e-1f78-4497-a426-94fe5404b151",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "8bca4bb9-6c0c-409b-88b2-b9e42b573412",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "fd06280f-80fc-4298-99c2-ecc7d33db69f",
+          "assertionType" : "EQUAL",
+          "key" : "/email"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "4f541300-f09b-4345-9192-ce698785b617",
+          "assertionType" : "EQUAL",
+          "key" : "/password"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "0",
+          "id" : "5a19d872-5e6a-41fa-8710-7eb09976e5f9",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "7a0e4352-9b3c-4ea1-b949-33fdd2b3ff25",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "4f714fb9-4c95-4783-9b51-8bfb9cbe5556",
+      "name" : "updateUser saved on 2024-06-20 11:14",
+      "description" : null,
+      "methodArguments" : [ "\"string\"", "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}" ],
+      "returnValue" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456877945184791,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1394489334,
+      "probSerializedValue" : "eyJpZCI6InN0cmluZyIsIm5hbWUiOiJzdHJpbmciLCJlbWFpbCI6InN0cmluZyIsInBhc3N3b3JkIjoic3RyaW5nIiwiYWdlIjowfQ==",
+      "mockIds" : [ "cc048853-c164-4681-821e-6f057cb260fb" ],
+      "exception" : false,
+      "method" : {
+        "name" : "updateUser",
+        "signature" : "(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.UserService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.UserService#deleteUser#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;" : [ {
+      "lineNumbers" : [ 49 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"\\u0000\\u0001��F\\u001Bө\"",
+          "id" : "407a5cc3-f529-4308-8b19-9db33c86fff5",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "716b1f79-667e-4cad-abc0-f573d44f3ecb",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "8cc06cb5-472b-43d1-a6d3-a1f66393a7f1",
+      "name" : "deleteUser saved on 2024-06-20 11:14",
+      "description" : null,
+      "methodArguments" : [ "\"string\"" ],
+      "returnValue" : "\u0000\u0001��F\u001Bө",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456934154736875,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -852530716,
+      "probSerializedValue" : "AAGflEYb06k=",
+      "mockIds" : [ "a9a49810-42c2-4bed-b2e2-7d5dd3aa3602" ],
+      "exception" : false,
+      "method" : {
+        "name" : "deleteUser",
+        "signature" : "(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.UserService",
+        "methodHash" : 96000204
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.service.UserService#getAllUsers#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;" : [ {
+      "id" : "1b65beb8-392d-4f8a-af7c-f0275c6fa5ad",
+      "name" : "mock response for call to userService.getAllUsers()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.UserService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.UserController",
+      "fieldName" : "userService",
+      "methodName" : "getAllUsers",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u0001�����:\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.dto.UserDto>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.UserService#getAllUsers#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.UserService#getUserById#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;" : [ {
+      "id" : "32de3505-967e-417b-ba5d-abcae888f2a7",
+      "name" : "mock response for call to userService.getUserById(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.UserService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.UserController",
+      "fieldName" : "userService",
+      "methodName" : "getUserById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"string\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u0001���\\u0000.\\u0016\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.dto.UserDto>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.UserService#getUserById#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.UserService#createUser#(Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;" : [ {
+      "id" : "92ecfa4e-c3d0-4c8a-a6a4-fe332070f950",
+      "name" : "mock response for call to userService.createUser(userDto)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.UserService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.UserController",
+      "fieldName" : "userService",
+      "methodName" : "createUser",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.dto.UserDto>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.UserService#createUser#(Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.UserService#updateUser#(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;" : [ {
+      "id" : "5108dce2-f8b5-4b07-81b7-a09aea1fcd74",
+      "name" : "mock response for call to userService.updateUser(id, userDto)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.UserService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.UserController",
+      "fieldName" : "userService",
+      "methodName" : "updateUser",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"string\""
+      }, {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.dto.UserDto>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.UserService#updateUser#(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.UserService#deleteUser#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;" : [ {
+      "id" : "0844e1ce-896b-4df3-b975-b9caa659d5ca",
+      "name" : "mock response for call to userService.deleteUser(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.UserService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.UserController",
+      "fieldName" : "userService",
+      "methodName" : "deleteUser",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"string\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u0001��F\\u001Bө\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.lang.Void>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.UserService#deleteUser#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;"
+    } ]
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.ProductController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.ProductController#createProduct#(Lorg/unlogged/springwebfluxdemo/model/Product;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;" : [ {
+      "lineNumbers" : [ 19, 19 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"1\"",
+          "id" : "c8125e9f-294e-43e8-b04a-4d5f6ee58241",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "4bbed700-b9d3-4c5e-a3eb-54e740c18fdc",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "100.0",
+          "id" : "73229dee-b15d-4852-bce3-4ae2282091c2",
+          "assertionType" : "EQUAL",
+          "key" : "/price"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "a189e7d0-bb69-4eee-a6af-b3fdfd4a06b7",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "503e84be-2639-4075-8feb-752f9d95703e",
+      "name" : "createProduct saved on 2024-06-20 11:09",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":\"1\",\"name\":\"string\",\"price\":100.0}" ],
+      "returnValue" : "{\"id\":\"1\",\"name\":\"string\",\"price\":100.0}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456518910370583,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1608977872,
+      "probSerializedValue" : "eyJpZCI6IjEiLCJuYW1lIjoic3RyaW5nIiwicHJpY2UiOjEwMC4wfQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "createProduct",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/Product;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.ProductController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.ProductController#getProductById#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;" : [ {
+      "lineNumbers" : [ 24, 23 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"1\"",
+          "id" : "94ff4f07-b67f-413f-b597-6d8dc8f694c3",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "eebd0176-c6cc-4fe6-96e7-3c0d564cd007",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "100.0",
+          "id" : "de3268c8-2208-4a73-8bf7-f9a990611c1e",
+          "assertionType" : "EQUAL",
+          "key" : "/price"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "823ad741-645f-4f4e-9741-67288d0bdc88",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "8b76ea85-29b1-4002-b1bd-aa336540012e",
+      "name" : "getProductById saved on 2024-06-20 11:09",
+      "description" : null,
+      "methodArguments" : [ "\"1\"" ],
+      "returnValue" : "{\"id\":\"1\",\"name\":\"string\",\"price\":100.0}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456526845568250,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 916359400,
+      "probSerializedValue" : "eyJpZCI6IjEiLCJuYW1lIjoic3RyaW5nIiwicHJpY2UiOjEwMC4wfQ==",
+      "mockIds" : [ "4f97c4aa-e8eb-4f29-99cb-7119082071d6" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getProductById",
+        "signature" : "(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.ProductController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.ProductController#getAllProducts#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Product;>;" : [ {
+      "lineNumbers" : [ 29, 27 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"1\"",
+          "id" : "4561f8a4-a320-49ba-a9c2-131593bd9044",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "817c52c9-6519-4e29-98e5-76fbedad9fcf",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "100.0",
+          "id" : "a61a327f-451b-480b-bc54-9ff59a5c63b3",
+          "assertionType" : "EQUAL",
+          "key" : "/price"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "356d8e76-2f5c-4a28-b16d-16a35c0e6e5d",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "9625121c-fe00-4521-b658-96e9b86ead80",
+      "name" : "getAllProducts saved on 2024-06-20 11:09",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"id\":\"1\",\"name\":\"string\",\"price\":100.0}",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456532227111375,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 927529240,
+      "probSerializedValue" : "eyJpZCI6IjEiLCJuYW1lIjoic3RyaW5nIiwicHJpY2UiOjEwMC4wfQ==",
+      "mockIds" : [ "4467f73c-519e-44d3-964c-4bef84bf723b" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getAllProducts",
+        "signature" : "()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Product;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.ProductController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.ProductController#updateProduct#(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/model/Product;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;" : [ {
+      "lineNumbers" : [ 34, 31, 32, 33 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"1\"",
+          "id" : "754ed61e-2ba0-4b1f-a1fd-f3525ba62566",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"apple\"",
+          "id" : "0367882a-32a9-4da2-b75f-8ed463fb8bc7",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "100.0",
+          "id" : "0067fd31-e3ce-419a-8e7b-91e397a68e78",
+          "assertionType" : "EQUAL",
+          "key" : "/price"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "226e4576-3069-4933-b356-cc79daf35560",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "9392e91d-47d6-45b6-871a-45dae0cdac5f",
+      "name" : "updateProduct saved on 2024-06-20 11:09",
+      "description" : null,
+      "methodArguments" : [ "\"1\"", "{\"id\":\"1\",\"name\":\"apple\",\"price\":100.0}" ],
+      "returnValue" : "{\"id\":\"1\",\"name\":\"apple\",\"price\":100.0}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456546506300208,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -342095834,
+      "probSerializedValue" : "eyJpZCI6IjEiLCJuYW1lIjoiYXBwbGUiLCJwcmljZSI6MTAwLjB9",
+      "mockIds" : [ "29d9c2a0-567a-455d-bc90-dfe99d67aa13" ],
+      "exception" : false,
+      "method" : {
+        "name" : "updateProduct",
+        "signature" : "(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/model/Product;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Product;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.ProductController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.ProductController#deleteProduct#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;" : [ {
+      "lineNumbers" : [ 39, 41, 42 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"\\u0000\\u0001�<��\\b}\"",
+          "id" : "ebb2cb74-5152-4c21-8ba8-c68822fd6b77",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "2312467f-5afc-46f1-a106-1ed550e46197",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "737d6f44-a8d5-447f-8928-d9df07e8eff3",
+      "name" : "deleteProduct saved on 2024-06-20 11:09",
+      "description" : null,
+      "methodArguments" : [ "\"2\"" ],
+      "returnValue" : "\u0000\u0001�<��\b}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456557248292333,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -268745866,
+      "probSerializedValue" : "AAGfPITECH0=",
+      "mockIds" : [ "53002601-8ff2-4495-a04f-c8339d468af1" ],
+      "exception" : false,
+      "method" : {
+        "name" : "deleteProduct",
+        "signature" : "(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.ProductController",
+        "methodHash" : -289376921
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

@@ -1,0 +1,46 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.CronController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.CronController#cronHello#()Lreactor/core/publisher/Mono<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 23, 27 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Hello Cron: 3\"",
+          "id" : "61e1a619-c18f-4a91-aa5d-ba762593b696",
+          "assertionType" : "NOT_NULL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "6d0d6119-7cd4-4116-8e2c-d917d7ffb8bc",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "2d6495aa-e8c0-4b63-8e55-a7fc4419bfbc",
+      "name" : "cronHello saved on 2024-06-20 10:46",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "\"Hello Cron: 3\"",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 455198920373791,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1119606428,
+      "probSerializedValue" : "IkhlbGxvIENyb246IDMi",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "cronHello",
+        "signature" : "()Lreactor/core/publisher/Mono<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.CronController",
+        "methodHash" : -447843883
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

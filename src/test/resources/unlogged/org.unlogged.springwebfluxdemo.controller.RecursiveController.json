@@ -1,0 +1,72 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.RecursiveController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.RecursiveController#nthFibonacci#(I)Lreactor/core/publisher/Mono<Ljava/lang/Long;>;" : [ {
+      "lineNumbers" : [ 28, 21 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "9b3e18a5-5193-42d0-8b33-020c8d61aa73",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "13a33620-f58c-4159-b44d-282c774af0f7",
+      "name" : "nthFibonacci saved on 2024-06-20 11:12",
+      "description" : null,
+      "methodArguments" : [ "10" ],
+      "returnValue" : "55",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456671765088333,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 633713716,
+      "probSerializedValue" : "NTU=",
+      "mockIds" : [ "8bcd70de-ff73-4eb0-8df2-9e4ba8867edb" ],
+      "exception" : false,
+      "method" : {
+        "name" : "nthFibonacci",
+        "signature" : "(I)Lreactor/core/publisher/Mono<Ljava/lang/Long;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RecursiveController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RecursiveController#factorial#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 23, 11, 14, 15, 16 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "81d858a7-5b9a-455c-9bbf-2973556ccbb8",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "dea03d6a-1692-4f7e-8e06-120bfdb27d9f",
+      "name" : "factorial saved on 2024-06-20 11:12",
+      "description" : null,
+      "methodArguments" : [ "10" ],
+      "returnValue" : "3628800",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456666262933458,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1334776730,
+      "probSerializedValue" : "MzYyODgwMA==",
+      "mockIds" : [ "cf5e09fa-95f2-4955-867c-426927c1652b" ],
+      "exception" : false,
+      "method" : {
+        "name" : "factorial",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RecursiveController",
+        "methodHash" : 1648921619
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

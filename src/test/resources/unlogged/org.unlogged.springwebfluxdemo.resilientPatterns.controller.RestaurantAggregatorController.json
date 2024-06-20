@@ -1,0 +1,257 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.RestaurantAggregatorController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.controller.RestaurantAggregatorController#getProductAggregate#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/RestaurantAggregate;>;" : [ {
+      "lineNumbers" : [ 22, 23, 24, 24, 25, 26, 28, 24, 25, 26, 27, 28, 29, 30, 31, 32, 29, 30, 31, 32, 33, 34, 35, 36, 37 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "7247b0ce-8548-4225-a18e-23fda83b5e49",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3",
+            "id" : "16e652c2-78dd-4d49-81bd-6fba9dc2c1a2",
+            "assertionType" : "EQUAL",
+            "key" : "/body/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Japanese\"",
+            "id" : "f252a75e-46ab-43c5-9c0b-33385704669e",
+            "assertionType" : "EQUAL",
+            "key" : "/body/cuisine"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Japanese good cuisine\"",
+            "id" : "1e9ac65d-59c3-4640-b8fc-88e1db33b1fa",
+            "assertionType" : "EQUAL",
+            "key" : "/body/description"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "3",
+                "id" : "97bfb43e-7ba3-459b-9ecf-1a0f0518cc35",
+                "assertionType" : "EQUAL",
+                "key" : "/body/reviews/0/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"FallBack User\"",
+                "id" : "c8c6d754-91ee-4288-911d-1f71f1fb7f45",
+                "assertionType" : "EQUAL",
+                "key" : "/body/reviews/0/user"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "0",
+                "id" : "519eaae2-50bf-49d9-81c8-cb06bc88193a",
+                "assertionType" : "EQUAL",
+                "key" : "/body/reviews/0/rating"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"FallBack comment\"",
+                "id" : "61710e29-c254-4d4e-80de-722362fcbcab",
+                "assertionType" : "EQUAL",
+                "key" : "/body/reviews/0/comment"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "b92f333d-e674-4cc8-9fff-32b302ae3ad4",
+              "assertionType" : "ALLOF",
+              "key" : "/body/reviews/0"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "65f3e4cd-f1be-4736-aac7-83c889e1ba53",
+            "assertionType" : "ALLOF",
+            "key" : "/body/reviews"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "2f3f10b6-ee5e-4b66-a9d1-7ee6f50ebce4",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "524cccd3-a997-403c-a60f-2ec6a5393062",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "7d537596-b83a-4b81-a9c8-6f88ba9a1418",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "2b7550db-7a8a-4b9d-919e-bf3a6d7f028c",
+      "name" : "getProductAggregate saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "3" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"id\":3,\"cuisine\":\"Japanese\",\"description\":\"Japanese good cuisine\",\"reviews\":[{\"id\":3,\"user\":\"FallBack User\",\"rating\":0,\"comment\":\"FallBack comment\"}]},\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458621183631833,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1511129419,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJpZCI6MywiY3Vpc2luZSI6IkphcGFuZXNlIiwiZGVzY3JpcHRpb24iOiJKYXBhbmVzZSBnb29kIGN1aXNpbmUiLCJyZXZpZXdzIjpbeyJpZCI6MywidXNlciI6IkZhbGxCYWNrIFVzZXIiLCJyYXRpbmciOjAsImNvbW1lbnQiOiJGYWxsQmFjayBjb21tZW50In1dfSwic3RhdHVzIjoiT0sifQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getProductAggregate",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/RestaurantAggregate;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.RestaurantAggregatorController",
+        "methodHash" : -7973675
+      }
+    }, {
+      "lineNumbers" : [ 22, 23, 24, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 24, 25, 26, 27, 28, 29, 30, 31, 32 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "07cca8b0-68bd-4645-9992-248c73de8cff",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "4",
+            "id" : "0f4ee67c-dcc8-4e73-8643-83f92e725306",
+            "assertionType" : "EQUAL",
+            "key" : "/body/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Indian\"",
+            "id" : "3b645f2e-2512-493b-9c3e-c61f62960594",
+            "assertionType" : "EQUAL",
+            "key" : "/body/cuisine"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Mimicking an indian Item for which no reviews yet\"",
+            "id" : "a94669bf-b1b1-48e2-95fe-f015a03616b1",
+            "assertionType" : "EQUAL",
+            "key" : "/body/description"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "475374d7-e20c-455d-b71a-a55f21aeae1c",
+            "assertionType" : "ALLOF",
+            "key" : "/body/reviews"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "ff45e186-c574-4aee-a7e9-65c55e427856",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "1e33b68d-a8a0-4852-ab3f-540e33f421ac",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "9e380a44-bc06-4eb7-b5f1-393ab7b9b6dd",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "a3984e48-b5ea-4d7e-9da7-d2d5fba7570d",
+      "name" : "getProductAggregate saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "4" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"id\":4,\"cuisine\":\"Indian\",\"description\":\"Mimicking an indian Item for which no reviews yet\",\"reviews\":[]},\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458627358103708,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1735716613,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJpZCI6NCwiY3Vpc2luZSI6IkluZGlhbiIsImRlc2NyaXB0aW9uIjoiTWltaWNraW5nIGFuIGluZGlhbiBJdGVtIGZvciB3aGljaCBubyByZXZpZXdzIHlldCIsInJldmlld3MiOltdfSwic3RhdHVzIjoiT0sifQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getProductAggregate",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/RestaurantAggregate;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.RestaurantAggregatorController",
+        "methodHash" : -7973675
+      }
+    }, {
+      "lineNumbers" : [ 22, 23, 24, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 24, 25, 26, 27, 28, 29, 30, 31, 32 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "5f701775-21d8-4339-9dfc-3a8b3bed56b3",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "05d83185-d1db-42f2-ac5b-6b67e038d9a7",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"NOT_FOUND\"",
+          "id" : "7df741a6-19e3-4bdb-9239-080e8639a5e5",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "b0741cc4-94aa-4a8d-9e3a-46116fc6d2d7",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "2f5e7bf2-75d3-4730-890b-b1631a01ae16",
+      "name" : "getProductAggregate saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "5" ],
+      "returnValue" : "{\"headers\":{},\"body\":null,\"status\":\"NOT_FOUND\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458632947428333,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1870540081,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6bnVsbCwic3RhdHVzIjoiTk9UX0ZPVU5EIn0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getProductAggregate",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/RestaurantAggregate;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.RestaurantAggregatorController",
+        "methodHash" : -7973675
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

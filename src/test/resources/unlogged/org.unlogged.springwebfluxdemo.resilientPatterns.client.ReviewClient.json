@@ -1,0 +1,206 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient#fallBackReview#(Ljava/lang/Integer;Ljava/lang/Throwable;)Lreactor/core/publisher/Mono<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;" : [ {
+      "lineNumbers" : [ 42, 43, 44 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3",
+            "id" : "728f8ae5-53ff-478f-a5ec-21b62a0715a1",
+            "assertionType" : "EQUAL",
+            "key" : "/0/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"FallBack User\"",
+            "id" : "89f88f65-ce51-4b8a-8b9b-a39cde702f0e",
+            "assertionType" : "EQUAL",
+            "key" : "/0/user"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "0",
+            "id" : "80959b94-6b9b-4623-91a6-00106c3267bf",
+            "assertionType" : "EQUAL",
+            "key" : "/0/rating"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"FallBack comment\"",
+            "id" : "7000fbdb-d0a4-48ef-b1f5-4bb70b057309",
+            "assertionType" : "EQUAL",
+            "key" : "/0/comment"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "0d5e1565-4d59-4b60-8eb7-82a7f890aabb",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "867e78d9-331b-4323-837c-b48bf526f3be",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "663564ad-036f-4849-98e2-14003f310aae",
+      "name" : "fallBackReview saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "3", "{\"error\": \"failed to serialize object\", \"message\":\"Invalid type definition for type `io.github.resilience4j.circuitbreaker.CallNotPermittedException`: Failed to construct BeanSerializer for [simple type, class io.github.resilience4j.circuitbreaker.CallNotPermittedException]: (java.lang.IllegalArgumentException) Failed to call `setAccess()` on Field 'detailMessage' (of class `java.lang.Throwable`) due to `java.lang.reflect.InaccessibleObjectException`, problem: Unable to make field private java.lang.String java.lang.Throwable.detailMessage accessible: module java.base does not \"opens java.lang\" to unnamed module @36aa7bc2\"}" ],
+      "returnValue" : "[{\"id\":3,\"user\":\"FallBack User\",\"rating\":0,\"comment\":\"FallBack comment\"}]",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458621187436083,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 768488126,
+      "probSerializedValue" : "W3siaWQiOjMsInVzZXIiOiJGYWxsQmFjayBVc2VyIiwicmF0aW5nIjowLCJjb21tZW50IjoiRmFsbEJhY2sgY29tbWVudCJ9XQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "fallBackReview",
+        "signature" : "(Ljava/lang/Integer;Ljava/lang/Throwable;)Lreactor/core/publisher/Mono<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient",
+        "methodHash" : -2100216910
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient#getReviews#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;" : [ {
+      "lineNumbers" : [ 29, 30, 31, 32, 33, 34, 35, 36, 37 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3",
+            "id" : "ab8bb049-03c2-4a74-992c-6e3b16b18141",
+            "assertionType" : "EQUAL",
+            "key" : "/0/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"FallBack User\"",
+            "id" : "245ea2dd-6dff-4784-b8d9-e04d034e94a7",
+            "assertionType" : "EQUAL",
+            "key" : "/0/user"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "0",
+            "id" : "e1ae7bd1-921d-4a82-85af-5fc7ba51c8fa",
+            "assertionType" : "EQUAL",
+            "key" : "/0/rating"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"FallBack comment\"",
+            "id" : "d8e14c88-fdd5-46fa-8000-a33f5596a1fc",
+            "assertionType" : "EQUAL",
+            "key" : "/0/comment"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "9bf78ef1-f6a5-4c90-86b8-645ff9a8636a",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "59a08663-6988-4f5a-a68c-02aee2d18a19",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "2b4a0a87-6f9a-4ffd-adfd-45aa3960d83f",
+      "name" : "getReviews saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "3" ],
+      "returnValue" : "[{\"id\":3,\"user\":\"FallBack User\",\"rating\":0,\"comment\":\"FallBack comment\"}]",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458621185038375,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1615108343,
+      "probSerializedValue" : "W3siaWQiOjMsInVzZXIiOiJGYWxsQmFjayBVc2VyIiwicmF0aW5nIjowLCJjb21tZW50IjoiRmFsbEJhY2sgY29tbWVudCJ9XQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getReviews",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient",
+        "methodHash" : 679159998
+      }
+    }, {
+      "lineNumbers" : [ 29, 30, 31, 32, 33, 34, 35, 36, 37 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "ea978022-691b-4af9-9fce-bba7289b0060",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "c456a61a-e288-453d-9cd3-a12d2f5b2049",
+      "name" : "getReviews saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "4" ],
+      "returnValue" : "[]",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458627359030625,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1536371264,
+      "probSerializedValue" : "W10=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getReviews",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient",
+        "methodHash" : 679159998
+      }
+    }, {
+      "lineNumbers" : [ 29, 30, 31, 32, 33, 34, 35, 36, 37 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "d20beabc-4f97-4114-aedf-d26a637f9191",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "26112f4c-50c2-4afc-9a73-aa208e2a8205",
+      "name" : "getReviews saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "5" ],
+      "returnValue" : "[]",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458632948082958,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1616258099,
+      "probSerializedValue" : "W10=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getReviews",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient",
+        "methodHash" : 679159998
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

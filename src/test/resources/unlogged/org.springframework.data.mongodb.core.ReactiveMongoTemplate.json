@@ -1,0 +1,133 @@
+{
+  "classname" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.springframework.data.mongodb.core.ReactiveMongoTemplate#save#(T)Lreactor/core/publisher/Mono<T>;" : [ {
+      "id" : "168e8a4c-a62b-4818-9db0-357ff44be7c8",
+      "name" : "mock response for call to mongoTemplate.save(product)",
+      "fieldTypeName" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.ProductService",
+      "fieldName" : "mongoTemplate",
+      "methodName" : "save",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":\"1\",\"name\":\"string\",\"price\":100.0}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"1\",\"name\":\"string\",\"price\":100.0}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<T>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate#save#(T)Lreactor/core/publisher/Mono<T>;"
+    } ],
+    "org.springframework.data.mongodb.core.ReactiveMongoTemplate#findById#(Ljava/lang/Object;Ljava/lang/Class<T>;)Lreactor/core/publisher/Mono<T>;" : [ {
+      "id" : "106173ff-23d9-4955-a888-35d6ae720eb2",
+      "name" : "mock response for call to mongoTemplate.findById(id, Product.class)",
+      "fieldTypeName" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.ProductService",
+      "fieldName" : "mongoTemplate",
+      "methodName" : "findById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"1\""
+      }, {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"org.unlogged.springwebfluxdemo.model.Product\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"1\",\"name\":\"string\",\"price\":100.0}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<T>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate#findById#(Ljava/lang/Object;Ljava/lang/Class<T>;)Lreactor/core/publisher/Mono<T>;"
+    } ],
+    "org.springframework.data.mongodb.core.ReactiveMongoTemplate#findAll#(Ljava/lang/Class<T>;)Lreactor/core/publisher/Flux<T>;" : [ {
+      "id" : "2b8e2909-6f58-4f62-b52b-751bd2b2ac82",
+      "name" : "mock response for call to mongoTemplate.findAll(Product.class)",
+      "fieldTypeName" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.ProductService",
+      "fieldName" : "mongoTemplate",
+      "methodName" : "findAll",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"org.unlogged.springwebfluxdemo.model.Product\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"1\",\"name\":\"string\",\"price\":100.0}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<T>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate#findAll#(Ljava/lang/Class<T>;)Lreactor/core/publisher/Flux<T>;"
+    } ],
+    "org.springframework.data.mongodb.core.ReactiveMongoTemplate#findOne#(Lorg/springframework/data/mongodb/core/query/Query;Ljava/lang/Class<T>;)Lreactor/core/publisher/Mono<T>;" : [ {
+      "id" : "8027b46a-ba5f-435e-8dad-ea78ff451124",
+      "name" : "mock response for call to mongoTemplate.findOne(query, Product.class)",
+      "fieldTypeName" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.ProductService",
+      "fieldName" : "mongoTemplate",
+      "methodName" : "findOne",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1315311145"
+      }, {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"org.unlogged.springwebfluxdemo.model.Product\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"1\",\"name\":\"string\",\"price\":100.0}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<T>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate#findOne#(Lorg/springframework/data/mongodb/core/query/Query;Ljava/lang/Class<T>;)Lreactor/core/publisher/Mono<T>;"
+    } ],
+    "org.springframework.data.mongodb.core.ReactiveMongoTemplate#remove#(Lorg/springframework/data/mongodb/core/query/Query;Ljava/lang/Class<?>;)Lreactor/core/publisher/Mono<Lcom/mongodb/client/result/DeleteResult;>;" : [ {
+      "id" : "838963b1-1865-4116-bb22-fee528d5c4f1",
+      "name" : "mock response for call to mongoTemplate.remove(query, Product.class)",
+      "fieldTypeName" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.ProductService",
+      "fieldName" : "mongoTemplate",
+      "methodName" : "remove",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "473332915"
+      }, {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"org.unlogged.springwebfluxdemo.model.Product\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"deletedCount\":0}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<com.mongodb.client.result.DeleteResult>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.mongodb.core.ReactiveMongoTemplate#remove#(Lorg/springframework/data/mongodb/core/query/Query;Ljava/lang/Class<?>;)Lreactor/core/publisher/Mono<Lcom/mongodb/client/result/DeleteResult;>;"
+    } ]
+  }
+}

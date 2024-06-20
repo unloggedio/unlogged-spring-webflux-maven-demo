@@ -1,0 +1,241 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.VarKeywordController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.VarKeywordController#getObjectArrayVar#(I)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/controller/ObjectTest;>;" : [ {
+      "lineNumbers" : [ 67, 68, 69, 71 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "89d8190f-76b4-419d-be06-37720a0c7931",
+          "assertionType" : "EQUAL",
+          "key" : "/a"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"a\"",
+          "id" : "a4d18c15-4d2a-4519-8e59-40f00e178ce9",
+          "assertionType" : "EQUAL",
+          "key" : "/b"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"test\"",
+          "id" : "6d1de4ea-d894-4c73-9059-df0472c404bf",
+          "assertionType" : "EQUAL",
+          "key" : "/c"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "9.99",
+          "id" : "6b422109-ee1b-4d02-8a00-ab58e0fd7c39",
+          "assertionType" : "EQUAL",
+          "key" : "/d"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "7e4e9bf3-8016-4b1f-bcff-ad3d5f8778d2",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "bb8926c5-39dd-4e07-95cd-3c2c0b30ded6",
+      "name" : "getObjectArrayVar saved on 2024-06-20 11:34",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"a\":1,\"b\":\"a\",\"c\":\"test\",\"d\":9.99}",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 457969350628625,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 54047371,
+      "probSerializedValue" : "eyJhIjoxLCJiIjoiYSIsImMiOiJ0ZXN0IiwiZCI6OS45OX0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getObjectArrayVar",
+        "signature" : "(I)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/controller/ObjectTest;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.VarKeywordController",
+        "methodHash" : -233423095
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.VarKeywordController#getStringVar#(C)Lreactor/core/publisher/Mono<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 36, 37, 38 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"abca\"",
+          "id" : "92ef19bb-cb2e-4a4e-85b6-1a2c25f9ba62",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "23a8f817-9d66-4046-98a7-50ed1e42777f",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "c3a90374-0642-49a5-8626-05e35443029e",
+      "name" : "getStringVar saved on 2024-06-20 11:34",
+      "description" : null,
+      "methodArguments" : [ "97" ],
+      "returnValue" : "\"abca\"",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 457946441841375,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -915956221,
+      "probSerializedValue" : "ImFiY2Ei",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getStringVar",
+        "signature" : "(C)Lreactor/core/publisher/Mono<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.VarKeywordController",
+        "methodHash" : -835120643
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.VarKeywordController#getCharVar#(C)Lreactor/core/publisher/Mono<Ljava/lang/Character;>;" : [ {
+      "lineNumbers" : [ 43, 44 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"a\"",
+          "id" : "b8f9f2cf-28b6-4dcf-906b-72395d626d32",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "e10d3c1f-1f73-45f7-af95-6816691ee6db",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "cbcf1487-a7c3-46b6-a29f-ae038e74d4e5",
+      "name" : "getCharVar saved on 2024-06-20 11:34",
+      "description" : null,
+      "methodArguments" : [ "97" ],
+      "returnValue" : "\"a\"",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 457952265988916,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1903541211,
+      "probSerializedValue" : "ImEi",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getCharVar",
+        "signature" : "(C)Lreactor/core/publisher/Mono<Ljava/lang/Character;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.VarKeywordController",
+        "methodHash" : 38216868
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.VarKeywordController#getIntegerArrayVar#(I)Lreactor/core/publisher/Flux<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 50, 51, 52, 54 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "a6227ed9-cc98-4bc2-9922-7ab64e9d2d0a",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "6c7611c0-c25f-4af0-9d3a-c78b5181a8e6",
+      "name" : "getIntegerArrayVar saved on 2024-06-20 11:34",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "1",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 457958685220166,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -2134367560,
+      "probSerializedValue" : "MQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getIntegerArrayVar",
+        "signature" : "(I)Lreactor/core/publisher/Flux<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.VarKeywordController",
+        "methodHash" : 579284310
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.VarKeywordController#getObjectVar#(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/controller/ObjectTest;>;" : [ {
+      "lineNumbers" : [ 60, 61 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "414b1b5f-9070-4da3-8c73-0621403ac982",
+          "assertionType" : "EQUAL",
+          "key" : "/a"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"a\"",
+          "id" : "3e9e472f-db45-459f-86cd-1985dd297aa3",
+          "assertionType" : "EQUAL",
+          "key" : "/b"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"test\"",
+          "id" : "881ee558-74b8-4a6c-b3e2-2016e996f356",
+          "assertionType" : "EQUAL",
+          "key" : "/c"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "9.99",
+          "id" : "ef2ab563-dc5c-4a38-abf8-966d58860023",
+          "assertionType" : "EQUAL",
+          "key" : "/d"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "eef312b7-bbf8-488a-82e7-083c76ee3154",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "74c7a780-706d-45bf-9e10-9be5a6ee0d64",
+      "name" : "getObjectVar saved on 2024-06-20 11:34",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"a\":1,\"b\":\"a\",\"c\":\"test\",\"d\":9.99}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 457963778604000,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 527946925,
+      "probSerializedValue" : "eyJhIjoxLCJiIjoiYSIsImMiOiJ0ZXN0IiwiZCI6OS45OX0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getObjectVar",
+        "signature" : "(I)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/controller/ObjectTest;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.VarKeywordController",
+        "methodHash" : -1444618130
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

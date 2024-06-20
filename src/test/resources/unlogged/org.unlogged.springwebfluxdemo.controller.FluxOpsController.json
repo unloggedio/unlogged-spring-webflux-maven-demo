@@ -160,7 +160,7 @@
         "name" : "fluxListSubscribe",
         "signature" : "()Ljava/util/List<Ljava/lang/Integer;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
-        "methodHash" : -78710267
+        "methodHash" : 0
       }
     } ],
     "org.unlogged.springwebfluxdemo.controller.FluxOpsController#fluxThrottling#()I" : [ {
@@ -193,7 +193,7 @@
         "name" : "fluxThrottling",
         "signature" : "()I",
         "className" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
-        "methodHash" : 18705804
+        "methodHash" : 0
       }
     } ],
     "org.unlogged.springwebfluxdemo.controller.FluxOpsController#concurrent#()Ljava/util/List<Ljava/lang/Integer;>;" : [ {
@@ -254,7 +254,7 @@
         "name" : "concurrent",
         "signature" : "()Ljava/util/List<Ljava/lang/Integer;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
-        "methodHash" : 815895634
+        "methodHash" : 0
       }
     } ],
     "org.unlogged.springwebfluxdemo.controller.FluxOpsController#backPressure1#()Ljava/util/List<Ljava/lang/Integer;>;" : [ {
@@ -315,7 +315,309 @@
         "name" : "backPressure1",
         "signature" : "()Ljava/util/List<Ljava/lang/Integer;>;",
         "className" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
-        "methodHash" : 1581881271
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.FluxOpsController#parallelFluxExample#()Ljava/util/List<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 164, 165, 166, 167, 168, 170, 173, 174 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "12",
+          "id" : "6c8af913-aabc-4d6d-ba26-1a700741f907",
+          "assertionType" : "NOT_NULL",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "6",
+          "id" : "07d68e45-5e59-46b8-8c0d-5ff49de5bde5",
+          "assertionType" : "NOT_NULL",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "2",
+          "id" : "b8a65c2c-9a5c-4ac0-b49e-6d2bc4635668",
+          "assertionType" : "NOT_NULL",
+          "key" : "/2"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "14",
+          "id" : "f0b36456-fa59-49fd-9123-63be5d45a6ef",
+          "assertionType" : "NOT_NULL",
+          "key" : "/3"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "4",
+          "id" : "f7f0a4e4-5f36-4f3e-ba53-2bbc1ae4fb15",
+          "assertionType" : "NOT_NULL",
+          "key" : "/4"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "16",
+          "id" : "cc006624-ca11-48ec-a4a5-6b94ab80c0c2",
+          "assertionType" : "NOT_NULL",
+          "key" : "/5"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "567aba79-3ee2-4339-a15c-c2c5b353964f",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "7061f1c7-c5ec-445f-bc19-c36acb9908be",
+      "name" : "parallelFluxExample saved on 2024-06-20 10:49",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[12,6,2,14,4,16]",
+      "returnValueClassname" : "java.util.List",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 455336057410958,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1809735790,
+      "probSerializedValue" : "WzEyLDYsMiwxNCw0LDE2XQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "parallelFluxExample",
+        "signature" : "()Ljava/util/List<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
+        "methodHash" : 461240157
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.FluxOpsController#disposableExample#()Ljava/util/List<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 179, 180, 181, 182, 185, 186, 189, 190 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "7c3f30c3-ebaa-40d7-8b10-800b4718efc2",
+          "assertionType" : "EQUAL",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "2",
+          "id" : "cab2694f-23ef-4d56-acf5-ebd46e5dac89",
+          "assertionType" : "EQUAL",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "3",
+          "id" : "d6e9dfb8-25d8-4589-8ff9-3b52db2fcb2d",
+          "assertionType" : "EQUAL",
+          "key" : "/2"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "93f6a2d4-cfda-4fb0-b4ca-09689da85113",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "624593b3-b19f-4843-9138-cb1e8a732456",
+      "name" : "disposableExample saved on 2024-06-20 10:49",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[1,2,3]",
+      "returnValueClassname" : "java.util.List",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 455324688825083,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1327921924,
+      "probSerializedValue" : "WzEsMiwzXQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "disposableExample",
+        "signature" : "()Ljava/util/List<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
+        "methodHash" : 1236041966
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.FluxOpsController#tuple4Example#()Lreactor/core/publisher/Flux<Lreactor/util/function/Tuple4;><Ljava/lang/Integer;,Ljava/lang/String;,Ljava/lang/Double;,Ljava/lang/Boolean;>;" : [ {
+      "lineNumbers" : [ 195, 196, 197, 198, 200, 202 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "0c694391-7c90-4f1c-bc40-03e68f08db8a",
+            "assertionType" : "EQUAL",
+            "key" : "/0/0"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"A\"",
+            "id" : "b23e8c70-6c37-4a06-bef3-1a0cea038550",
+            "assertionType" : "EQUAL",
+            "key" : "/0/1"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1.1",
+            "id" : "7a327531-7e5f-4319-87d6-8b8da2badd22",
+            "assertionType" : "EQUAL",
+            "key" : "/0/2"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "7727c371-3d21-439f-919c-585171ad3e94",
+            "assertionType" : "EQUAL",
+            "key" : "/0/3"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "948ef3b1-ac1e-4f26-b1da-6bba60a9e763",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "2",
+            "id" : "449ac2a0-4fb0-4a6a-ad6d-01c7a05c85f4",
+            "assertionType" : "EQUAL",
+            "key" : "/1/0"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"B\"",
+            "id" : "5fd0a832-8937-41c4-9a3d-88e491d10caf",
+            "assertionType" : "EQUAL",
+            "key" : "/1/1"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "2.2",
+            "id" : "ab094411-2611-4972-a559-6662e2fb799b",
+            "assertionType" : "EQUAL",
+            "key" : "/1/2"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "false",
+            "id" : "220e8976-2a5c-4422-b7d8-82dd0bd8270b",
+            "assertionType" : "EQUAL",
+            "key" : "/1/3"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "f6a32a1f-2682-4a56-acab-6cd581063a3d",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3",
+            "id" : "e8257ab8-158c-41aa-9ddb-bfed56fb7cd1",
+            "assertionType" : "EQUAL",
+            "key" : "/2/0"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"C\"",
+            "id" : "598d63d5-e250-4555-a349-e49addf1f989",
+            "assertionType" : "EQUAL",
+            "key" : "/2/1"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3.3",
+            "id" : "cc0a958f-f993-4cfa-80d6-8282a9eb09f1",
+            "assertionType" : "EQUAL",
+            "key" : "/2/2"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "0eb0bc9d-983d-4f6f-a43a-47295da2dd64",
+            "assertionType" : "EQUAL",
+            "key" : "/2/3"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "45e8910d-f452-45cc-9327-0e0a730e5603",
+          "assertionType" : "ALLOF",
+          "key" : "/2"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "4",
+            "id" : "256e0fe8-ad95-42e5-9e9d-2e6fbdaecb53",
+            "assertionType" : "EQUAL",
+            "key" : "/3/0"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"D\"",
+            "id" : "5cc84c8c-1ddb-4e35-bad2-73584374696e",
+            "assertionType" : "EQUAL",
+            "key" : "/3/1"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "4.4",
+            "id" : "e9fa05ad-6970-4034-9130-7c90470cc321",
+            "assertionType" : "EQUAL",
+            "key" : "/3/2"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "false",
+            "id" : "e8b21e81-9f3c-4b48-a8e4-cae99c79c86f",
+            "assertionType" : "EQUAL",
+            "key" : "/3/3"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "94a7796c-b508-423b-ae7f-8883d02ab460",
+          "assertionType" : "ALLOF",
+          "key" : "/3"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "72691c7e-8c44-494d-ac92-cf40b655e029",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "dc35346e-16c5-43e6-beda-071bafce8773",
+      "name" : "tuple4Example saved on 2024-06-20 10:49",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[[1,\"A\",1.1,true],[2,\"B\",2.2,false],[3,\"C\",3.3,true],[4,\"D\",4.4,false]]",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 455316082823958,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1407848630,
+      "probSerializedValue" : "W1sxLCJBIiwxLjEsdHJ1ZV0sWzIsIkIiLDIuMixmYWxzZV0sWzMsIkMiLDMuMyx0cnVlXSxbNCwiRCIsNC40LGZhbHNlXV0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "tuple4Example",
+        "signature" : "()Lreactor/core/publisher/Flux<Lreactor/util/function/Tuple4;><Ljava/lang/Integer;,Ljava/lang/String;,Ljava/lang/Double;,Ljava/lang/Boolean;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
+        "methodHash" : -1328895433
       }
     } ]
   },

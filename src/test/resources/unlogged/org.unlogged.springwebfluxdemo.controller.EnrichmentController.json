@@ -108,6 +108,123 @@
         "className" : "org.unlogged.springwebfluxdemo.controller.EnrichmentController",
         "methodHash" : 0
       }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.EnrichmentController#enrichPersonsInParallel#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Person;>;" : [ {
+      "lineNumbers" : [ 79, 85, 86, 87, 91 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "b0eec5b5-e92a-4165-a8a0-837fabfd1693",
+            "assertionType" : "EQUAL",
+            "key" : "/0/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Alice#En\"",
+            "id" : "4138c663-9edc-4cda-9b02-b3c946e1072c",
+            "assertionType" : "EQUAL",
+            "key" : "/0/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "25",
+            "id" : "a7cf5051-e3e7-4697-9ae7-db7ed51b97bc",
+            "assertionType" : "EQUAL",
+            "key" : "/0/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "97e4f0e2-d669-4da9-97f6-59253e7d3aa7",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "253a8a7c-24a5-46c5-97bf-ad0a37c8fe6d",
+            "assertionType" : "EQUAL",
+            "key" : "/1/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Bob#En\"",
+            "id" : "5ea81d9d-cfb7-4731-a898-13f86449fec5",
+            "assertionType" : "EQUAL",
+            "key" : "/1/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "30",
+            "id" : "cf8a5a06-79cd-4bd5-86d7-6f1c1ae8b3b0",
+            "assertionType" : "EQUAL",
+            "key" : "/1/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "c338702a-8646-4f03-a419-c515a106ca0f",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "046bc550-87e5-4e8f-b116-7358436a2e38",
+            "assertionType" : "EQUAL",
+            "key" : "/2/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Charlie#En\"",
+            "id" : "dfb9b08f-ff15-4664-8f65-a57215f580e7",
+            "assertionType" : "EQUAL",
+            "key" : "/2/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "28",
+            "id" : "533c3858-c353-4469-b2e7-e26e22a59961",
+            "assertionType" : "EQUAL",
+            "key" : "/2/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "2a31a82f-217d-4393-b501-2e13078fd5bc",
+          "assertionType" : "ALLOF",
+          "key" : "/2"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "6b12c39c-fb99-493b-97ae-402ed6c6b81f",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "d1946a79-e43e-466b-a124-1558869f54fe",
+      "name" : "enrichPersonsInParallel saved on 2024-06-20 10:47",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[{\"id\":null,\"name\":\"Alice#En\",\"age\":25},{\"id\":null,\"name\":\"Bob#En\",\"age\":30},{\"id\":null,\"name\":\"Charlie#En\",\"age\":28}]",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 455251444648625,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 822844861,
+      "probSerializedValue" : "W3siaWQiOm51bGwsIm5hbWUiOiJBbGljZSNFbiIsImFnZSI6MjV9LHsiaWQiOm51bGwsIm5hbWUiOiJCb2IjRW4iLCJhZ2UiOjMwfSx7ImlkIjpudWxsLCJuYW1lIjoiQ2hhcmxpZSNFbiIsImFnZSI6Mjh9XQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "enrichPersonsInParallel",
+        "signature" : "()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Person;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.EnrichmentController",
+        "methodHash" : 0
+      }
     } ]
   },
   "declaredMockMap" : { }

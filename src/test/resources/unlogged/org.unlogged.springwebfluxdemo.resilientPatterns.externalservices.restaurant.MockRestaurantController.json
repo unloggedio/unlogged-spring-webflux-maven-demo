@@ -1,0 +1,222 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.restaurant.MockRestaurantController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.restaurant.MockRestaurantController#getRestaurant#(Ljava/lang/Integer;)Lorg/springframework/http/ResponseEntity<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;" : [ {
+      "lineNumbers" : [ 17, 18, 23, 28, 29, 30, 31, 32, 50 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "06677e55-3823-4dc8-9558-bddeee4ad836",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3",
+            "id" : "01520044-bb0a-4054-8aa9-d6a645881e61",
+            "assertionType" : "EQUAL",
+            "key" : "/body/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Japanese\"",
+            "id" : "59789070-9221-4813-8afd-b9cb9fc2e1f6",
+            "assertionType" : "EQUAL",
+            "key" : "/body/cuisine"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Japanese good cuisine\"",
+            "id" : "388d25e8-5e3d-4a3d-802d-aab4d6cb33fd",
+            "assertionType" : "EQUAL",
+            "key" : "/body/description"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "100",
+            "id" : "d2ee35d5-9e20-44d1-b930-5bb25d6e21b9",
+            "assertionType" : "EQUAL",
+            "key" : "/body/price"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "2a83ff50-5760-4eca-bb79-b90cdb4c047b",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "a282c348-c88f-40c4-a7fe-51923514261d",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "a0d76b3f-ae1f-4088-8521-9f3644da0461",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "67a5fc32-403f-47de-ac43-34fddb6dca81",
+      "name" : "getRestaurant saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "3" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"id\":3,\"cuisine\":\"Japanese\",\"description\":\"Japanese good cuisine\",\"price\":100},\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458621192369291,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1198201951,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJpZCI6MywiY3Vpc2luZSI6IkphcGFuZXNlIiwiZGVzY3JpcHRpb24iOiJKYXBhbmVzZSBnb29kIGN1aXNpbmUiLCJwcmljZSI6MTAwfSwic3RhdHVzIjoiT0sifQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getRestaurant",
+        "signature" : "(Ljava/lang/Integer;)Lorg/springframework/http/ResponseEntity<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.restaurant.MockRestaurantController",
+        "methodHash" : -288947624
+      }
+    }, {
+      "lineNumbers" : [ 17, 18, 23, 28, 34, 35, 36, 37, 38, 50 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "121104f4-b2ac-4352-b353-9a0632c8e733",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "4",
+            "id" : "7285d6ee-4826-4fe0-b47d-e5364d2a8144",
+            "assertionType" : "EQUAL",
+            "key" : "/body/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Indian\"",
+            "id" : "45ef1e56-3c19-41b1-bdf2-7a2d6bfeb0c1",
+            "assertionType" : "EQUAL",
+            "key" : "/body/cuisine"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Mimicking an indian Item for which no reviews yet\"",
+            "id" : "d447b262-104c-488a-8916-18023935ca68",
+            "assertionType" : "EQUAL",
+            "key" : "/body/description"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "90",
+            "id" : "26e9739d-0eb5-4378-912b-d1234d8296b0",
+            "assertionType" : "EQUAL",
+            "key" : "/body/price"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "3dd37076-bb24-49df-bb4e-f3886efe48a0",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "de2563ec-c9f1-43db-9a33-1c43aabfd8c0",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "85a28b1f-063f-40d6-9bc3-a16d5bddf1da",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "02a956a8-8da8-40fe-afac-9010443f44b6",
+      "name" : "getRestaurant saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "4" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"id\":4,\"cuisine\":\"Indian\",\"description\":\"Mimicking an indian Item for which no reviews yet\",\"price\":90},\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458627365043125,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -753195764,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJpZCI6NCwiY3Vpc2luZSI6IkluZGlhbiIsImRlc2NyaXB0aW9uIjoiTWltaWNraW5nIGFuIGluZGlhbiBJdGVtIGZvciB3aGljaCBubyByZXZpZXdzIHlldCIsInByaWNlIjo5MH0sInN0YXR1cyI6Ik9LIn0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getRestaurant",
+        "signature" : "(Ljava/lang/Integer;)Lorg/springframework/http/ResponseEntity<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.restaurant.MockRestaurantController",
+        "methodHash" : -288947624
+      }
+    }, {
+      "lineNumbers" : [ 17, 18, 23, 28, 34, 39, 40 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "12a24614-d0c9-48e8-bcb3-0a143f8e9e3b",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "f07aeca6-8055-40da-baf5-dfb9f11efcdb",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"INTERNAL_SERVER_ERROR\"",
+          "id" : "f691bcd0-4c62-49cf-bbf4-1a00c2ab7a47",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "0b9bc28b-ca30-4948-a00a-576f35c42476",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "d51fda0f-d24c-4cf4-8e70-9f17f24b3bf4",
+      "name" : "getRestaurant saved on 2024-06-20 11:44",
+      "description" : null,
+      "methodArguments" : [ "5" ],
+      "returnValue" : "{\"headers\":{},\"body\":null,\"status\":\"INTERNAL_SERVER_ERROR\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458633073263333,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -746404288,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6bnVsbCwic3RhdHVzIjoiSU5URVJOQUxfU0VSVkVSX0VSUk9SIn0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getRestaurant",
+        "signature" : "(Ljava/lang/Integer;)Lorg/springframework/http/ResponseEntity<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.restaurant.MockRestaurantController",
+        "methodHash" : -288947624
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

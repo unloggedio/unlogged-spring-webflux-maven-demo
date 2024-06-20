@@ -1,0 +1,46 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.webclient.UserClient",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.webclient.UserClient#createUser#(Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;" : [ {
+      "lineNumbers" : [ 41, 42, 43, 44, 45, 46 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from POST http://localhost:8080/users\"",
+          "id" : "517d4311-e83f-423f-aafc-b53723e80aea",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "5340afe5-4689-482b-8dc6-6a42366c559f",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "40ebce40-5f39-4feb-a8f6-2e92f7c0cde0",
+      "name" : "createUser saved on 2024-06-20 11:41",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}" ],
+      "returnValue" : "org.springframework.web.reactive.function.client.WebClientResponseException$BadRequest: 400 Bad Request from POST http://localhost:8080/users",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458505667191208,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1427366523,
+      "probSerializedValue" : "b3JnLnNwcmluZ2ZyYW1ld29yay53ZWIucmVhY3RpdmUuZnVuY3Rpb24uY2xpZW50LldlYkNsaWVudFJlc3BvbnNlRXhjZXB0aW9uJEJhZFJlcXVlc3Q6IDQwMCBCYWQgUmVxdWVzdCBmcm9tIFBPU1QgaHR0cDovL2xvY2FsaG9zdDo4MDgwL3VzZXJz",
+      "mockIds" : [ "e5f4e0a0-5a1e-4536-8a99-5437542a7a80" ],
+      "exception" : false,
+      "method" : {
+        "name" : "createUser",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/dto/UserDto;>;",
+        "className" : "org.unlogged.springwebfluxdemo.webclient.UserClient",
+        "methodHash" : 48392340
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

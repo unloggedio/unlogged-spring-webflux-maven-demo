@@ -1,0 +1,588 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.service.WeatherService",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.service.WeatherService#getWeatherInfo#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 31, 32, 37, 38, 42, 46, 47 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"{\\\"location\\\":{\\\"name\\\":\\\"Dehradun\\\",\\\"region\\\":\\\"Uttarakhand\\\",\\\"country\\\":\\\"India\\\",\\\"lat\\\":30.32,\\\"lon\\\":78.03,\\\"tz_id\\\":\\\"Asia/Kolkata\\\",\\\"localtime_epoch\\\":1718863465,\\\"localtime\\\":\\\"2024-06-20 11:34\\\"},\\\"current\\\":{\\\"temp_c\\\":39.1,\\\"temp_f\\\":102.4,\\\"is_day\\\":1,\\\"condition\\\":{\\\"text\\\":\\\"Sunny\\\",\\\"icon\\\":\\\"//cdn.weatherapi.com/weather/64x64/day/113.png\\\",\\\"code\\\":1000},\\\"wind_mph\\\":6.5,\\\"wind_kph\\\":10.4,\\\"wind_degree\\\":206,\\\"wind_dir\\\":\\\"SSW\\\",\\\"pressure_mb\\\":998.0,\\\"pressure_in\\\":29.48,\\\"precip_mm\\\":0.0,\\\"precip_in\\\":0.0,\\\"humidity\\\":19,\\\"cloud\\\":5,\\\"feelslike_c\\\":38.7,\\\"feelslike_f\\\":101.6,\\\"vis_km\\\":10.0,\\\"vis_miles\\\":6.0,\\\"uv\\\":9.0,\\\"gust_mph\\\":7.5,\\\"gust_kph\\\":12.0}}\"",
+          "id" : "d20ac2cb-53bf-41bc-a6aa-342872ac09d4",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "0e8e65f2-b29b-42d1-bfe2-79d3e738eecb",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "850f8365-1126-4cac-8255-a9a771d94193",
+      "name" : "getWeatherInfo saved on 2024-06-20 11:35",
+      "description" : null,
+      "methodArguments" : [ "\"dehradun\"" ],
+      "returnValue" : "\"{\\\"location\\\":{\\\"name\\\":\\\"Dehradun\\\",\\\"region\\\":\\\"Uttarakhand\\\",\\\"country\\\":\\\"India\\\",\\\"lat\\\":30.32,\\\"lon\\\":78.03,\\\"tz_id\\\":\\\"Asia/Kolkata\\\",\\\"localtime_epoch\\\":1718863465,\\\"localtime\\\":\\\"2024-06-20 11:34\\\"},\\\"current\\\":{\\\"temp_c\\\":39.1,\\\"temp_f\\\":102.4,\\\"is_day\\\":1,\\\"condition\\\":{\\\"text\\\":\\\"Sunny\\\",\\\"icon\\\":\\\"//cdn.weatherapi.com/weather/64x64/day/113.png\\\",\\\"code\\\":1000},\\\"wind_mph\\\":6.5,\\\"wind_kph\\\":10.4,\\\"wind_degree\\\":206,\\\"wind_dir\\\":\\\"SSW\\\",\\\"pressure_mb\\\":998.0,\\\"pressure_in\\\":29.48,\\\"precip_mm\\\":0.0,\\\"precip_in\\\":0.0,\\\"humidity\\\":19,\\\"cloud\\\":5,\\\"feelslike_c\\\":38.7,\\\"feelslike_f\\\":101.6,\\\"vis_km\\\":10.0,\\\"vis_miles\\\":6.0,\\\"uv\\\":9.0,\\\"gust_mph\\\":7.5,\\\"gust_kph\\\":12.0}}\"",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458166919876250,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -2055864736,
+      "probSerializedValue" : "IntcImxvY2F0aW9uXCI6e1wibmFtZVwiOlwiRGVocmFkdW5cIixcInJlZ2lvblwiOlwiVXR0YXJha2hhbmRcIixcImNvdW50cnlcIjpcIkluZGlhXCIsXCJsYXRcIjozMC4zMixcImxvblwiOjc4LjAzLFwidHpfaWRcIjpcIkFzaWEvS29sa2F0YVwiLFwibG9jYWx0aW1lX2Vwb2NoXCI6MTcxODg2MzQ2NSxcImxvY2FsdGltZVwiOlwiMjAyNC0wNi0yMCAxMTozNFwifSxcImN1cnJlbnRcIjp7XCJ0ZW1wX2NcIjozOS4xLFwidGVtcF9mXCI6MTAyLjQsXCJpc19kYXlcIjoxLFwiY29uZGl0aW9uXCI6e1widGV4dFwiOlwiU3VubnlcIixcImljb25cIjpcIi8vY2RuLndlYXRoZXJhcGkuY29tL3dlYXRoZXIvNjR4NjQvZGF5LzExMy5wbmdcIixcImNvZGVcIjoxMDAwfSxcIndpbmRfbXBoXCI6Ni41LFwid2luZF9rcGhcIjoxMC40LFwid2luZF9kZWdyZWVcIjoyMDYsXCJ3aW5kX2RpclwiOlwiU1NXXCIsXCJwcmVzc3VyZV9tYlwiOjk5OC4wLFwicHJlc3N1cmVfaW5cIjoyOS40OCxcInByZWNpcF9tbVwiOjAuMCxcInByZWNpcF9pblwiOjAuMCxcImh1bWlkaXR5XCI6MTksXCJjbG91ZFwiOjUsXCJmZWVsc2xpa2VfY1wiOjM4LjcsXCJmZWVsc2xpa2VfZlwiOjEwMS42LFwidmlzX2ttXCI6MTAuMCxcInZpc19taWxlc1wiOjYuMCxcInV2XCI6OS4wLFwiZ3VzdF9tcGhcIjo3LjUsXCJndXN0X2twaFwiOjEyLjB9fSI=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getWeatherInfo",
+        "signature" : "(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.WeatherService",
+        "methodHash" : 1188178102
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.WeatherService#getWeatherForAddress#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/weather/WeatherInfo;>;" : [ {
+      "lineNumbers" : [ 21, 22, 23 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Dehradun\"",
+            "id" : "e6b69f47-350b-42f8-9b61-4edb5362a0de",
+            "assertionType" : "EQUAL",
+            "key" : "/location/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Uttarakhand\"",
+            "id" : "98c30015-a1e9-45bd-8262-5949f38f953c",
+            "assertionType" : "EQUAL",
+            "key" : "/location/region"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"India\"",
+            "id" : "f85b836d-6bb4-4875-a96f-d08ab20dcd9b",
+            "assertionType" : "EQUAL",
+            "key" : "/location/country"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "30.32",
+            "id" : "6ff2cd95-9b4a-4202-8680-79346718f096",
+            "assertionType" : "EQUAL",
+            "key" : "/location/lat"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "78.03",
+            "id" : "fae13cfd-ec6a-432c-968a-8899aaac86f1",
+            "assertionType" : "EQUAL",
+            "key" : "/location/lon"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Asia/Kolkata\"",
+            "id" : "1cb0b68c-ba3b-4bc5-b7bd-f98febd0faba",
+            "assertionType" : "EQUAL",
+            "key" : "/location/tz_id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1718863465",
+            "id" : "bd88f8cd-a13c-448c-ae0c-18c3fb4f1e8b",
+            "assertionType" : "EQUAL",
+            "key" : "/location/localtime_epoch"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-20 11:34\"",
+            "id" : "389842ae-87d9-4cba-9b8d-7a1a6a47c8a0",
+            "assertionType" : "EQUAL",
+            "key" : "/location/localtime"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "668a6d69-6e5b-4109-ac4e-a78f0fe32bb3",
+          "assertionType" : "ALLOF",
+          "key" : "/location"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "39.1",
+            "id" : "9f11da6f-745c-4e75-8788-bdb474ae68a3",
+            "assertionType" : "EQUAL",
+            "key" : "/current/temp_c"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "102.4",
+            "id" : "732cb4ed-850c-45f6-af8b-7252bd6f0f7b",
+            "assertionType" : "EQUAL",
+            "key" : "/current/temp_f"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "944810bf-1160-49fd-8a51-1b94fa54b3c6",
+            "assertionType" : "EQUAL",
+            "key" : "/current/is_day"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Sunny\"",
+              "id" : "d4bd47e6-b93d-470a-9ce0-1b683757bb01",
+              "assertionType" : "EQUAL",
+              "key" : "/current/condition/text"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"//cdn.weatherapi.com/weather/64x64/day/113.png\"",
+              "id" : "561e8d27-f61f-4dc4-9dc4-a03efeca3618",
+              "assertionType" : "EQUAL",
+              "key" : "/current/condition/icon"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1000",
+              "id" : "40689451-4a61-46f8-8b14-67df33d4977d",
+              "assertionType" : "EQUAL",
+              "key" : "/current/condition/code"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "0ec80054-7606-48b2-8e46-56daf03d24f1",
+            "assertionType" : "ALLOF",
+            "key" : "/current/condition"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "6.5",
+            "id" : "5c0d7f2e-9ff8-4966-9b47-34b823c9257c",
+            "assertionType" : "EQUAL",
+            "key" : "/current/wind_mph"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "10.4",
+            "id" : "494623c7-2c45-48a7-a442-28d310b958a5",
+            "assertionType" : "EQUAL",
+            "key" : "/current/wind_kph"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "206",
+            "id" : "8c2c12b8-c54d-42b3-974f-d11f5957d221",
+            "assertionType" : "EQUAL",
+            "key" : "/current/wind_degree"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SSW\"",
+            "id" : "49f6e09c-2cc5-41da-9b6c-c7c89c11b5f3",
+            "assertionType" : "EQUAL",
+            "key" : "/current/wind_dir"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "998.0",
+            "id" : "09b973a7-793b-454b-af03-907f9d8fe892",
+            "assertionType" : "EQUAL",
+            "key" : "/current/pressure_mb"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "29.48",
+            "id" : "7738414e-9139-4147-a748-059f2ffcf6af",
+            "assertionType" : "EQUAL",
+            "key" : "/current/pressure_in"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "0.0",
+            "id" : "ec53364c-6300-415c-8995-6291f3738a2f",
+            "assertionType" : "EQUAL",
+            "key" : "/current/precip_mm"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "0.0",
+            "id" : "ab263c74-9fee-411c-b40a-343a2fbf163b",
+            "assertionType" : "EQUAL",
+            "key" : "/current/precip_in"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "19",
+            "id" : "349024f9-2305-4752-9d1a-bec698df20f7",
+            "assertionType" : "EQUAL",
+            "key" : "/current/humidity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "5",
+            "id" : "1eac76d7-ae63-49cc-8be7-d4d982ee1d7e",
+            "assertionType" : "EQUAL",
+            "key" : "/current/cloud"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "38.7",
+            "id" : "07efe3b1-f49a-4d9c-81d1-c775f7df21da",
+            "assertionType" : "EQUAL",
+            "key" : "/current/feelslike_c"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101.6",
+            "id" : "ffcb2497-7387-436a-a67c-8887205a0ede",
+            "assertionType" : "EQUAL",
+            "key" : "/current/feelslike_f"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "10.0",
+            "id" : "24cfe93f-3319-4c10-aec3-e047b57f3fd4",
+            "assertionType" : "EQUAL",
+            "key" : "/current/vis_km"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "6.0",
+            "id" : "1a0b3631-6678-4712-916b-b0cda902fc60",
+            "assertionType" : "EQUAL",
+            "key" : "/current/vis_miles"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "9.0",
+            "id" : "c48af923-53b5-4c5e-b84d-6d269e4b7351",
+            "assertionType" : "EQUAL",
+            "key" : "/current/uv"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "7.5",
+            "id" : "58a7ae5e-0787-4dd8-b294-37c708a554f1",
+            "assertionType" : "EQUAL",
+            "key" : "/current/gust_mph"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "12.0",
+            "id" : "f939a082-6ebb-4eac-b05e-5e79a7045950",
+            "assertionType" : "EQUAL",
+            "key" : "/current/gust_kph"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "b643b1bd-4f88-46b7-94d9-ea970f2ecdad",
+          "assertionType" : "ALLOF",
+          "key" : "/current"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "80555470-cfc9-4baa-aa7f-c9aaab2bbded",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "c234962c-4632-4ccc-829f-777359fcd51b",
+      "name" : "getWeatherForAddress saved on 2024-06-20 11:35",
+      "description" : null,
+      "methodArguments" : [ "\"dehradun\"" ],
+      "returnValue" : "{\"location\":{\"name\":\"Dehradun\",\"region\":\"Uttarakhand\",\"country\":\"India\",\"lat\":30.32,\"lon\":78.03,\"tz_id\":\"Asia/Kolkata\",\"localtime_epoch\":1718863465,\"localtime\":\"2024-06-20 11:34\"},\"current\":{\"temp_c\":39.1,\"temp_f\":102.4,\"is_day\":1,\"condition\":{\"text\":\"Sunny\",\"icon\":\"//cdn.weatherapi.com/weather/64x64/day/113.png\",\"code\":1000},\"wind_mph\":6.5,\"wind_kph\":10.4,\"wind_degree\":206,\"wind_dir\":\"SSW\",\"pressure_mb\":998.0,\"pressure_in\":29.48,\"precip_mm\":0.0,\"precip_in\":0.0,\"humidity\":19,\"cloud\":5,\"feelslike_c\":38.7,\"feelslike_f\":101.6,\"vis_km\":10.0,\"vis_miles\":6.0,\"uv\":9.0,\"gust_mph\":7.5,\"gust_kph\":12.0}}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458166919820375,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1768892426,
+      "probSerializedValue" : "eyJsb2NhdGlvbiI6eyJuYW1lIjoiRGVocmFkdW4iLCJyZWdpb24iOiJVdHRhcmFraGFuZCIsImNvdW50cnkiOiJJbmRpYSIsImxhdCI6MzAuMzIsImxvbiI6NzguMDMsInR6X2lkIjoiQXNpYS9Lb2xrYXRhIiwibG9jYWx0aW1lX2Vwb2NoIjoxNzE4ODYzNDY1LCJsb2NhbHRpbWUiOiIyMDI0LTA2LTIwIDExOjM0In0sImN1cnJlbnQiOnsidGVtcF9jIjozOS4xLCJ0ZW1wX2YiOjEwMi40LCJpc19kYXkiOjEsImNvbmRpdGlvbiI6eyJ0ZXh0IjoiU3VubnkiLCJpY29uIjoiLy9jZG4ud2VhdGhlcmFwaS5jb20vd2VhdGhlci82NHg2NC9kYXkvMTEzLnBuZyIsImNvZGUiOjEwMDB9LCJ3aW5kX21waCI6Ni41LCJ3aW5kX2twaCI6MTAuNCwid2luZF9kZWdyZWUiOjIwNiwid2luZF9kaXIiOiJTU1ciLCJwcmVzc3VyZV9tYiI6OTk4LjAsInByZXNzdXJlX2luIjoyOS40OCwicHJlY2lwX21tIjowLjAsInByZWNpcF9pbiI6MC4wLCJodW1pZGl0eSI6MTksImNsb3VkIjo1LCJmZWVsc2xpa2VfYyI6MzguNywiZmVlbHNsaWtlX2YiOjEwMS42LCJ2aXNfa20iOjEwLjAsInZpc19taWxlcyI6Ni4wLCJ1diI6OS4wLCJndXN0X21waCI6Ny41LCJndXN0X2twaCI6MTIuMH19",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getWeatherForAddress",
+        "signature" : "(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/weather/WeatherInfo;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.WeatherService",
+        "methodHash" : -800439441
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.WeatherService#convertToObject#(Ljava/lang/String;)Lorg/unlogged/springwebfluxdemo/model/weather/WeatherInfo;" : [ {
+      "lineNumbers" : [ 56 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Dehradun\"",
+            "id" : "24843fd9-28f4-4ca1-8f0e-c67eeb2856ee",
+            "assertionType" : "EQUAL",
+            "key" : "/location/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Uttarakhand\"",
+            "id" : "c049c02f-11c0-4221-bc02-3da03d9a7315",
+            "assertionType" : "EQUAL",
+            "key" : "/location/region"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"India\"",
+            "id" : "9eac227e-32a7-4604-a1b6-6e231bf3a9fa",
+            "assertionType" : "EQUAL",
+            "key" : "/location/country"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "30.32",
+            "id" : "ec2a0da5-a928-4e4f-bc08-2b84cbeb07ec",
+            "assertionType" : "EQUAL",
+            "key" : "/location/lat"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "78.03",
+            "id" : "96d30c17-0aeb-4df3-85c2-fabb49eb676b",
+            "assertionType" : "EQUAL",
+            "key" : "/location/lon"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Asia/Kolkata\"",
+            "id" : "769f4e99-b5e4-47f0-9e14-c5ff8fe07e8c",
+            "assertionType" : "EQUAL",
+            "key" : "/location/tz_id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1718863465",
+            "id" : "00fc571d-237b-4a28-ae06-6b95011a9a3b",
+            "assertionType" : "EQUAL",
+            "key" : "/location/localtime_epoch"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-20 11:34\"",
+            "id" : "08d40d1a-fea1-4847-99fa-9cb16de062e1",
+            "assertionType" : "EQUAL",
+            "key" : "/location/localtime"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "cda0e044-08ff-410b-b4c6-45c41019d0db",
+          "assertionType" : "ALLOF",
+          "key" : "/location"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "39.1",
+            "id" : "65fe0b20-49e8-4c52-bf64-e0c67c12cb46",
+            "assertionType" : "EQUAL",
+            "key" : "/current/temp_c"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "102.4",
+            "id" : "ab486877-72c7-44f9-a98e-dce704d08431",
+            "assertionType" : "EQUAL",
+            "key" : "/current/temp_f"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "7d00dc33-af53-4d07-8e05-40ccb6d9d0f3",
+            "assertionType" : "EQUAL",
+            "key" : "/current/is_day"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Sunny\"",
+              "id" : "d34f7926-e670-46f5-85db-a0de1640cb79",
+              "assertionType" : "EQUAL",
+              "key" : "/current/condition/text"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"//cdn.weatherapi.com/weather/64x64/day/113.png\"",
+              "id" : "f86c64c9-efb9-4c9e-986b-964e29c2a293",
+              "assertionType" : "EQUAL",
+              "key" : "/current/condition/icon"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1000",
+              "id" : "a26a546c-17ee-48d7-9702-ed13931a7331",
+              "assertionType" : "EQUAL",
+              "key" : "/current/condition/code"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "99a924b9-547d-4c02-a8f9-175b906c2b3d",
+            "assertionType" : "ALLOF",
+            "key" : "/current/condition"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "6.5",
+            "id" : "42f8f09d-6b05-4c7a-bef2-c0cc3a82f80b",
+            "assertionType" : "EQUAL",
+            "key" : "/current/wind_mph"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "10.4",
+            "id" : "333025e9-833c-45ef-bea2-24e9f49e92a2",
+            "assertionType" : "EQUAL",
+            "key" : "/current/wind_kph"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "206",
+            "id" : "93d91d1e-8012-47b1-9eca-ded9f32e1497",
+            "assertionType" : "EQUAL",
+            "key" : "/current/wind_degree"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SSW\"",
+            "id" : "a9f95b7c-44e3-499c-a5b0-322efd1be064",
+            "assertionType" : "EQUAL",
+            "key" : "/current/wind_dir"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "998.0",
+            "id" : "8c196701-7483-4514-802d-4160e80754e7",
+            "assertionType" : "EQUAL",
+            "key" : "/current/pressure_mb"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "29.48",
+            "id" : "7b55bbfa-13b7-42a4-a2f4-e3f85485d8b1",
+            "assertionType" : "EQUAL",
+            "key" : "/current/pressure_in"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "0.0",
+            "id" : "acef3ffc-cb30-4cd8-b7ae-aae8caea2b13",
+            "assertionType" : "EQUAL",
+            "key" : "/current/precip_mm"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "0.0",
+            "id" : "5d6e2733-88c4-4037-a409-1f6a2ae87d72",
+            "assertionType" : "EQUAL",
+            "key" : "/current/precip_in"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "19",
+            "id" : "81ef1420-f6bb-4874-8dda-15a4caa4a5e1",
+            "assertionType" : "EQUAL",
+            "key" : "/current/humidity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "5",
+            "id" : "4294685c-4c87-4d2b-80cf-7182efadf081",
+            "assertionType" : "EQUAL",
+            "key" : "/current/cloud"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "38.7",
+            "id" : "c8084b62-b653-4d9f-aab1-81cf91c97192",
+            "assertionType" : "EQUAL",
+            "key" : "/current/feelslike_c"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101.6",
+            "id" : "0bdb4cc2-219d-402e-a345-247c8717842b",
+            "assertionType" : "EQUAL",
+            "key" : "/current/feelslike_f"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "10.0",
+            "id" : "742f839a-12ab-49e0-97f6-4dd87cfcf47d",
+            "assertionType" : "EQUAL",
+            "key" : "/current/vis_km"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "6.0",
+            "id" : "58c4bfef-1e52-4ee9-882f-fd18e08a98f6",
+            "assertionType" : "EQUAL",
+            "key" : "/current/vis_miles"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "9.0",
+            "id" : "61f65920-7f2e-497c-a4cb-2e923f6008a3",
+            "assertionType" : "EQUAL",
+            "key" : "/current/uv"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "7.5",
+            "id" : "1e978412-d065-48f0-aadb-e70c544d2122",
+            "assertionType" : "EQUAL",
+            "key" : "/current/gust_mph"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "12.0",
+            "id" : "25ee1cb9-d28e-428a-a9a4-dd809831983c",
+            "assertionType" : "EQUAL",
+            "key" : "/current/gust_kph"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "aeedf6cd-7255-4a89-a940-c2ca6f60cdc1",
+          "assertionType" : "ALLOF",
+          "key" : "/current"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "47e90a31-0b05-416b-abef-325ea9cccb8c",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "b2fad36a-b467-4e38-aa73-20c437da5706",
+      "name" : "convertToObject saved on 2024-06-20 11:35",
+      "description" : null,
+      "methodArguments" : [ "\"{\\\"location\\\":{\\\"name\\\":\\\"Dehradun\\\",\\\"region\\\":\\\"Uttarakhand\\\",\\\"country\\\":\\\"India\\\",\\\"lat\\\":30.32,\\\"lon\\\":78.03,\\\"tz_id\\\":\\\"Asia/Kolkata\\\",\\\"localtime_epoch\\\":1718863465,\\\"localtime\\\":\\\"2024-06-20 11:34\\\"},\\\"current\\\":{\\\"temp_c\\\":39.1,\\\"temp_f\\\":102.4,\\\"is_day\\\":1,\\\"condition\\\":{\\\"text\\\":\\\"Sunny\\\",\\\"icon\\\":\\\"//cdn.weatherapi.com/weather/64x64/day/113.png\\\",\\\"code\\\":1000},\\\"wind_mph\\\":6.5,\\\"wind_kph\\\":10.4,\\\"wind_degree\\\":206,\\\"wind_dir\\\":\\\"SSW\\\",\\\"pressure_mb\\\":998.0,\\\"pressure_in\\\":29.48,\\\"precip_mm\\\":0.0,\\\"precip_in\\\":0.0,\\\"humidity\\\":19,\\\"cloud\\\":5,\\\"feelslike_c\\\":38.7,\\\"feelslike_f\\\":101.6,\\\"vis_km\\\":10.0,\\\"vis_miles\\\":6.0,\\\"uv\\\":9.0,\\\"gust_mph\\\":7.5,\\\"gust_kph\\\":12.0}}\"" ],
+      "returnValue" : "{\"location\":{\"name\":\"Dehradun\",\"region\":\"Uttarakhand\",\"country\":\"India\",\"lat\":30.32,\"lon\":78.03,\"tz_id\":\"Asia/Kolkata\",\"localtime_epoch\":1718863465,\"localtime\":\"2024-06-20 11:34\"},\"current\":{\"temp_c\":39.1,\"temp_f\":102.4,\"is_day\":1,\"condition\":{\"text\":\"Sunny\",\"icon\":\"//cdn.weatherapi.com/weather/64x64/day/113.png\",\"code\":1000},\"wind_mph\":6.5,\"wind_kph\":10.4,\"wind_degree\":206,\"wind_dir\":\"SSW\",\"pressure_mb\":998.0,\"pressure_in\":29.48,\"precip_mm\":0.0,\"precip_in\":0.0,\"humidity\":19,\"cloud\":5,\"feelslike_c\":38.7,\"feelslike_f\":101.6,\"vis_km\":10.0,\"vis_miles\":6.0,\"uv\":9.0,\"gust_mph\":7.5,\"gust_kph\":12.0}}",
+      "returnValueClassname" : "org.unlogged.springwebfluxdemo.model.weather.WeatherInfo",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458168061750625,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1466925284,
+      "probSerializedValue" : "eyJsb2NhdGlvbiI6eyJuYW1lIjoiRGVocmFkdW4iLCJyZWdpb24iOiJVdHRhcmFraGFuZCIsImNvdW50cnkiOiJJbmRpYSIsImxhdCI6MzAuMzIsImxvbiI6NzguMDMsInR6X2lkIjoiQXNpYS9Lb2xrYXRhIiwibG9jYWx0aW1lX2Vwb2NoIjoxNzE4ODYzNDY1LCJsb2NhbHRpbWUiOiIyMDI0LTA2LTIwIDExOjM0In0sImN1cnJlbnQiOnsidGVtcF9jIjozOS4xLCJ0ZW1wX2YiOjEwMi40LCJpc19kYXkiOjEsImNvbmRpdGlvbiI6eyJ0ZXh0IjoiU3VubnkiLCJpY29uIjoiLy9jZG4ud2VhdGhlcmFwaS5jb20vd2VhdGhlci82NHg2NC9kYXkvMTEzLnBuZyIsImNvZGUiOjEwMDB9LCJ3aW5kX21waCI6Ni41LCJ3aW5kX2twaCI6MTAuNCwid2luZF9kZWdyZWUiOjIwNiwid2luZF9kaXIiOiJTU1ciLCJwcmVzc3VyZV9tYiI6OTk4LjAsInByZXNzdXJlX2luIjoyOS40OCwicHJlY2lwX21tIjowLjAsInByZWNpcF9pbiI6MC4wLCJodW1pZGl0eSI6MTksImNsb3VkIjo1LCJmZWVsc2xpa2VfYyI6MzguNywiZmVlbHNsaWtlX2YiOjEwMS42LCJ2aXNfa20iOjEwLjAsInZpc19taWxlcyI6Ni4wLCJ1diI6OS4wLCJndXN0X21waCI6Ny41LCJndXN0X2twaCI6MTIuMH19",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "convertToObject",
+        "signature" : "(Ljava/lang/String;)Lorg/unlogged/springwebfluxdemo/model/weather/WeatherInfo;",
+        "className" : "org.unlogged.springwebfluxdemo.service.WeatherService",
+        "methodHash" : -1259272462
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

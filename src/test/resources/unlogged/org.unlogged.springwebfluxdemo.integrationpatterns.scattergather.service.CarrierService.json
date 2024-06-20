@@ -1,0 +1,235 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.service.CarrierService",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.service.CarrierService#getCarriers#(Ljava/lang/String;Ljava/lang/String;)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/integrationpatterns/scattergather/dto/CarrierResponse;>;" : [ {
+      "lineNumbers" : [ 22, 23, 24, 26, 23, 24, 25, 26, 27, 28, 29, 25, 26, 27, 28, 29, 30 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"DHL\"",
+            "id" : "7db9089a-0292-4af7-8847-7cfdf6f14945",
+            "assertionType" : "EQUAL",
+            "key" : "/0/serviceProvider"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"dehradun\"",
+            "id" : "183a1bf1-136b-4a34-81ce-17fedebd5e53",
+            "assertionType" : "EQUAL",
+            "key" : "/0/from"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"delhi\"",
+            "id" : "e1d69009-f08b-475d-ba66-aaa0e4fac9de",
+            "assertionType" : "EQUAL",
+            "key" : "/0/to"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101.11",
+            "id" : "cc9660c3-ddd4-4f53-9ea3-3d74eb460d77",
+            "assertionType" : "EQUAL",
+            "key" : "/0/price"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-20\"",
+            "id" : "cfacb231-ed1f-4f83-9112-052f68a55164",
+            "assertionType" : "EQUAL",
+            "key" : "/0/date"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "26d323b7-c564-41b5-95db-20c965d4dc62",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"DHL\"",
+            "id" : "ac5d505d-8de6-4201-b7c8-3af56fccf8f4",
+            "assertionType" : "EQUAL",
+            "key" : "/1/serviceProvider"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"dehradun\"",
+            "id" : "820df97d-ae0c-45b3-bb4c-3f78a36df448",
+            "assertionType" : "EQUAL",
+            "key" : "/1/from"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"delhi\"",
+            "id" : "ba334461-8cd4-4e71-9b9a-2a4b433a4337",
+            "assertionType" : "EQUAL",
+            "key" : "/1/to"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101.11",
+            "id" : "07e74b68-32dc-4a70-ba88-bc870cf6f5fc",
+            "assertionType" : "EQUAL",
+            "key" : "/1/price"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-20\"",
+            "id" : "8c0aaf08-6ba1-492f-8131-8ea1612b4f3a",
+            "assertionType" : "EQUAL",
+            "key" : "/1/date"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "5508b5d7-5448-4f5d-b548-2c1260b3506c",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"BlueDart\"",
+            "id" : "c07c4e93-1f9b-4b4e-abf1-f5ec2327d0f5",
+            "assertionType" : "EQUAL",
+            "key" : "/2/serviceProvider"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"dehradun\"",
+            "id" : "bd48e1b2-e0e5-452f-a316-f17b706747a1",
+            "assertionType" : "EQUAL",
+            "key" : "/2/from"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"delhi\"",
+            "id" : "16dcdf83-68ac-47e7-94ca-5f6c9b968da1",
+            "assertionType" : "EQUAL",
+            "key" : "/2/to"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "12.0",
+            "id" : "69486327-4759-4e13-bb6b-02744cd0f66d",
+            "assertionType" : "EQUAL",
+            "key" : "/2/price"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-20\"",
+            "id" : "7656a51b-7d51-4466-aaf7-590016a90d1b",
+            "assertionType" : "EQUAL",
+            "key" : "/2/date"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "7fdca81f-8b46-47ef-8971-ebd8498d1e92",
+          "assertionType" : "ALLOF",
+          "key" : "/2"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"BlueDart\"",
+            "id" : "f99f8413-d3c6-4195-bb34-76cf68aa4c05",
+            "assertionType" : "EQUAL",
+            "key" : "/3/serviceProvider"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"dehradun\"",
+            "id" : "d83f4e2d-a374-4737-9159-3f3d44ab880e",
+            "assertionType" : "EQUAL",
+            "key" : "/3/from"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"delhi\"",
+            "id" : "97732253-01dd-4284-8f9f-e1752733c12d",
+            "assertionType" : "EQUAL",
+            "key" : "/3/to"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "18.0",
+            "id" : "acf6f574-f1f3-4108-ba37-eddc78489f0a",
+            "assertionType" : "EQUAL",
+            "key" : "/3/price"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-20\"",
+            "id" : "f4ae2091-05d9-464d-bb5c-67917dbe6a94",
+            "assertionType" : "EQUAL",
+            "key" : "/3/date"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "3d771a88-3817-4776-b1cb-4e8cd6b056be",
+          "assertionType" : "ALLOF",
+          "key" : "/3"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "7f5a0a8e-987b-49d0-a727-faa6156a62cd",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "1560e3e5-168e-41d0-a872-0ce0298d7967",
+      "name" : "getCarriers saved on 2024-06-20 11:51",
+      "description" : null,
+      "methodArguments" : [ "\"dehradun\"", "\"delhi\"" ],
+      "returnValue" : "[{\"serviceProvider\":\"DHL\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":101.11,\"date\":\"2024-06-20\"},{\"serviceProvider\":\"DHL\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":101.11,\"date\":\"2024-06-20\"},{\"serviceProvider\":\"BlueDart\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":12.0,\"date\":\"2024-06-20\"},{\"serviceProvider\":\"BlueDart\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":18.0,\"date\":\"2024-06-20\"}]",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 459109847875125,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -98393855,
+      "probSerializedValue" : "W3sic2VydmljZVByb3ZpZGVyIjoiREhMIiwiZnJvbSI6ImRlaHJhZHVuIiwidG8iOiJkZWxoaSIsInByaWNlIjoxMDEuMTEsImRhdGUiOiIyMDI0LTA2LTIwIn0seyJzZXJ2aWNlUHJvdmlkZXIiOiJESEwiLCJmcm9tIjoiZGVocmFkdW4iLCJ0byI6ImRlbGhpIiwicHJpY2UiOjEwMS4xMSwiZGF0ZSI6IjIwMjQtMDYtMjAifSx7InNlcnZpY2VQcm92aWRlciI6IkJsdWVEYXJ0IiwiZnJvbSI6ImRlaHJhZHVuIiwidG8iOiJkZWxoaSIsInByaWNlIjoxMi4wLCJkYXRlIjoiMjAyNC0wNi0yMCJ9LHsic2VydmljZVByb3ZpZGVyIjoiQmx1ZURhcnQiLCJmcm9tIjoiZGVocmFkdW4iLCJ0byI6ImRlbGhpIiwicHJpY2UiOjE4LjAsImRhdGUiOiIyMDI0LTA2LTIwIn1d",
+      "mockIds" : [ "5acba237-5a29-4f7b-8742-9a28592df8e4", "731002d1-0860-4089-bb16-930c8ba08bb4" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getCarriers",
+        "signature" : "(Ljava/lang/String;Ljava/lang/String;)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/integrationpatterns/scattergather/dto/CarrierResponse;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.service.CarrierService",
+        "methodHash" : -166466294
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.service.CarrierService#getCarriers#(Ljava/lang/String;Ljava/lang/String;)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/integrationpatterns/scattergather/dto/CarrierResponse;>;" : [ {
+      "id" : "4f28c61e-ade2-4037-b426-17e73c998f53",
+      "name" : "mock response for call to this.service.getCarriers(from, to)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.service.CarrierService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.controller.CarrierController",
+      "fieldName" : "this.service",
+      "methodName" : "getCarriers",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"dehradun\""
+      }, {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"delhi\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"serviceProvider\":\"DHL\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":101.11,\"date\":\"2024-06-20\"},{\"serviceProvider\":\"DHL\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":101.11,\"date\":\"2024-06-20\"},{\"serviceProvider\":\"BlueDart\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":12.0,\"date\":\"2024-06-20\"},{\"serviceProvider\":\"BlueDart\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":18.0,\"date\":\"2024-06-20\"}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.dto.CarrierResponse>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.service.CarrierService#getCarriers#(Ljava/lang/String;Ljava/lang/String;)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/integrationpatterns/scattergather/dto/CarrierResponse;>;"
+    } ]
+  }
+}

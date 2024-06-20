@@ -1,0 +1,33 @@
+{
+  "classname" : "org.modelmapper.ModelMapper",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.modelmapper.ModelMapper#map#(Ljava/lang/Object;Ljava/lang/Class<D>;)D" : [ {
+      "id" : "574cb096-8ba8-4fd6-b579-695548f59cdc",
+      "name" : "mock response for call to modelMapper.map(userDto, User.class)",
+      "fieldTypeName" : "org.modelmapper.ModelMapper",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.util.UserUtil",
+      "fieldName" : "modelMapper",
+      "methodName" : "map",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}"
+      }, {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"org.unlogged.springwebfluxdemo.entity.User\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}",
+          "returnValueType" : "REAL",
+          "className" : "D"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.modelmapper.ModelMapper#map#(Ljava/lang/Object;Ljava/lang/Class<D>;)D"
+    } ]
+  }
+}

@@ -1,0 +1,567 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.PlayerController#batchInsertProducts#(Ljava/util/List<Lorg/unlogged/springwebfluxdemo/model/Player;>;)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "lineNumbers" : [ 32 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"[{\\\"id\\\":20,\\\"name\\\":\\\"John Doe\\\",\\\"age\\\":25},org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST \\\"Invalid name\\\",{\\\"id\\\":21,\\\"name\\\":\\\"Jane Smith\\\",\\\"age\\\":30}]\"",
+          "id" : "1e57ef71-3228-4723-bdb8-6ea5acba0b1a",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "8620b12a-d4db-4661-b56d-bd666c15e0b1",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "918d6e4d-9b47-445f-ab66-b15f5adf3d51",
+      "name" : "batchInsertProducts saved on 2024-06-20 11:00",
+      "description" : null,
+      "methodArguments" : [ "[{\"id\":1,\"name\":\"John Doe\",\"age\":25},{\"id\":2,\"name\":\"Jane Smith\",\"age\":30},{\"id\":4,\"name\":\"\",\"age\":28}]" ],
+      "returnValue" : "[{\"id\":20,\"name\":\"John Doe\",\"age\":25},org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST \"Invalid name\",{\"id\":21,\"name\":\"Jane Smith\",\"age\":30}]",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 455981097189791,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -925263917,
+      "probSerializedValue" : "W3siaWQiOjIwLCJuYW1lIjoiSm9obiBEb2UiLCJhZ2UiOjI1fSxvcmcuc3ByaW5nZnJhbWV3b3JrLndlYi5zZXJ2ZXIuUmVzcG9uc2VTdGF0dXNFeGNlcHRpb246IDQwMCBCQURfUkVRVUVTVCAiSW52YWxpZCBuYW1lIix7ImlkIjoyMSwibmFtZSI6IkphbmUgU21pdGgiLCJhZ2UiOjMwfV0=",
+      "mockIds" : [ "fd39583d-e4e5-46c0-9901-ba572e8fb045" ],
+      "exception" : false,
+      "method" : {
+        "name" : "batchInsertProducts",
+        "signature" : "(Ljava/util/List<Lorg/unlogged/springwebfluxdemo/model/Player;>;)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+        "methodHash" : 0
+      }
+    }, {
+      "lineNumbers" : [ 32 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "23",
+            "id" : "e8b007f1-e791-43bc-ab55-82644e5fef6f",
+            "assertionType" : "EQUAL",
+            "key" : "/0/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"John Doe\"",
+            "id" : "ab243aea-edc0-4f64-93de-62550a716d53",
+            "assertionType" : "EQUAL",
+            "key" : "/0/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "25",
+            "id" : "c0bdab2f-8281-46c7-b2b6-73befd31ff70",
+            "assertionType" : "EQUAL",
+            "key" : "/0/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "fe36466a-ef60-48db-971d-fb729958fe9c",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "24",
+            "id" : "f5f3270f-1136-4bbb-b002-4b88fb735795",
+            "assertionType" : "EQUAL",
+            "key" : "/1/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Jane Smith\"",
+            "id" : "87a2e78c-88b9-4774-9f86-b2d6256ad391",
+            "assertionType" : "EQUAL",
+            "key" : "/1/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "30",
+            "id" : "b10956fe-f4a0-401c-9b31-8eb6c7846d61",
+            "assertionType" : "EQUAL",
+            "key" : "/1/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "634272cb-8566-4a3f-91f2-9af35b63ef6c",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "25",
+            "id" : "c6e70f4c-0e4e-41f6-be87-10600e94c929",
+            "assertionType" : "EQUAL",
+            "key" : "/2/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"hello\"",
+            "id" : "959422e6-7647-4003-923a-24de609d7bfc",
+            "assertionType" : "EQUAL",
+            "key" : "/2/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "28",
+            "id" : "3d00fe3b-2e63-42e4-8a42-600265d240c0",
+            "assertionType" : "EQUAL",
+            "key" : "/2/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "275074b1-671d-433e-9a29-4bf9d3985aad",
+          "assertionType" : "ALLOF",
+          "key" : "/2"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "cb43c68f-ecd9-4f1c-b435-8683a48c11e7",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "25401599-e4fd-4978-8436-601f521b5cbf",
+      "name" : "batchInsertProducts saved on 2024-06-20 11:03",
+      "description" : null,
+      "methodArguments" : [ "[{\"id\":1,\"name\":\"John Doe\",\"age\":25},{\"id\":2,\"name\":\"Jane Smith\",\"age\":30},{\"id\":4,\"name\":\"hello\",\"age\":28}]" ],
+      "returnValue" : "[{\"id\":23,\"name\":\"John Doe\",\"age\":25},{\"id\":24,\"name\":\"Jane Smith\",\"age\":30},{\"id\":25,\"name\":\"hello\",\"age\":28}]",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456121680447791,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 720914177,
+      "probSerializedValue" : "W3siaWQiOjIzLCJuYW1lIjoiSm9obiBEb2UiLCJhZ2UiOjI1fSx7ImlkIjoyNCwibmFtZSI6IkphbmUgU21pdGgiLCJhZ2UiOjMwfSx7ImlkIjoyNSwibmFtZSI6ImhlbGxvIiwiYWdlIjoyOH1d",
+      "mockIds" : [ "5eca450e-43b0-4f1b-b541-f10cdad9e034" ],
+      "exception" : false,
+      "method" : {
+        "name" : "batchInsertProducts",
+        "signature" : "(Ljava/util/List<Lorg/unlogged/springwebfluxdemo/model/Player;>;)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.PlayerController#getAllPlayers#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "lineNumbers" : [ 37, 34 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3",
+            "id" : "a0c48822-a881-45af-9fe9-da286cb493d2",
+            "assertionType" : "EQUAL",
+            "key" : "/0/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"asfsd\"",
+            "id" : "a0e62b60-a228-4374-8f18-21b014f86924",
+            "assertionType" : "EQUAL",
+            "key" : "/0/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "10",
+            "id" : "6204db28-de96-4873-8d02-578a602a3e07",
+            "assertionType" : "EQUAL",
+            "key" : "/0/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "c7cda873-c867-45fd-a5dc-b363f2dcd3ac",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "7",
+            "id" : "359fe5c3-52a7-4d8b-95ce-14b28489066d",
+            "assertionType" : "EQUAL",
+            "key" : "/1/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"John Doe\"",
+            "id" : "f07821a0-28a3-4fdf-8b5a-2e576456092d",
+            "assertionType" : "EQUAL",
+            "key" : "/1/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "25",
+            "id" : "7c9dff09-f355-4f82-9e96-4b3397cdc66c",
+            "assertionType" : "EQUAL",
+            "key" : "/1/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "6754b892-b4a4-4ece-9028-46eabece84af",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "8",
+            "id" : "8be27bfa-7ad6-4cc0-83f9-1197f2dac7bf",
+            "assertionType" : "EQUAL",
+            "key" : "/2/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Jane Smith\"",
+            "id" : "667d2c29-0f4e-4dde-93c1-9e55d82bb199",
+            "assertionType" : "EQUAL",
+            "key" : "/2/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "30",
+            "id" : "991e5ccf-525c-42e0-b83d-b821aee6ecde",
+            "assertionType" : "EQUAL",
+            "key" : "/2/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "8efb7e13-53cd-4115-9f91-049c0cf713d8",
+          "assertionType" : "ALLOF",
+          "key" : "/2"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "9",
+            "id" : "6f300026-13ba-457b-9a40-7b6f32cfd9c9",
+            "assertionType" : "EQUAL",
+            "key" : "/3/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"\"",
+            "id" : "5e8c87c1-b753-4167-be79-ea92de74ece1",
+            "assertionType" : "EQUAL",
+            "key" : "/3/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "28",
+            "id" : "e1b7b477-dd2e-427e-9484-6d22e35b81a9",
+            "assertionType" : "EQUAL",
+            "key" : "/3/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "e2c56076-16fb-499d-9c0b-adf266f953ee",
+          "assertionType" : "ALLOF",
+          "key" : "/3"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "19",
+            "id" : "a035aef1-0394-4498-a010-10b96cfcd7c8",
+            "assertionType" : "EQUAL",
+            "key" : "/4/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Akshat\"",
+            "id" : "da4fdba6-4707-4b8c-b2bc-0c1a4420762f",
+            "assertionType" : "EQUAL",
+            "key" : "/4/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "22",
+            "id" : "3ad60cc1-bf6d-4697-bf70-dcf8981026dc",
+            "assertionType" : "EQUAL",
+            "key" : "/4/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "f6fbb8d4-168d-4e0d-a39f-46acb9af3926",
+          "assertionType" : "ALLOF",
+          "key" : "/4"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "23",
+            "id" : "44de1b29-26e2-411f-8cc9-d3b3afa7cec3",
+            "assertionType" : "EQUAL",
+            "key" : "/5/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"John Doe\"",
+            "id" : "1cf0935e-09a7-40bf-ac68-9fed5fd9240c",
+            "assertionType" : "EQUAL",
+            "key" : "/5/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "25",
+            "id" : "64d9903f-9899-4dcc-af67-99677019907c",
+            "assertionType" : "EQUAL",
+            "key" : "/5/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "6d69fb41-4d2f-45a8-bd13-aebb27413e47",
+          "assertionType" : "ALLOF",
+          "key" : "/5"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "24",
+            "id" : "954f716f-12d2-4c67-812d-420ca3c19003",
+            "assertionType" : "EQUAL",
+            "key" : "/6/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Jane Smith\"",
+            "id" : "bc5f1f4a-4db2-414c-915c-220cfa7d287f",
+            "assertionType" : "EQUAL",
+            "key" : "/6/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "30",
+            "id" : "7e555201-c781-45d0-8668-cd54947969ae",
+            "assertionType" : "EQUAL",
+            "key" : "/6/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "f32a572b-fa6f-4eaf-a966-063860ebe175",
+          "assertionType" : "ALLOF",
+          "key" : "/6"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "25",
+            "id" : "23d4943d-2f38-41bd-b3f8-b4e5088c0f6a",
+            "assertionType" : "EQUAL",
+            "key" : "/7/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"hello\"",
+            "id" : "2d721311-c3cc-4f64-a10d-d6f0093f196d",
+            "assertionType" : "EQUAL",
+            "key" : "/7/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "28",
+            "id" : "4524c111-aea4-4c9c-81ad-d200d6c5d229",
+            "assertionType" : "EQUAL",
+            "key" : "/7/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "a82a4104-5fd1-46c7-beca-1765e7cd66e3",
+          "assertionType" : "ALLOF",
+          "key" : "/7"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "25863272-595d-4531-af4f-c528e5d3a1de",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "ee910a01-fff3-4003-aa1c-e52aa4ff4426",
+      "name" : "getAllPlayers saved on 2024-06-20 11:04",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[{\"id\":3,\"name\":\"asfsd\",\"age\":10},{\"id\":7,\"name\":\"John Doe\",\"age\":25},{\"id\":8,\"name\":\"Jane Smith\",\"age\":30},{\"id\":9,\"name\":\"\",\"age\":28},{\"id\":19,\"name\":\"Akshat\",\"age\":22},{\"id\":23,\"name\":\"John Doe\",\"age\":25},{\"id\":24,\"name\":\"Jane Smith\",\"age\":30},{\"id\":25,\"name\":\"hello\",\"age\":28}]",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456288205938666,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1528102135,
+      "probSerializedValue" : "W3siaWQiOjMsIm5hbWUiOiJhc2ZzZCIsImFnZSI6MTB9LHsiaWQiOjcsIm5hbWUiOiJKb2huIERvZSIsImFnZSI6MjV9LHsiaWQiOjgsIm5hbWUiOiJKYW5lIFNtaXRoIiwiYWdlIjozMH0seyJpZCI6OSwibmFtZSI6IiIsImFnZSI6Mjh9LHsiaWQiOjE5LCJuYW1lIjoiQWtzaGF0IiwiYWdlIjoyMn0seyJpZCI6MjMsIm5hbWUiOiJKb2huIERvZSIsImFnZSI6MjV9LHsiaWQiOjI0LCJuYW1lIjoiSmFuZSBTbWl0aCIsImFnZSI6MzB9LHsiaWQiOjI1LCJuYW1lIjoiaGVsbG8iLCJhZ2UiOjI4fV0=",
+      "mockIds" : [ "fffc592f-31b9-48af-9531-4fce31b58886" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getAllPlayers",
+        "signature" : "()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.PlayerController#getPlayerById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "lineNumbers" : [ 42, 38 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "19",
+          "id" : "d9c8e002-3096-49db-8da6-46afd5a24df1",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Akshat\"",
+          "id" : "6655c182-7806-4bb2-a715-218668d2aa98",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "22",
+          "id" : "45c80e96-71df-45c6-8658-7156d5660f67",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "449f007d-25c3-49cf-b316-298605ce2d73",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "4d46120d-d0fa-4218-9fb5-10b2e99c18cb",
+      "name" : "getPlayerById saved on 2024-06-20 11:05",
+      "description" : null,
+      "methodArguments" : [ "19" ],
+      "returnValue" : "{\"id\":19,\"name\":\"Akshat\",\"age\":22}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456389311043000,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1185996982,
+      "probSerializedValue" : "eyJpZCI6MTksIm5hbWUiOiJBa3NoYXQiLCJhZ2UiOjIyfQ==",
+      "mockIds" : [ "f57fdc5d-27cd-4845-8b7f-fa80bcaebd97" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getPlayerById",
+        "signature" : "(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.PlayerController#updatePlayer#(Ljava/lang/Long;Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "lineNumbers" : [ 47, 48, 42 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "19",
+          "id" : "b3b191ec-8af4-46c1-b7c8-1fc765c9f9a4",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Akshat\"",
+          "id" : "3bd9f762-fda9-453f-a9d3-82092ae3a109",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "22",
+          "id" : "df94b13d-d677-407c-b9d8-e1ba5905c2e9",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "bce4c020-827c-4817-997b-190bca4bcc70",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "de9c7da3-489d-4341-85d5-ec56bf67236a",
+      "name" : "updatePlayer saved on 2024-06-20 11:07",
+      "description" : null,
+      "methodArguments" : [ "19", "{\"id\":19,\"name\":\"Akshat\",\"age\":22}" ],
+      "returnValue" : "{\"id\":19,\"name\":\"Akshat\",\"age\":22}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456439756525958,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -325330953,
+      "probSerializedValue" : "eyJpZCI6MTksIm5hbWUiOiJBa3NoYXQiLCJhZ2UiOjIyfQ==",
+      "mockIds" : [ "ea53b6a1-7353-4515-9376-d379b9b05f5c" ],
+      "exception" : false,
+      "method" : {
+        "name" : "updatePlayer",
+        "signature" : "(Ljava/lang/Long;Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.PlayerController#deletePlayerById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;" : [ {
+      "lineNumbers" : [ 53, 46 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"\\u0000\\u0001�#�\\b�@\"",
+          "id" : "29faad85-88c4-4ca3-a2ee-f5366a1600f3",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "fe397c2d-a5d9-474e-a8e1-20817006a1ee",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "770265b1-d829-4cdb-a163-d69a3469a9e5",
+      "name" : "deletePlayerById saved on 2024-06-20 11:07",
+      "description" : null,
+      "methodArguments" : [ "20" ],
+      "returnValue" : "\u0000\u0001�#�\b�@",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456451318487916,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 813631269,
+      "probSerializedValue" : "AAGfI9sIx0A=",
+      "mockIds" : [ "b9488fdd-17e1-4558-af74-1d9d6cf2ff4f" ],
+      "exception" : false,
+      "method" : {
+        "name" : "deletePlayerById",
+        "signature" : "(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+        "methodHash" : 505120158
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

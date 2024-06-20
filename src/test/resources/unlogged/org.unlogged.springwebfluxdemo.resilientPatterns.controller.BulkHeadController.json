@@ -1,0 +1,154 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.BulkHeadController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.controller.BulkHeadController#findFib#(Ljava/lang/Long;)Ljava/lang/Long;" : [ {
+      "lineNumbers" : [ 27, 28 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "042fa810-2bb8-485a-bd2e-b606b1f38c81",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "38406d32-7983-4d24-8dbb-454e7433e3a4",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "729ee24f-3951-465d-88a3-ce8e20b18ba8",
+      "name" : "findFib saved on 2024-06-20 11:47",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "1",
+      "returnValueClassname" : "java.lang.Long",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458865277241125,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 557804896,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "findFib",
+        "signature" : "(Ljava/lang/Long;)Ljava/lang/Long;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.BulkHeadController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.resilientPatterns.controller.BulkHeadController#fib#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/Long;>;" : [ {
+      "lineNumbers" : [ 21, 22, 23 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "00bac1ee-ea03-4ce3-a7a5-09269c37d648",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "610",
+          "id" : "427acdb6-2176-4771-9185-573072263970",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "5ff975d3-c573-45d6-97ac-1017b26c4abc",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "162ebc6e-c71b-4f5b-bb45-9cc769d7f5b5",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "172e91d7-06e9-4f8f-b66e-7d33f5f976db",
+      "name" : "fib saved on 2024-06-20 11:47",
+      "description" : null,
+      "methodArguments" : [ "15" ],
+      "returnValue" : "{\"headers\":{},\"body\":610,\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458865246234666,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -217905622,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6NjEwLCJzdGF0dXMiOiJPSyJ9",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "fib",
+        "signature" : "(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/Long;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.BulkHeadController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.resilientPatterns.controller.BulkHeadController#nonCPUIntensiveTask#()Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 34 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "f15dca74-5674-475a-96be-492f8499431d",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Hello World\"",
+          "id" : "c953b83a-3a33-46c0-bf32-a86d6aa5239a",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "d665567a-2fd9-432c-a626-14c662e7ab65",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "fa0286fe-bf3d-43df-ab64-584af1c62e18",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "8df5bb0c-f71d-4686-907b-68ec0c5ed1c1",
+      "name" : "nonCPUIntensiveTask saved on 2024-06-20 11:48",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"headers\":{},\"body\":\"Hello World\",\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458929184552083,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1643531073,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6IkhlbGxvIFdvcmxkIiwic3RhdHVzIjoiT0sifQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "nonCPUIntensiveTask",
+        "signature" : "()Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.BulkHeadController",
+        "methodHash" : 2133163593
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

@@ -1,0 +1,578 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.service.PlayerService#throwStatusExceptionWhenNameIsEmpty#(Lorg/unlogged/springwebfluxdemo/model/Player;)V" : [ {
+      "lineNumbers" : [ 77, 80 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "2699538c-ef76-4019-b9c5-d5ee457bacad",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "fc12ba79-57ba-4b99-bd41-abd8bb852088",
+      "name" : "throwStatusExceptionWhenNameIsEmpty saved on 2024-06-20 11:00",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":21,\"name\":\"Jane Smith\",\"age\":30}" ],
+      "returnValue" : "0",
+      "returnValueClassname" : "V",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 455981148472250,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -2015879567,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "throwStatusExceptionWhenNameIsEmpty",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/Player;)V",
+        "className" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.PlayerService#getAllPlayers#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "lineNumbers" : [ 34 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3",
+            "id" : "0c775234-740d-470f-ac1b-72f19098080f",
+            "assertionType" : "EQUAL",
+            "key" : "/0/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"asfsd\"",
+            "id" : "acb1da17-b873-4b36-b70c-deb47437f79a",
+            "assertionType" : "EQUAL",
+            "key" : "/0/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "10",
+            "id" : "b42e1126-a784-4206-8bd2-7c0e407fd966",
+            "assertionType" : "EQUAL",
+            "key" : "/0/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "3a539f68-778e-4593-ada0-7b684506eda8",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "7",
+            "id" : "34394d39-a144-456c-bbcd-1c10fddd0901",
+            "assertionType" : "EQUAL",
+            "key" : "/1/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"John Doe\"",
+            "id" : "7ba0ca81-4c58-4fdf-b46d-9585ec21caec",
+            "assertionType" : "EQUAL",
+            "key" : "/1/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "25",
+            "id" : "b5988a58-02ed-418e-b348-d0ee1ec3c3ce",
+            "assertionType" : "EQUAL",
+            "key" : "/1/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "39d2456c-e0bd-459a-82a7-1c6c36553646",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "8",
+            "id" : "91b2fe3d-5f82-4f9d-87fd-9579b846464a",
+            "assertionType" : "EQUAL",
+            "key" : "/2/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Jane Smith\"",
+            "id" : "5f848339-2ce7-4d30-96e7-6c9a251cdf2f",
+            "assertionType" : "EQUAL",
+            "key" : "/2/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "30",
+            "id" : "e56528ed-1b51-4fbe-bbb3-69c19b78d686",
+            "assertionType" : "EQUAL",
+            "key" : "/2/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "ff2a2bca-21d3-4aa9-a8f1-a493770d18aa",
+          "assertionType" : "ALLOF",
+          "key" : "/2"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "9",
+            "id" : "db7a2d49-41a2-44b4-8592-494bfea7a4cd",
+            "assertionType" : "EQUAL",
+            "key" : "/3/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"\"",
+            "id" : "dae44855-56d2-4784-bdaf-ae26e1d409ce",
+            "assertionType" : "EQUAL",
+            "key" : "/3/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "28",
+            "id" : "aa384501-c88e-4577-a6ca-903baa2af7dd",
+            "assertionType" : "EQUAL",
+            "key" : "/3/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "8dea88a1-f3c1-4098-9384-ff0d72efe640",
+          "assertionType" : "ALLOF",
+          "key" : "/3"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "19",
+            "id" : "22192339-d7d0-41ea-a216-f1cd60c7e5a6",
+            "assertionType" : "EQUAL",
+            "key" : "/4/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Akshat\"",
+            "id" : "ff486ff3-a1b8-48b8-bf06-eb08cc892963",
+            "assertionType" : "EQUAL",
+            "key" : "/4/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "22",
+            "id" : "b5ce3c45-a794-4aae-926f-c55981481c25",
+            "assertionType" : "EQUAL",
+            "key" : "/4/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "5262844c-9555-4b3d-a94a-9088f22ee556",
+          "assertionType" : "ALLOF",
+          "key" : "/4"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "23",
+            "id" : "352f1c93-1d99-49fb-9b1b-bea8fb1073b8",
+            "assertionType" : "EQUAL",
+            "key" : "/5/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"John Doe\"",
+            "id" : "87618674-5aec-4211-a6a8-51727bb76dc0",
+            "assertionType" : "EQUAL",
+            "key" : "/5/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "25",
+            "id" : "bb21f45a-572d-4d4d-9802-c7605d08a903",
+            "assertionType" : "EQUAL",
+            "key" : "/5/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "7a4815a6-f118-4963-b6ed-c70c8ad23adc",
+          "assertionType" : "ALLOF",
+          "key" : "/5"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "24",
+            "id" : "f7d17681-2531-4489-9cd8-d00cfb16f320",
+            "assertionType" : "EQUAL",
+            "key" : "/6/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Jane Smith\"",
+            "id" : "1c83342b-930a-40ca-832c-ad586a060f26",
+            "assertionType" : "EQUAL",
+            "key" : "/6/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "30",
+            "id" : "76943ed6-a27f-4bb2-b3a3-08c165515bf6",
+            "assertionType" : "EQUAL",
+            "key" : "/6/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "de4780c5-aaef-4481-a978-a0241280c7e2",
+          "assertionType" : "ALLOF",
+          "key" : "/6"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "25",
+            "id" : "4b42f005-dfee-4c0e-b662-4e572a73e642",
+            "assertionType" : "EQUAL",
+            "key" : "/7/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"hello\"",
+            "id" : "334fcb77-f0d4-4f55-a9b2-8197dd710511",
+            "assertionType" : "EQUAL",
+            "key" : "/7/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "28",
+            "id" : "0e3a9a4e-140a-4df5-9890-1e361e583516",
+            "assertionType" : "EQUAL",
+            "key" : "/7/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "f4535553-726b-4caf-8f8a-35fc4dd23e42",
+          "assertionType" : "ALLOF",
+          "key" : "/7"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "4551b7cb-ad16-40d8-8364-2bfa1e6049e6",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "78ae9f8a-85be-4b7d-a8da-c65bb6a7f782",
+      "name" : "getAllPlayers saved on 2024-06-20 11:04",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[{\"id\":3,\"name\":\"asfsd\",\"age\":10},{\"id\":7,\"name\":\"John Doe\",\"age\":25},{\"id\":8,\"name\":\"Jane Smith\",\"age\":30},{\"id\":9,\"name\":\"\",\"age\":28},{\"id\":19,\"name\":\"Akshat\",\"age\":22},{\"id\":23,\"name\":\"John Doe\",\"age\":25},{\"id\":24,\"name\":\"Jane Smith\",\"age\":30},{\"id\":25,\"name\":\"hello\",\"age\":28}]",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456288206414791,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -435076881,
+      "probSerializedValue" : "W3siaWQiOjMsIm5hbWUiOiJhc2ZzZCIsImFnZSI6MTB9LHsiaWQiOjcsIm5hbWUiOiJKb2huIERvZSIsImFnZSI6MjV9LHsiaWQiOjgsIm5hbWUiOiJKYW5lIFNtaXRoIiwiYWdlIjozMH0seyJpZCI6OSwibmFtZSI6IiIsImFnZSI6Mjh9LHsiaWQiOjE5LCJuYW1lIjoiQWtzaGF0IiwiYWdlIjoyMn0seyJpZCI6MjMsIm5hbWUiOiJKb2huIERvZSIsImFnZSI6MjV9LHsiaWQiOjI0LCJuYW1lIjoiSmFuZSBTbWl0aCIsImFnZSI6MzB9LHsiaWQiOjI1LCJuYW1lIjoiaGVsbG8iLCJhZ2UiOjI4fV0=",
+      "mockIds" : [ "6095cfc2-3fd2-495e-96e8-973df1af5cb4" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getAllPlayers",
+        "signature" : "()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.PlayerService#getPlayerById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "lineNumbers" : [ 38 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "19",
+          "id" : "76ec78f8-bdd9-44d8-b642-545f832f8a9c",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Akshat\"",
+          "id" : "4de978fa-a3e5-4938-93ec-401be3f75922",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "22",
+          "id" : "10d36d7b-9fb6-42f9-97f8-230305ce9dcc",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "51c26154-1087-4aa5-87fe-7afcd672bf78",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "b9cb41b2-e45c-403c-a201-290a20902f0f",
+      "name" : "getPlayerById saved on 2024-06-20 11:05",
+      "description" : null,
+      "methodArguments" : [ "19" ],
+      "returnValue" : "{\"id\":19,\"name\":\"Akshat\",\"age\":22}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456389311483208,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1170461297,
+      "probSerializedValue" : "eyJpZCI6MTksIm5hbWUiOiJBa3NoYXQiLCJhZ2UiOjIyfQ==",
+      "mockIds" : [ "39b35a1c-811f-4df6-a400-36678248c042" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getPlayerById",
+        "signature" : "(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.PlayerService#updatePlayer#(Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "lineNumbers" : [ 42 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "19",
+          "id" : "cade4f96-9946-4c78-8873-c27a2237842a",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Akshat\"",
+          "id" : "42e21df3-f7a9-4055-b382-116ebf308114",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "22",
+          "id" : "78f1c3f3-45d6-4317-acfb-ca0540d93380",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "0cb8ed22-9c2d-4745-bc8e-164efe32f959",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "0bc860a2-a233-4e33-98a4-44fc34fc1652",
+      "name" : "updatePlayer saved on 2024-06-20 11:07",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":19,\"name\":\"Akshat\",\"age\":22}" ],
+      "returnValue" : "{\"id\":19,\"name\":\"Akshat\",\"age\":22}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456439757135750,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -631110924,
+      "probSerializedValue" : "eyJpZCI6MTksIm5hbWUiOiJBa3NoYXQiLCJhZ2UiOjIyfQ==",
+      "mockIds" : [ "d942c2b3-b4df-4adf-bec7-583db1d1387b" ],
+      "exception" : false,
+      "method" : {
+        "name" : "updatePlayer",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.PlayerService#deletePlayerById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;" : [ {
+      "lineNumbers" : [ 46 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"\\u0000\\u0001�#�\\b\\n�\"",
+          "id" : "3608a2ae-b66e-4f58-b876-d4f89ed0bcd8",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "9b56c091-f976-4201-8e09-78a718103e6a",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "304a9649-3750-495f-a2dd-c63c01bd1198",
+      "name" : "deletePlayerById saved on 2024-06-20 11:07",
+      "description" : null,
+      "methodArguments" : [ "20" ],
+      "returnValue" : "\u0000\u0001�#�\b\n�",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 456451318630000,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 2121402740,
+      "probSerializedValue" : "AAGfI9sICpw=",
+      "mockIds" : [ "1447fef8-cfea-4b14-b9c1-da2443f5d7e6" ],
+      "exception" : false,
+      "method" : {
+        "name" : "deletePlayerById",
+        "signature" : "(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+        "methodHash" : -1096189116
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.service.PlayerService#saveAll#(Ljava/util/List<Lorg/unlogged/springwebfluxdemo/model/Player;>;)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "id" : "fd39583d-e4e5-46c0-9901-ba572e8fb045",
+      "name" : "mock response for call to playerService.saveAll(players)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+      "fieldName" : "playerService",
+      "methodName" : "saveAll",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "[{\"id\":1,\"name\":\"John Doe\",\"age\":25},{\"id\":2,\"name\":\"Jane Smith\",\"age\":30},{\"id\":4,\"name\":\"\",\"age\":28}]"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"[{\\\"id\\\":20,\\\"name\\\":\\\"John Doe\\\",\\\"age\\\":25},org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST \\\"Invalid name\\\",{\\\"id\\\":21,\\\"name\\\":\\\"Jane Smith\\\",\\\"age\\\":30}]\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Player>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.PlayerService#saveAll#(Ljava/util/List<Lorg/unlogged/springwebfluxdemo/model/Player;>;)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;"
+    }, {
+      "id" : "5eca450e-43b0-4f1b-b541-f10cdad9e034",
+      "name" : "mock response for call to playerService.saveAll(players)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+      "fieldName" : "playerService",
+      "methodName" : "saveAll",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "[{\"id\":1,\"name\":\"John Doe\",\"age\":25},{\"id\":2,\"name\":\"Jane Smith\",\"age\":30},{\"id\":4,\"name\":\"hello\",\"age\":28}]"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":23,\"name\":\"John Doe\",\"age\":25},{\"id\":24,\"name\":\"Jane Smith\",\"age\":30},{\"id\":25,\"name\":\"hello\",\"age\":28}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Player>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.PlayerService#saveAll#(Ljava/util/List<Lorg/unlogged/springwebfluxdemo/model/Player;>;)Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.PlayerService#getAllPlayers#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "id" : "fffc592f-31b9-48af-9531-4fce31b58886",
+      "name" : "mock response for call to playerService.getAllPlayers()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+      "fieldName" : "playerService",
+      "methodName" : "getAllPlayers",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":3,\"name\":\"asfsd\",\"age\":10},{\"id\":7,\"name\":\"John Doe\",\"age\":25},{\"id\":8,\"name\":\"Jane Smith\",\"age\":30},{\"id\":9,\"name\":\"\",\"age\":28},{\"id\":19,\"name\":\"Akshat\",\"age\":22},{\"id\":23,\"name\":\"John Doe\",\"age\":25},{\"id\":24,\"name\":\"Jane Smith\",\"age\":30},{\"id\":25,\"name\":\"hello\",\"age\":28}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Player>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.PlayerService#getAllPlayers#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.PlayerService#getPlayerById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "id" : "f57fdc5d-27cd-4845-8b7f-fa80bcaebd97",
+      "name" : "mock response for call to playerService.getPlayerById(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+      "fieldName" : "playerService",
+      "methodName" : "getPlayerById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "19"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":19,\"name\":\"Akshat\",\"age\":22}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.Player>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.PlayerService#getPlayerById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.PlayerService#updatePlayer#(Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "id" : "ea53b6a1-7353-4515-9376-d379b9b05f5c",
+      "name" : "mock response for call to playerService.updatePlayer(player)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+      "fieldName" : "playerService",
+      "methodName" : "updatePlayer",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":19,\"name\":\"Akshat\",\"age\":22}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":19,\"name\":\"Akshat\",\"age\":22}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.Player>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.PlayerService#updatePlayer#(Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.PlayerService#deletePlayerById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;" : [ {
+      "id" : "b9488fdd-17e1-4558-af74-1d9d6cf2ff4f",
+      "name" : "mock response for call to playerService.deletePlayerById(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+      "fieldName" : "playerService",
+      "methodName" : "deletePlayerById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "20"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u0001�#�\\b\\n�\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.lang.Void>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.PlayerService#deletePlayerById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;"
+    } ]
+  }
+}

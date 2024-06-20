@@ -1,0 +1,114 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.CalculatorController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.controller.CalculatorController#doubleInput#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 24, 25 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "7897f0ce-a2b6-4c33-8487-96b6cfab0be7",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "20000",
+          "id" : "1532be70-6a98-4fc2-ae1b-6813226e3e37",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "e80ee49b-63c4-43c4-91b8-68b2299e0990",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "69488ae8-ec12-47fe-9804-9ab9bbbd13d4",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "14615d71-a531-42ea-9c3f-70082cf86c78",
+      "name" : "doubleInput saved on 2024-06-20 11:46",
+      "description" : null,
+      "methodArguments" : [ "10000" ],
+      "returnValue" : "{\"headers\":{},\"body\":20000,\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458811790353416,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 409456933,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6MjAwMDAsInN0YXR1cyI6Ik9LIn0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "doubleInput",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.CalculatorController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.resilientPatterns.controller.CalculatorController#fallback#(Ljava/lang/Integer;Ljava/lang/Throwable;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 29 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "093682ea-eeed-45ed-a70e-6caf64d79aef",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"RateLimiter 'calculator-service' does not permit further calls\"",
+          "id" : "5cead83d-e3c0-4d7a-8d4e-cd541ff72bdf",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"TOO_MANY_REQUESTS\"",
+          "id" : "d1611273-eef9-47ba-b1f0-7a9f77783dda",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "69aa500f-309f-4056-91fc-31bf12dcc3a3",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "30eca355-08af-4a2e-a023-48228d8d74e6",
+      "name" : "fallback saved on 2024-06-20 11:46",
+      "description" : null,
+      "methodArguments" : [ "10000", "2088797893" ],
+      "returnValue" : "{\"headers\":{},\"body\":\"RateLimiter 'calculator-service' does not permit further calls\",\"status\":\"TOO_MANY_REQUESTS\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 458833656517500,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -202005581,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6IlJhdGVMaW1pdGVyICdjYWxjdWxhdG9yLXNlcnZpY2UnIGRvZXMgbm90IHBlcm1pdCBmdXJ0aGVyIGNhbGxzIiwic3RhdHVzIjoiVE9PX01BTllfUkVRVUVTVFMifQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "fallback",
+        "signature" : "(Ljava/lang/Integer;Ljava/lang/Throwable;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.CalculatorController",
+        "methodHash" : 477561350
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

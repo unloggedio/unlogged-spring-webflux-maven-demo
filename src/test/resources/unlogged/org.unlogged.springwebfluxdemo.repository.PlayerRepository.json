@@ -1,0 +1,94 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.repository.PlayerRepository#findAll#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "id" : "6095cfc2-3fd2-495e-96e8-973df1af5cb4",
+      "name" : "mock response for call to repository.findAll()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+      "fieldName" : "repository",
+      "methodName" : "findAll",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":3,\"name\":\"asfsd\",\"age\":10},{\"id\":7,\"name\":\"John Doe\",\"age\":25},{\"id\":8,\"name\":\"Jane Smith\",\"age\":30},{\"id\":9,\"name\":\"\",\"age\":28},{\"id\":19,\"name\":\"Akshat\",\"age\":22},{\"id\":23,\"name\":\"John Doe\",\"age\":25},{\"id\":24,\"name\":\"Jane Smith\",\"age\":30},{\"id\":25,\"name\":\"hello\",\"age\":28}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Flux<org.unlogged.springwebfluxdemo.model.Player>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository#findAll#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/model/Player;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.repository.PlayerRepository#findById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "id" : "39b35a1c-811f-4df6-a400-36678248c042",
+      "name" : "mock response for call to repository.findById(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+      "fieldName" : "repository",
+      "methodName" : "findById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "19"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":19,\"name\":\"Akshat\",\"age\":22}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.model.Player>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository#findById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.repository.PlayerRepository#save#(Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<S>;" : [ {
+      "id" : "d942c2b3-b4df-4adf-bec7-583db1d1387b",
+      "name" : "mock response for call to repository.save(player)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+      "fieldName" : "repository",
+      "methodName" : "save",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":19,\"name\":\"Akshat\",\"age\":22}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":19,\"name\":\"Akshat\",\"age\":22}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<S>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository#save#(Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<S>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.repository.PlayerRepository#deleteById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;" : [ {
+      "id" : "1447fef8-cfea-4b14-b9c1-da2443f5d7e6",
+      "name" : "mock response for call to repository.deleteById(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+      "fieldName" : "repository",
+      "methodName" : "deleteById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "20"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u0001�#�\\u0006J\\u000B\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.lang.Void>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository#deleteById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;"
+    } ]
+  }
+}
