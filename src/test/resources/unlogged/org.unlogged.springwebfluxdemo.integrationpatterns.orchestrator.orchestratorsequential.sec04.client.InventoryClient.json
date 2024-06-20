@@ -136,7 +136,75 @@
         "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.client.InventoryClient",
         "methodHash" : -1286384731
       }
-    } ],
+    },
+      {
+        "lineNumbers" : [ 33, 34, 35, 36, 37, 38, 39 ],
+        "testAssertions" : {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "8ac2885d-6819-4c41-b5a6-a259c4a27df8",
+            "assertionType" : "EQUAL",
+            "key" : "/inventoryId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "11",
+            "id" : "fa06e4c9-8e36-4a0a-9b84-5249ea82b8cc",
+            "assertionType" : "EQUAL",
+            "key" : "/productId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "6",
+            "id" : "2d84c65a-5912-4c09-aa53-a53ceb08517e",
+            "assertionType" : "EQUAL",
+            "key" : "/quantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "7e4d2c01-c03c-4638-99c2-b237c1974bca",
+            "assertionType" : "EQUAL",
+            "key" : "/remainingQuantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "54400297-b5ac-45a0-a397-f2edd786d2ac",
+            "assertionType" : "EQUAL",
+            "key" : "/status"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "40ea9739-8b4e-41c2-aad0-844e28ca2a97",
+          "assertionType" : "ALLOF",
+          "key" : "/"
+        },
+        "candidateId" : "17e18e00-e75b-4a12-808c-586a3f191b2a",
+        "name" : "callInventoryService_integrationMode",
+        "description" : null,
+        "methodArguments" : [ "\"deduct\"", "{\"paymentId\":null,\"productId\":11,\"quantity\":6}" ],
+        "returnValue" : "{\"inventoryId\":null,\"productId\":11,\"quantity\":6,\"remainingQuantity\":null,\"status\":\"SUCCESS\"}",
+        "returnValueClassname" : "reactor.core.publisher.Mono",
+        "metadata" : {
+          "recordedBy" : "akshatjain",
+          "hostMachineName" : "akshatjain",
+          "timestamp" : 467422866828791,
+          "candidateStatus" : "NA"
+        },
+        "sessionIdentifier" : 574853862,
+        "probSerializedValue" : "eyJpbnZlbnRvcnlJZCI6bnVsbCwicHJvZHVjdElkIjoxMSwicXVhbnRpdHkiOjYsInJlbWFpbmluZ1F1YW50aXR5IjpudWxsLCJzdGF0dXMiOiJTVUNDRVNTIn0=",
+        "mockIds" : [ ],
+        "exception" : false,
+        "method" : {
+          "name" : "callInventoryService",
+          "signature" : "(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/InventoryRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/InventoryResponse;>;",
+          "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.client.InventoryClient",
+          "methodHash" : -1286384731
+        }
+      } ],
     "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.client.InventoryClient#deduct#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/InventoryRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/InventoryResponse;>;" : [ {
       "lineNumbers" : [ 25 ],
       "testAssertions" : {

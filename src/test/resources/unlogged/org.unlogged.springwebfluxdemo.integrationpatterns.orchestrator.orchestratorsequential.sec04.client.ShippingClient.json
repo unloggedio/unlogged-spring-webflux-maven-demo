@@ -164,7 +164,103 @@
         "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.client.ShippingClient",
         "methodHash" : -1092930877
       }
-    } ],
+    },
+      {
+        "lineNumbers" : [ 33, 34, 35, 36, 37, 38, 39 ],
+        "testAssertions" : {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "14635fb1-ffcd-411e-9374-e7ebe52d41b1",
+            "assertionType" : "EQUAL",
+            "key" : "/shippingId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "6",
+            "id" : "1bb87a33-0608-45cb-b805-3079815612fb",
+            "assertionType" : "EQUAL",
+            "key" : "/quantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "7d3acd98-2b92-4caf-a00e-e5b20e36bb24",
+            "assertionType" : "EQUAL",
+            "key" : "/status"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-23\"",
+            "id" : "09f063a6-e008-4d72-afac-701514de67a8",
+            "assertionType" : "EQUAL",
+            "key" : "/expectedDelivery"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"123 Main St\"",
+              "id" : "06fb7ecf-c15e-45dd-acfd-222af5ee98bb",
+              "assertionType" : "EQUAL",
+              "key" : "/address/street"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Anytown\"",
+              "id" : "1bb30408-ac89-4839-846d-f9562c958b0e",
+              "assertionType" : "EQUAL",
+              "key" : "/address/city"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"AnyState\"",
+              "id" : "3416e628-d181-4a75-9cad-06dabd6f079b",
+              "assertionType" : "EQUAL",
+              "key" : "/address/state"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"12345\"",
+              "id" : "0128fde6-2beb-4513-9eab-22454c85ded4",
+              "assertionType" : "EQUAL",
+              "key" : "/address/zipCode"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "845a955a-41d0-4577-9d2b-8f60da0db527",
+            "assertionType" : "ALLOF",
+            "key" : "/address"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "19d47aeb-707f-40cd-b7a9-387064d5a109",
+          "assertionType" : "ALLOF",
+          "key" : "/"
+        },
+        "candidateId" : "c615956c-4133-4b41-9f2f-f967bf6512d0",
+        "name" : "callShippingService_integrationMode",
+        "description" : null,
+        "methodArguments" : [ "\"schedule\"", "{\"quantity\":6,\"userId\":1,\"inventoryId\":null}" ],
+        "returnValue" : "{\"shippingId\":null,\"quantity\":6,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}}",
+        "returnValueClassname" : "reactor.core.publisher.Mono",
+        "metadata" : {
+          "recordedBy" : "akshatjain",
+          "hostMachineName" : "akshatjain",
+          "timestamp" : 467422889089000,
+          "candidateStatus" : "NA"
+        },
+        "sessionIdentifier" : -1378879932,
+        "probSerializedValue" : "eyJzaGlwcGluZ0lkIjpudWxsLCJxdWFudGl0eSI6Niwic3RhdHVzIjoiU1VDQ0VTUyIsImV4cGVjdGVkRGVsaXZlcnkiOiIyMDI0LTA2LTIzIiwiYWRkcmVzcyI6eyJzdHJlZXQiOiIxMjMgTWFpbiBTdCIsImNpdHkiOiJBbnl0b3duIiwic3RhdGUiOiJBbnlTdGF0ZSIsInppcENvZGUiOiIxMjM0NSJ9fQ==",
+        "mockIds" : [ ],
+        "exception" : false,
+        "method" : {
+          "name" : "callShippingService",
+          "signature" : "(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/ShippingRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/ShippingResponse;>;",
+          "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.client.ShippingClient",
+          "methodHash" : -1092930877
+        }
+      }],
     "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.client.ShippingClient#schedule#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/ShippingRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/ShippingResponse;>;" : [ {
       "lineNumbers" : [ 25 ],
       "testAssertions" : {
