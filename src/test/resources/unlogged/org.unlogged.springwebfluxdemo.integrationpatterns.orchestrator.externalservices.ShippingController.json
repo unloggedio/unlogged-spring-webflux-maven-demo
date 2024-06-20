@@ -8,6 +8,115 @@
           "subAssertions" : [ ],
           "expression" : "SELF",
           "expectedValue" : "true",
+          "id" : "fd00e0d8-82e4-422a-a4b0-660ca40d7e40",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "6",
+            "id" : "4470944b-291b-45e8-8734-73caf57f6c1d",
+            "assertionType" : "EQUAL",
+            "key" : "/body/quantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "fce77749-f28a-4fd8-b563-50fbd798a4a7",
+            "assertionType" : "EQUAL",
+            "key" : "/body/status"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-23\"",
+            "id" : "6bc208ef-4fdd-4cde-a9dd-dfd3853491dd",
+            "assertionType" : "EQUAL",
+            "key" : "/body/expectedDelivery"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"123 Main St\"",
+              "id" : "8f5c2f64-6204-45ba-8acb-e3625ba2a218",
+              "assertionType" : "EQUAL",
+              "key" : "/body/address/street"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Anytown\"",
+              "id" : "7608f2e9-e466-4819-a7ce-9f229702c2a0",
+              "assertionType" : "EQUAL",
+              "key" : "/body/address/city"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"AnyState\"",
+              "id" : "55499ff2-116d-4551-a767-1bb4b047b6b4",
+              "assertionType" : "EQUAL",
+              "key" : "/body/address/state"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"12345\"",
+              "id" : "8041869a-8132-4c3f-b240-09285b0f335a",
+              "assertionType" : "EQUAL",
+              "key" : "/body/address/zipCode"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "8f02551b-6d88-4c18-90fe-762a00b23e12",
+            "assertionType" : "ALLOF",
+            "key" : "/body/address"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "5c725e9a-9ad7-4948-957e-b454a56b19af",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "cce6f3fd-cd85-40d7-83fb-af7535fcf50a",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "f8dd7ce1-6b17-4794-b397-94abf6b08180",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "79a21499-a2ce-4916-87f7-ef6b57c199ca",
+      "name" : "schedule saved on 2024-06-20 14:24",
+      "description" : null,
+      "methodArguments" : [ "{\"quantity\":6,\"userId\":1,\"orderId\":null}" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"orderId\":\"60d3f77b-5222-4875-86c8-cb1a41b3937e\",\"quantity\":6,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}},\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 467422899507833,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1249509197,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJvcmRlcklkIjoiNjBkM2Y3N2ItNTIyMi00ODc1LTg2YzgtY2IxYTQxYjM5MzdlIiwicXVhbnRpdHkiOjYsInN0YXR1cyI6IlNVQ0NFU1MiLCJleHBlY3RlZERlbGl2ZXJ5IjoiMjAyNC0wNi0yMyIsImFkZHJlc3MiOnsic3RyZWV0IjoiMTIzIE1haW4gU3QiLCJjaXR5IjoiQW55dG93biIsInN0YXRlIjoiQW55U3RhdGUiLCJ6aXBDb2RlIjoiMTIzNDUifX0sInN0YXR1cyI6Ik9LIn0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "schedule",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/ShippingRequest;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/ShippingResponse;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.ShippingController",
+        "methodHash" : -1347797257
+      }
+    }, {
+      "lineNumbers" : [ 22, 23, 25, 26, 21, 28 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
           "id" : "a8088e0a-c7fd-49ad-b413-45e83d2b5a65",
           "assertionType" : "ALLOF",
           "key" : "/headers"
@@ -115,7 +224,7 @@
         "name" : "schedule",
         "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/ShippingRequest;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/ShippingResponse;>;",
         "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.ShippingController",
-        "methodHash" : -1347797257
+        "methodHash" : 0
       }
     } ]
   },

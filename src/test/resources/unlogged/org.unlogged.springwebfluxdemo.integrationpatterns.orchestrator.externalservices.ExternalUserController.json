@@ -80,6 +80,87 @@
         "name" : "deduct",
         "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentRequest;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentResponse;>;",
         "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.ExternalUserController",
+        "methodHash" : 0
+      }
+    }, {
+      "lineNumbers" : [ 16, 17, 19 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "04bef506-ceda-436e-83b5-6c4da4a14114",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "1cc7d678-f6af-4f44-9d72-bb047def856e",
+            "assertionType" : "EQUAL",
+            "key" : "/body/userId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "e98787fc-b5e4-4d40-a267-8e9f5d935949",
+            "assertionType" : "EQUAL",
+            "key" : "/body/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "600",
+            "id" : "bc2d77d7-2459-4aec-8a15-4054a4a018c0",
+            "assertionType" : "EQUAL",
+            "key" : "/body/balance"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "aa028278-68c6-4fc5-8c6a-1ce4127cc5b7",
+            "assertionType" : "EQUAL",
+            "key" : "/body/status"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "33248359-aa5e-4846-9e5c-75e9d0564bb6",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "e0d2497d-3d33-427d-8e97-ae67f8c037a0",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "13496bcd-65ea-4ffc-93b5-aae85e8c9f7c",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "15e74a36-bc54-40f6-bf77-6e945b35fa45",
+      "name" : "deduct saved on 2024-06-20 14:24",
+      "description" : null,
+      "methodArguments" : [ "{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"}" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"},\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 467422843656375,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -2116050216,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJ1c2VySWQiOjEsIm5hbWUiOm51bGwsImJhbGFuY2UiOjYwMCwic3RhdHVzIjoiU1VDQ0VTUyJ9LCJzdGF0dXMiOiJPSyJ9",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "deduct",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentRequest;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentResponse;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.ExternalUserController",
         "methodHash" : 1903233618
       }
     } ]

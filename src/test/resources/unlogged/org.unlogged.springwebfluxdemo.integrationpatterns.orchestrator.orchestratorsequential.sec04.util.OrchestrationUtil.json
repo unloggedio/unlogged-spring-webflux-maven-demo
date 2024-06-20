@@ -1,0 +1,105 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.util.OrchestrationUtil",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.util.OrchestrationUtil#buildShippingRequest#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrchestrationRequestContext;)V" : [ {
+      "lineNumbers" : [ 29, 30, 31, 32, 34, 35 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "12036f76-0810-4ce3-a27f-a59cb4e3f976",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "ebff939e-e843-4f91-ade0-80ea7fce4142",
+      "name" : "buildShippingRequest saved on 2024-06-20 14:24",
+      "description" : null,
+      "methodArguments" : [ "{\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\",\"orderRequest\":{\"userId\":1,\"productId\":11,\"quantity\":6},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"},\"paymentResponse\":{\"paymentId\":null,\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"},\"inventoryRequest\":{\"paymentId\":null,\"productId\":11,\"quantity\":6},\"inventoryResponse\":{\"inventoryId\":null,\"productId\":11,\"quantity\":6,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"shippingRequest\":null,\"shippingResponse\":null,\"status\":null}" ],
+      "returnValue" : "0",
+      "returnValueClassname" : "V",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 467422887354375,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1201324985,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "buildShippingRequest",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrchestrationRequestContext;)V",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.util.OrchestrationUtil",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.util.OrchestrationUtil#buildInventoryRequest#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrchestrationRequestContext;)V" : [ {
+      "lineNumbers" : [ 20, 21, 22, 23, 25, 26 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "6f57bcc4-8715-45c5-8872-1fb5f8b24648",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "9a48ff03-220c-4d65-a3d9-bc6dff169593",
+      "name" : "buildInventoryRequest saved on 2024-06-20 14:24",
+      "description" : null,
+      "methodArguments" : [ "{\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\",\"orderRequest\":{\"userId\":1,\"productId\":11,\"quantity\":6},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"},\"paymentResponse\":{\"paymentId\":null,\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"},\"inventoryRequest\":null,\"inventoryResponse\":null,\"shippingRequest\":null,\"shippingResponse\":null,\"status\":null}" ],
+      "returnValue" : "0",
+      "returnValueClassname" : "V",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 467422865246375,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1436711251,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "buildInventoryRequest",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrchestrationRequestContext;)V",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.util.OrchestrationUtil",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.util.OrchestrationUtil#buildPaymentRequest#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrchestrationRequestContext;)V" : [ {
+      "lineNumbers" : [ 11, 12, 13, 14, 16, 17 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "5c644b40-9e2b-4fc2-9ebb-74d00f654169",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "38cdcb2d-b02e-4daf-8413-d351bb31cbb0",
+      "name" : "buildPaymentRequest saved on 2024-06-20 14:24",
+      "description" : null,
+      "methodArguments" : [ "{\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\",\"orderRequest\":{\"userId\":1,\"productId\":11,\"quantity\":6},\"productPrice\":100,\"paymentRequest\":null,\"paymentResponse\":null,\"inventoryRequest\":null,\"inventoryResponse\":null,\"shippingRequest\":null,\"shippingResponse\":null,\"status\":null}" ],
+      "returnValue" : "0",
+      "returnValueClassname" : "V",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 467422824714875,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -480936065,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "buildPaymentRequest",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrchestrationRequestContext;)V",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.util.OrchestrationUtil",
+        "methodHash" : 1382450920
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

@@ -1,0 +1,88 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.ExternalProductController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.ExternalProductController#getProduct#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/Product;>;" : [ {
+      "lineNumbers" : [ 15, 16 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "f1db177f-09ef-4c64-ac65-2cb49d74b86a",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "11",
+            "id" : "995da2d4-d674-446d-923a-98ac05189a31",
+            "assertionType" : "EQUAL",
+            "key" : "/body/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Electronics\"",
+            "id" : "95b5d2e5-02f3-4d76-be1b-7c4ed2f81651",
+            "assertionType" : "EQUAL",
+            "key" : "/body/category"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Sample Product Description\"",
+            "id" : "368f82a1-80f6-4e22-b38e-3eb83426655f",
+            "assertionType" : "EQUAL",
+            "key" : "/body/description"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "100",
+            "id" : "88803e0d-0748-4592-a788-64a7c6d72ed0",
+            "assertionType" : "EQUAL",
+            "key" : "/body/price"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "1dda82a7-619f-4a56-be9b-5bd2bc5b3fd2",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "72374f94-4bae-4b0c-bde2-3ce470739654",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "ab1e29f5-02e7-449a-9f30-c55d2de72d48",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "826ea191-8f55-4521-903a-94eed9b1b34c",
+      "name" : "getProduct saved on 2024-06-20 14:24",
+      "description" : null,
+      "methodArguments" : [ "11" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"id\":11,\"category\":\"Electronics\",\"description\":\"Sample Product Description\",\"price\":100},\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 467422800495875,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1383615368,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJpZCI6MTEsImNhdGVnb3J5IjoiRWxlY3Ryb25pY3MiLCJkZXNjcmlwdGlvbiI6IlNhbXBsZSBQcm9kdWN0IERlc2NyaXB0aW9uIiwicHJpY2UiOjEwMH0sInN0YXR1cyI6Ik9LIn0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getProduct",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/Product;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.ExternalProductController",
+        "methodHash" : 497730833
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

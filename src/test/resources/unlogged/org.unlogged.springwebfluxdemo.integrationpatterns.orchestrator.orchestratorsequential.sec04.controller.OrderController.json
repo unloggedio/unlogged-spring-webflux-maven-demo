@@ -1,0 +1,123 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.controller.OrderController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.controller.OrderController#placeOrder#(Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrderRequest;>;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrderResponse;>;" : [ {
+      "lineNumbers" : [ 26, 27, 28, 25, 26, 27, 28, 29, 30 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "8556a240-b537-4346-8db4-f3cd1dd98d76",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "55286495-6e1a-4096-afee-c731b283c3f0",
+            "assertionType" : "EQUAL",
+            "key" : "/body/userId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "11",
+            "id" : "44a0d8a4-2b32-406f-9093-853c8b4f1d8d",
+            "assertionType" : "EQUAL",
+            "key" : "/body/productId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "437ba74f-6237-4011-b4f4-76c5502972b0",
+            "assertionType" : "EQUAL",
+            "key" : "/body/status"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"123 Main St\"",
+              "id" : "aee3773b-621c-4f3e-b061-c15d742f62c9",
+              "assertionType" : "EQUAL",
+              "key" : "/body/shippingAddress/street"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Anytown\"",
+              "id" : "4ea5cc08-e288-404d-8dfd-09dd546573f0",
+              "assertionType" : "EQUAL",
+              "key" : "/body/shippingAddress/city"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"AnyState\"",
+              "id" : "0fd44df5-cd3e-401c-8396-abe1482d278a",
+              "assertionType" : "EQUAL",
+              "key" : "/body/shippingAddress/state"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"12345\"",
+              "id" : "4914d27d-1511-43b0-8a96-ea4087be44ff",
+              "assertionType" : "EQUAL",
+              "key" : "/body/shippingAddress/zipCode"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "af31a60c-022f-4550-abfa-a68adbc7d406",
+            "assertionType" : "ALLOF",
+            "key" : "/body/shippingAddress"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-23\"",
+            "id" : "3ab04e9d-da8e-4c92-b7a2-8501d0d2fb72",
+            "assertionType" : "EQUAL",
+            "key" : "/body/expectedDelivery"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "39aaf05a-4f3e-4d46-b230-6f4a09d3b2c2",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "e16f9dda-f708-40eb-a67a-943c2845a6ec",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "a073bc88-7a1f-4cc0-9511-25ae56600d88",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "28cdfff7-634a-4511-94a7-5698d26e04a8",
+      "name" : "placeOrder saved on 2024-06-20 14:24",
+      "description" : null,
+      "methodArguments" : [ "\u0000\u0001�\u001EK��<" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"userId\":1,\"productId\":11,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\",\"status\":\"SUCCESS\",\"shippingAddress\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"},\"expectedDelivery\":\"2024-06-23\"},\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 467422560857833,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1494152177,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJ1c2VySWQiOjEsInByb2R1Y3RJZCI6MTEsIm9yZGVySWQiOiI4Y2YwN2QzYy04NDA4LTQzNWItOTJmYi0yMDdlM2IwZmM4MjAiLCJzdGF0dXMiOiJTVUNDRVNTIiwic2hpcHBpbmdBZGRyZXNzIjp7InN0cmVldCI6IjEyMyBNYWluIFN0IiwiY2l0eSI6IkFueXRvd24iLCJzdGF0ZSI6IkFueVN0YXRlIiwiemlwQ29kZSI6IjEyMzQ1In0sImV4cGVjdGVkRGVsaXZlcnkiOiIyMDI0LTA2LTIzIn0sInN0YXR1cyI6Ik9LIn0=",
+      "mockIds" : [ "9f4195c9-56f7-48cb-9b34-bcf7f8fb6dcf" ],
+      "exception" : false,
+      "method" : {
+        "name" : "placeOrder",
+        "signature" : "(Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrderRequest;>;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrderResponse;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.controller.OrderController",
+        "methodHash" : -472483691
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

@@ -1,0 +1,91 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.client.ProductClient",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.client.ProductClient#getProduct#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/Product;>;" : [ {
+      "lineNumbers" : [ 21, 22, 23, 24, 25, 26 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "11",
+          "id" : "21275219-0780-490f-b442-ddac8d6ef0a0",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Electronics\"",
+          "id" : "447e0d09-bed0-4ccf-8674-21963c2db4de",
+          "assertionType" : "EQUAL",
+          "key" : "/category"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Sample Product Description\"",
+          "id" : "ababb6a0-957e-4b64-95b7-3e6435e83925",
+          "assertionType" : "EQUAL",
+          "key" : "/description"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "100",
+          "id" : "fe263b07-51d2-4bc9-bcfe-4363c5025413",
+          "assertionType" : "EQUAL",
+          "key" : "/price"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "886940cb-53f3-4c35-b9aa-a02bc77d49b6",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "35247352-8d46-415e-bd4c-f947abf35bd4",
+      "name" : "getProduct saved on 2024-06-20 14:24",
+      "description" : null,
+      "methodArguments" : [ "11" ],
+      "returnValue" : "{\"id\":11,\"category\":\"Electronics\",\"description\":\"Sample Product Description\",\"price\":100}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 467422632800083,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -14761409,
+      "probSerializedValue" : "eyJpZCI6MTEsImNhdGVnb3J5IjoiRWxlY3Ryb25pY3MiLCJkZXNjcmlwdGlvbiI6IlNhbXBsZSBQcm9kdWN0IERlc2NyaXB0aW9uIiwicHJpY2UiOjEwMH0=",
+      "mockIds" : [ "4c362f14-fbc3-4a48-87d4-cce8fa4000a9" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getProduct",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/Product;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.client.ProductClient",
+        "methodHash" : -26187361
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.client.ProductClient#getProduct#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/Product;>;" : [ {
+      "id" : "20b95a78-e1f4-486c-bda9-22f423f49a31",
+      "name" : "mock response for call to this.productClient.getProduct(ctx.getOrderRequest().getProductId())",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.client.ProductClient",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.service.OrderFulfillmentService",
+      "fieldName" : "this.productClient",
+      "methodName" : "getProduct",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "11"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":11,\"category\":\"Electronics\",\"description\":\"Sample Product Description\",\"price\":100}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.dto.Product>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.client.ProductClient#getProduct#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/Product;>;"
+    } ]
+  }
+}
