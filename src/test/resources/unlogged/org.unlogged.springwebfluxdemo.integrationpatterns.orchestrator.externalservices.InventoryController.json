@@ -1,0 +1,88 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.InventoryController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.InventoryController#deduct#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryRequest;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryResponse;>;" : [ {
+      "lineNumbers" : [ 16, 17, 18 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "75045b7a-0f2b-423a-942d-17e77da695be",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101",
+            "id" : "cac5fc92-c587-4e83-850a-36a39cea8e1e",
+            "assertionType" : "EQUAL",
+            "key" : "/body/productId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "5",
+            "id" : "f3a2b009-32f5-4994-be3a-4751ac1ded39",
+            "assertionType" : "EQUAL",
+            "key" : "/body/quantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "4e0e9845-4762-4c63-a55c-7266af166c2b",
+            "assertionType" : "EQUAL",
+            "key" : "/body/remainingQuantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "db4545f4-1d52-4a33-b92f-db55b4ec6cc0",
+            "assertionType" : "EQUAL",
+            "key" : "/body/status"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "b9ee7e4a-7939-4783-80fe-de652a9f857d",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "0edc5517-f454-4f2e-9673-4bdcc35ea254",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "def001b1-ea3d-48c7-bd01-c19ec79c4a2a",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "76392d2d-921b-427d-91b7-78a87d211cc3",
+      "name" : "deduct saved on 2024-06-20 13:52",
+      "description" : null,
+      "methodArguments" : [ "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5}" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 465303427594833,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 48835691,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJwcm9kdWN0SWQiOjEwMSwicXVhbnRpdHkiOjUsInJlbWFpbmluZ1F1YW50aXR5IjpudWxsLCJzdGF0dXMiOiJTVUNDRVNTIn0sInN0YXR1cyI6Ik9LIn0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "deduct",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryRequest;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryResponse;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.InventoryController",
+        "methodHash" : 167279027
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

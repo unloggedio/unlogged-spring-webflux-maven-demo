@@ -1,0 +1,88 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.ExternalUserController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.ExternalUserController#deduct#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentRequest;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentResponse;>;" : [ {
+      "lineNumbers" : [ 16, 17, 19 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "737f9ef2-44f9-4e57-8015-e6b05b94c08f",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "e967c17d-2377-4ea3-bade-0fb0ce6b3806",
+            "assertionType" : "EQUAL",
+            "key" : "/body/userId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "b281e4e6-5f1b-42b6-aab5-90f83b721c2f",
+            "assertionType" : "EQUAL",
+            "key" : "/body/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "500",
+            "id" : "42602480-69b4-4510-b3c4-e5b669a59f0c",
+            "assertionType" : "EQUAL",
+            "key" : "/body/balance"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "1b4d7d0a-4e98-4062-a5aa-19be388e92fb",
+            "assertionType" : "EQUAL",
+            "key" : "/body/status"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "71932e4d-a911-48b1-8556-873bd9978f93",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "ce47c862-0ede-4a96-aca2-21153551e2ab",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "13646264-af16-44a3-8010-2dc2e531bcc0",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "ceb56032-63a3-4071-ab24-3f2697951c7d",
+      "name" : "deduct saved on 2024-06-20 13:52",
+      "description" : null,
+      "methodArguments" : [ "{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"},\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 465303428176083,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 304800522,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJ1c2VySWQiOjEsIm5hbWUiOm51bGwsImJhbGFuY2UiOjUwMCwic3RhdHVzIjoiU1VDQ0VTUyJ9LCJzdGF0dXMiOiJPSyJ9",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "deduct",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentRequest;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentResponse;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.externalservices.ExternalUserController",
+        "methodHash" : 1903233618
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

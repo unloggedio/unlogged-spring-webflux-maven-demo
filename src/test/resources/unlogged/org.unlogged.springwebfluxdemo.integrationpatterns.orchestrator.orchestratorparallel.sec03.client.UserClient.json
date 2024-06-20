@@ -1,0 +1,213 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.UserClient",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.UserClient#buildErrorResponse#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentRequest;)Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentResponse;" : [ {
+      "lineNumbers" : [ 43, 44, 46 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "fcc78620-c5b7-44d0-a047-93856e5c4421",
+          "assertionType" : "EQUAL",
+          "key" : "/userId"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "16df2a7a-844c-4fae-a2a7-156308edf23e",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "500",
+          "id" : "2967bf4a-1d65-4ac6-93d0-abf34b3b8650",
+          "assertionType" : "EQUAL",
+          "key" : "/balance"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"FAILED\"",
+          "id" : "19cef5bd-b4f9-429a-ae90-0d8ad8b645a6",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "a663e255-12ff-4e24-a77a-803a79335509",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "52718a06-c3f3-4eab-9df2-626583ac760d",
+      "name" : "buildErrorResponse saved on 2024-06-20 13:52",
+      "description" : null,
+      "methodArguments" : [ "{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
+      "returnValue" : "{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"FAILED\"}",
+      "returnValueClassname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.PaymentResponse",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 465303420425958,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -773202862,
+      "probSerializedValue" : "eyJ1c2VySWQiOjEsIm5hbWUiOm51bGwsImJhbGFuY2UiOjUwMCwic3RhdHVzIjoiRkFJTEVEIn0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "buildErrorResponse",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentRequest;)Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentResponse;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.UserClient",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.UserClient#callUserService#(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentResponse;>;" : [ {
+      "lineNumbers" : [ 33, 34, 35, 36, 37, 38, 39 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "e1923f76-8e1e-457f-ac77-8f1598b827c7",
+          "assertionType" : "EQUAL",
+          "key" : "/userId"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "097b0b39-4974-4536-a9e3-920ed0b33e3f",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "500",
+          "id" : "c394e11b-3e2c-4e37-b554-249f73867e8c",
+          "assertionType" : "EQUAL",
+          "key" : "/balance"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"SUCCESS\"",
+          "id" : "9a0dbd64-fb5e-4530-94b3-b21fb94961f5",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "501962a2-cc04-4079-ae07-46ca5e6adf83",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "ef47b93e-8a13-41a2-8c65-4f52eeacad9d",
+      "name" : "callUserService saved on 2024-06-20 13:52",
+      "description" : null,
+      "methodArguments" : [ "\"deduct\"", "{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
+      "returnValue" : "{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 465303420179958,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 2045273227,
+      "probSerializedValue" : "eyJ1c2VySWQiOjEsIm5hbWUiOm51bGwsImJhbGFuY2UiOjUwMCwic3RhdHVzIjoiU1VDQ0VTUyJ9",
+      "mockIds" : [ "9cadba75-b1ad-45ad-847b-46b33295497f" ],
+      "exception" : false,
+      "method" : {
+        "name" : "callUserService",
+        "signature" : "(Ljava/lang/String;Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentResponse;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.UserClient",
+        "methodHash" : -1331392096
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.UserClient#deduct#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentResponse;>;" : [ {
+      "lineNumbers" : [ 25 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "9c414ac8-39c8-4f68-822b-4cf07b611ac6",
+          "assertionType" : "EQUAL",
+          "key" : "/userId"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "194b583f-3edb-47fc-b2a9-37b97d5c75df",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "500",
+          "id" : "e9705341-9d72-4d59-9ddd-565a19a8a470",
+          "assertionType" : "EQUAL",
+          "key" : "/balance"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"SUCCESS\"",
+          "id" : "3ef5624d-ecef-44fa-baaf-5c76c90ee031",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "374e0178-1df2-492f-bfe3-057c452549f1",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "cba2ae8c-722b-4397-9edf-60efd8e6acb8",
+      "name" : "deduct saved on 2024-06-20 13:52",
+      "description" : null,
+      "methodArguments" : [ "{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
+      "returnValue" : "{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 465303420164250,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1803663940,
+      "probSerializedValue" : "eyJ1c2VySWQiOjEsIm5hbWUiOm51bGwsImJhbGFuY2UiOjUwMCwic3RhdHVzIjoiU1VDQ0VTUyJ9",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "deduct",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentResponse;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.UserClient",
+        "methodHash" : 1948103231
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.UserClient#deduct#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentResponse;>;" : [ {
+      "id" : "af0df1c6-7e21-4f5a-81e7-396958eaa238",
+      "name" : "mock response for call to this.client.deduct(ctx.getPaymentRequest())",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.UserClient",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.PaymentOrchestrator",
+      "fieldName" : "this.client",
+      "methodName" : "deduct",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.PaymentResponse>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.UserClient#deduct#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/PaymentResponse;>;"
+    } ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.controller.OrderController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.controller.OrderController#placeOrder#(Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrderRequest;>;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrderResponse;>;" : [ {
+      "lineNumbers" : [ 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 35 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "cc68b2c6-d2b5-48f9-92b6-66de1abda49f",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "2808ef94-2568-44d1-9076-28f22e740db5",
+            "assertionType" : "EQUAL",
+            "key" : "/body/userId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101",
+            "id" : "14d1aa94-8df8-42ec-87c7-7de7657c1a10",
+            "assertionType" : "EQUAL",
+            "key" : "/body/productId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"a6e39091-2908-441c-b755-962b74988374\"",
+            "id" : "19e1fc44-5e5a-4c93-904a-9b77f3236cb8",
+            "assertionType" : "NOT_NULL",
+            "key" : "/body/orderId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "02f458da-aafd-4c05-ae8e-6e075d29e0a2",
+            "assertionType" : "EQUAL",
+            "key" : "/body/status"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"123 Main St\"",
+              "id" : "13fc998b-7792-46dd-aa8d-475e0421ed2c",
+              "assertionType" : "EQUAL",
+              "key" : "/body/shippingAddress/street"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Anytown\"",
+              "id" : "fc27a9ff-9fbc-45ce-972c-8b16773f6586",
+              "assertionType" : "EQUAL",
+              "key" : "/body/shippingAddress/city"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"AnyState\"",
+              "id" : "ca760f12-5e5f-4702-aef0-65ef28aa37f4",
+              "assertionType" : "EQUAL",
+              "key" : "/body/shippingAddress/state"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"12345\"",
+              "id" : "3f9c7118-6634-4831-89e7-705d8f7c97f4",
+              "assertionType" : "EQUAL",
+              "key" : "/body/shippingAddress/zipCode"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "0f4d48c4-fef1-453f-97ed-e866aa72cb89",
+            "assertionType" : "ALLOF",
+            "key" : "/body/shippingAddress"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-23\"",
+            "id" : "53b9ffb5-bb55-4c79-98ac-db44598c14e0",
+            "assertionType" : "EQUAL",
+            "key" : "/body/expectedDelivery"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "341f0f9e-4a4a-490b-af48-924b0ca0fd2b",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "c94d2d97-78df-4d5e-ad61-f41690ff0dd2",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "e8fe53ba-1b8d-4aa9-be8f-7f61e681d729",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "2c8fa2b6-997d-4884-b00a-d5ba440d9c86",
+      "name" : "placeOrder saved on 2024-06-20 13:52",
+      "description" : null,
+      "methodArguments" : [ "\u0000\u0001�0�:�" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"userId\":1,\"productId\":101,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"status\":\"SUCCESS\",\"shippingAddress\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"},\"expectedDelivery\":\"2024-06-23\"},\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 465303372430833,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -2014302609,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJ1c2VySWQiOjEsInByb2R1Y3RJZCI6MTAxLCJvcmRlcklkIjoiYTZlMzkwOTEtMjkwOC00NDFjLWI3NTUtOTYyYjc0OTg4Mzc0Iiwic3RhdHVzIjoiU1VDQ0VTUyIsInNoaXBwaW5nQWRkcmVzcyI6eyJzdHJlZXQiOiIxMjMgTWFpbiBTdCIsImNpdHkiOiJBbnl0b3duIiwic3RhdGUiOiJBbnlTdGF0ZSIsInppcENvZGUiOiIxMjM0NSJ9LCJleHBlY3RlZERlbGl2ZXJ5IjoiMjAyNC0wNi0yMyJ9LCJzdGF0dXMiOiJPSyJ9",
+      "mockIds" : [ "25900117-a8d0-4fc1-a25a-534e9d69a439" ],
+      "exception" : false,
+      "method" : {
+        "name" : "placeOrder",
+        "signature" : "(Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrderRequest;>;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrderResponse;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.controller.OrderController",
+        "methodHash" : -472483691
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}
