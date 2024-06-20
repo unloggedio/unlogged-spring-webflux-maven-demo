@@ -1,0 +1,640 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.nestedPojo.service.ContentEnrichmentService",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.nestedPojo.service.ContentEnrichmentService#getAllTeachers#()Ljava/util/List<Lorg/unlogged/springwebfluxdemo/nestedPojo/TeacherDto;>;" : [ {
+      "lineNumbers" : [ 26, 27, 28, 29, 17, 18, 19, 20, 21, 17, 18, 19, 20, 21, 17, 18, 19, 20, 21 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"1\"",
+            "id" : "c678dcd7-1539-4e79-a0ef-6ee06de1d440",
+            "assertionType" : "NOT_NULL",
+            "key" : "/0/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"John Doe\"",
+            "id" : "b43927c1-8397-45ac-8760-ad4a9e07a97d",
+            "assertionType" : "EQUAL",
+            "key" : "/0/name"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"123 Main St\"",
+              "id" : "b4cbac0f-19c4-4963-a40e-649041a34dfd",
+              "assertionType" : "EQUAL",
+              "key" : "/0/address/street"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"San Francisco\"",
+              "id" : "1eb14df0-d495-497e-85cf-7a63ee3c7a8d",
+              "assertionType" : "EQUAL",
+              "key" : "/0/address/city"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "\"teacher@example.com\"",
+                  "id" : "3bb1d30f-e4da-4543-b5ad-e873be040d91",
+                  "assertionType" : "EQUAL",
+                  "key" : "/0/address/contacts/0/email"
+                }, {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "\"123-456-7890\"",
+                  "id" : "01e0f5e9-edfd-4be2-a35b-8f31bfc7d61b",
+                  "assertionType" : "EQUAL",
+                  "key" : "/0/address/contacts/0/phone"
+                }, {
+                  "subAssertions" : [ {
+                    "subAssertions" : [ ],
+                    "expression" : "SELF",
+                    "expectedValue" : "37.7749",
+                    "id" : "e63882f2-39e8-40c9-8b9a-2329c323e0b1",
+                    "assertionType" : "EQUAL",
+                    "key" : "/0/address/contacts/0/locations/latitude"
+                  }, {
+                    "subAssertions" : [ ],
+                    "expression" : "SELF",
+                    "expectedValue" : "-122.4194",
+                    "id" : "c945a14c-a5ab-4e06-9bcf-68f5822a6af9",
+                    "assertionType" : "EQUAL",
+                    "key" : "/0/address/contacts/0/locations/longitude"
+                  } ],
+                  "expression" : "SELF",
+                  "expectedValue" : "true",
+                  "id" : "efe30062-a8cb-4cf3-9bf5-057accdc825b",
+                  "assertionType" : "ALLOF",
+                  "key" : "/0/address/contacts/0/locations"
+                } ],
+                "expression" : "SELF",
+                "expectedValue" : "true",
+                "id" : "ed3e38c2-6f5b-4b95-bf0b-584cbe5fba4a",
+                "assertionType" : "ALLOF",
+                "key" : "/0/address/contacts/0"
+              }, {
+                "subAssertions" : [ {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "\"teacherother@example.com\"",
+                  "id" : "af79aacb-4d7b-4cf9-ba36-215172c301a2",
+                  "assertionType" : "EQUAL",
+                  "key" : "/0/address/contacts/1/email"
+                }, {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "\"223-456-7890\"",
+                  "id" : "a5b5e4d1-63c1-4d87-88ba-5b38520f0ebc",
+                  "assertionType" : "EQUAL",
+                  "key" : "/0/address/contacts/1/phone"
+                }, {
+                  "subAssertions" : [ {
+                    "subAssertions" : [ ],
+                    "expression" : "SELF",
+                    "expectedValue" : "37.7749",
+                    "id" : "23a17271-a887-44c3-b686-a410b630a077",
+                    "assertionType" : "EQUAL",
+                    "key" : "/0/address/contacts/1/locations/latitude"
+                  }, {
+                    "subAssertions" : [ ],
+                    "expression" : "SELF",
+                    "expectedValue" : "-122.4194",
+                    "id" : "9d7131f6-6092-48ca-a198-a94f868d8d85",
+                    "assertionType" : "EQUAL",
+                    "key" : "/0/address/contacts/1/locations/longitude"
+                  } ],
+                  "expression" : "SELF",
+                  "expectedValue" : "true",
+                  "id" : "6214c516-1e43-4122-b627-93dadf67f654",
+                  "assertionType" : "ALLOF",
+                  "key" : "/0/address/contacts/1/locations"
+                } ],
+                "expression" : "SELF",
+                "expectedValue" : "true",
+                "id" : "0deae9a1-d98b-4777-856a-691c20efb892",
+                "assertionType" : "ALLOF",
+                "key" : "/0/address/contacts/1"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "59ce792a-7d5d-4dd8-9d1e-a55b85ba41b9",
+              "assertionType" : "ALLOF",
+              "key" : "/0/address/contacts"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "1dec18aa-ea3a-4f4b-8442-6ad1da4a229b",
+            "assertionType" : "ALLOF",
+            "key" : "/0/address"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "83d02140-ca3d-4a86-b0f5-7fc760ec13b7",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2\"",
+            "id" : "16483ff9-5d0e-4228-b574-c7512a8ea71e",
+            "assertionType" : "NOT_NULL",
+            "key" : "/1/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"John Doe\"",
+            "id" : "afabc304-e0c1-4035-a729-7ff74df53407",
+            "assertionType" : "EQUAL",
+            "key" : "/1/name"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"123 Main St\"",
+              "id" : "0dd326f4-aff6-49eb-82f6-b731504c5dd0",
+              "assertionType" : "EQUAL",
+              "key" : "/1/address/street"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"San Francisco\"",
+              "id" : "25176568-6dc4-46b3-b21a-b5ec1575443a",
+              "assertionType" : "EQUAL",
+              "key" : "/1/address/city"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "\"teacher@example.com\"",
+                  "id" : "1973a325-1d08-4eff-8a9a-db81f02ec8d8",
+                  "assertionType" : "EQUAL",
+                  "key" : "/1/address/contacts/0/email"
+                }, {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "\"123-456-7890\"",
+                  "id" : "e685e95d-33cb-4efc-8da4-b0f63e3f0e53",
+                  "assertionType" : "EQUAL",
+                  "key" : "/1/address/contacts/0/phone"
+                }, {
+                  "subAssertions" : [ {
+                    "subAssertions" : [ ],
+                    "expression" : "SELF",
+                    "expectedValue" : "37.7749",
+                    "id" : "5994cad8-8975-49de-a839-fbc30578f64b",
+                    "assertionType" : "EQUAL",
+                    "key" : "/1/address/contacts/0/locations/latitude"
+                  }, {
+                    "subAssertions" : [ ],
+                    "expression" : "SELF",
+                    "expectedValue" : "-122.4194",
+                    "id" : "7a76e36a-3a15-45d9-af3c-1114e1814003",
+                    "assertionType" : "EQUAL",
+                    "key" : "/1/address/contacts/0/locations/longitude"
+                  } ],
+                  "expression" : "SELF",
+                  "expectedValue" : "true",
+                  "id" : "81c02c7a-f6b5-4569-817a-1658a3f374f0",
+                  "assertionType" : "ALLOF",
+                  "key" : "/1/address/contacts/0/locations"
+                } ],
+                "expression" : "SELF",
+                "expectedValue" : "true",
+                "id" : "d31dc4a2-6a6a-4b3a-aacc-a11373ab0874",
+                "assertionType" : "ALLOF",
+                "key" : "/1/address/contacts/0"
+              }, {
+                "subAssertions" : [ {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "\"teacherother@example.com\"",
+                  "id" : "0bc7c6d4-7188-4e87-863d-c03dce50fcdd",
+                  "assertionType" : "EQUAL",
+                  "key" : "/1/address/contacts/1/email"
+                }, {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "\"223-456-7890\"",
+                  "id" : "46411508-91f7-47a5-bd78-79b6883907a9",
+                  "assertionType" : "EQUAL",
+                  "key" : "/1/address/contacts/1/phone"
+                }, {
+                  "subAssertions" : [ {
+                    "subAssertions" : [ ],
+                    "expression" : "SELF",
+                    "expectedValue" : "37.7749",
+                    "id" : "9dd3c51f-9534-4dee-ad49-a5b75ff82e87",
+                    "assertionType" : "EQUAL",
+                    "key" : "/1/address/contacts/1/locations/latitude"
+                  }, {
+                    "subAssertions" : [ ],
+                    "expression" : "SELF",
+                    "expectedValue" : "-122.4194",
+                    "id" : "037f6927-3360-45d2-b4b7-07d56cc680e9",
+                    "assertionType" : "EQUAL",
+                    "key" : "/1/address/contacts/1/locations/longitude"
+                  } ],
+                  "expression" : "SELF",
+                  "expectedValue" : "true",
+                  "id" : "ddddba71-3d27-4541-96af-3645ee315e1b",
+                  "assertionType" : "ALLOF",
+                  "key" : "/1/address/contacts/1/locations"
+                } ],
+                "expression" : "SELF",
+                "expectedValue" : "true",
+                "id" : "491222c1-a521-46fc-8616-d2ddde2e8334",
+                "assertionType" : "ALLOF",
+                "key" : "/1/address/contacts/1"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "4119e681-25ea-4473-b46a-fe15d3f3df96",
+              "assertionType" : "ALLOF",
+              "key" : "/1/address/contacts"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "138a0c54-f7fc-4a39-89d2-2bf09c517898",
+            "assertionType" : "ALLOF",
+            "key" : "/1/address"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "cb624e3f-0d43-4302-ad84-b92e75b71de2",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"3\"",
+            "id" : "f9b851fb-9f65-442b-aea6-d1e15901cd3b",
+            "assertionType" : "NOT_NULL",
+            "key" : "/2/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"John Doe\"",
+            "id" : "baa3c5b3-59a7-4ff2-b786-cb439b8a17ad",
+            "assertionType" : "EQUAL",
+            "key" : "/2/name"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"123 Main St\"",
+              "id" : "f9e03828-80d5-48c9-bb38-e25d357287e8",
+              "assertionType" : "EQUAL",
+              "key" : "/2/address/street"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"San Francisco\"",
+              "id" : "02af0723-6610-4801-9967-7fb76380483b",
+              "assertionType" : "EQUAL",
+              "key" : "/2/address/city"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "\"teacher@example.com\"",
+                  "id" : "1be6b2c4-3322-4cc4-bf1b-793afa724304",
+                  "assertionType" : "EQUAL",
+                  "key" : "/2/address/contacts/0/email"
+                }, {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "\"123-456-7890\"",
+                  "id" : "44df524f-20b0-4509-942e-63cdf9e67436",
+                  "assertionType" : "EQUAL",
+                  "key" : "/2/address/contacts/0/phone"
+                }, {
+                  "subAssertions" : [ {
+                    "subAssertions" : [ ],
+                    "expression" : "SELF",
+                    "expectedValue" : "37.7749",
+                    "id" : "2d0108ec-3914-4e06-b8ec-3154af79b89f",
+                    "assertionType" : "EQUAL",
+                    "key" : "/2/address/contacts/0/locations/latitude"
+                  }, {
+                    "subAssertions" : [ ],
+                    "expression" : "SELF",
+                    "expectedValue" : "-122.4194",
+                    "id" : "e890558e-ed4b-4057-a369-a26584c5ead9",
+                    "assertionType" : "EQUAL",
+                    "key" : "/2/address/contacts/0/locations/longitude"
+                  } ],
+                  "expression" : "SELF",
+                  "expectedValue" : "true",
+                  "id" : "1f86d757-202a-4bae-8eb7-cf3db37e00c7",
+                  "assertionType" : "ALLOF",
+                  "key" : "/2/address/contacts/0/locations"
+                } ],
+                "expression" : "SELF",
+                "expectedValue" : "true",
+                "id" : "be1290b6-00ff-4d02-bd78-bfe362406009",
+                "assertionType" : "ALLOF",
+                "key" : "/2/address/contacts/0"
+              }, {
+                "subAssertions" : [ {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "\"teacherother@example.com\"",
+                  "id" : "bfd9c044-5383-4297-97ec-9d2f1537aa9e",
+                  "assertionType" : "EQUAL",
+                  "key" : "/2/address/contacts/1/email"
+                }, {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "\"223-456-7890\"",
+                  "id" : "77247214-a988-4f9c-a7dc-d7048e003a19",
+                  "assertionType" : "EQUAL",
+                  "key" : "/2/address/contacts/1/phone"
+                }, {
+                  "subAssertions" : [ {
+                    "subAssertions" : [ ],
+                    "expression" : "SELF",
+                    "expectedValue" : "37.7749",
+                    "id" : "49df5c03-e79c-4043-9ad3-a643f4298dfa",
+                    "assertionType" : "EQUAL",
+                    "key" : "/2/address/contacts/1/locations/latitude"
+                  }, {
+                    "subAssertions" : [ ],
+                    "expression" : "SELF",
+                    "expectedValue" : "-122.4194",
+                    "id" : "ab518876-85b6-43d9-ae53-6a0adf024460",
+                    "assertionType" : "EQUAL",
+                    "key" : "/2/address/contacts/1/locations/longitude"
+                  } ],
+                  "expression" : "SELF",
+                  "expectedValue" : "true",
+                  "id" : "67b1bddb-6114-4c77-9c1c-0f4fe77d576d",
+                  "assertionType" : "ALLOF",
+                  "key" : "/2/address/contacts/1/locations"
+                } ],
+                "expression" : "SELF",
+                "expectedValue" : "true",
+                "id" : "af5190f7-5c04-481e-aed9-a27107ad6bf1",
+                "assertionType" : "ALLOF",
+                "key" : "/2/address/contacts/1"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "c79b4684-80ba-4408-8a1d-dfa714c3b177",
+              "assertionType" : "ALLOF",
+              "key" : "/2/address/contacts"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "1bb75feb-b0d5-41f9-93a5-60819ea044d9",
+            "assertionType" : "ALLOF",
+            "key" : "/2/address"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "2dd8953f-930d-48eb-8f7a-f097f45804ce",
+          "assertionType" : "ALLOF",
+          "key" : "/2"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "2c706d82-4a07-4771-ba1f-79f225abc4c9",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "0305c7c0-45a6-44f9-9db0-4ab997183036",
+      "name" : "ContentEnrichmentService.getAllTeachers - normal",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[{\"id\":\"1\",\"name\":\"John Doe\",\"address\":{\"street\":\"123 Main St\",\"city\":\"San Francisco\",\"contacts\":[{\"email\":\"teacher@example.com\",\"phone\":\"123-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}},{\"email\":\"teacherother@example.com\",\"phone\":\"223-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}}]}},{\"id\":\"2\",\"name\":\"John Doe\",\"address\":{\"street\":\"123 Main St\",\"city\":\"San Francisco\",\"contacts\":[{\"email\":\"teacher@example.com\",\"phone\":\"123-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}},{\"email\":\"teacherother@example.com\",\"phone\":\"223-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}}]}},{\"id\":\"3\",\"name\":\"John Doe\",\"address\":{\"street\":\"123 Main St\",\"city\":\"San Francisco\",\"contacts\":[{\"email\":\"teacher@example.com\",\"phone\":\"123-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}},{\"email\":\"teacherother@example.com\",\"phone\":\"223-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}}]}}]",
+      "returnValueClassname" : "java.util.List",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 475880891101416,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -133636845,
+      "probSerializedValue" : "W3siaWQiOiIxIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRkcmVzcyI6eyJzdHJlZXQiOiIxMjMgTWFpbiBTdCIsImNpdHkiOiJTYW4gRnJhbmNpc2NvIiwiY29udGFjdHMiOlt7ImVtYWlsIjoidGVhY2hlckBleGFtcGxlLmNvbSIsInBob25lIjoiMTIzLTQ1Ni03ODkwIiwibG9jYXRpb25zIjp7ImxhdGl0dWRlIjozNy43NzQ5LCJsb25naXR1ZGUiOi0xMjIuNDE5NH19LHsiZW1haWwiOiJ0ZWFjaGVyb3RoZXJAZXhhbXBsZS5jb20iLCJwaG9uZSI6IjIyMy00NTYtNzg5MCIsImxvY2F0aW9ucyI6eyJsYXRpdHVkZSI6MzcuNzc0OSwibG9uZ2l0dWRlIjotMTIyLjQxOTR9fV19fSx7ImlkIjoiMiIsIm5hbWUiOiJKb2huIERvZSIsImFkZHJlc3MiOnsic3RyZWV0IjoiMTIzIE1haW4gU3QiLCJjaXR5IjoiU2FuIEZyYW5jaXNjbyIsImNvbnRhY3RzIjpbeyJlbWFpbCI6InRlYWNoZXJAZXhhbXBsZS5jb20iLCJwaG9uZSI6IjEyMy00NTYtNzg5MCIsImxvY2F0aW9ucyI6eyJsYXRpdHVkZSI6MzcuNzc0OSwibG9uZ2l0dWRlIjotMTIyLjQxOTR9fSx7ImVtYWlsIjoidGVhY2hlcm90aGVyQGV4YW1wbGUuY29tIiwicGhvbmUiOiIyMjMtNDU2LTc4OTAiLCJsb2NhdGlvbnMiOnsibGF0aXR1ZGUiOjM3Ljc3NDksImxvbmdpdHVkZSI6LTEyMi40MTk0fX1dfX0seyJpZCI6IjMiLCJuYW1lIjoiSm9obiBEb2UiLCJhZGRyZXNzIjp7InN0cmVldCI6IjEyMyBNYWluIFN0IiwiY2l0eSI6IlNhbiBGcmFuY2lzY28iLCJjb250YWN0cyI6W3siZW1haWwiOiJ0ZWFjaGVyQGV4YW1wbGUuY29tIiwicGhvbmUiOiIxMjMtNDU2LTc4OTAiLCJsb2NhdGlvbnMiOnsibGF0aXR1ZGUiOjM3Ljc3NDksImxvbmdpdHVkZSI6LTEyMi40MTk0fX0seyJlbWFpbCI6InRlYWNoZXJvdGhlckBleGFtcGxlLmNvbSIsInBob25lIjoiMjIzLTQ1Ni03ODkwIiwibG9jYXRpb25zIjp7ImxhdGl0dWRlIjozNy43NzQ5LCJsb25naXR1ZGUiOi0xMjIuNDE5NH19XX19XQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getAllTeachers",
+        "signature" : "()Ljava/util/List<Lorg/unlogged/springwebfluxdemo/nestedPojo/TeacherDto;>;",
+        "className" : "org.unlogged.springwebfluxdemo.nestedPojo.service.ContentEnrichmentService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.nestedPojo.service.ContentEnrichmentService#enrichTeacherDetails#(Ljava/lang/String;)Lorg/unlogged/springwebfluxdemo/nestedPojo/TeacherDto;" : [ {
+      "lineNumbers" : [ 17, 18, 19, 20, 21 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"1\"",
+          "id" : "890fe00b-cd66-4ab9-b5c9-eda140c2a1c3",
+          "assertionType" : "NOT_NULL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"John Doe\"",
+          "id" : "ca98492b-b82b-4896-9988-6add4099efa6",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"123 Main St\"",
+            "id" : "cbe25349-2386-4f16-a176-dbb5e764f0aa",
+            "assertionType" : "EQUAL",
+            "key" : "/address/street"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"San Francisco\"",
+            "id" : "22a5433b-b28d-4a3b-9182-c8fda7cd6d6b",
+            "assertionType" : "EQUAL",
+            "key" : "/address/city"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"teacher@example.com\"",
+                "id" : "182d62e0-73d9-4639-ab0a-ee668bea897e",
+                "assertionType" : "EQUAL",
+                "key" : "/address/contacts/0/email"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"123-456-7890\"",
+                "id" : "999d2f5e-b52a-437f-a0a3-6a2f85811dfe",
+                "assertionType" : "EQUAL",
+                "key" : "/address/contacts/0/phone"
+              }, {
+                "subAssertions" : [ {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "37.7749",
+                  "id" : "60e1237b-ac42-41e1-9653-62772d8f9642",
+                  "assertionType" : "EQUAL",
+                  "key" : "/address/contacts/0/locations/latitude"
+                }, {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "-122.4194",
+                  "id" : "f301fbbf-765f-42a7-b322-9731e4146e2f",
+                  "assertionType" : "EQUAL",
+                  "key" : "/address/contacts/0/locations/longitude"
+                } ],
+                "expression" : "SELF",
+                "expectedValue" : "true",
+                "id" : "87ee452e-8a53-4221-8d69-c17686ca0e0b",
+                "assertionType" : "ALLOF",
+                "key" : "/address/contacts/0/locations"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "4afc1625-14c2-4bda-acdd-e73c9cb31563",
+              "assertionType" : "ALLOF",
+              "key" : "/address/contacts/0"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"teacherother@example.com\"",
+                "id" : "2f84368b-334d-49cd-8001-4fbb2073f782",
+                "assertionType" : "EQUAL",
+                "key" : "/address/contacts/1/email"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"223-456-7890\"",
+                "id" : "ad0668e5-1248-4b06-9185-575af6b690bc",
+                "assertionType" : "EQUAL",
+                "key" : "/address/contacts/1/phone"
+              }, {
+                "subAssertions" : [ {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "37.7749",
+                  "id" : "0a97b14a-dc1b-4c23-ac39-166453adfb1e",
+                  "assertionType" : "EQUAL",
+                  "key" : "/address/contacts/1/locations/latitude"
+                }, {
+                  "subAssertions" : [ ],
+                  "expression" : "SELF",
+                  "expectedValue" : "-122.4194",
+                  "id" : "7924074e-7ae9-46b3-b2fc-1c715e0ad21f",
+                  "assertionType" : "EQUAL",
+                  "key" : "/address/contacts/1/locations/longitude"
+                } ],
+                "expression" : "SELF",
+                "expectedValue" : "true",
+                "id" : "89c410fe-b21a-405e-94b6-195c79f33b52",
+                "assertionType" : "ALLOF",
+                "key" : "/address/contacts/1/locations"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "8da3f54d-329a-4470-8606-019ce2fdaac6",
+              "assertionType" : "ALLOF",
+              "key" : "/address/contacts/1"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "4a281eab-3dab-404e-bfbd-33a1a22f79bc",
+            "assertionType" : "ALLOF",
+            "key" : "/address/contacts"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "ad1e2f5f-6949-4517-8d58-a2432f6e5aab",
+          "assertionType" : "ALLOF",
+          "key" : "/address"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "b67ded18-3649-4ff5-a26f-b06420a000f6",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "303fbe20-626d-4899-867d-7dc1d800c153",
+      "name" : "ContentEnrichmentService.enrichTeacherDetails - normal",
+      "description" : null,
+      "methodArguments" : [ "\"1\"" ],
+      "returnValue" : "{\"id\":\"1\",\"name\":\"John Doe\",\"address\":{\"street\":\"123 Main St\",\"city\":\"San Francisco\",\"contacts\":[{\"email\":\"teacher@example.com\",\"phone\":\"123-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}},{\"email\":\"teacherother@example.com\",\"phone\":\"223-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}}]}}",
+      "returnValueClassname" : "org.unlogged.springwebfluxdemo.nestedPojo.TeacherDto",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 475875032472208,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -514058460,
+      "probSerializedValue" : "eyJpZCI6IjEiLCJuYW1lIjoiSm9obiBEb2UiLCJhZGRyZXNzIjp7InN0cmVldCI6IjEyMyBNYWluIFN0IiwiY2l0eSI6IlNhbiBGcmFuY2lzY28iLCJjb250YWN0cyI6W3siZW1haWwiOiJ0ZWFjaGVyQGV4YW1wbGUuY29tIiwicGhvbmUiOiIxMjMtNDU2LTc4OTAiLCJsb2NhdGlvbnMiOnsibGF0aXR1ZGUiOjM3Ljc3NDksImxvbmdpdHVkZSI6LTEyMi40MTk0fX0seyJlbWFpbCI6InRlYWNoZXJvdGhlckBleGFtcGxlLmNvbSIsInBob25lIjoiMjIzLTQ1Ni03ODkwIiwibG9jYXRpb25zIjp7ImxhdGl0dWRlIjozNy43NzQ5LCJsb25naXR1ZGUiOi0xMjIuNDE5NH19XX19",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "enrichTeacherDetails",
+        "signature" : "(Ljava/lang/String;)Lorg/unlogged/springwebfluxdemo/nestedPojo/TeacherDto;",
+        "className" : "org.unlogged.springwebfluxdemo.nestedPojo.service.ContentEnrichmentService",
+        "methodHash" : 132652635
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.nestedPojo.service.ContentEnrichmentService#getAllTeachers#()Ljava/util/List<Lorg/unlogged/springwebfluxdemo/nestedPojo/TeacherDto;>;" : [ {
+      "id" : "a1337127-d744-4a2b-982a-2cfa1fc55f6b",
+      "name" : "mock response for call to contentEnrichmentService.getAllTeachers()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.nestedPojo.service.ContentEnrichmentService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.nestedPojo.controller.TeacherController",
+      "fieldName" : "contentEnrichmentService",
+      "methodName" : "getAllTeachers",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":\"1\",\"name\":\"John Doe\",\"address\":{\"street\":\"123 Main St\",\"city\":\"San Francisco\",\"contacts\":[{\"email\":\"teacher@example.com\",\"phone\":\"123-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}},{\"email\":\"teacherother@example.com\",\"phone\":\"223-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}}]}},{\"id\":\"2\",\"name\":\"John Doe\",\"address\":{\"street\":\"123 Main St\",\"city\":\"San Francisco\",\"contacts\":[{\"email\":\"teacher@example.com\",\"phone\":\"123-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}},{\"email\":\"teacherother@example.com\",\"phone\":\"223-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}}]}},{\"id\":\"3\",\"name\":\"John Doe\",\"address\":{\"street\":\"123 Main St\",\"city\":\"San Francisco\",\"contacts\":[{\"email\":\"teacher@example.com\",\"phone\":\"123-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}},{\"email\":\"teacherother@example.com\",\"phone\":\"223-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}}]}}]",
+          "returnValueType" : "REAL",
+          "className" : "java.util.List<org.unlogged.springwebfluxdemo.nestedPojo.TeacherDto>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.nestedPojo.service.ContentEnrichmentService#getAllTeachers#()Ljava/util/List<Lorg/unlogged/springwebfluxdemo/nestedPojo/TeacherDto;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.nestedPojo.service.ContentEnrichmentService#enrichTeacherDetails#(Ljava/lang/String;)Lorg/unlogged/springwebfluxdemo/nestedPojo/TeacherDto;" : [ {
+      "id" : "c8d26f0e-8801-43b2-bdc1-e20b570378a1",
+      "name" : "mock response for call to contentEnrichmentService.enrichTeacherDetails(teacherId)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.nestedPojo.service.ContentEnrichmentService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.nestedPojo.controller.TeacherController",
+      "fieldName" : "contentEnrichmentService",
+      "methodName" : "enrichTeacherDetails",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"1\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"1\",\"name\":\"John Doe\",\"address\":{\"street\":\"123 Main St\",\"city\":\"San Francisco\",\"contacts\":[{\"email\":\"teacher@example.com\",\"phone\":\"123-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}},{\"email\":\"teacherother@example.com\",\"phone\":\"223-456-7890\",\"locations\":{\"latitude\":37.7749,\"longitude\":-122.4194}}]}}",
+          "returnValueType" : "REAL",
+          "className" : "org.unlogged.springwebfluxdemo.nestedPojo.TeacherDto"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.nestedPojo.service.ContentEnrichmentService#enrichTeacherDetails#(Ljava/lang/String;)Lorg/unlogged/springwebfluxdemo/nestedPojo/TeacherDto;"
+    } ]
+  }
+}
