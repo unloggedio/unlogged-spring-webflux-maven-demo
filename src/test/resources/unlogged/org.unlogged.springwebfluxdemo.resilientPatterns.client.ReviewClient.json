@@ -1,0 +1,133 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient#getReviews#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;" : [ {
+      "lineNumbers" : [ 29, 30, 31, 32, 33, 34, 35, 36, 37 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "34f1cd65-fcbd-4530-afec-dbce88cbb6e6",
+            "assertionType" : "EQUAL",
+            "key" : "/0/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"User1\"",
+            "id" : "31f7a0b2-b159-46bc-9759-fe0a593acb45",
+            "assertionType" : "EQUAL",
+            "key" : "/0/user"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "4",
+            "id" : "61139635-b5d3-4d38-8cd2-aa039bce713c",
+            "assertionType" : "EQUAL",
+            "key" : "/0/rating"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Great food\"",
+            "id" : "769d2e3c-6965-4ec7-9619-c8f4b452727d",
+            "assertionType" : "EQUAL",
+            "key" : "/0/comment"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "a3f22b14-87b9-44aa-b02d-600bf0a75d3b",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "afb91e95-861d-41ef-b1c7-b2c382d2fb6f",
+            "assertionType" : "EQUAL",
+            "key" : "/1/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"User2\"",
+            "id" : "c40e1be7-651c-40ee-8172-060bb249ab9e",
+            "assertionType" : "EQUAL",
+            "key" : "/1/user"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "5",
+            "id" : "f4d32902-0e1f-4065-a3d5-0df1c7bbac39",
+            "assertionType" : "EQUAL",
+            "key" : "/1/rating"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Excellent service\"",
+            "id" : "830526ab-d41a-4370-a7a4-e1f0e8e1d956",
+            "assertionType" : "EQUAL",
+            "key" : "/1/comment"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "cf3ff325-df72-485f-91f9-e2621b53853f",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "49fe8489-7453-4d78-b89e-2fa05a91305b",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "a685cabb-e047-4e33-8234-3bee6ad7d953",
+      "name" : "ReviewClient.getReviews - connection refused",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "[{\"id\":1,\"user\":\"User1\",\"rating\":4,\"comment\":\"Great food\"},{\"id\":1,\"user\":\"User2\",\"rating\":5,\"comment\":\"Excellent service\"}]",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 478172081117166,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -975828978,
+      "probSerializedValue" : "W3siaWQiOjEsInVzZXIiOiJVc2VyMSIsInJhdGluZyI6NCwiY29tbWVudCI6IkdyZWF0IGZvb2QifSx7ImlkIjoxLCJ1c2VyIjoiVXNlcjIiLCJyYXRpbmciOjUsImNvbW1lbnQiOiJFeGNlbGxlbnQgc2VydmljZSJ9XQ==",
+      "mockIds" : [ "4c362f14-fbc3-4a48-87d4-cce8fa4000a9" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getReviews",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient",
+        "methodHash" : 679159998
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient#getReviews#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;" : [ {
+      "id" : "4c25dba0-232a-4147-92a5-33958e904e4f",
+      "name" : "mock response for call to this.reviewClient.getReviews(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.resilientPatterns.service.RestaurantAggregatorService",
+      "fieldName" : "this.reviewClient",
+      "methodName" : "getReviews",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"id\":1,\"user\":\"User1\",\"rating\":4,\"comment\":\"Great food\"},{\"id\":1,\"user\":\"User2\",\"rating\":5,\"comment\":\"Excellent service\"}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.util.List<org.unlogged.springwebfluxdemo.resilientPatterns.dto.Review>>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient#getReviews#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;"
+    } ]
+  }
+}

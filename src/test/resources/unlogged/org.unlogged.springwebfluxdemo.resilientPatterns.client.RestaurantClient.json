@@ -1,0 +1,91 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.RestaurantClient",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.client.RestaurantClient#getRestaurant#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;" : [ {
+      "lineNumbers" : [ 24, 25, 26, 27, 28, 29, 30, 31, 32 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "1d0c2c9b-ca47-47da-b844-4ec222f5a746",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Italian\"",
+          "id" : "c0af5a33-33b5-4a8b-a5e0-68bf6b0c6211",
+          "assertionType" : "EQUAL",
+          "key" : "/cuisine"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Delicious Italian cuisine\"",
+          "id" : "8226b6a9-f9c4-4e15-b139-dd6a6a7906da",
+          "assertionType" : "EQUAL",
+          "key" : "/description"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "50",
+          "id" : "1f48603e-0cf2-4fa0-909f-e88211770dff",
+          "assertionType" : "EQUAL",
+          "key" : "/price"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "c5263841-fa88-463b-a48e-06452002e385",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "01142a65-8925-4e75-b243-79c6afce96ff",
+      "name" : "RestaurantClient.getRestaurant - connection refused",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"id\":1,\"cuisine\":\"Italian\",\"description\":\"Delicious Italian cuisine\",\"price\":50}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 478172078315916,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 155001648,
+      "probSerializedValue" : "eyJpZCI6MSwiY3Vpc2luZSI6Ikl0YWxpYW4iLCJkZXNjcmlwdGlvbiI6IkRlbGljaW91cyBJdGFsaWFuIGN1aXNpbmUiLCJwcmljZSI6NTB9",
+      "mockIds" : [ "4c362f14-fbc3-4a48-87d4-cce8fa4000a9" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getRestaurant",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.RestaurantClient",
+        "methodHash" : 1173105330
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.client.RestaurantClient#getRestaurant#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;" : [ {
+      "id" : "8a137c45-663e-4e8c-8ba6-0be4498bd630",
+      "name" : "mock response for call to this.restaurantClient.getRestaurant(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.RestaurantClient",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.resilientPatterns.service.RestaurantAggregatorService",
+      "fieldName" : "this.restaurantClient",
+      "methodName" : "getRestaurant",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "1"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":1,\"cuisine\":\"Italian\",\"description\":\"Delicious Italian cuisine\",\"price\":50}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.resilientPatterns.dto.Restaurant>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.RestaurantClient#getRestaurant#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;"
+    } ]
+  }
+}

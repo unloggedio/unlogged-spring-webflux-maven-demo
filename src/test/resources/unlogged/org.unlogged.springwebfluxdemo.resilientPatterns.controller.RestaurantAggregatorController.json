@@ -1,0 +1,158 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.RestaurantAggregatorController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.controller.RestaurantAggregatorController#getProductAggregate#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/RestaurantAggregate;>;" : [ {
+      "lineNumbers" : [ 22, 23, 24, 24, 25, 26, 28, 24, 25, 26, 27, 28, 29, 30, 31, 32, 29, 30, 31, 32, 33, 34, 35, 36, 37 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "ec88553e-3688-4e42-9763-37af2da325e5",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "3a9144c5-6416-409a-ab00-05e0dae8b451",
+            "assertionType" : "EQUAL",
+            "key" : "/body/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Italian\"",
+            "id" : "ae5afce4-8aa3-4453-afde-eb0fa6e50d13",
+            "assertionType" : "EQUAL",
+            "key" : "/body/cuisine"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Delicious Italian cuisine\"",
+            "id" : "5425c3c3-92d5-4223-9d2a-a416be306c85",
+            "assertionType" : "EQUAL",
+            "key" : "/body/description"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "1",
+                "id" : "2a8f7df9-9399-4ca0-81eb-a8323e4e1250",
+                "assertionType" : "EQUAL",
+                "key" : "/body/reviews/0/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"User1\"",
+                "id" : "98bf17bb-7cc1-493a-aab2-ed13dd46e083",
+                "assertionType" : "EQUAL",
+                "key" : "/body/reviews/0/user"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "4",
+                "id" : "74c0fd44-8cd1-4a93-8c7b-aa20ee67a41b",
+                "assertionType" : "EQUAL",
+                "key" : "/body/reviews/0/rating"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Great food\"",
+                "id" : "d8aa2fac-e85d-48d9-a5a8-7d3e8738bc5e",
+                "assertionType" : "EQUAL",
+                "key" : "/body/reviews/0/comment"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "18a9d197-9fd5-4219-8d1e-6f8cce2cded9",
+              "assertionType" : "ALLOF",
+              "key" : "/body/reviews/0"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "1",
+                "id" : "0a923e86-d463-4df2-ae15-199af841f45f",
+                "assertionType" : "EQUAL",
+                "key" : "/body/reviews/1/id"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"User2\"",
+                "id" : "aeec5edf-ce60-4241-895d-5dd95873fb29",
+                "assertionType" : "EQUAL",
+                "key" : "/body/reviews/1/user"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "5",
+                "id" : "7674a11d-7423-4e16-8580-f0a14add8c0f",
+                "assertionType" : "EQUAL",
+                "key" : "/body/reviews/1/rating"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Excellent service\"",
+                "id" : "7ac274f6-4c73-4573-a8d3-dc76e36edd4f",
+                "assertionType" : "EQUAL",
+                "key" : "/body/reviews/1/comment"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "595d0266-1bce-4412-9ab6-321aeae0ac75",
+              "assertionType" : "ALLOF",
+              "key" : "/body/reviews/1"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "8d923e6a-224e-4d28-84ab-3fafce521466",
+            "assertionType" : "ALLOF",
+            "key" : "/body/reviews"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "cde83658-7ee9-4575-91c8-85a5f61d93c6",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "51d062b1-bdfb-4270-9036-f82808397b67",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "0dd64c22-9ff9-4161-897e-fee144f55f71",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "d92be7ae-9825-44fd-8b70-91b12e38d9af",
+      "name" : "RestaurantAggregatorController.getProductAggregate - connection refused",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"id\":1,\"cuisine\":\"Italian\",\"description\":\"Delicious Italian cuisine\",\"reviews\":[{\"id\":1,\"user\":\"User1\",\"rating\":4,\"comment\":\"Great food\"},{\"id\":1,\"user\":\"User2\",\"rating\":5,\"comment\":\"Excellent service\"}]},\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 478172077779708,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1240258793,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJpZCI6MSwiY3Vpc2luZSI6Ikl0YWxpYW4iLCJkZXNjcmlwdGlvbiI6IkRlbGljaW91cyBJdGFsaWFuIGN1aXNpbmUiLCJyZXZpZXdzIjpbeyJpZCI6MSwidXNlciI6IlVzZXIxIiwicmF0aW5nIjo0LCJjb21tZW50IjoiR3JlYXQgZm9vZCJ9LHsiaWQiOjEsInVzZXIiOiJVc2VyMiIsInJhdGluZyI6NSwiY29tbWVudCI6IkV4Y2VsbGVudCBzZXJ2aWNlIn1dfSwic3RhdHVzIjoiT0sifQ==",
+      "mockIds" : [ "c63db432-22e1-4c87-991a-b680dd88d2f4" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getProductAggregate",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/RestaurantAggregate;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.RestaurantAggregatorController",
+        "methodHash" : -7973675
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

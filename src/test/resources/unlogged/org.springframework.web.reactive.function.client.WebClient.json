@@ -25,7 +25,7 @@
       "id" : "4c362f14-fbc3-4a48-87d4-cce8fa4000a9",
       "name" : "mock response for call to this.client\n                .get()",
       "fieldTypeName" : "org.springframework.web.reactive.function.client.WebClient",
-      "sourceClassName" : "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.client.DHLClient",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient",
       "fieldName" : "this.client",
       "methodName" : "get",
       "whenParameter" : [ ],

@@ -1,0 +1,60 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.CalculatorController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.controller.CalculatorController#doubleInput#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 24, 25 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "a5e0a15a-51ac-45a4-aa55-cff1e910d9e7",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "20",
+          "id" : "792bbf36-1194-43ea-959d-3217ac7e4b54",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "875a9e73-eeaf-424e-8070-8cabd1a8e6c4",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "7d8171f5-c601-44b9-9c84-64d61db09d1c",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "78a98998-62cf-4db3-888e-16f1bbc12bb8",
+      "name" : "CalculatorController.doubleInput - normal",
+      "description" : null,
+      "methodArguments" : [ "10" ],
+      "returnValue" : "{\"headers\":{},\"body\":20,\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 477975839554041,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1918568807,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6MjAsInN0YXR1cyI6Ik9LIn0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "doubleInput",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.CalculatorController",
+        "methodHash" : 12946192
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}
