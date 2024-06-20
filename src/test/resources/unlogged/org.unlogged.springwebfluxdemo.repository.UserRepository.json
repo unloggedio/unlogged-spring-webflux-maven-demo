@@ -1,0 +1,74 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.repository.UserRepository",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.repository.UserRepository#deleteById#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;" : [ {
+      "id" : "297c1c30-6432-433c-a0ab-e4cbaf6f8689",
+      "name" : "mock response for call to userRepository.deleteById(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.UserRepository",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.UserService",
+      "fieldName" : "userRepository",
+      "methodName" : "deleteById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"1\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u0001��9��f\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.lang.Void>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.UserRepository#deleteById#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.repository.UserRepository#findById#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/entity/User;>;" : [ {
+      "id" : "220392bc-6400-44dd-b947-a3f94196f180",
+      "name" : "mock response for call to userRepository.findById(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.UserRepository",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.UserService",
+      "fieldName" : "userRepository",
+      "methodName" : "findById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"string\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u0001������\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.entity.User>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.UserRepository#findById#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/entity/User;>;"
+    }, {
+      "id" : "8012b99f-d023-4ff6-941f-5b58b4d1765b",
+      "name" : "mock response for call to userRepository.findById(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.UserRepository",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.UserService",
+      "fieldName" : "userRepository",
+      "methodName" : "findById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"1\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u0001��V�F0\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.entity.User>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.UserRepository#findById#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/entity/User;>;"
+    } ]
+  }
+}
