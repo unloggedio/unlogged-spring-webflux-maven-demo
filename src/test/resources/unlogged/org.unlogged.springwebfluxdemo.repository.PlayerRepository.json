@@ -1,0 +1,52 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.repository.PlayerRepository#save#(Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<S>;" : [ {
+      "id" : "a5f6180e-2b31-4866-be9e-358e3db64954",
+      "name" : "mock response for call to repository.save(player)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+      "fieldName" : "repository",
+      "methodName" : "save",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":null,\"name\":\"string1\",\"age\":22}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":35,\"name\":\"string1\",\"age\":22}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<S>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository#save#(Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<S>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.repository.PlayerRepository#deleteById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;" : [ {
+      "id" : "57a5919c-1f44-4790-b712-a8dbf85e8464",
+      "name" : "mock response for call to repository.deleteById(id)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.service.PlayerService",
+      "fieldName" : "repository",
+      "methodName" : "deleteById",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "36"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "\"\\u0000\\u0001��\\u001A]ɣ\"",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.lang.Void>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.repository.PlayerRepository#deleteById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;"
+    } ]
+  }
+}

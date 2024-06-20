@@ -1,0 +1,166 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.PlayerController#createPlayer#(Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;" : [ {
+      "lineNumbers" : [ 26, 29, 30 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string1\"",
+          "id" : "0daa2219-4000-403e-bd8a-d2be09550382",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "22",
+          "id" : "bc61a4d4-c6d8-4a12-8c15-7183a734c5b0",
+          "assertionType" : "EQUAL",
+          "key" : "/age"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "b58cad31-1e5b-4f44-9a96-9a9348c3952b",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "4ddc2d19-6068-4e8c-9484-7814c863c595",
+      "name" : "createPlayer_mockMode_happyPath",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":0,\"name\":\"string1\",\"age\":22}" ],
+      "returnValue" : "{\"id\":35,\"name\":\"string1\",\"age\":22}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 474708690216958,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 861398428,
+      "probSerializedValue" : "eyJpZCI6MzUsIm5hbWUiOiJzdHJpbmcxIiwiYWdlIjoyMn0=",
+      "mockIds" : [ "bba5fcea-a4cb-4e31-b56f-fd5f21593f8c" ],
+      "exception" : false,
+      "method" : {
+        "name" : "createPlayer",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+        "methodHash" : 0
+      }
+    },
+      {
+        "lineNumbers" : [ 26, 29, 30 ],
+        "testAssertions" : {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"string1\"",
+            "id" : "0daa2219-4000-403e-bd8a-d2be09550382",
+            "assertionType" : "EQUAL",
+            "key" : "/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "22",
+            "id" : "bc61a4d4-c6d8-4a12-8c15-7183a734c5b0",
+            "assertionType" : "EQUAL",
+            "key" : "/age"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "b58cad31-1e5b-4f44-9a96-9a9348c3952b",
+          "assertionType" : "ALLOF",
+          "key" : "/"
+        },
+        "candidateId" : "4ddc2d19-6068-4e8c-9484-7814c863c595",
+        "name" : "createPlayer_integrationMode_happyPath",
+        "description" : null,
+        "methodArguments" : [ "{\"id\":0,\"name\":\"string1\",\"age\":22}" ],
+        "returnValue" : "{\"id\":35,\"name\":\"string1\",\"age\":22}",
+        "returnValueClassname" : "reactor.core.publisher.Mono",
+        "metadata" : {
+          "recordedBy" : "akshatjain",
+          "hostMachineName" : "akshatjain",
+          "timestamp" : 474708690216958,
+          "candidateStatus" : "NA"
+        },
+        "sessionIdentifier" : 861398428,
+        "probSerializedValue" : "eyJpZCI6MzUsIm5hbWUiOiJzdHJpbmcxIiwiYWdlIjoyMn0=",
+        "mockIds" : [ ],
+        "exception" : false,
+        "method" : {
+          "name" : "createPlayer",
+          "signature" : "(Lorg/unlogged/springwebfluxdemo/model/Player;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/Player;>;",
+          "className" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+          "methodHash" : 0
+        }
+      }],
+    "org.unlogged.springwebfluxdemo.controller.PlayerController#deletePlayerById#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;" : [ {
+      "lineNumbers" : [ 53, 46 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "421630ec-c10a-4d81-a7f5-3c9d9ad9e903",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "2fdddcde-8d70-4d9d-99ed-dcb8a6b8ecdf",
+      "name" : "deletePlayerById_mockMode",
+      "description" : null,
+      "methodArguments" : [ "36" ],
+      "returnValue" : "\u0000\u0001��\u001Aa^�",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 474800483743500,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1308161900,
+      "probSerializedValue" : "AAGv1BphXqE=",
+      "mockIds" : [ "753e3d24-0d02-449d-a459-105a508249a7" ],
+      "exception" : false,
+      "method" : {
+        "name" : "deletePlayerById",
+        "signature" : "(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+        "methodHash" : 505120158
+      }
+    },
+      {
+        "lineNumbers" : [ 53, 46 ],
+        "testAssertions" : {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : null,
+          "id" : "421630ec-c10a-4d81-a7f5-3c9d9ad9e903",
+          "assertionType" : "ALLOF",
+          "key" : null
+        },
+        "candidateId" : "2fdddcde-8d70-4d9d-99ed-dcb8a6b8ecdf",
+        "name" : "deletePlayerById_integrationMode_happyPath",
+        "description" : null,
+        "methodArguments" : [ "36" ],
+        "returnValue" : "\u0000\u0001��\u001Aa^�",
+        "returnValueClassname" : "reactor.core.publisher.Mono",
+        "metadata" : {
+          "recordedBy" : "akshatjain",
+          "hostMachineName" : "akshatjain",
+          "timestamp" : 474800483743500,
+          "candidateStatus" : "NA"
+        },
+        "sessionIdentifier" : 1308161900,
+        "probSerializedValue" : "AAGv1BphXqE=",
+        "mockIds" : [ ],
+        "exception" : false,
+        "method" : {
+          "name" : "deletePlayerById",
+          "signature" : "(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;",
+          "className" : "org.unlogged.springwebfluxdemo.controller.PlayerController",
+          "methodHash" : 505120158
+        }
+      }]
+  },
+  "declaredMockMap" : { }
+}
