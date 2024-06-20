@@ -1,0 +1,92 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.service.CronService",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.service.CronService#getCount#()Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 27 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "0eb7230d-e876-46d9-8bfd-3fdac081ea8c",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "2788481e-052a-4707-92d5-63de4323e50c",
+      "name" : "getCount_happyPath",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "1",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 473807499280833,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1486385348,
+      "probSerializedValue" : "MQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getCount",
+        "signature" : "()Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.CronService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.CronService#executeTask#()V" : [ {
+      "lineNumbers" : [ 22, 23, 24 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "160f96d2-17cf-4f03-8057-eb039b599d93",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "09b02214-5b23-4d8f-85d6-119ed058d0a2",
+      "name" : "executeTask_happyPath",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "0",
+      "returnValueClassname" : "V",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 473798300262708,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -837205116,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "executeTask",
+        "signature" : "()V",
+        "className" : "org.unlogged.springwebfluxdemo.service.CronService",
+        "methodHash" : 46838380
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.service.CronService#getCount#()Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;" : [ {
+      "id" : "6fa0abb1-e7a5-439a-96d0-9df8750f02d9",
+      "name" : "mock response for call to cronService.getCount()",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.CronService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.CronController",
+      "fieldName" : "cronService",
+      "methodName" : "getCount",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.lang.Integer>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.CronService#getCount#()Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;"
+    } ]
+  }
+}
