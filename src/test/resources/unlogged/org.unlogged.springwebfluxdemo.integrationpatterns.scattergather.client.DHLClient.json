@@ -358,7 +358,7 @@
         "key" : null
       },
       "candidateId" : "7172753a-0480-4558-b115-26eca348d187",
-      "name" : "normalizeResponse saved on 2024-06-20 14:42",
+      "name" : "DHLClient.normalizeResponse - normal",
       "description" : null,
       "methodArguments" : [ "{\"serviceProvider\":null,\"from\":null,\"to\":null,\"price\":101.11,\"date\":\"2024-06-20\"}", "\"dehradun\"", "\"delhi\"" ],
       "returnValue" : "0",
