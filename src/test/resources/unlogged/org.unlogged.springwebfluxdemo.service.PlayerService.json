@@ -26,7 +26,7 @@
         "key" : "/"
       },
       "candidateId" : "fc25a0d5-7020-4dd7-8f41-f73ed42725d5",
-      "name" : "createPlayer_mockMode_unexpectedFailure",
+      "name" : "PlayerService.createPlayer - fail",
       "description" : null,
       "methodArguments" : [ "{\"id\":0,\"name\":\"string1\",\"age\":22}" ],
       "returnValue" : "{\"id\":35,\"name\":\"string1\",\"age\":22}",
@@ -73,7 +73,7 @@
           "key" : "/"
         },
         "candidateId" : "fc25a0d5-7020-4dd7-8f41-f73ed42725d5",
-        "name" : "createPlayer_integration",
+        "name" : "PlayerService.createPlayer - fail integration",
         "description" : null,
         "methodArguments" : [ "{\"id\":0,\"name\":\"string1\",\"age\":22}" ],
         "returnValue" : "{\"id\":35,\"name\":\"string1\",\"age\":22}",
@@ -106,7 +106,7 @@
         "key" : null
       },
       "candidateId" : "aa49fc33-12e1-4bcd-8eaa-fe407009e1dc",
-      "name" : "deletePlayerById_mockMode_happyPath",
+      "name" : "PlayerService.deletePlayerById - normal",
       "description" : null,
       "methodArguments" : [ "36" ],
       "returnValue" : "\u0000\u0001��\u001A`�m",
@@ -139,7 +139,7 @@
           "key" : null
         },
         "candidateId" : "aa49fc33-12e1-4bcd-8eaa-fe407009e1dc",
-        "name" : "deletePlayerById_integrationMode_happyPath",
+        "name" : "PlayerService.deletePlayerById - normal integrationMode",
         "description" : null,
         "methodArguments" : [ "36" ],
         "returnValue" : "\u0000\u0001��\u001A`�m",

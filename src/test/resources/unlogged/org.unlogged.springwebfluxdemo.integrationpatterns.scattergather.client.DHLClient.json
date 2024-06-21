@@ -152,7 +152,7 @@
         "key" : "/"
       },
       "candidateId" : "d3b704b1-7b17-4895-9233-84ba50bb0cf3",
-      "name" : "getServiceOptions saved on 2024-06-20 14:42",
+      "name" : "DHLClient.getServiceOptions - fail",
       "description" : null,
       "methodArguments" : [ "\"dehradun\"", "\"delhi\"" ],
       "returnValue" : "[{\"serviceProvider\":\"DHL\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":101.11,\"date\":\"2024-06-20\"},{\"serviceProvider\":\"DHL\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":101.11,\"date\":\"2024-06-20\"},{\"serviceProvider\":\"DHL\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":101.11,\"date\":\"2024-06-20\"},{\"serviceProvider\":\"DHL\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":101.11,\"date\":\"2024-06-20\"}]",
@@ -325,7 +325,7 @@
           "key" : "/"
         },
         "candidateId" : "d3b704b1-7b17-4895-9233-84ba50bb0cf3",
-        "name" : "getServiceOptions_integrationMode",
+        "name" : "DHLClient.getServiceOptions - fail integrationMode",
         "description" : null,
         "methodArguments" : [ "\"dehradun\"", "\"delhi\"" ],
         "returnValue" : "[{\"serviceProvider\":\"DHL\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":101.11,\"date\":\"2024-06-20\"},{\"serviceProvider\":\"DHL\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":101.11,\"date\":\"2024-06-20\"},{\"serviceProvider\":\"DHL\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":101.11,\"date\":\"2024-06-20\"},{\"serviceProvider\":\"DHL\",\"from\":\"dehradun\",\"to\":\"delhi\",\"price\":101.11,\"date\":\"2024-06-20\"}]",

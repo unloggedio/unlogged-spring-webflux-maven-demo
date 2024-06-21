@@ -54,7 +54,7 @@
         "key" : "/"
       },
       "candidateId" : "36b564d7-f723-4df6-8fc4-9404ff557852",
-      "name" : "getServiceOptions saved on 2024-06-20 14:42",
+      "name" : "MockDHLController.getServiceOptions - fail",
       "description" : null,
       "methodArguments" : [ "\"dehradun\"", "\"delhi\"" ],
       "returnValue" : "[{\"price\":101.11,\"date\":\"2024-06-20\"},{\"price\":101.11,\"date\":\"2024-06-20\"}]",
@@ -129,7 +129,7 @@
         "key" : "/"
       },
       "candidateId" : "7565d492-a419-4674-97a2-64a0c266f7aa",
-      "name" : "responseList saved on 2024-06-20 14:42",
+      "name" : "MockDHLController.responseList - fail",
       "description" : null,
       "methodArguments" : [ "\"dehradun\"", "\"delhi\"" ],
       "returnValue" : "[{\"price\":101.11,\"date\":\"2024-06-20\"},{\"price\":101.11,\"date\":\"2024-06-20\"}]",

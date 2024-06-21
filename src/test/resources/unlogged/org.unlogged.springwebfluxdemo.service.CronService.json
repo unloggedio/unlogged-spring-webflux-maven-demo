@@ -12,7 +12,7 @@
         "key" : null
       },
       "candidateId" : "2788481e-052a-4707-92d5-63de4323e50c",
-      "name" : "getCount_happyPath",
+      "name" : "CronService.getCount- normal",
       "description" : null,
       "methodArguments" : [ ],
       "returnValue" : "1",
@@ -45,7 +45,7 @@
         "key" : null
       },
       "candidateId" : "09b02214-5b23-4d8f-85d6-119ed058d0a2",
-      "name" : "executeTask saved on 2024-06-20 19:02",
+      "name" : "CronService.executeTask - normal",
       "description" : null,
       "methodArguments" : [ ],
       "returnValue" : "0",
