@@ -1,0 +1,25 @@
+{
+  "classname" : "org.springframework.data.redis.core.ReactiveRedisOperations<java.lang.String,java.lang.String>",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.springframework.data.redis.core.ReactiveRedisOperations<java.lang.String,java.lang.String>#opsForValue#()Lorg/springframework/data/redis/core/ReactiveValueOperations<Ljava/lang/String;,Ljava/lang/String;>;" : [ {
+      "id" : "44603466-8ea6-4621-ab6c-c76720573db9",
+      "name" : "mock response for call to redisOps.opsForValue()",
+      "fieldTypeName" : "org.springframework.data.redis.core.ReactiveRedisOperations<java.lang.String,java.lang.String>",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.RedisOpsController",
+      "fieldName" : "redisOps",
+      "methodName" : "opsForValue",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{}",
+          "returnValueType" : "REAL",
+          "className" : "org.springframework.data.redis.core.ReactiveValueOperations<java.lang.String,java.lang.String>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.data.redis.core.ReactiveRedisOperations<java.lang.String,java.lang.String>#opsForValue#()Lorg/springframework/data/redis/core/ReactiveValueOperations<Ljava/lang/String;,Ljava/lang/String;>;"
+    } ]
+  }
+}

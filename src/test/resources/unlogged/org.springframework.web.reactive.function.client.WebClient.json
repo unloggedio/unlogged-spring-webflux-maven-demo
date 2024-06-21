@@ -1,0 +1,44 @@
+{
+  "classname" : "org.springframework.web.reactive.function.client.WebClient",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.springframework.web.reactive.function.client.WebClient#post#()Lorg/springframework/web/reactive/function/client/WebClient/RequestBodyUriSpec;" : [ {
+      "id" : "9cadba75-b1ad-45ad-847b-46b33295497f",
+      "name" : "mock response for call to this.client\n                .post()",
+      "fieldTypeName" : "org.springframework.web.reactive.function.client.WebClient",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.integrationpatterns.scattergather.client.BlueDartClient",
+      "fieldName" : "this.client",
+      "methodName" : "post",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{}",
+          "returnValueType" : "REAL",
+          "className" : "org.springframework.web.reactive.function.client.WebClient.RequestBodyUriSpec"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.web.reactive.function.client.WebClient#post#()Lorg/springframework/web/reactive/function/client/WebClient/RequestBodyUriSpec;"
+    } ],
+    "org.springframework.web.reactive.function.client.WebClient#get#()Lorg/springframework/web/reactive/function/client/WebClient/RequestHeadersUriSpec<?>;" : [ {
+      "id" : "4c362f14-fbc3-4a48-87d4-cce8fa4000a9",
+      "name" : "mock response for call to this.client\n                .get()",
+      "fieldTypeName" : "org.springframework.web.reactive.function.client.WebClient",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.resilientPatterns.client.ReviewClient",
+      "fieldName" : "this.client",
+      "methodName" : "get",
+      "whenParameter" : [ ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{}",
+          "returnValueType" : "REAL",
+          "className" : "org.springframework.web.reactive.function.client.WebClient.RequestHeadersUriSpec<?>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.springframework.web.reactive.function.client.WebClient#get#()Lorg/springframework/web/reactive/function/client/WebClient/RequestHeadersUriSpec<?>;"
+    } ]
+  }
+}

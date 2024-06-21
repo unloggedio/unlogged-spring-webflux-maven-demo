@@ -1,0 +1,39 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.service.Orchestrator",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.service.Orchestrator#statusHandler#()Ljava/util/function/BiConsumer<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrchestrationRequestContext;,Lreactor/core/publisher/SynchronousSink;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrchestrationRequestContext;>;" : [ {
+      "lineNumbers" : [ 18 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "fba0d4c9-134e-4d21-a1ae-9d1b352df8f5",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "1ae17532-e838-4bf6-972a-213c52439ce6",
+      "name" : "Orchestrator.statusHandler - normal",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "1796091784",
+      "returnValueClassname" : "java.util.function.BiConsumer",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 467422891989625,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 565909605,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "statusHandler",
+        "signature" : "()Ljava/util/function/BiConsumer<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrchestrationRequestContext;,Lreactor/core/publisher/SynchronousSink;><Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorsequential/sec04/dto/OrchestrationRequestContext;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorsequential.sec04.service.Orchestrator",
+        "methodHash" : 0
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

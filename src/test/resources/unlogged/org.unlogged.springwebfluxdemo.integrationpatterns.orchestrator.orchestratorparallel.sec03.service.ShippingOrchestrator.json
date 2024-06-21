@@ -1,0 +1,651 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.ShippingOrchestrator",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.ShippingOrchestrator#isSuccess#()Ljava/util/function/Predicate<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;>;" : [ {
+      "lineNumbers" : [ 28 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "446efe3c-4bd4-4681-b8b9-dbac4f30fa73",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "6902f9c0-e609-428e-b0ac-67aba532ef2d",
+      "name" : "ShippingOrchestrator.isSuccess - normal",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "1423175746",
+      "returnValueClassname" : "java.util.function.Predicate",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 465303434268791,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1777695785,
+      "probSerializedValue" : "",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "isSuccess",
+        "signature" : "()Ljava/util/function/Predicate<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.ShippingOrchestrator",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.ShippingOrchestrator#create#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;>;" : [ {
+      "lineNumbers" : [ 21, 22, 23, 25 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"a6e39091-2908-441c-b755-962b74988374\"",
+          "id" : "af888622-be8e-4299-b5f1-435ddb176d3c",
+          "assertionType" : "NOT_NULL",
+          "key" : "/orderId"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "047e2777-dcc4-484a-b0af-36b053243437",
+            "assertionType" : "EQUAL",
+            "key" : "/orderRequest/userId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101",
+            "id" : "915a7690-ac71-4ff3-9029-685a565b6edb",
+            "assertionType" : "EQUAL",
+            "key" : "/orderRequest/productId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "5",
+            "id" : "c04c1120-51aa-4647-bfb7-e1cb1e6a1a61",
+            "assertionType" : "EQUAL",
+            "key" : "/orderRequest/quantity"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "a60ab696-9f00-4cb3-8df0-de6de2255344",
+          "assertionType" : "ALLOF",
+          "key" : "/orderRequest"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "100",
+          "id" : "33886eb0-2a7a-4601-8092-85e35862ad7d",
+          "assertionType" : "EQUAL",
+          "key" : "/productPrice"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "497a9e74-5509-459a-961f-193b72a0b302",
+            "assertionType" : "EQUAL",
+            "key" : "/paymentRequest/userId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "500",
+            "id" : "f8321851-7514-49d7-896f-25263a149bbb",
+            "assertionType" : "EQUAL",
+            "key" : "/paymentRequest/amount"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"a6e39091-2908-441c-b755-962b74988374\"",
+            "id" : "673a64f8-0b62-44a4-b837-28cfc087f61b",
+            "assertionType" : "NOT_NULL",
+            "key" : "/paymentRequest/orderId"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "4d7e1884-af3e-4113-8410-9b57ab146205",
+          "assertionType" : "ALLOF",
+          "key" : "/paymentRequest"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "96a85e8e-8307-4457-8f6d-5ba1c3f536f2",
+            "assertionType" : "EQUAL",
+            "key" : "/paymentResponse/userId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "ee5688fd-3e02-4338-87ff-3583d6f86dfe",
+            "assertionType" : "EQUAL",
+            "key" : "/paymentResponse/name"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "500",
+            "id" : "b18a3155-aff2-43e3-baee-2d26ad47993b",
+            "assertionType" : "EQUAL",
+            "key" : "/paymentResponse/balance"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "ec6f24f4-2cc7-4781-8c20-32e41852e697",
+            "assertionType" : "EQUAL",
+            "key" : "/paymentResponse/status"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "a17d2309-d474-4875-99db-3b39a8769477",
+          "assertionType" : "ALLOF",
+          "key" : "/paymentResponse"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"a6e39091-2908-441c-b755-962b74988374\"",
+            "id" : "29726bae-7586-4dec-aec1-b1868d986961",
+            "assertionType" : "NOT_NULL",
+            "key" : "/inventoryRequest/orderId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101",
+            "id" : "8f6acda3-8042-49b6-98f1-aa8ee04930ad",
+            "assertionType" : "EQUAL",
+            "key" : "/inventoryRequest/productId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "5",
+            "id" : "40a1634e-2c1e-4153-8deb-47cd0d9bad57",
+            "assertionType" : "EQUAL",
+            "key" : "/inventoryRequest/quantity"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "055cd7c0-c4ce-4054-bf4d-3191bd238c2a",
+          "assertionType" : "ALLOF",
+          "key" : "/inventoryRequest"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101",
+            "id" : "76ae4f4c-5e56-457f-9082-cd4ff10c548c",
+            "assertionType" : "EQUAL",
+            "key" : "/inventoryResponse/productId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "5",
+            "id" : "a8cb5ebc-a4f5-4834-bbfe-39e7570b5f2c",
+            "assertionType" : "EQUAL",
+            "key" : "/inventoryResponse/quantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "4a66bfc1-bc35-4008-836f-c68743a12611",
+            "assertionType" : "EQUAL",
+            "key" : "/inventoryResponse/remainingQuantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "5ab2ec31-0017-453b-90be-101e23bdd6c5",
+            "assertionType" : "EQUAL",
+            "key" : "/inventoryResponse/status"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "aca993ba-e59b-439c-a04f-4d445722b60e",
+          "assertionType" : "ALLOF",
+          "key" : "/inventoryResponse"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "5",
+            "id" : "3c190a0d-ce03-4824-945c-5b4743100298",
+            "assertionType" : "EQUAL",
+            "key" : "/shippingRequest/quantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "17a47cb4-6c24-4704-bed9-b3025020f678",
+            "assertionType" : "EQUAL",
+            "key" : "/shippingRequest/userId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"a6e39091-2908-441c-b755-962b74988374\"",
+            "id" : "7ee340bc-c296-4ffb-bd1c-384204078cb0",
+            "assertionType" : "NOT_NULL",
+            "key" : "/shippingRequest/orderId"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "93362326-6937-4699-8666-9ab09aa234bd",
+          "assertionType" : "ALLOF",
+          "key" : "/shippingRequest"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"c5d82308-0193-46c7-b793-80bd31b8cf89\"",
+            "id" : "4072e1c4-f695-4e21-920b-a22a57373e37",
+            "assertionType" : "NOT_NULL",
+            "key" : "/shippingResponse/orderId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "5",
+            "id" : "f845d43d-af24-47bf-8303-afa74747694f",
+            "assertionType" : "EQUAL",
+            "key" : "/shippingResponse/quantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "0adf34d8-22c2-45b2-a961-d9f91355ddd0",
+            "assertionType" : "EQUAL",
+            "key" : "/shippingResponse/status"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"2024-06-23\"",
+            "id" : "0ea60aa6-f12b-4409-a7a3-2d1d878803fd",
+            "assertionType" : "EQUAL",
+            "key" : "/shippingResponse/expectedDelivery"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"123 Main St\"",
+              "id" : "3a69804c-c0cd-4929-b4e8-97caf5518cd2",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingResponse/address/street"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Anytown\"",
+              "id" : "7de21344-29b9-4d28-8533-5802584b3e12",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingResponse/address/city"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"AnyState\"",
+              "id" : "20ebace6-f7b1-4119-946c-31d745806296",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingResponse/address/state"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"12345\"",
+              "id" : "37799d75-2aff-48dc-a4c5-dd0874601cc6",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingResponse/address/zipCode"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "5728bbcb-a095-4f44-8afa-0b113729e690",
+            "assertionType" : "ALLOF",
+            "key" : "/shippingResponse/address"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "c7f7cb4b-4a1e-4821-85df-7061115aeb40",
+          "assertionType" : "ALLOF",
+          "key" : "/shippingResponse"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "7d2befb6-e8c8-457e-b40c-2b8d48c7a3d0",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "6cbbc9a1-66fd-47d6-a2bd-51ef35351819",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "8611c9a9-8fc9-4fbf-8960-f1bf1351804e",
+      "name" : "ShippingOrchestrator.create - mock mismatch",
+      "description" : null,
+      "methodArguments" : [ "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"orderRequest\":{\"userId\":1,\"productId\":101,\"quantity\":5},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"paymentResponse\":null,\"inventoryRequest\":{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5},\"inventoryResponse\":null,\"shippingRequest\":{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"shippingResponse\":null,\"status\":null}" ],
+      "returnValue" : "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"orderRequest\":{\"userId\":1,\"productId\":101,\"quantity\":5},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"paymentResponse\":{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"},\"inventoryRequest\":{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5},\"inventoryResponse\":{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"shippingRequest\":{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"shippingResponse\":{\"orderId\":\"c5d82308-0193-46c7-b793-80bd31b8cf89\",\"quantity\":5,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}},\"status\":null}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 465303420773625,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 543064753,
+      "probSerializedValue" : "eyJvcmRlcklkIjoiYTZlMzkwOTEtMjkwOC00NDFjLWI3NTUtOTYyYjc0OTg4Mzc0Iiwib3JkZXJSZXF1ZXN0Ijp7InVzZXJJZCI6MSwicHJvZHVjdElkIjoxMDEsInF1YW50aXR5Ijo1fSwicHJvZHVjdFByaWNlIjoxMDAsInBheW1lbnRSZXF1ZXN0Ijp7InVzZXJJZCI6MSwiYW1vdW50Ijo1MDAsIm9yZGVySWQiOiJhNmUzOTA5MS0yOTA4LTQ0MWMtYjc1NS05NjJiNzQ5ODgzNzQifSwicGF5bWVudFJlc3BvbnNlIjp7InVzZXJJZCI6MSwibmFtZSI6bnVsbCwiYmFsYW5jZSI6NTAwLCJzdGF0dXMiOiJTVUNDRVNTIn0sImludmVudG9yeVJlcXVlc3QiOnsib3JkZXJJZCI6ImE2ZTM5MDkxLTI5MDgtNDQxYy1iNzU1LTk2MmI3NDk4ODM3NCIsInByb2R1Y3RJZCI6MTAxLCJxdWFudGl0eSI6NX0sImludmVudG9yeVJlc3BvbnNlIjp7InByb2R1Y3RJZCI6MTAxLCJxdWFudGl0eSI6NSwicmVtYWluaW5nUXVhbnRpdHkiOm51bGwsInN0YXR1cyI6IlNVQ0NFU1MifSwic2hpcHBpbmdSZXF1ZXN0Ijp7InF1YW50aXR5Ijo1LCJ1c2VySWQiOjEsIm9yZGVySWQiOiJhNmUzOTA5MS0yOTA4LTQ0MWMtYjc1NS05NjJiNzQ5ODgzNzQifSwic2hpcHBpbmdSZXNwb25zZSI6eyJvcmRlcklkIjoiYzVkODIzMDgtMDE5My00NmM3LWI3OTMtODBiZDMxYjhjZjg5IiwicXVhbnRpdHkiOjUsInN0YXR1cyI6IlNVQ0NFU1MiLCJleHBlY3RlZERlbGl2ZXJ5IjoiMjAyNC0wNi0yMyIsImFkZHJlc3MiOnsic3RyZWV0IjoiMTIzIE1haW4gU3QiLCJjaXR5IjoiQW55dG93biIsInN0YXRlIjoiQW55U3RhdGUiLCJ6aXBDb2RlIjoiMTIzNDUifX0sInN0YXR1cyI6bnVsbH0=",
+      "mockIds" : [ "b647a917-e1b6-42e1-8c19-fc140acba81b" ],
+      "exception" : false,
+      "method" : {
+        "name" : "create",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.ShippingOrchestrator",
+        "methodHash" : 540022960
+      }
+    },
+      {
+        "lineNumbers" : [ 21, 22, 23, 25 ],
+        "testAssertions" : {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"a6e39091-2908-441c-b755-962b74988374\"",
+            "id" : "af888622-be8e-4299-b5f1-435ddb176d3c",
+            "assertionType" : "NOT_NULL",
+            "key" : "/orderId"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1",
+              "id" : "047e2777-dcc4-484a-b0af-36b053243437",
+              "assertionType" : "EQUAL",
+              "key" : "/orderRequest/userId"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "101",
+              "id" : "915a7690-ac71-4ff3-9029-685a565b6edb",
+              "assertionType" : "EQUAL",
+              "key" : "/orderRequest/productId"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "5",
+              "id" : "c04c1120-51aa-4647-bfb7-e1cb1e6a1a61",
+              "assertionType" : "EQUAL",
+              "key" : "/orderRequest/quantity"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "a60ab696-9f00-4cb3-8df0-de6de2255344",
+            "assertionType" : "ALLOF",
+            "key" : "/orderRequest"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "100",
+            "id" : "33886eb0-2a7a-4601-8092-85e35862ad7d",
+            "assertionType" : "EQUAL",
+            "key" : "/productPrice"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1",
+              "id" : "497a9e74-5509-459a-961f-193b72a0b302",
+              "assertionType" : "EQUAL",
+              "key" : "/paymentRequest/userId"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "500",
+              "id" : "f8321851-7514-49d7-896f-25263a149bbb",
+              "assertionType" : "EQUAL",
+              "key" : "/paymentRequest/amount"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"a6e39091-2908-441c-b755-962b74988374\"",
+              "id" : "673a64f8-0b62-44a4-b837-28cfc087f61b",
+              "assertionType" : "NOT_NULL",
+              "key" : "/paymentRequest/orderId"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "4d7e1884-af3e-4113-8410-9b57ab146205",
+            "assertionType" : "ALLOF",
+            "key" : "/paymentRequest"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1",
+              "id" : "96a85e8e-8307-4457-8f6d-5ba1c3f536f2",
+              "assertionType" : "EQUAL",
+              "key" : "/paymentResponse/userId"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "ee5688fd-3e02-4338-87ff-3583d6f86dfe",
+              "assertionType" : "EQUAL",
+              "key" : "/paymentResponse/name"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "500",
+              "id" : "b18a3155-aff2-43e3-baee-2d26ad47993b",
+              "assertionType" : "EQUAL",
+              "key" : "/paymentResponse/balance"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"SUCCESS\"",
+              "id" : "ec6f24f4-2cc7-4781-8c20-32e41852e697",
+              "assertionType" : "EQUAL",
+              "key" : "/paymentResponse/status"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "a17d2309-d474-4875-99db-3b39a8769477",
+            "assertionType" : "ALLOF",
+            "key" : "/paymentResponse"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"a6e39091-2908-441c-b755-962b74988374\"",
+              "id" : "29726bae-7586-4dec-aec1-b1868d986961",
+              "assertionType" : "NOT_NULL",
+              "key" : "/inventoryRequest/orderId"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "101",
+              "id" : "8f6acda3-8042-49b6-98f1-aa8ee04930ad",
+              "assertionType" : "EQUAL",
+              "key" : "/inventoryRequest/productId"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "5",
+              "id" : "40a1634e-2c1e-4153-8deb-47cd0d9bad57",
+              "assertionType" : "EQUAL",
+              "key" : "/inventoryRequest/quantity"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "055cd7c0-c4ce-4054-bf4d-3191bd238c2a",
+            "assertionType" : "ALLOF",
+            "key" : "/inventoryRequest"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "101",
+              "id" : "76ae4f4c-5e56-457f-9082-cd4ff10c548c",
+              "assertionType" : "EQUAL",
+              "key" : "/inventoryResponse/productId"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "5",
+              "id" : "a8cb5ebc-a4f5-4834-bbfe-39e7570b5f2c",
+              "assertionType" : "EQUAL",
+              "key" : "/inventoryResponse/quantity"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "null",
+              "id" : "4a66bfc1-bc35-4008-836f-c68743a12611",
+              "assertionType" : "EQUAL",
+              "key" : "/inventoryResponse/remainingQuantity"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"SUCCESS\"",
+              "id" : "5ab2ec31-0017-453b-90be-101e23bdd6c5",
+              "assertionType" : "EQUAL",
+              "key" : "/inventoryResponse/status"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "aca993ba-e59b-439c-a04f-4d445722b60e",
+            "assertionType" : "ALLOF",
+            "key" : "/inventoryResponse"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "5",
+              "id" : "3c190a0d-ce03-4824-945c-5b4743100298",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingRequest/quantity"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1",
+              "id" : "17a47cb4-6c24-4704-bed9-b3025020f678",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingRequest/userId"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"a6e39091-2908-441c-b755-962b74988374\"",
+              "id" : "7ee340bc-c296-4ffb-bd1c-384204078cb0",
+              "assertionType" : "NOT_NULL",
+              "key" : "/shippingRequest/orderId"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "93362326-6937-4699-8666-9ab09aa234bd",
+            "assertionType" : "ALLOF",
+            "key" : "/shippingRequest"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"c5d82308-0193-46c7-b793-80bd31b8cf89\"",
+              "id" : "4072e1c4-f695-4e21-920b-a22a57373e37",
+              "assertionType" : "NOT_NULL",
+              "key" : "/shippingResponse/orderId"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "5",
+              "id" : "f845d43d-af24-47bf-8303-afa74747694f",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingResponse/quantity"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"SUCCESS\"",
+              "id" : "0adf34d8-22c2-45b2-a961-d9f91355ddd0",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingResponse/status"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"2024-06-23\"",
+              "id" : "0ea60aa6-f12b-4409-a7a3-2d1d878803fd",
+              "assertionType" : "EQUAL",
+              "key" : "/shippingResponse/expectedDelivery"
+            }, {
+              "subAssertions" : [ {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"123 Main St\"",
+                "id" : "3a69804c-c0cd-4929-b4e8-97caf5518cd2",
+                "assertionType" : "EQUAL",
+                "key" : "/shippingResponse/address/street"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"Anytown\"",
+                "id" : "7de21344-29b9-4d28-8533-5802584b3e12",
+                "assertionType" : "EQUAL",
+                "key" : "/shippingResponse/address/city"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"AnyState\"",
+                "id" : "20ebace6-f7b1-4119-946c-31d745806296",
+                "assertionType" : "EQUAL",
+                "key" : "/shippingResponse/address/state"
+              }, {
+                "subAssertions" : [ ],
+                "expression" : "SELF",
+                "expectedValue" : "\"12345\"",
+                "id" : "37799d75-2aff-48dc-a4c5-dd0874601cc6",
+                "assertionType" : "EQUAL",
+                "key" : "/shippingResponse/address/zipCode"
+              } ],
+              "expression" : "SELF",
+              "expectedValue" : "true",
+              "id" : "5728bbcb-a095-4f44-8afa-0b113729e690",
+              "assertionType" : "ALLOF",
+              "key" : "/shippingResponse/address"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "c7f7cb4b-4a1e-4821-85df-7061115aeb40",
+            "assertionType" : "ALLOF",
+            "key" : "/shippingResponse"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "7d2befb6-e8c8-457e-b40c-2b8d48c7a3d0",
+            "assertionType" : "EQUAL",
+            "key" : "/status"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "6cbbc9a1-66fd-47d6-a2bd-51ef35351819",
+          "assertionType" : "ALLOF",
+          "key" : "/"
+        },
+        "candidateId" : "8611c9a9-8fc9-4fbf-8960-f1bf1351804e",
+        "name" : "ShippingOrchestrator.create - mock mismatch integrationMode",
+        "description" : null,
+        "methodArguments" : [ "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"orderRequest\":{\"userId\":1,\"productId\":101,\"quantity\":5},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"paymentResponse\":null,\"inventoryRequest\":{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5},\"inventoryResponse\":null,\"shippingRequest\":{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"shippingResponse\":null,\"status\":null}" ],
+        "returnValue" : "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"orderRequest\":{\"userId\":1,\"productId\":101,\"quantity\":5},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"paymentResponse\":{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"},\"inventoryRequest\":{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5},\"inventoryResponse\":{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"shippingRequest\":{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"shippingResponse\":{\"orderId\":\"c5d82308-0193-46c7-b793-80bd31b8cf89\",\"quantity\":5,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}},\"status\":null}",
+        "returnValueClassname" : "reactor.core.publisher.Mono",
+        "metadata" : {
+          "recordedBy" : "akshatjain",
+          "hostMachineName" : "akshatjain",
+          "timestamp" : 465303420773625,
+          "candidateStatus" : "NA"
+        },
+        "sessionIdentifier" : 543064753,
+        "probSerializedValue" : "eyJvcmRlcklkIjoiYTZlMzkwOTEtMjkwOC00NDFjLWI3NTUtOTYyYjc0OTg4Mzc0Iiwib3JkZXJSZXF1ZXN0Ijp7InVzZXJJZCI6MSwicHJvZHVjdElkIjoxMDEsInF1YW50aXR5Ijo1fSwicHJvZHVjdFByaWNlIjoxMDAsInBheW1lbnRSZXF1ZXN0Ijp7InVzZXJJZCI6MSwiYW1vdW50Ijo1MDAsIm9yZGVySWQiOiJhNmUzOTA5MS0yOTA4LTQ0MWMtYjc1NS05NjJiNzQ5ODgzNzQifSwicGF5bWVudFJlc3BvbnNlIjp7InVzZXJJZCI6MSwibmFtZSI6bnVsbCwiYmFsYW5jZSI6NTAwLCJzdGF0dXMiOiJTVUNDRVNTIn0sImludmVudG9yeVJlcXVlc3QiOnsib3JkZXJJZCI6ImE2ZTM5MDkxLTI5MDgtNDQxYy1iNzU1LTk2MmI3NDk4ODM3NCIsInByb2R1Y3RJZCI6MTAxLCJxdWFudGl0eSI6NX0sImludmVudG9yeVJlc3BvbnNlIjp7InByb2R1Y3RJZCI6MTAxLCJxdWFudGl0eSI6NSwicmVtYWluaW5nUXVhbnRpdHkiOm51bGwsInN0YXR1cyI6IlNVQ0NFU1MifSwic2hpcHBpbmdSZXF1ZXN0Ijp7InF1YW50aXR5Ijo1LCJ1c2VySWQiOjEsIm9yZGVySWQiOiJhNmUzOTA5MS0yOTA4LTQ0MWMtYjc1NS05NjJiNzQ5ODgzNzQifSwic2hpcHBpbmdSZXNwb25zZSI6eyJvcmRlcklkIjoiYzVkODIzMDgtMDE5My00NmM3LWI3OTMtODBiZDMxYjhjZjg5IiwicXVhbnRpdHkiOjUsInN0YXR1cyI6IlNVQ0NFU1MiLCJleHBlY3RlZERlbGl2ZXJ5IjoiMjAyNC0wNi0yMyIsImFkZHJlc3MiOnsic3RyZWV0IjoiMTIzIE1haW4gU3QiLCJjaXR5IjoiQW55dG93biIsInN0YXRlIjoiQW55U3RhdGUiLCJ6aXBDb2RlIjoiMTIzNDUifX0sInN0YXR1cyI6bnVsbH0=",
+        "mockIds" : [  ],
+        "exception" : false,
+        "method" : {
+          "name" : "create",
+          "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/OrchestrationRequestContext;>;",
+          "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.ShippingOrchestrator",
+          "methodHash" : 540022960
+        }
+      }]
+  },
+  "declaredMockMap" : { }
+}
