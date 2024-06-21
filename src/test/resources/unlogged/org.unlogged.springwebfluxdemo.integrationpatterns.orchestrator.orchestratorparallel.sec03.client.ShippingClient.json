@@ -47,7 +47,7 @@
         "key" : "/"
       },
       "candidateId" : "476b033f-827e-44d8-9123-08cf10ba1105",
-      "name" : "buildErrorResponse saved on 2024-06-20 13:52",
+      "name" : "ShippingClient.buildErrorResponse - normal",
       "description" : null,
       "methodArguments" : [ "{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
       "returnValue" : "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"quantity\":5,\"status\":\"FAILED\",\"expectedDelivery\":null,\"address\":null}",
@@ -143,7 +143,7 @@
         "key" : "/"
       },
       "candidateId" : "7662ed4b-7f38-46a5-8a1f-983f42847c6a",
-      "name" : "callShippingService saved on 2024-06-20 13:52",
+      "name" : "ShippingClient.callShippingService - mock mismatch",
       "description" : null,
       "methodArguments" : [ "\"schedule\"", "{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
       "returnValue" : "{\"orderId\":\"c5d82308-0193-46c7-b793-80bd31b8cf89\",\"quantity\":5,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}}",
@@ -239,7 +239,7 @@
           "key" : "/"
         },
         "candidateId" : "7662ed4b-7f38-46a5-8a1f-983f42847c6a",
-        "name" : "callShippingService_integrationMode",
+        "name" : "ShippingClient.callShippingService - mock mismatch integrationMode",
         "description" : null,
         "methodArguments" : [ "\"schedule\"", "{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
         "returnValue" : "{\"orderId\":\"c5d82308-0193-46c7-b793-80bd31b8cf89\",\"quantity\":5,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}}",
@@ -335,7 +335,7 @@
         "key" : "/"
       },
       "candidateId" : "21217c2a-a648-421d-9d37-49e75382a580",
-      "name" : "schedule saved on 2024-06-20 13:52",
+      "name" : "ShippingClient.schedule - mock mismatch",
       "description" : null,
       "methodArguments" : [ "{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
       "returnValue" : "{\"orderId\":\"c5d82308-0193-46c7-b793-80bd31b8cf89\",\"quantity\":5,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}}",

@@ -47,7 +47,7 @@
         "key" : "/"
       },
       "candidateId" : "b7bba4dd-2259-41c7-99cd-033d98bd60ec",
-      "name" : "buildErrorResponse saved on 2024-06-20 14:24",
+      "name" : "ShippingClient.buildErrorResponse - normal",
       "description" : null,
       "methodArguments" : [ "{\"quantity\":6,\"userId\":1,\"inventoryId\":null}" ],
       "returnValue" : "{\"shippingId\":null,\"quantity\":6,\"status\":\"FAILED\",\"expectedDelivery\":null,\"address\":null}",
@@ -143,7 +143,7 @@
         "key" : "/"
       },
       "candidateId" : "c615956c-4133-4b41-9f2f-f967bf6512d0",
-      "name" : "callShippingService saved on 2024-06-20 14:24",
+      "name" : "ShippingClient.callShippingService - fail",
       "description" : null,
       "methodArguments" : [ "\"schedule\"", "{\"quantity\":6,\"userId\":1,\"inventoryId\":null}" ],
       "returnValue" : "{\"shippingId\":null,\"quantity\":6,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}}",
@@ -239,7 +239,7 @@
           "key" : "/"
         },
         "candidateId" : "c615956c-4133-4b41-9f2f-f967bf6512d0",
-        "name" : "callShippingService_integrationMode",
+        "name" : "ShippingClient.callShippingService - fail integrationMode",
         "description" : null,
         "methodArguments" : [ "\"schedule\"", "{\"quantity\":6,\"userId\":1,\"inventoryId\":null}" ],
         "returnValue" : "{\"shippingId\":null,\"quantity\":6,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}}",
@@ -335,7 +335,7 @@
         "key" : "/"
       },
       "candidateId" : "e1ba8b5b-f33b-4e6f-b95f-1b520eee010f",
-      "name" : "schedule saved on 2024-06-20 14:24",
+      "name" : "ShippingClient.schedule - fail",
       "description" : null,
       "methodArguments" : [ "{\"quantity\":6,\"userId\":1,\"inventoryId\":null}" ],
       "returnValue" : "{\"shippingId\":null,\"quantity\":6,\"status\":\"SUCCESS\",\"expectedDelivery\":\"2024-06-23\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Anytown\",\"state\":\"AnyState\",\"zipCode\":\"12345\"}}",

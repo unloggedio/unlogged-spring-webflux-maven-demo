@@ -12,7 +12,7 @@
         "key" : null
       },
       "candidateId" : "ebff939e-e843-4f91-ade0-80ea7fce4142",
-      "name" : "buildShippingRequest saved on 2024-06-20 14:24",
+      "name" : "OrchestrationUtil.buildShippingRequest - normal",
       "description" : null,
       "methodArguments" : [ "{\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\",\"orderRequest\":{\"userId\":1,\"productId\":11,\"quantity\":6},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"},\"paymentResponse\":{\"paymentId\":null,\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"},\"inventoryRequest\":{\"paymentId\":null,\"productId\":11,\"quantity\":6},\"inventoryResponse\":{\"inventoryId\":null,\"productId\":11,\"quantity\":6,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"shippingRequest\":null,\"shippingResponse\":null,\"status\":null}" ],
       "returnValue" : "0",
@@ -45,7 +45,7 @@
         "key" : null
       },
       "candidateId" : "9a48ff03-220c-4d65-a3d9-bc6dff169593",
-      "name" : "buildInventoryRequest saved on 2024-06-20 14:24",
+      "name" : "OrchestrationUtil.InventoryRequest - normal",
       "description" : null,
       "methodArguments" : [ "{\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\",\"orderRequest\":{\"userId\":1,\"productId\":11,\"quantity\":6},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"},\"paymentResponse\":{\"paymentId\":null,\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"},\"inventoryRequest\":null,\"inventoryResponse\":null,\"shippingRequest\":null,\"shippingResponse\":null,\"status\":null}" ],
       "returnValue" : "0",
@@ -78,7 +78,7 @@
         "key" : null
       },
       "candidateId" : "38cdcb2d-b02e-4daf-8413-d351bb31cbb0",
-      "name" : "buildPaymentRequest saved on 2024-06-20 14:24",
+      "name" : "OrchestrationUtil.buildPaymentRequest - normal",
       "description" : null,
       "methodArguments" : [ "{\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\",\"orderRequest\":{\"userId\":1,\"productId\":11,\"quantity\":6},\"productPrice\":100,\"paymentRequest\":null,\"paymentResponse\":null,\"inventoryRequest\":null,\"inventoryResponse\":null,\"shippingRequest\":null,\"shippingResponse\":null,\"status\":null}" ],
       "returnValue" : "0",

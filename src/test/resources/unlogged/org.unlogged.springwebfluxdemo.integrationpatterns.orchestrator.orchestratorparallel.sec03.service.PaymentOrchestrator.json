@@ -12,7 +12,7 @@
         "key" : null
       },
       "candidateId" : "58291e0f-c1e6-4a7d-a22f-e40a05d7b487",
-      "name" : "isSuccess saved on 2024-06-20 13:52",
+      "name" : "PaymentOrchestrator.isSuccess - normal",
       "description" : null,
       "methodArguments" : [ ],
       "returnValue" : "918487117",
@@ -255,7 +255,7 @@
         "key" : "/"
       },
       "candidateId" : "26f5f6d3-d245-4cef-baca-91bb2ea966de",
-      "name" : "create saved on 2024-06-20 13:52",
+      "name" : "PaymentOrchestrator.create - mock mismatch",
       "description" : null,
       "methodArguments" : [ "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"orderRequest\":{\"userId\":1,\"productId\":101,\"quantity\":5},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"paymentResponse\":null,\"inventoryRequest\":{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5},\"inventoryResponse\":null,\"shippingRequest\":{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"shippingResponse\":null,\"status\":null}" ],
       "returnValue" : "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"orderRequest\":{\"userId\":1,\"productId\":101,\"quantity\":5},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"paymentResponse\":{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"},\"inventoryRequest\":{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5},\"inventoryResponse\":{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"shippingRequest\":{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"shippingResponse\":null,\"status\":null}",
@@ -498,7 +498,7 @@
           "key" : "/"
         },
         "candidateId" : "26f5f6d3-d245-4cef-baca-91bb2ea966de",
-        "name" : "create_integrationMode",
+        "name" : "PaymentOrchestrator.create - mock mismatch integrationMode",
         "description" : null,
         "methodArguments" : [ "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"orderRequest\":{\"userId\":1,\"productId\":101,\"quantity\":5},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"paymentResponse\":null,\"inventoryRequest\":{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5},\"inventoryResponse\":null,\"shippingRequest\":{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"shippingResponse\":null,\"status\":null}" ],
         "returnValue" : "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"orderRequest\":{\"userId\":1,\"productId\":101,\"quantity\":5},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"paymentResponse\":{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"},\"inventoryRequest\":{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5},\"inventoryResponse\":{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"shippingRequest\":{\"quantity\":5,\"userId\":1,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"},\"shippingResponse\":null,\"status\":null}",

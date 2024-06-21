@@ -47,7 +47,7 @@
         "key" : "/"
       },
       "candidateId" : "844c634b-2062-42c7-be75-3ba07652360e",
-      "name" : "buildErrorResponse saved on 2024-06-20 14:24",
+      "name" : "UserClient.buildErrorResponse - normal",
       "description" : null,
       "methodArguments" : [ "{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"}" ],
       "returnValue" : "{\"paymentId\":null,\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"FAILED\"}",
@@ -115,7 +115,7 @@
         "key" : "/"
       },
       "candidateId" : "4a2c9857-89b7-4ab7-bd59-d1be2939ebb2",
-      "name" : "callUserService saved on 2024-06-20 14:24",
+      "name" : "UserClient.callUserService - fail",
       "description" : null,
       "methodArguments" : [ "\"deduct\"", "{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"}" ],
       "returnValue" : "{\"paymentId\":null,\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"}",
@@ -183,7 +183,7 @@
           "key" : "/"
         },
         "candidateId" : "4a2c9857-89b7-4ab7-bd59-d1be2939ebb2",
-        "name" : "callUserService_integrationMode",
+        "name" : "UserClient.UserService - fail integrationMode",
         "description" : null,
         "methodArguments" : [ "\"deduct\"", "{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"}" ],
         "returnValue" : "{\"paymentId\":null,\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"}",
@@ -251,7 +251,7 @@
         "key" : "/"
       },
       "candidateId" : "cdac13bf-8a6b-494f-9728-ec632d7286ad",
-      "name" : "deduct saved on 2024-06-20 14:24",
+      "name" : "UserClient.deduct - fail",
       "description" : null,
       "methodArguments" : [ "{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"}" ],
       "returnValue" : "{\"paymentId\":null,\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"}",

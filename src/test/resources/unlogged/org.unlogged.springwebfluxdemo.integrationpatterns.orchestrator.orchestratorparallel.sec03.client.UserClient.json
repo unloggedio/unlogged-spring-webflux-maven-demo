@@ -40,7 +40,7 @@
         "key" : "/"
       },
       "candidateId" : "52718a06-c3f3-4eab-9df2-626583ac760d",
-      "name" : "buildErrorResponse saved on 2024-06-20 13:52",
+      "name" : "UserClient.buildErrorResponse - normal",
       "description" : null,
       "methodArguments" : [ "{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
       "returnValue" : "{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"FAILED\"}",
@@ -101,7 +101,7 @@
         "key" : "/"
       },
       "candidateId" : "ef47b93e-8a13-41a2-8c65-4f52eeacad9d",
-      "name" : "callUserService saved on 2024-06-20 13:52",
+      "name" : "UserClient.callUserService - mock mismatch",
       "description" : null,
       "methodArguments" : [ "\"deduct\"", "{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
       "returnValue" : "{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"}",
@@ -162,7 +162,7 @@
           "key" : "/"
         },
         "candidateId" : "ef47b93e-8a13-41a2-8c65-4f52eeacad9d",
-        "name" : "callUserService_integrationMode",
+        "name" : "UserClient.callUserService - mock mismatch integrationMode",
         "description" : null,
         "methodArguments" : [ "\"deduct\"", "{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
         "returnValue" : "{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"}",
@@ -224,7 +224,7 @@
         "key" : "/"
       },
       "candidateId" : "cba2ae8c-722b-4397-9edf-60efd8e6acb8",
-      "name" : "deduct saved on 2024-06-20 13:52",
+      "name" : "UserClient.deduct - mock mismatch",
       "description" : null,
       "methodArguments" : [ "{\"userId\":1,\"amount\":500,\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\"}" ],
       "returnValue" : "{\"userId\":1,\"name\":null,\"balance\":500,\"status\":\"SUCCESS\"}",

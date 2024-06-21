@@ -12,7 +12,7 @@
         "key" : null
       },
       "candidateId" : "d219c766-d205-4a5c-a668-cc1add1c6c2d",
-      "name" : "isSuccess saved on 2024-06-20 14:24",
+      "name" : "InventoryOrchestrator.isSuccess - success",
       "description" : null,
       "methodArguments" : [ ],
       "returnValue" : "329329177",
@@ -234,7 +234,7 @@
         "key" : "/"
       },
       "candidateId" : "28d24b24-9c9e-40c7-90c9-2671719338a2",
-      "name" : "create saved on 2024-06-20 14:24",
+      "name" : "InventoryOrchestrator.create - null exception",
       "description" : null,
       "methodArguments" : [ "{\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\",\"orderRequest\":{\"userId\":1,\"productId\":11,\"quantity\":6},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"},\"paymentResponse\":{\"paymentId\":null,\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"},\"inventoryRequest\":{\"paymentId\":null,\"productId\":11,\"quantity\":6},\"inventoryResponse\":null,\"shippingRequest\":null,\"shippingResponse\":null,\"status\":null}" ],
       "returnValue" : "{\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\",\"orderRequest\":{\"userId\":1,\"productId\":11,\"quantity\":6},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"},\"paymentResponse\":{\"paymentId\":null,\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"},\"inventoryRequest\":{\"paymentId\":null,\"productId\":11,\"quantity\":6},\"inventoryResponse\":{\"inventoryId\":null,\"productId\":11,\"quantity\":6,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"shippingRequest\":null,\"shippingResponse\":null,\"status\":null}",
@@ -456,7 +456,7 @@
           "key" : "/"
         },
         "candidateId" : "28d24b24-9c9e-40c7-90c9-2671719338a2",
-        "name" : "create_integrationMode",
+        "name" : "InventoryOrchestrator.create - null exception integrationMode",
         "description" : null,
         "methodArguments" : [ "{\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\",\"orderRequest\":{\"userId\":1,\"productId\":11,\"quantity\":6},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"},\"paymentResponse\":{\"paymentId\":null,\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"},\"inventoryRequest\":{\"paymentId\":null,\"productId\":11,\"quantity\":6},\"inventoryResponse\":null,\"shippingRequest\":null,\"shippingResponse\":null,\"status\":null}" ],
         "returnValue" : "{\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\",\"orderRequest\":{\"userId\":1,\"productId\":11,\"quantity\":6},\"productPrice\":100,\"paymentRequest\":{\"userId\":1,\"amount\":600,\"orderId\":\"8cf07d3c-8408-435b-92fb-207e3b0fc820\"},\"paymentResponse\":{\"paymentId\":null,\"userId\":1,\"name\":null,\"balance\":600,\"status\":\"SUCCESS\"},\"inventoryRequest\":{\"paymentId\":null,\"productId\":11,\"quantity\":6},\"inventoryResponse\":{\"inventoryId\":null,\"productId\":11,\"quantity\":6,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},\"shippingRequest\":null,\"shippingResponse\":null,\"status\":null}",

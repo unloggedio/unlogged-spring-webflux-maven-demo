@@ -47,7 +47,7 @@
         "key" : "/"
       },
       "candidateId" : "35cb23aa-6307-45a7-8881-a0b6a6f953c6",
-      "name" : "buildErrorResponse saved on 2024-06-20 14:24",
+      "name" : "InventoryClient.buildErrorResponse - normal",
       "description" : null,
       "methodArguments" : [ "{\"paymentId\":null,\"productId\":11,\"quantity\":6}" ],
       "returnValue" : "{\"inventoryId\":null,\"productId\":11,\"quantity\":6,\"remainingQuantity\":null,\"status\":\"FAILED\"}",
@@ -115,7 +115,7 @@
         "key" : "/"
       },
       "candidateId" : "17e18e00-e75b-4a12-808c-586a3f191b2a",
-      "name" : "callInventoryService saved on 2024-06-20 14:24",
+      "name" : "InventoryClient.callInventoryService - mock mismatch",
       "description" : null,
       "methodArguments" : [ "\"deduct\"", "{\"paymentId\":null,\"productId\":11,\"quantity\":6}" ],
       "returnValue" : "{\"inventoryId\":null,\"productId\":11,\"quantity\":6,\"remainingQuantity\":null,\"status\":\"SUCCESS\"}",
@@ -183,7 +183,7 @@
           "key" : "/"
         },
         "candidateId" : "17e18e00-e75b-4a12-808c-586a3f191b2a",
-        "name" : "callInventoryService_integrationMode",
+        "name" : "InventoryClient.callInventoryService - mock mismatch integrationMode",
         "description" : null,
         "methodArguments" : [ "\"deduct\"", "{\"paymentId\":null,\"productId\":11,\"quantity\":6}" ],
         "returnValue" : "{\"inventoryId\":null,\"productId\":11,\"quantity\":6,\"remainingQuantity\":null,\"status\":\"SUCCESS\"}",
@@ -251,7 +251,7 @@
         "key" : "/"
       },
       "candidateId" : "54bb5737-e867-4646-9e76-841033fd1bbd",
-      "name" : "deduct saved on 2024-06-20 14:24",
+      "name" : "InventoryClient.deduct - mock mismatch",
       "description" : null,
       "methodArguments" : [ "{\"paymentId\":null,\"productId\":11,\"quantity\":6}" ],
       "returnValue" : "{\"inventoryId\":null,\"productId\":11,\"quantity\":6,\"remainingQuantity\":null,\"status\":\"SUCCESS\"}",
