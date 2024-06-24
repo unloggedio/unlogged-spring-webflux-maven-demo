@@ -12,8 +12,8 @@ import org.springframework.test.context.TestPropertySource;
 import io.unlogged.runner.UnloggedTestRunner;
 
 @RunWith(UnloggedTestRunner.class)
-@ComponentScan("org.unlogged.springwebfluxdemo")
-@EnableAutoConfiguration
+//@ComponentScan("org.unlogged.springwebfluxdemo")
+//@EnableAutoConfiguration
 public class UnloggedRunnerTest {
 
     public static class YamlPropertySourceFactory implements PropertySourceFactory {
