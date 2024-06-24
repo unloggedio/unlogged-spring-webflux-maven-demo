@@ -1,0 +1,61 @@
+version: '3'
+
+services:
+  mysqldb:
+    image: mysql:latest
+    restart: always
+    networks:
+      - unlogged_network
+    environment:
+      MYSQL_DATABASE: udemo2
+      MYSQL_ROOT_PASSWORD: root_password
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # Mount SQL initialization script
+    command: ['--init-file', '/docker-entrypoint-initdb.d/init.sql']  # Execute script
+
+  redis-r:
+    image: redis:latest
+    restart: always
+    networks:
+      - unlogged_network
+    environment:
+      REDIS_MASTER_HOST: localhost
+
+  mongodb:
+    image: mongo:latest
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data_container:/data/db
+    networks:
+      - unlogged_network
+
+  webflux-app:
+    container_name: webflux-target-repo
+    build:
+      context: ../
+    volumes:
+      - ~/.unlogged/:/root/.unlogged/
+      - ~/.m2/repository/video/bug/unlogged-sdk:/root/.m2/repository/video/bug/unlogged-sdk
+    ports:
+      - "8080:8080"
+      - "12100:12100"
+    depends_on:
+      - mysqldb
+      - redis-r
+      - mongodb
+    networks:
+      - unlogged_network
+    environment:
+      SPRING_DATA_MONGODB_HOST: mongodb:27017
+      SPRING_R2DBC_URL: r2dbc:mysql://mysqldb:3306/unlogged
+      SPRING_R2DBC_USERNAME: root
+      SPRING_R2DBC_PASSWORD: root_password
+
+networks:
+  unlogged_network:
+    driver: bridge
+
+volumes:
+  mongodb_data_container:

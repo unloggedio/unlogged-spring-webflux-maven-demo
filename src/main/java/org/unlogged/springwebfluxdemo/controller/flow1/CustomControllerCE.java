@@ -79,4 +79,9 @@ public class CustomControllerCE extends BaseController<CustomService> {
     public ResponseEntity<Mono<UniversityProfileV2>> getUniversityV2(@RequestParam int universityId) {
         return ResponseEntity.ok(customService.getUniversityV2(universityId));
     }
+
+    @Override
+    public Mono<String> getServiceClassName() {
+        return super.getServiceClassName();
+    }
 }
