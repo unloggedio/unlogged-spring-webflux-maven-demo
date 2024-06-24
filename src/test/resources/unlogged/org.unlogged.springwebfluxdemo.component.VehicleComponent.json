@@ -1,0 +1,137 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.component.VehicleComponent",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.component.VehicleComponent#getVehicles#()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/sealedKeywordUsage/Vehicle;>;" : [ {
+      "lineNumbers" : [ 35 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Honda City\"",
+            "id" : "48c39707-26f9-4203-814a-db2635836df7",
+            "assertionType" : "EQUAL",
+            "key" : "/0/model"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "4",
+            "id" : "ce700c71-fdb3-4c9d-961e-3fb2c71e96d1",
+            "assertionType" : "EQUAL",
+            "key" : "/0/doors"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "a9d1c217-6945-4d22-9c13-4a6818395de3",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Eicher Pro\"",
+            "id" : "f8db8a52-fe4e-4852-a496-e5135dcfeb63",
+            "assertionType" : "EQUAL",
+            "key" : "/1/model"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "400",
+            "id" : "428a7fab-49fc-4f7e-aa4f-909cda4a9b37",
+            "assertionType" : "EQUAL",
+            "key" : "/1/capacity"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "6a1781a2-12f7-428b-9724-9bc1c5addba6",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Tata Nexon EV\"",
+            "id" : "c0db5930-7365-42f3-8e10-56dc6c6916ed",
+            "assertionType" : "EQUAL",
+            "key" : "/2/model"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "4",
+            "id" : "247eed4e-aa10-4231-aead-77815843ce9d",
+            "assertionType" : "EQUAL",
+            "key" : "/2/doors"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "350",
+            "id" : "55648a17-3312-4f49-b154-1d56851f86ac",
+            "assertionType" : "EQUAL",
+            "key" : "/2/batteryCapacity"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "3c338f66-9129-47f5-83af-64cb575ef807",
+          "assertionType" : "ALLOF",
+          "key" : "/2"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Mahindra Jeeto\"",
+            "id" : "719666a3-17f7-4791-89a1-32cf897eb4ec",
+            "assertionType" : "EQUAL",
+            "key" : "/3/model"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "550",
+            "id" : "f8c3aea5-5d17-44de-8bac-3aa4e58568ef",
+            "assertionType" : "EQUAL",
+            "key" : "/3/capacity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "500",
+            "id" : "3422e134-0802-4bf9-9b01-8e28fbd8230c",
+            "assertionType" : "EQUAL",
+            "key" : "/3/fuelCapacity"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "7765ebb8-be24-40dd-a592-8616f330c6dc",
+          "assertionType" : "ALLOF",
+          "key" : "/3"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "a37ca5f9-0a37-4ec1-9db1-49400a14f799",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "e626e3a7-82f4-49ee-87a7-bb5491a11db7",
+      "name" : "VehicleComponent.getVehicles - normal",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[{\"model\":\"Honda City\",\"doors\":4},{\"model\":\"Eicher Pro\",\"capacity\":400},{\"model\":\"Tata Nexon EV\",\"doors\":4,\"batteryCapacity\":350},{\"model\":\"Mahindra Jeeto\",\"capacity\":550,\"fuelCapacity\":500}]",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 480555044090708,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -211803530,
+      "probSerializedValue" : "W3sibW9kZWwiOiJIb25kYSBDaXR5IiwiZG9vcnMiOjR9LHsibW9kZWwiOiJFaWNoZXIgUHJvIiwiY2FwYWNpdHkiOjQwMH0seyJtb2RlbCI6IlRhdGEgTmV4b24gRVYiLCJkb29ycyI6NCwiYmF0dGVyeUNhcGFjaXR5IjozNTB9LHsibW9kZWwiOiJNYWhpbmRyYSBKZWV0byIsImNhcGFjaXR5Ijo1NTAsImZ1ZWxDYXBhY2l0eSI6NTAwfV0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getVehicles",
+        "signature" : "()Lreactor/core/publisher/Flux<Lorg/unlogged/springwebfluxdemo/sealedKeywordUsage/Vehicle;>;",
+        "className" : "org.unlogged.springwebfluxdemo.component.VehicleComponent",
+        "methodHash" : 2068724858
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

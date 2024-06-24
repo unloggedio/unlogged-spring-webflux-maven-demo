@@ -1,0 +1,315 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.FluxOpsController#disposableExample#()Ljava/util/List<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 179, 180, 181, 182, 185, 186, 189, 190 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "1",
+          "id" : "43ba8ba8-9b09-4a61-8fee-42440a4fb03d",
+          "assertionType" : "EQUAL",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "2",
+          "id" : "6bc1f3f3-eedd-42a4-965a-2c184baeda62",
+          "assertionType" : "EQUAL",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "3",
+          "id" : "303a26b7-2041-45ab-aa04-136f15a0fb6f",
+          "assertionType" : "EQUAL",
+          "key" : "/2"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "6a5674d6-bad8-4807-ae29-6aa7970bc7b9",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "3744f40e-afd3-48a0-bc2f-f1a2d426d775",
+      "name" : "FluxOpsController.disposableExample - normal",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[1,2,3]",
+      "returnValueClassname" : "java.util.List",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 474315369012416,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 590963926,
+      "probSerializedValue" : "WzEsMiwzXQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "disposableExample",
+        "signature" : "()Ljava/util/List<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
+        "methodHash" : 1236041966
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.FluxOpsController#parallelFluxExample#()Ljava/util/List<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 164, 165, 166, 167, 168, 170, 173, 174 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "8",
+          "id" : "99c2ee93-1c90-429c-9de3-a53491e22db6",
+          "assertionType" : "NOT_NULL",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "2",
+          "id" : "a01f7acb-abf3-49e2-821e-b695da622b29",
+          "assertionType" : "NOT_NULL",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "10",
+          "id" : "3ba3da45-b70d-4f2a-b8f1-9de7f62ec721",
+          "assertionType" : "NOT_NULL",
+          "key" : "/2"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "6",
+          "id" : "87418fc7-dc5a-4df6-806b-bb752694fd49",
+          "assertionType" : "NOT_NULL",
+          "key" : "/3"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "16",
+          "id" : "e1d6cd8e-d4cb-4fc1-b6be-c653fd5cdd2f",
+          "assertionType" : "NOT_NULL",
+          "key" : "/4"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "4",
+          "id" : "e5bc5226-ab0e-490f-9259-ddc709674599",
+          "assertionType" : "NOT_NULL",
+          "key" : "/5"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "12",
+          "id" : "0f28c6ae-6c6d-4f23-b423-b2d4d35b89e3",
+          "assertionType" : "NOT_NULL",
+          "key" : "/6"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "e938daf7-5068-4559-a744-9519fb085fc7",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "1b4d2ff0-0ec1-406c-bafc-93cbf891a11e",
+      "name" : "FluxOpsController.parallelFluxExample - normal",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[8,2,10,6,16,4,12]",
+      "returnValueClassname" : "java.util.List",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 474311609071875,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 681754794,
+      "probSerializedValue" : "WzgsMiwxMCw2LDE2LDQsMTJd",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "parallelFluxExample",
+        "signature" : "()Ljava/util/List<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
+        "methodHash" : 461240157
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.FluxOpsController#tuple4Example#()Lreactor/core/publisher/Flux<Lreactor/util/function/Tuple4;><Ljava/lang/Integer;,Ljava/lang/String;,Ljava/lang/Double;,Ljava/lang/Boolean;>;" : [ {
+      "lineNumbers" : [ 195, 196, 197, 198, 200, 202 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "e6409f68-54ac-444f-801d-c4d2cbfaf398",
+            "assertionType" : "EQUAL",
+            "key" : "/0/0"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"A\"",
+            "id" : "6b7d62a7-dfc4-4cc7-8291-6b07a02d7160",
+            "assertionType" : "EQUAL",
+            "key" : "/0/1"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1.1",
+            "id" : "47857902-3a47-4f33-953b-166e3daa9432",
+            "assertionType" : "EQUAL",
+            "key" : "/0/2"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "ace9e87e-bc3f-45c7-8d22-c13648a1ca02",
+            "assertionType" : "EQUAL",
+            "key" : "/0/3"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "1dbd2b38-0c5b-493f-9c7c-3da13963d718",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "2",
+            "id" : "35d214a7-25ab-4ec5-ba61-725673f4183b",
+            "assertionType" : "EQUAL",
+            "key" : "/1/0"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"B\"",
+            "id" : "8274ca23-e4ce-44f5-b863-f37d64f3bf40",
+            "assertionType" : "EQUAL",
+            "key" : "/1/1"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "2.2",
+            "id" : "1b59d469-ed88-45e5-9b78-66a5aa97a481",
+            "assertionType" : "EQUAL",
+            "key" : "/1/2"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "false",
+            "id" : "da9b74c2-ed08-4bb7-84c0-14820927616c",
+            "assertionType" : "EQUAL",
+            "key" : "/1/3"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "02f9213e-1cbe-4b49-a809-1306b161516b",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3",
+            "id" : "d6cb5b6e-ebf8-4876-87fc-ad881214e99f",
+            "assertionType" : "EQUAL",
+            "key" : "/2/0"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"C\"",
+            "id" : "21951cd1-f2eb-4fe1-b94c-3a9b91d41982",
+            "assertionType" : "EQUAL",
+            "key" : "/2/1"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "3.3",
+            "id" : "bcecdd3d-0246-4698-9f3e-895616b39f43",
+            "assertionType" : "EQUAL",
+            "key" : "/2/2"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "dc1efadf-4039-4167-b5f9-425616b731e6",
+            "assertionType" : "EQUAL",
+            "key" : "/2/3"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "4920bf5c-7ba0-4286-b6ee-63619e3603ac",
+          "assertionType" : "ALLOF",
+          "key" : "/2"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "4",
+            "id" : "85cd9d63-d841-4c84-a989-24a577d4edc0",
+            "assertionType" : "EQUAL",
+            "key" : "/3/0"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"D\"",
+            "id" : "9ba841c3-4cfb-4cd5-a419-c2341b593084",
+            "assertionType" : "EQUAL",
+            "key" : "/3/1"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "4.4",
+            "id" : "80ab4158-ba36-4995-a6d4-c4bb64233c32",
+            "assertionType" : "EQUAL",
+            "key" : "/3/2"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "false",
+            "id" : "db455827-8b3b-4a06-a5f4-01d04c9ae793",
+            "assertionType" : "EQUAL",
+            "key" : "/3/3"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "b82e30cc-9f0e-4d42-80ff-a5964e824952",
+          "assertionType" : "ALLOF",
+          "key" : "/3"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "6869dfd5-df71-4d25-881c-95b9704c78dd",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "7f867547-c05e-45fb-940b-73bc0bcdc1aa",
+      "name" : "FluxOpsController.tuple4Example - normal",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "[[1,\"A\",1.1,true],[2,\"B\",2.2,false],[3,\"C\",3.3,true],[4,\"D\",4.4,false]]",
+      "returnValueClassname" : "reactor.core.publisher.Flux",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 474323821725416,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 367411672,
+      "probSerializedValue" : "W1sxLCJBIiwxLjEsdHJ1ZV0sWzIsIkIiLDIuMixmYWxzZV0sWzMsIkMiLDMuMyx0cnVlXSxbNCwiRCIsNC40LGZhbHNlXV0=",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "tuple4Example",
+        "signature" : "()Lreactor/core/publisher/Flux<Lreactor/util/function/Tuple4;><Ljava/lang/Integer;,Ljava/lang/String;,Ljava/lang/Double;,Ljava/lang/Boolean;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.FluxOpsController",
+        "methodHash" : -1328895433
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

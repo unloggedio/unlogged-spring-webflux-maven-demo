@@ -1,0 +1,88 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.restaurant.MockRestaurantController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.restaurant.MockRestaurantController#getRestaurant#(Ljava/lang/Integer;)Lorg/springframework/http/ResponseEntity<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;" : [ {
+      "lineNumbers" : [ 17, 18, 19, 20, 21, 22, 50 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "301a9f71-716d-4bd5-aa7a-8237018e3914",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "1",
+            "id" : "d11a139a-d293-49c5-90ea-088ae6d84e71",
+            "assertionType" : "EQUAL",
+            "key" : "/body/id"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Italian\"",
+            "id" : "ba487d53-004d-4fb2-81d8-823290c9b314",
+            "assertionType" : "EQUAL",
+            "key" : "/body/cuisine"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"Delicious Italian cuisine\"",
+            "id" : "32980ceb-b5c6-48a6-924d-3f9af46c5a0b",
+            "assertionType" : "EQUAL",
+            "key" : "/body/description"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "50",
+            "id" : "0424006c-5487-420b-a456-c243b4976f9f",
+            "assertionType" : "EQUAL",
+            "key" : "/body/price"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "1a6f9151-756f-41ad-98be-618c2baf07ed",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "3e98a3fd-f6ce-4a7a-960c-0872112e4229",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "d07e52d4-be61-4a3b-bf37-8288aed435ea",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "eec963c9-edcc-4116-831e-9ee00daad80f",
+      "name" : "MockRestaurantController.getRestaurant - normal",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"headers\":{},\"body\":{\"id\":1,\"cuisine\":\"Italian\",\"description\":\"Delicious Italian cuisine\",\"price\":50},\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 478172099289500,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1695274432,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6eyJpZCI6MSwiY3Vpc2luZSI6Ikl0YWxpYW4iLCJkZXNjcmlwdGlvbiI6IkRlbGljaW91cyBJdGFsaWFuIGN1aXNpbmUiLCJwcmljZSI6NTB9LCJzdGF0dXMiOiJPSyJ9",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getRestaurant",
+        "signature" : "(Ljava/lang/Integer;)Lorg/springframework/http/ResponseEntity<Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Restaurant;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.restaurant.MockRestaurantController",
+        "methodHash" : -288947624
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

@@ -1,0 +1,100 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.controller.RedisOpsController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.controller.RedisOpsController#setValue#(Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;" : [ {
+      "lineNumbers" : [ 28 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "203b78a8-89c6-419b-a357-ce7e22f14559",
+          "assertionType" : "EQUAL",
+          "key" : "/"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "83e26efa-7293-4e97-8734-ebea61adc6a9",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "b29437ac-3722-4a02-8aaf-4435b3b9673b",
+      "name" : "RedisOpsController.setValue - return value null",
+      "description" : null,
+      "methodArguments" : [ "{\"id\":\"string\",\"name\":\"string\",\"department\":\"string\"}" ],
+      "returnValue" : "true",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 480520176076458,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -455537193,
+      "probSerializedValue" : "dHJ1ZQ==",
+      "mockIds" : [ "44603466-8ea6-4621-ab6c-c76720573db9" ],
+      "exception" : false,
+      "method" : {
+        "name" : "setValue",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;)Lreactor/core/publisher/Mono<Ljava/lang/Boolean;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RedisOpsController",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.controller.RedisOpsController#getValue#(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;>;" : [ {
+      "lineNumbers" : [ 33, 34 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "853913ff-1e2a-4f85-8992-26351dc8df9b",
+          "assertionType" : "EQUAL",
+          "key" : "/id"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "5448916d-efba-461e-a41a-805056aa9e3d",
+          "assertionType" : "EQUAL",
+          "key" : "/name"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"string\"",
+          "id" : "8dd66626-9a60-4901-8f04-a8555c8c8751",
+          "assertionType" : "EQUAL",
+          "key" : "/department"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "cecd9cdb-faa1-4540-b418-01bd7296fc2f",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "93720321-46b5-431b-970c-78841fbcab9f",
+      "name" : "RedisOpsController.getValue - logging.record event returns null",
+      "description" : null,
+      "methodArguments" : [ "\"string\"" ],
+      "returnValue" : "{\"id\":\"string\",\"name\":\"string\",\"department\":\"string\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 480524834680291,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 615495438,
+      "probSerializedValue" : "eyJpZCI6InN0cmluZyIsIm5hbWUiOiJzdHJpbmciLCJkZXBhcnRtZW50Ijoic3RyaW5nIn0=",
+      "mockIds" : [ "44603466-8ea6-4621-ab6c-c76720573db9" ],
+      "exception" : false,
+      "method" : {
+        "name" : "getValue",
+        "signature" : "(Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/model/EmployeeV1;>;",
+        "className" : "org.unlogged.springwebfluxdemo.controller.RedisOpsController",
+        "methodHash" : 2109525063
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

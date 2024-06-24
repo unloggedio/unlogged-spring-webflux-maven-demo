@@ -49,6 +49,8 @@ public class SecurityConfig {
         return http
                 .authorizeExchange(auth -> {
                     auth.pathMatchers("/login").permitAll();
+                    auth.pathMatchers("/resilient/**").permitAll();
+                    auth.pathMatchers("/integration/**").permitAll();
                     auth.pathMatchers("/users/{id}").permitAll();
                     auth.pathMatchers("/users/**").authenticated();
                     auth.anyExchange().authenticated();

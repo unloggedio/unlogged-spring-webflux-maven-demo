@@ -1,0 +1,194 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.InventoryClient",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.InventoryClient#deduct#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryResponse;>;" : [ {
+      "lineNumbers" : [ 25 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101",
+            "id" : "bf4142a9-a70a-42f1-8f23-f0669dbca25e",
+            "assertionType" : "EQUAL",
+            "key" : "/0/productId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "5",
+            "id" : "e76c945f-83fb-4a7e-8b01-b4b60c52fd91",
+            "assertionType" : "EQUAL",
+            "key" : "/0/quantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "65120855-8db5-4b69-b3b9-e138996dbdc1",
+            "assertionType" : "EQUAL",
+            "key" : "/0/remainingQuantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "dac90439-4227-4e7c-8451-e0344c101f31",
+            "assertionType" : "EQUAL",
+            "key" : "/0/status"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "3795574d-e9ae-40cf-b298-fe517df6b074",
+          "assertionType" : "ALLOF",
+          "key" : "/0"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "101",
+            "id" : "832a9244-b58d-44cf-a56d-6d32d97dd43d",
+            "assertionType" : "EQUAL",
+            "key" : "/1/productId"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "5",
+            "id" : "6c92722b-a916-4a87-bd16-570e0de67802",
+            "assertionType" : "EQUAL",
+            "key" : "/1/quantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "null",
+            "id" : "f9d783db-52f7-47f4-bf1e-fcb6b5f32c99",
+            "assertionType" : "EQUAL",
+            "key" : "/1/remainingQuantity"
+          }, {
+            "subAssertions" : [ ],
+            "expression" : "SELF",
+            "expectedValue" : "\"SUCCESS\"",
+            "id" : "93aeeae0-2652-4007-806d-64da19fbfd43",
+            "assertionType" : "EQUAL",
+            "key" : "/1/status"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "46f5ccf2-c7be-45d6-b362-4b93152e73f5",
+          "assertionType" : "ALLOF",
+          "key" : "/1"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "85943c69-0972-41c4-b86d-8c50c61f950a",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "f959483a-92dd-4266-8e3d-33537d6fb441",
+      "name" : "InventoryClient.deduct - mock mismatch",
+      "description" : null,
+      "methodArguments" : [ "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5}" ],
+      "returnValue" : "[{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"SUCCESS\"}]",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 465303419349250,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1732918727,
+      "probSerializedValue" : "W3sicHJvZHVjdElkIjoxMDEsInF1YW50aXR5Ijo1LCJyZW1haW5pbmdRdWFudGl0eSI6bnVsbCwic3RhdHVzIjoiU1VDQ0VTUyJ9LHsicHJvZHVjdElkIjoxMDEsInF1YW50aXR5Ijo1LCJyZW1haW5pbmdRdWFudGl0eSI6bnVsbCwic3RhdHVzIjoiU1VDQ0VTUyJ9XQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "deduct",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryResponse;>;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.InventoryClient",
+        "methodHash" : -1170466822
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.InventoryClient#buildErrorResponse#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryRequest;)Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryResponse;" : [ {
+      "lineNumbers" : [ 43, 44, 45 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "101",
+          "id" : "643cfc27-037b-4d27-96b0-bd58d345bb35",
+          "assertionType" : "EQUAL",
+          "key" : "/productId"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "5",
+          "id" : "379428cf-f427-4914-9d69-f0640678c97d",
+          "assertionType" : "EQUAL",
+          "key" : "/quantity"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "null",
+          "id" : "0b2911ee-93bf-41cc-8dc6-e3f4b352ae2e",
+          "assertionType" : "EQUAL",
+          "key" : "/remainingQuantity"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"FAILED\"",
+          "id" : "700f3410-8e15-4905-89fe-2dcc4a8a6f2a",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "e7ae9e91-4c66-4865-af9d-ee0e2ab2a345",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "715d1bed-aea4-421e-9576-de4ea10ba030",
+      "name" : "InventoryClient.buildErrorResponse - normal",
+      "description" : null,
+      "methodArguments" : [ "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5}" ],
+      "returnValue" : "{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"FAILED\"}",
+      "returnValueClassname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.InventoryResponse",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 465303419706708,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1339922096,
+      "probSerializedValue" : "eyJwcm9kdWN0SWQiOjEwMSwicXVhbnRpdHkiOjUsInJlbWFpbmluZ1F1YW50aXR5IjpudWxsLCJzdGF0dXMiOiJGQUlMRUQifQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "buildErrorResponse",
+        "signature" : "(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryRequest;)Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryResponse;",
+        "className" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.InventoryClient",
+        "methodHash" : -169513996
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.InventoryClient#deduct#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryResponse;>;" : [ {
+      "id" : "75647896-beca-43cf-af5a-dd712e8a1d67",
+      "name" : "mock response for call to this.client.deduct(ctx.getInventoryRequest())",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.InventoryClient",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.InventoryOrchestrator",
+      "fieldName" : "this.client",
+      "methodName" : "deduct",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"orderId\":\"a6e39091-2908-441c-b755-962b74988374\",\"productId\":101,\"quantity\":5}"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "[{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"SUCCESS\"},{\"productId\":101,\"quantity\":5,\"remainingQuantity\":null,\"status\":\"SUCCESS\"}]",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.InventoryResponse>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.client.InventoryClient#deduct#(Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryRequest;)Lreactor/core/publisher/Mono<Lorg/unlogged/springwebfluxdemo/integrationpatterns/orchestrator/orchestratorparallel/sec03/dto/InventoryResponse;>;"
+    } ]
+  }
+}

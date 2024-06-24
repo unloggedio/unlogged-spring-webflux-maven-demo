@@ -1,0 +1,59 @@
+{
+  "classname" : "org.modelmapper.ModelMapper",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.modelmapper.ModelMapper#map#(Ljava/lang/Object;Ljava/lang/Class<D>;)D" : [ {
+      "id" : "f39af428-b79e-44ac-8e7a-240f7d3e4e4d",
+      "name" : "mock response for call to modelMapper.map(user, UserDto.class)",
+      "fieldTypeName" : "org.modelmapper.ModelMapper",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.util.UserUtil",
+      "fieldName" : "modelMapper",
+      "methodName" : "map",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":\"1\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":22}"
+      }, {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"org.unlogged.springwebfluxdemo.model.dto.UserDto\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"1\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":22}",
+          "returnValueType" : "REAL",
+          "className" : "D"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.modelmapper.ModelMapper#map#(Ljava/lang/Object;Ljava/lang/Class<D>;)D"
+    }, {
+      "id" : "f8aff476-3b11-475e-9647-8dcbbf6c47e8",
+      "name" : "mock response for call to modelMapper.map(userDto, User.class)",
+      "fieldTypeName" : "org.modelmapper.ModelMapper",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.util.UserUtil",
+      "fieldName" : "modelMapper",
+      "methodName" : "map",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}"
+      }, {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"org.unlogged.springwebfluxdemo.entity.User\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{\"id\":\"string\",\"name\":\"string\",\"email\":\"string\",\"password\":\"string\",\"age\":0}",
+          "returnValueType" : "REAL",
+          "className" : "D"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.modelmapper.ModelMapper#map#(Ljava/lang/Object;Ljava/lang/Class<D>;)D"
+    } ]
+  }
+}

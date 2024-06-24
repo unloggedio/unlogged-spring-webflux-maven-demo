@@ -1,0 +1,51 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.Status",
+  "storedCandidateMap" : { },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.Status#equals#(Ljava/lang/Object;)Z" : [ {
+      "id" : "db61ea3b-2d20-4a89-91df-7872d4d886a5",
+      "name" : "mock response for call to Status.SUCCESS.equals(ctx.getStatus())",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.Status",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.OrchestratorService",
+      "fieldName" : "Status.SUCCESS",
+      "methodName" : "equals",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"SUCCESS\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "true",
+          "returnValueType" : "REAL",
+          "className" : "boolean"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.Status#equals#(Ljava/lang/Object;)Z"
+    }, {
+      "id" : "efc4fb58-02ed-4063-814d-0dde1e8b590f",
+      "name" : "mock response for call to Status.FAILED.equals(ctx.getStatus())",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.Status",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.service.OrchestratorService",
+      "fieldName" : "Status.FAILED",
+      "methodName" : "equals",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "\"SUCCESS\""
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "false",
+          "returnValueType" : "REAL",
+          "className" : "boolean"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.integrationpatterns.orchestrator.orchestratorparallel.sec03.dto.Status#equals#(Ljava/lang/Object;)Z"
+    } ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.service.RecursiveService",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.service.RecursiveService#nthFibonacci#(I)Lreactor/core/publisher/Mono<Ljava/lang/Long;>;" : [ {
+      "lineNumbers" : [ 21 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "da91435c-a1c5-4b45-b51f-708ff5d98773",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "0f0f592e-ba97-4ef8-962a-4409d6e71216",
+      "name" : "RecursiveService.nthFibonacci - normal",
+      "description" : null,
+      "methodArguments" : [ "2" ],
+      "returnValue" : "1",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 480278345430583,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1947018230,
+      "probSerializedValue" : "MQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "nthFibonacci",
+        "signature" : "(I)Lreactor/core/publisher/Mono<Ljava/lang/Long;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.RecursiveService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.RecursiveService#fibonacci#(I)Lreactor/core/publisher/Mono<Ljava/lang/Long;>;" : [ {
+      "lineNumbers" : [ 25, 28 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "e472bc0d-cad2-4407-a28e-ca5fe953f1ab",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "36dd2af0-2c39-4463-bcba-3fee57ab4c97",
+      "name" : "RecursiveService.fibonacci - normal",
+      "description" : null,
+      "methodArguments" : [ "2" ],
+      "returnValue" : "1",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 480278345436416,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1165227981,
+      "probSerializedValue" : "MQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "fibonacci",
+        "signature" : "(I)Lreactor/core/publisher/Mono<Ljava/lang/Long;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.RecursiveService",
+        "methodHash" : 0
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.service.RecursiveService#factorial#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;" : [ {
+      "lineNumbers" : [ 11, 14, 15, 16 ],
+      "testAssertions" : {
+        "subAssertions" : [ ],
+        "expression" : "SELF",
+        "expectedValue" : null,
+        "id" : "7768d1b7-9423-4dc3-8f2b-0dda57ff5629",
+        "assertionType" : "ALLOF",
+        "key" : null
+      },
+      "candidateId" : "04abe14e-b0fd-4f3a-ade6-efcc0465452c",
+      "name" : "RecursiveService.factorial - normal",
+      "description" : null,
+      "methodArguments" : [ "2" ],
+      "returnValue" : "2",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 480269322749375,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -225854483,
+      "probSerializedValue" : "Mg==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "factorial",
+        "signature" : "(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;",
+        "className" : "org.unlogged.springwebfluxdemo.service.RecursiveService",
+        "methodHash" : -1213237452
+      }
+    } ]
+  },
+  "declaredMockMap" : {
+    "org.unlogged.springwebfluxdemo.service.RecursiveService#nthFibonacci#(I)Lreactor/core/publisher/Mono<Ljava/lang/Long;>;" : [ {
+      "id" : "48899d63-bb56-4e9f-a6b8-cd337fd98bae",
+      "name" : "mock response for call to recursiveService.nthFibonacci(n)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.RecursiveService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.RecursiveController",
+      "fieldName" : "recursiveService",
+      "methodName" : "nthFibonacci",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "2"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.lang.Long>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.RecursiveService#nthFibonacci#(I)Lreactor/core/publisher/Mono<Ljava/lang/Long;>;"
+    } ],
+    "org.unlogged.springwebfluxdemo.service.RecursiveService#factorial#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;" : [ {
+      "id" : "d9294765-0932-400f-a886-5b99f90c30d0",
+      "name" : "mock response for call to recursiveService.factorial(number)",
+      "fieldTypeName" : "org.unlogged.springwebfluxdemo.service.RecursiveService",
+      "sourceClassName" : "org.unlogged.springwebfluxdemo.controller.RecursiveController",
+      "fieldName" : "recursiveService",
+      "methodName" : "factorial",
+      "whenParameter" : [ {
+        "name" : null,
+        "type" : "EQUAL",
+        "value" : "2"
+      } ],
+      "thenParameter" : [ {
+        "returnParameter" : {
+          "declaredMocks" : [ ],
+          "value" : "{}",
+          "returnValueType" : "REAL",
+          "className" : "reactor.core.publisher.Mono<java.lang.Integer>"
+        },
+        "methodExitType" : "NORMAL"
+      } ],
+      "methodHashKey" : "org.unlogged.springwebfluxdemo.service.RecursiveService#factorial#(Ljava/lang/Integer;)Lreactor/core/publisher/Mono<Ljava/lang/Integer;>;"
+    } ]
+  }
+}

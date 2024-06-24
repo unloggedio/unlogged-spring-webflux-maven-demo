@@ -82,17 +82,4 @@ public class ReactiveRedisConfig {
             return fallback.deserialize(bytes);
         }
     }
-
-//    @Bean
-//    public ReactiveRedisTemplate<String, EmployeeV1> reactiveRedisTemplate(
-//            ReactiveRedisConnectionFactory factory) {
-//        StringRedisSerializer keySerializer = new StringRedisSerializer();
-//        Jackson2JsonRedisSerializer<EmployeeV1> valueSerializer =
-//                new Jackson2JsonRedisSerializer<>(EmployeeV1.class);
-//        RedisSerializationContext.RedisSerializationContextBuilder<String, EmployeeV1> builder =
-//                RedisSerializationContext.newSerializationContext(keySerializer);
-//        RedisSerializationContext<String, EmployeeV1> context =
-//                builder.value(valueSerializer).build();
-//        return new ReactiveRedisTemplate<>(factory, context);
-//    }
 }

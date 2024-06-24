@@ -1,0 +1,130 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.review.MockReviewController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.review.MockReviewController#getReviews#(Ljava/lang/Integer;)Lorg/springframework/http/ResponseEntity<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;" : [ {
+      "lineNumbers" : [ 24, 25, 26, 44 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "dc1f1c75-5524-4b6e-bfae-e5e8484a5cbc",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1",
+              "id" : "55afa474-b63d-45d7-837b-2e0b92d64a32",
+              "assertionType" : "EQUAL",
+              "key" : "/body/0/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"User1\"",
+              "id" : "7db0d75d-56c6-46f4-b4e0-488067133590",
+              "assertionType" : "EQUAL",
+              "key" : "/body/0/user"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "4",
+              "id" : "c088a427-e52a-4efd-bbfc-c92ad08b73c1",
+              "assertionType" : "EQUAL",
+              "key" : "/body/0/rating"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Great food\"",
+              "id" : "af4e8045-a200-4069-b79c-720d90603ad1",
+              "assertionType" : "EQUAL",
+              "key" : "/body/0/comment"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "6375d9c6-8dda-40f3-8624-00e0a3052fdb",
+            "assertionType" : "ALLOF",
+            "key" : "/body/0"
+          }, {
+            "subAssertions" : [ {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "1",
+              "id" : "c269c66e-b4ec-4632-bf90-17f4f95a4502",
+              "assertionType" : "EQUAL",
+              "key" : "/body/1/id"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"User2\"",
+              "id" : "44286b43-6e9d-4aff-ae62-0aadd780bc41",
+              "assertionType" : "EQUAL",
+              "key" : "/body/1/user"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "5",
+              "id" : "8b22aa7f-6b1b-4247-9a1b-caf8e3f28824",
+              "assertionType" : "EQUAL",
+              "key" : "/body/1/rating"
+            }, {
+              "subAssertions" : [ ],
+              "expression" : "SELF",
+              "expectedValue" : "\"Excellent service\"",
+              "id" : "bb0e93be-cd89-489c-904d-7fa68a9c5201",
+              "assertionType" : "EQUAL",
+              "key" : "/body/1/comment"
+            } ],
+            "expression" : "SELF",
+            "expectedValue" : "true",
+            "id" : "39e18f53-bdf5-4f6f-8f04-72ab4ec88218",
+            "assertionType" : "ALLOF",
+            "key" : "/body/1"
+          } ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "a7bd50d6-d172-4e86-8bf2-8efc961bdeb0",
+          "assertionType" : "ALLOF",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "b44525be-8cae-4eb6-8dd2-60182f4716d7",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "32bff384-b0eb-4939-a95a-78ba3de3ac1d",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "4fd3cc41-f904-440c-8540-d572f9dc9ec5",
+      "name" : "MockReviewController.getReviews - normal",
+      "description" : null,
+      "methodArguments" : [ "1" ],
+      "returnValue" : "{\"headers\":{},\"body\":[{\"id\":1,\"user\":\"User1\",\"rating\":4,\"comment\":\"Great food\"},{\"id\":1,\"user\":\"User2\",\"rating\":5,\"comment\":\"Excellent service\"}],\"status\":\"OK\"}",
+      "returnValueClassname" : "org.springframework.http.ResponseEntity",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 478172099239125,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : -1654876987,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6W3siaWQiOjEsInVzZXIiOiJVc2VyMSIsInJhdGluZyI6NCwiY29tbWVudCI6IkdyZWF0IGZvb2QifSx7ImlkIjoxLCJ1c2VyIjoiVXNlcjIiLCJyYXRpbmciOjUsImNvbW1lbnQiOiJFeGNlbGxlbnQgc2VydmljZSJ9XSwic3RhdHVzIjoiT0sifQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "getReviews",
+        "signature" : "(Ljava/lang/Integer;)Lorg/springframework/http/ResponseEntity<Ljava/util/List;><Lorg/unlogged/springwebfluxdemo/resilientPatterns/dto/Review;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.externalservices.review.MockReviewController",
+        "methodHash" : 1683816737
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}

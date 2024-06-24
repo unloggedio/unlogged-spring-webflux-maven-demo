@@ -1,0 +1,114 @@
+{
+  "classname" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.BulkHeadController",
+  "storedCandidateMap" : {
+    "org.unlogged.springwebfluxdemo.resilientPatterns.controller.BulkHeadController#nonCPUIntensiveTask#()Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/String;>;" : [ {
+      "lineNumbers" : [ 34 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "03cc62cf-b924-4705-9ed5-0bfa5a06ffe4",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"Hello World\"",
+          "id" : "3e47f324-9949-4b5b-b79d-3dd52435f663",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "51b51366-cfeb-4faf-845b-c285680db230",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "8ceb375e-eb2e-49c4-b20f-3ebc183034b7",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "409e3ee0-7582-49c3-b066-03c2898eaf47",
+      "name" : "BulkHeadController.nonCPUIntensiveTask - normal",
+      "description" : null,
+      "methodArguments" : [ ],
+      "returnValue" : "{\"headers\":{},\"body\":\"Hello World\",\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 477928167879291,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 1492101464,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6IkhlbGxvIFdvcmxkIiwic3RhdHVzIjoiT0sifQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "nonCPUIntensiveTask",
+        "signature" : "()Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/String;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.BulkHeadController",
+        "methodHash" : 2133163593
+      }
+    } ],
+    "org.unlogged.springwebfluxdemo.resilientPatterns.controller.BulkHeadController#fib#(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/Long;>;" : [ {
+      "lineNumbers" : [ 21, 22, 23 ],
+      "testAssertions" : {
+        "subAssertions" : [ {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "true",
+          "id" : "4d6ee24e-7167-4980-b321-9ceb6d72262e",
+          "assertionType" : "ALLOF",
+          "key" : "/headers"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "6765",
+          "id" : "a17f99cb-2439-4b99-b97b-c5f7c481db25",
+          "assertionType" : "EQUAL",
+          "key" : "/body"
+        }, {
+          "subAssertions" : [ ],
+          "expression" : "SELF",
+          "expectedValue" : "\"OK\"",
+          "id" : "d2a59651-4639-4d91-ae99-af1842b4b18f",
+          "assertionType" : "EQUAL",
+          "key" : "/status"
+        } ],
+        "expression" : "SELF",
+        "expectedValue" : "true",
+        "id" : "dc4a04be-be70-46d4-a424-2575e08bed69",
+        "assertionType" : "ALLOF",
+        "key" : "/"
+      },
+      "candidateId" : "cdf9470d-cb77-4c9e-9e04-006dcf7bf41e",
+      "name" : "BulkHeadController.fib - normal",
+      "description" : null,
+      "methodArguments" : [ "20" ],
+      "returnValue" : "{\"headers\":{},\"body\":6765,\"status\":\"OK\"}",
+      "returnValueClassname" : "reactor.core.publisher.Mono",
+      "metadata" : {
+        "recordedBy" : "akshatjain",
+        "hostMachineName" : "akshatjain",
+        "timestamp" : 477922445528916,
+        "candidateStatus" : "NA"
+      },
+      "sessionIdentifier" : 668787536,
+      "probSerializedValue" : "eyJoZWFkZXJzIjp7fSwiYm9keSI6Njc2NSwic3RhdHVzIjoiT0sifQ==",
+      "mockIds" : [ ],
+      "exception" : false,
+      "method" : {
+        "name" : "fib",
+        "signature" : "(Ljava/lang/Long;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity;><Ljava/lang/Long;>;",
+        "className" : "org.unlogged.springwebfluxdemo.resilientPatterns.controller.BulkHeadController",
+        "methodHash" : -976243567
+      }
+    } ]
+  },
+  "declaredMockMap" : { }
+}
