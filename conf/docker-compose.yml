@@ -52,6 +52,20 @@ services:
       SPRING_R2DBC_URL: r2dbc:mysql://mysqldb:3306/unlogged
       SPRING_R2DBC_USERNAME: root
       SPRING_R2DBC_PASSWORD: root_password
+      resilient_restaurant_service: "http://webflux-app: 8080/resilient/restaurant/"
+      resilient_review_service: "http://webflux-app: 8080/resilient/review/"
+      integration_bluedart_service: "http://webflux-app: 8080/integration/bluedart/"
+      integration_dhl_service: "http://webflux-app: 8080/integration/dhl/"
+      integration_splitter_concert_service: "http://webflux-app: 8080/integration/splitter/concert/reserve"
+      integration_splitter_theatre_service: "http://webflux-app: 8080/integration/splitter/theatre/reserve"
+      sec03_product_service: "http://webflux-app: 8080/integration/orchestration/parallel/product/"
+      sec03_user_service: "http://webflux-app: 8080/integration/orchestration/parallel/user/"
+      sec03_inventory_service: "http://webflux-app: 8080/integration/orchestration/parallel/inventory/"
+      sec03_shipping_service: "http://webflux-app: 8080/integration/orchestration/parallel/shipping/"
+      sec04_product_service: "http://webflux-app: 8080/integration/orchestration/parallel/product/"
+      sec04_user_service: "http://webflux-app: 8080/integration/orchestration/parallel/user/"
+      sec04_inventory_service: "http://webflux-app: 8080/integration/orchestration/parallel/inventory/"
+      sec04_shipping_service: "http://webflux-app: 8080/integration/orchestration/parallel/shipping/"
 
 networks:
   unlogged_network:
