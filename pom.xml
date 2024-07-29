@@ -56,7 +56,7 @@
         <dependency>
             <artifactId>unlogged-sdk</artifactId>
             <groupId>video.bug</groupId>
-            <version>0.6.5</version>
+            <version>0.6.9</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
