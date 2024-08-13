@@ -32,7 +32,7 @@ services:
       - unlogged_network
 
   webflux-app:
-    container_name: webflux-target-repo
+    container_name: target-repo
     build:
       context: ../
     volumes:
